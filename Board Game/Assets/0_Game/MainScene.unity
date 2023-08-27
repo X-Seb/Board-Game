@@ -374,6 +374,108 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 23662281}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &58223326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 58223327}
+  - component: {fileID: 58223329}
+  - component: {fileID: 58223330}
+  m_Layer: 13
+  m_Name: Damage on touch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &58223327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58223326}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 155389896}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &58223329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58223326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76891b3b532f84acaaeed44c357bd00c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  Owner: {fileID: 0}
+  TriggerFilter: 195
+  MinDamageCaused: 8
+  MaxDamageCaused: 12
+  TypedDamages: []
+  DamageDirectionMode: 1
+  DamageCausedKnockbackType: 1
+  DamageCausedKnockbackDirection: 0
+  DamageCausedKnockbackForce: {x: 10, y: 10, z: 10}
+  InvincibilityDuration: 0.5
+  RepeatDamageOverTime: 0
+  AmountOfRepeats: 3
+  DurationBetweenRepeats: 1
+  DamageOverTimeInterruptible: 1
+  RepeatedDamageType: {fileID: 0}
+  DamageTakenEveryTime: 0
+  DamageTakenDamageable: 0
+  DamageTakenNonDamageable: 0
+  DamageTakenKnockbackType: 0
+  DamageTakenKnockbackForce: {x: 0, y: 0, z: 0}
+  DamageTakenInvincibilityDuration: 0.5
+  HitDamageableFeedback: {fileID: 0}
+  HitNonDamageableFeedback: {fileID: 0}
+  HitAnythingFeedback: {fileID: 0}
+  HitDamageableEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  HitNonDamageableEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  HitAnythingEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &58223330
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58223326}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &67576464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -993,14 +1095,13 @@ GameObject:
   - component: {fileID: 155389899}
   - component: {fileID: 155389898}
   - component: {fileID: 155389897}
-  - component: {fileID: 155389907}
   m_Layer: 13
   m_Name: Pawn Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &155389896
 Transform:
   m_ObjectHideFlags: 0
@@ -1016,6 +1117,7 @@ Transform:
   m_Children:
   - {fileID: 1434915353}
   - {fileID: 110365537}
+  - {fileID: 58223327}
   m_Father: {fileID: 1247921190}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &155389897
@@ -1316,7 +1418,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 2
-  m_Radius: 0.5
+  m_Radius: 0.4
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -1347,54 +1449,6 @@ MonoBehaviour:
   AdditionalAbilityNodes: []
   CharacterBrain: {fileID: 110365542}
   OptimizeForMobile: 1
---- !u!114 &155389907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155389895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76891b3b532f84acaaeed44c357bd00c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TargetLayerMask:
-    serializedVersion: 2
-    m_Bits: 1024
-  Owner: {fileID: 0}
-  TriggerFilter: 195
-  MinDamageCaused: 8
-  MaxDamageCaused: 12
-  TypedDamages: []
-  DamageDirectionMode: 1
-  DamageCausedKnockbackType: 1
-  DamageCausedKnockbackDirection: 0
-  DamageCausedKnockbackForce: {x: 10, y: 10, z: 10}
-  InvincibilityDuration: 0.5
-  RepeatDamageOverTime: 0
-  AmountOfRepeats: 3
-  DurationBetweenRepeats: 1
-  DamageOverTimeInterruptible: 1
-  RepeatedDamageType: {fileID: 0}
-  DamageTakenEveryTime: 0
-  DamageTakenDamageable: 0
-  DamageTakenNonDamageable: 0
-  DamageTakenKnockbackType: 0
-  DamageTakenKnockbackForce: {x: 0, y: 0, z: 0}
-  DamageTakenInvincibilityDuration: 0.5
-  HitDamageableFeedback: {fileID: 0}
-  HitNonDamageableFeedback: {fileID: 0}
-  HitAnythingFeedback: {fileID: 0}
-  HitDamageableEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  HitNonDamageableEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  HitAnythingEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &164759397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3316,8 +3370,8 @@ MonoBehaviour:
         Owner: {fileID: 574341097}
         DebugActive: 0
         FlashColor: {r: 1, g: 0, b: 0, a: 1}
-        FlashDuration: 0.1
-        FlashAlpha: 1
+        FlashDuration: 0.5
+        FlashAlpha: 0.4
         FlashID: 0
     - rid: 6455811717136646172
       type: {class: MMF_ChromaticAberration, ns: MoreMountains.FeedbacksForThirdParty,
@@ -3568,9 +3622,9 @@ MonoBehaviour:
         DebugActive: 0
         Sfx: {fileID: 0}
         RandomSfx:
-        - {fileID: 8300000, guid: ccec37d734aad9b49a1a39a8a7262bbd, type: 3}
-        - {fileID: 8300000, guid: 4e4e706c4c03d554fbf42a015cc10055, type: 3}
-        - {fileID: 8300000, guid: 497123663b0cc014c96d9984ce147c73, type: 3}
+        - {fileID: 8300000, guid: ef370672c9b9c4fbdae838bbd2d7175a, type: 3}
+        - {fileID: 8300000, guid: 0a8027dbceb4d47c4bdad316eb99a9d8, type: 3}
+        - {fileID: 8300000, guid: b5df16dd84bf34042bfd9ea4b4a0dbcb, type: 3}
         TestPlayButton:
           ButtonText: Debug Play Sound
         TestStopButton:
@@ -16992,74 +17046,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!1001 &1806571840
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 181676881823221232, guid: e81471914ddae49ac880ae72c5acc9cb,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.496744
-      objectReference: {fileID: 0}
-    - target: {fileID: 181676881823221232, guid: e81471914ddae49ac880ae72c5acc9cb,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.2414455
-      objectReference: {fileID: 0}
-    - target: {fileID: 181676881823221232, guid: e81471914ddae49ac880ae72c5acc9cb,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 8.309651
-      objectReference: {fileID: 0}
-    - target: {fileID: 181676881823221232, guid: e81471914ddae49ac880ae72c5acc9cb,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 181676881823221232, guid: e81471914ddae49ac880ae72c5acc9cb,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 181676881823221232, guid: e81471914ddae49ac880ae72c5acc9cb,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 181676881823221232, guid: e81471914ddae49ac880ae72c5acc9cb,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 181676881823221232, guid: e81471914ddae49ac880ae72c5acc9cb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 181676881823221232, guid: e81471914ddae49ac880ae72c5acc9cb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 181676881823221232, guid: e81471914ddae49ac880ae72c5acc9cb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2042042464619825846, guid: e81471914ddae49ac880ae72c5acc9cb,
-        type: 3}
-      propertyPath: m_Name
-      value: ShootFeedback
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e81471914ddae49ac880ae72c5acc9cb, type: 3}
 --- !u!1001 &1834242284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35287,4 +35273,3 @@ SceneRoots:
   - {fileID: 945502838}
   - {fileID: 7269871778760869422}
   - {fileID: 8026379540254895078}
-  - {fileID: 1806571840}
