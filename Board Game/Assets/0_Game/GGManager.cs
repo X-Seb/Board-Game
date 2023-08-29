@@ -15,6 +15,7 @@ public class GGManager : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioSource m_globalAudioSource;
     [SerializeField] private AudioMixer m_mainMixer;
+    [SerializeField] private string m_volumeParameterName;
 
     #region Enums
 
@@ -45,9 +46,9 @@ public class GGManager : MonoBehaviour
     private void Start()
     {
         m_currentGameState = m_startingGameState;
-        if (PlayerPrefs.HasKey("Volume"))
+        if (PlayerPrefs.HasKey(m_volumeParameterName))
         {
-            SetVolume(PlayerPrefs.GetFloat("Volume"));
+            SetVolume(PlayerPrefs.GetFloat(m_volumeParameterName));
         }
         else { SetVolume(0.0f); }
     }
@@ -78,8 +79,8 @@ public class GGManager : MonoBehaviour
 
     public void SetVolume(float volume)
     {
-        m_mainMixer.SetFloat("Volume", volume);
-        PlayerPrefs.SetFloat("Volume", volume);
+        m_mainMixer.SetFloat(m_volumeParameterName, volume);
+        PlayerPrefs.SetFloat(m_volumeParameterName, volume);
     }
 
     public void PlaySFX(AudioClip clip, AudioSource source, float volume = 1.0f)
