@@ -9,14 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b441ccf6b8a5214eb494cc55d6dc414, type: 3}
-  m_Name: InventoryEngineHealth
+  m_Script: {fileID: 11500000, guid: 9529ae2b2ee0d1e4d802b51d271424c3, type: 3}
+  m_Name: Dice Of Death
   m_EditorClassIdentifier: 
-  ItemID: HealthBonus
+  ItemID: DiceOfDeath
   TargetInventoryName: MainInventory
   ForceSlotIndex: 0
   TargetIndex: 0
-  Usable: 1
+  Usable: 0
   Consumable: 1
   ConsumeQuantity: 1
   Equippable: 0
@@ -33,17 +33,17 @@ MonoBehaviour:
     DisplayUseButton: 1
     DisplayUnequipButton: 1
   Quantity: 1
-  ItemName: 
-  ShortDescription: 
-  Description: 
-  Icon: {fileID: 0}
-  Prefab: {fileID: 0}
+  ItemName: Dices of Death
+  ShortDescription: Insert Dice Pun here
+  Description: Who said dice were made to play game?
+  Icon: {fileID: 21300000, guid: dcd973c53b20640a6b20fe08af1b97b9, type: 3}
+  Prefab: {fileID: 9005286536894908845, guid: 38f01729ccb2346bca0d91f0bbbc781f, type: 3}
   ForcePrefabDropQuantity: 0
   PrefabDropQuantity: 1
   DropProperties:
     Shape: 0
     NormalToSpawnPlane: {x: 0, y: 1, z: 0}
-    MinimumSphereRadius: 1
+    MinimumSphereRadius: 1.5
     MaximumSphereRadius: 2
     MinimumCubeBaseSize: {x: 1, y: 1, z: 1}
     MaximumCubeBaseSize: {x: 2, y: 2, z: 2}
@@ -82,11 +82,14 @@ MonoBehaviour:
     MinimumScale: {x: 1, y: 1, z: 1}
     MaximumScale: {x: 1, y: 1, z: 1}
   MaximumStack: 1
-  ItemClass: 0
+  ItemClass: 2
   TargetEquipmentInventoryName: 
   EquippedSound: {fileID: 0}
   UsedSound: {fileID: 0}
   MovedSound: {fileID: 0}
   DroppedSound: {fileID: 0}
   UseDefaultSoundsIfNull: 1
-  HealthBonus: 0
+  EquippableWeapon: {fileID: 1377586820623386294, guid: 9b8537c6c99da4f519ef250d4a20d8af,
+    type: 3}
+  AutoEquipMode: 1
+  HandleWeaponID: 1

@@ -9,14 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9529ae2b2ee0d1e4d802b51d271424c3, type: 3}
-  m_Name: PlayerDefaultWeapon
+  m_Script: {fileID: 11500000, guid: 0b441ccf6b8a5214eb494cc55d6dc414, type: 3}
+  m_Name: Health Bonus
   m_EditorClassIdentifier: 
-  ItemID: PlayerDefaultWeapon
+  ItemID: HealthBonus
   TargetInventoryName: MainInventory
   ForceSlotIndex: 0
   TargetIndex: 0
-  Usable: 0
+  Usable: 1
   Consumable: 1
   ConsumeQuantity: 1
   Equippable: 0
@@ -89,6 +89,4 @@ MonoBehaviour:
   MovedSound: {fileID: 0}
   DroppedSound: {fileID: 0}
   UseDefaultSoundsIfNull: 1
-  EquippableWeapon: {fileID: 0}
-  AutoEquipMode: 1
-  HandleWeaponID: 1
+  HealthBonus: 0
