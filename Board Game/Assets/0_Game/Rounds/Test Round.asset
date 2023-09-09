@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
+  m_Name: Test Round
+  m_EditorClassIdentifier: 
+  m_roundName: The First Battle...
+  m_description: No time to waste!
+  m_roundDifficulty: 0
+  m_numberOfWaves: 
+  m_wave1: []
+  m_wave2: []
+  m_wave3: []
+  m_wave4: []
+  m_wave5: []
