@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 14768138973613231, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: m_Name
-      value: Pawn Black Enemy 1
+      value: Pawn White Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 14768138973613231, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
@@ -21,7 +21,7 @@ PrefabInstance:
     - target: {fileID: 844675530073811170, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: WalkSpeed
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2055519518907867145, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}

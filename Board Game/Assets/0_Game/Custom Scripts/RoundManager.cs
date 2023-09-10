@@ -63,6 +63,9 @@ public class RoundManager : MonoBehaviour
 
     public void Start()
     {
+        m_totalEnemiesKilledText.text = "0";
+        m_targetsRemainingText.text = "0";
+        m_currentRoundText.text = "Round 0";
         Reshuffle(m_easyRounds);
         //Reshuffle(m_mediumRounds);
         //Reshuffle(m_hardRounds);
@@ -128,7 +131,7 @@ public class RoundManager : MonoBehaviour
     {
         m_roundNameText.text = round.roundName;
         m_roundDescriptionText.text = round.roundDescription;
-        m_currentRoundText.text = "Round " + m_totalRoundNumber.ToString();
+        m_currentRoundText.text = "ROUND " + m_totalRoundNumber.ToString();
         m_roundStartFeedback.PlayFeedbacks();
     }
 

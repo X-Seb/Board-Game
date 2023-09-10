@@ -948,7 +948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InitializationMode: 0
   Label: 
-  MaximumDurationInADirection: 1
+  MaximumDurationInADirection: 0.7
   ObstacleLayerMask:
     serializedVersion: 2
     m_Bits: 256
@@ -7005,7 +7005,7 @@ MonoBehaviour:
           DelayBetweenRepeats: 1
           MMFeedbacksDirectionCondition: 0
           PlayDirection: 0
-          ConstantIntensity: 0
+          ConstantIntensity: 1
           UseIntensityInterval: 0
           IntensityIntervalMin: 0
           IntensityIntervalMax: 0
