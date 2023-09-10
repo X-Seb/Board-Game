@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b85c182ee962461d89aa134dc739747, type: 3}
-  m_Name: Wave1
+  m_Name: Wave1 2
   m_EditorClassIdentifier: 
   m_enemies:
+  - {fileID: 14768138973613231, guid: 83495f77c31594c5bba0325a249fb7d7, type: 3}
   - {fileID: 14768138973613231, guid: 83495f77c31594c5bba0325a249fb7d7, type: 3}
   m_spawnInterval: 0
   m_overrideSpawner: 0

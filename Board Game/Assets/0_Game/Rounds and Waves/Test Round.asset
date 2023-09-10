@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
   m_Name: Test Round
   m_EditorClassIdentifier: 
-  m_roundName: The First Battle...
-  m_description: No time to waste!
-  m_roundDifficulty: 0
-  m_numberOfWaves: 
-  m_wave1: []
-  m_wave2: []
-  m_wave3: []
-  m_wave4: []
-  m_wave5: []
+  roundName: Bishop Barrage
+  roundDescription: 'basically, bisops attack you '
+  roundDifficulty: 1
+  overrideSFX: 0
+  roundStartSFX: {fileID: 0}
+  roundEndSFX: {fileID: 0}
+  m_waves:
+  - {fileID: 11400000, guid: d66af4ca1a678459c9540ce0e6164919, type: 2}
+  - {fileID: 11400000, guid: 2011db0a7de644287a04a060a9296bf6, type: 2}
+  - {fileID: 11400000, guid: 5fe9ca279189740888c3bbad5dd4ab85, type: 2}

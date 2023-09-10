@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MoreMountains.Feedbacks;
 
 public class EnemySpawner : MonoBehaviour
 {
+    [Header("Setup: ")]
     [SerializeField] private Transform m_spawnPosition;
+    [SerializeField] private MMFeedbacks m_spawnFeedback;
 
     [Header("Just Spawned delay: ")]
     [SerializeField] private bool m_justSpawned;
@@ -12,6 +15,7 @@ public class EnemySpawner : MonoBehaviour
 
     public void Spawn(GameObject objectToSpawn)
     {
+        m_spawnFeedback.PlayFeedbacks();
         Instantiate(objectToSpawn, m_spawnPosition);
         StartCoroutine(UpdateJustSpawned());
     }
