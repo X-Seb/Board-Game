@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
-  m_Name: Test Round
+  m_Name: TeamUpTactics
   m_EditorClassIdentifier: 
-  roundName: Bishop Barrage
-  roundDescription: 'basically, bisops attack you '
-  roundDifficulty: 1
+  roundName: Team Up Tactics
+  roundDescription: Prepare to get ganged up on...
+  roundDifficulty: 2
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
   m_waves:
-  - {fileID: 11400000, guid: d66af4ca1a678459c9540ce0e6164919, type: 2}
-  - {fileID: 11400000, guid: 2011db0a7de644287a04a060a9296bf6, type: 2}
-  - {fileID: 11400000, guid: 5fe9ca279189740888c3bbad5dd4ab85, type: 2}
+  - {fileID: 11400000, guid: b369ea8c0ed814d42a5d34896cbd62c1, type: 2}
+  - {fileID: 11400000, guid: 50478e70af48a4a29b05ec196fd1d984, type: 2}
+  - {fileID: 11400000, guid: 19c79f1d4c59d482989f85ec9adc0788, type: 2}

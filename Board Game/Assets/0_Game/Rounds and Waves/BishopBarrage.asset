@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
+  m_Name: BishopBarrage
+  m_EditorClassIdentifier: 
+  roundName: Bishop Barrage
+  roundDescription: 'Basically, bishops attack you '
+  roundDifficulty: 1
+  overrideSFX: 0
+  roundStartSFX: {fileID: 0}
+  roundEndSFX: {fileID: 0}
+  m_waves:
+  - {fileID: 11400000, guid: d66af4ca1a678459c9540ce0e6164919, type: 2}
+  - {fileID: 11400000, guid: 2011db0a7de644287a04a060a9296bf6, type: 2}
+  - {fileID: 11400000, guid: 5fe9ca279189740888c3bbad5dd4ab85, type: 2}

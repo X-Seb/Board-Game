@@ -117,7 +117,17 @@ public class GGManager : MonoBehaviour
 
     #region Private methods
 
-
+    private void Reshuffle(string[] texts)
+    {
+        // Knuth shuffle algorithm 
+        for (int t = 0; t < texts.Length; t++)
+        {
+            string tmp = texts[t];
+            int r = Random.Range(t, texts.Length);
+            texts[t] = texts[r];
+            texts[r] = tmp;
+        }
+    }
 
     #endregion
 }

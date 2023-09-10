@@ -171,7 +171,7 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 640
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -235,7 +235,7 @@ MonoBehaviour:
   DirectionCanBeChangedBySpawner: 1
   FlipValue: {x: 1, y: 1, z: 1}
   ProjectileIsFacingRight: 0
-  InitialInvulnerabilityDuration: 0
+  InitialInvulnerabilityDuration: 0.3
   DamageOwner: 0
 --- !u!114 &8475036552516892904
 MonoBehaviour:

@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private MMFeedbacks m_spawnFeedback;
 
     [Header("Just Spawned delay: ")]
-    [SerializeField] private bool m_justSpawned;
+    [SerializeField] private bool m_justSpawned = false;
     [SerializeField] private float m_waitSeconds;
 
     public void Spawn(GameObject objectToSpawn)
@@ -21,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
     }
 
     // Getter method
-    public bool JustSpawned() { return m_justSpawned;  }
+    public bool IsAvailable() { return m_justSpawned;  }
 
     private IEnumerator UpdateJustSpawned()
     {

@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 8271282181270349910}
   - component: {fileID: 4924273329214902431}
   m_Layer: 13
-  m_Name: Bishop Enemy
+  m_Name: Bishop White Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -268,8 +268,8 @@ MonoBehaviour:
   WalkSpeed: 12
   ShouldSetMovement: 1
   IdleThreshold: 0.05
-  Acceleration: 15
-  Deceleration: 15
+  Acceleration: 20
+  Deceleration: 20
   InterpolateMovementSpeed: 0
   WalkParticles: []
   TouchTheGroundParticles: []
@@ -322,12 +322,12 @@ MonoBehaviour:
   Model: {fileID: 2093422333673364802}
   CurrentHealth: 100
   Invulnerable: 0
-  InitialHealth: 100000
-  MaximumHealth: 1000000
+  InitialHealth: 34
+  MaximumHealth: 34
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 4258168009356082337}
-  FeedbackIsProportionalToDamage: 0
+  FeedbackIsProportionalToDamage: 1
   PreventTakeSelfDamage: 0
   ImmuneToKnockback: 0
   ImmuneToKnockbackIfZeroDamage: 0
@@ -586,7 +586,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e1279aa5767144cc5836bea69d14d757, type: 2}
+  - {fileID: 2100000, guid: e7feb3f9b41fa204f9032ab171d5b3df, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -615,7 +615,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093422333673364802}
-  m_Mesh: {fileID: 3811053669902914943, guid: cf6b3a073579ea14ea9259ec645214f1, type: 3}
+  m_Mesh: {fileID: -632972855434581787, guid: 2939d7866d94f014a887e798621fef4c, type: 3}
 --- !u!114 &5733011107357719982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,8 +740,8 @@ MonoBehaviour:
     m_Bits: 1024
   Owner: {fileID: 0}
   TriggerFilter: 195
-  MinDamageCaused: 10
-  MaxDamageCaused: 14
+  MinDamageCaused: 7
+  MaxDamageCaused: 10
   TypedDamages: []
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
@@ -7172,7 +7172,7 @@ MonoBehaviour:
         Value: 3
         UseIntensityAsValue: 1
         RoundingMethod: 1
-        ForceColor: 1
+        ForceColor: 0
         AnimateColorGradient:
           serializedVersion: 2
           key0: {r: 0.24528301, g: 0, b: 0, a: 1}

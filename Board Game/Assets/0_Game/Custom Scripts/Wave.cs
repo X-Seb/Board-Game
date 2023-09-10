@@ -14,4 +14,9 @@ public class Wave : ScriptableObject
     public bool IsSpawnerOverride() { return m_overrideSpawner; }
     public float GetSpawnInterval() { return m_spawnInterval; }
     public GameObject[] GetEnemies() { return m_enemies; }
+
+    public int NumberOfEnemies()
+    {
+        return m_enemies.Length;
+    }
 }
