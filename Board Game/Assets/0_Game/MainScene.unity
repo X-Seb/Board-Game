@@ -2542,12 +2542,12 @@ GameObject:
   - component: {fileID: 236955889}
   - component: {fileID: 236955897}
   m_Layer: 13
-  m_Name: Bishop Enemy
+  m_Name: Bishop Enemy (dummy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &236955888
 Transform:
   m_ObjectHideFlags: 0
@@ -2557,7 +2557,7 @@ Transform:
   m_GameObject: {fileID: 236955887}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.99, y: 0.82, z: 8.76}
+  m_LocalPosition: {x: 1.44, y: 0.82, z: 5.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4805,11 +4805,11 @@ MonoBehaviour:
         m_Calls: []
   DebugActive: 0
   FeedbacksList:
-  - rid: 2694893308341911552
-  - rid: 2694893308341911553
-  - rid: 2694893308341911554
-  - rid: 2694893308341911555
-  - rid: 2694893308341911556
+  - rid: 2694893308341911585
+  - rid: 2694893308341911586
+  - rid: 2694893308341911587
+  - rid: 2694893308341911588
+  - rid: 2694893308341911589
   KeepPlayModeChanges: 0
   PerformanceMode: 0
   StopFeedbacksOnDisable: 0
@@ -4817,11 +4817,11 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 2694893308341911552
+    - rid: 2694893308341911585
       type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
       data:
         Active: 1
-        UniqueID: -1061654377
+        UniqueID: 353332645
         Label: Sound
         ChannelMode: 0
         Channel: 0
@@ -4937,11 +4937,11 @@ MonoBehaviour:
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-    - rid: 2694893308341911553
+    - rid: 2694893308341911586
       type: {class: MMF_Flicker, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
         Active: 1
-        UniqueID: 1827523405
+        UniqueID: -374505532
         Label: Flicker
         ChannelMode: 0
         Channel: 0
@@ -5014,11 +5014,11 @@ MonoBehaviour:
         MaterialIndexes: 00000000
         UseMaterialPropertyBlocks: 0
         SpriteRendererTextureProperty: _MainTex
-    - rid: 2694893308341911554
+    - rid: 2694893308341911587
       type: {class: MMF_Particles, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
         Active: 1
-        UniqueID: 412084196
+        UniqueID: -2042751192
         Label: Particles Play
         ChannelMode: 0
         Channel: 0
@@ -5091,11 +5091,11 @@ MonoBehaviour:
         DeclaredDuration: 0
         ForceSimulationSpeed: 0
         ForcedSimulationSpeed: {x: 0.1, y: 1}
-    - rid: 2694893308341911555
+    - rid: 2694893308341911588
       type: {class: MMF_ScaleShake, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
       data:
         Active: 1
-        UniqueID: 1191092562
+        UniqueID: 1422635097
         Label: Scale Shake
         ChannelMode: 0
         Channel: 0
@@ -5208,12 +5208,12 @@ MonoBehaviour:
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-    - rid: 2694893308341911556
+    - rid: 2694893308341911589
       type: {class: MMF_TopDownEngineFloatingText, ns: MoreMountains.TopDownEngine,
         asm: MoreMountains.TopDownEngine}
       data:
         Active: 1
-        UniqueID: -1874273888
+        UniqueID: 1612158461
         Label: TopDown Engine Floating Text
         ChannelMode: 0
         Channel: 0
@@ -5316,7 +5316,7 @@ MonoBehaviour:
         Lifetime: 0.6
         PositionMode: 1
         TargetTransform: {fileID: 0}
-        Direction: {x: 0.47987878, y: 0, z: -0.14041495}
+        Direction: {x: -0.35088965, y: 0, z: 0.3561972}
         TargetHealth: {fileID: 236955889}
         Formatting: 
         DamageDirectionImpactsTextDirection: 1
@@ -7088,7 +7088,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &489989945
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26995,7 +26995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1754882446
 Transform:
   m_ObjectHideFlags: 0
@@ -27031,7 +27031,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1761423092
 Transform:
   m_ObjectHideFlags: 0
@@ -37633,7 +37633,7 @@ MonoBehaviour:
   NestWaitingPool: 1
   MutualizeWaitingPools: 1
   PoolCanExpand: 1
-  Lifetime: {x: 0.5, y: 0.5}
+  Lifetime: {x: 0.5, y: 0.7}
   SpawnOffsetMin: {x: 0, y: 0, z: 0}
   SpawnOffsetMax: {x: 0, y: 0, z: 0}
   AnimateMovement: 1
@@ -37844,12 +37844,12 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  IntensityImpactsLifetime: 0
-  IntensityLifetimeMultiplier: 1
-  IntensityImpactsMovement: 0
-  IntensityMovementMultiplier: 1
+  IntensityImpactsLifetime: 1
+  IntensityLifetimeMultiplier: 2
+  IntensityImpactsMovement: 1
+  IntensityMovementMultiplier: 2
   IntensityImpactsScale: 1
-  IntensityScaleMultiplier: 0.75
+  IntensityScaleMultiplier: 1.5
   DebugRandomValue: {x: 100, y: 500}
   DebugInterval: {x: 0.3, y: 0.5}
   TestSpawnOneBtn: 0
@@ -42746,7 +42746,7 @@ MonoBehaviour:
   InputAuthorized: 1
   AnalogInput: 1
   ScriptDrivenInput: 0
-  WalkSpeed: 7
+  WalkSpeed: 8
   ShouldSetMovement: 1
   IdleThreshold: 0.05
   Acceleration: 12

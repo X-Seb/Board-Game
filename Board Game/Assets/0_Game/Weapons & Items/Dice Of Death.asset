@@ -37,7 +37,7 @@ MonoBehaviour:
   ShortDescription: Insert Dice Pun here
   Description: Who said dice were made to play game?
   Icon: {fileID: 21300000, guid: dcd973c53b20640a6b20fe08af1b97b9, type: 3}
-  Prefab: {fileID: 9005286536894908845, guid: 38f01729ccb2346bca0d91f0bbbc781f, type: 3}
+  Prefab: {fileID: 1229595596555871739, guid: 7ebcce69749d34d9fb9bb5920d1b42c8, type: 3}
   ForcePrefabDropQuantity: 0
   PrefabDropQuantity: 1
   DropProperties:
@@ -89,7 +89,7 @@ MonoBehaviour:
   MovedSound: {fileID: 0}
   DroppedSound: {fileID: 0}
   UseDefaultSoundsIfNull: 1
-  EquippableWeapon: {fileID: 1377586820623386294, guid: 9b8537c6c99da4f519ef250d4a20d8af,
+  EquippableWeapon: {fileID: 2226647201843857789, guid: 7ebcce69749d34d9fb9bb5920d1b42c8,
     type: 3}
   AutoEquipMode: 1
   HandleWeaponID: 1

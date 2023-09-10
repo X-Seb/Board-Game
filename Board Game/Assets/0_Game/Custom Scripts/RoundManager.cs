@@ -4,6 +4,8 @@ using MoreMountains.Feedbacks;
 using TMPro;
 using MoreMountains.Tools;
 
+//public struct KilledEnemy
+
 /// <summary>
 /// Lots of the logic is controlled by the feedbacks
 /// </summary>

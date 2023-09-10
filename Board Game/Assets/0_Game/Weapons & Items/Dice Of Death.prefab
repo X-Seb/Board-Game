@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1805374013884308271}
   - component: {fileID: 35715766387417535}
   m_Layer: 0
-  m_Name: Dice Of Death 1
+  m_Name: Dice Of Death
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,11 +180,36 @@ MonoBehaviour:
   Pool:
   - GameObjectToPool: {fileID: 1303676275303563734, guid: cefdb9d4fa15547a8840ff20ec9f5152,
       type: 3}
-    PoolSize: 10
-    PoolCanExpand: 1
+    PoolSize: 6
+    PoolCanExpand: 0
+    Enabled: 1
+  - GameObjectToPool: {fileID: 1303676275303563734, guid: af799fe7ee7434836857ca69afc1e9d2,
+      type: 3}
+    PoolSize: 4
+    PoolCanExpand: 0
+    Enabled: 1
+  - GameObjectToPool: {fileID: 1303676275303563734, guid: bcfee845439d44b90a1ef555b30ef45f,
+      type: 3}
+    PoolSize: 3
+    PoolCanExpand: 0
+    Enabled: 1
+  - GameObjectToPool: {fileID: 1303676275303563734, guid: 0679b4b0a7c4b422a852de064dce5f06,
+      type: 3}
+    PoolSize: 2
+    PoolCanExpand: 0
+    Enabled: 1
+  - GameObjectToPool: {fileID: 1303676275303563734, guid: 1d833b97286224ef79f40ad78488e35d,
+      type: 3}
+    PoolSize: 2
+    PoolCanExpand: 0
+    Enabled: 1
+  - GameObjectToPool: {fileID: 1303676275303563734, guid: 4231ff7d5ddd2419eb87b2f539281994,
+      type: 3}
+    PoolSize: 1
+    PoolCanExpand: 0
     Enabled: 1
   PoolingMethod: 3
-  CanPoolSameObjectTwice: 1
+  CanPoolSameObjectTwice: 0
   MutualizedPoolName: 
 --- !u!1 &1965030226280718971
 GameObject:
