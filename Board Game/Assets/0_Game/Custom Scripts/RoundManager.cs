@@ -10,6 +10,8 @@ using TMPro;
 public class RoundManager : MonoBehaviour
 {
     #region Variables
+    [Header("Testing: ")]
+    [SerializeField] private bool m_shouldSpawnWaves;
     [Header("Round Setup: ")]
     [SerializeField] private Round[] m_tutorialRounds;
     [SerializeField] private Round[] m_easyRounds;
@@ -71,7 +73,8 @@ public class RoundManager : MonoBehaviour
         //Reshuffle(m_hardRounds);
         //Reshuffle(m_insaneRounds);
         Reshuffle(m_enemySpawners);
-        m_startGameFeedback.PlayFeedbacks();
+
+        if (m_shouldSpawnWaves) { m_startGameFeedback.PlayFeedbacks(); }
     }
 
     /// <summary>
