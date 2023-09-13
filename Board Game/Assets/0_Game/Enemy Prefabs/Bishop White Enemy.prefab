@@ -40,7 +40,6 @@ Transform:
   m_Children:
   - {fileID: 222102980037628042}
   - {fileID: 8307363430491205631}
-  - {fileID: 4116384897439144732}
   - {fileID: 4492869978732425817}
   - {fileID: 1992583399722807602}
   m_Father: {fileID: 0}
@@ -339,7 +338,7 @@ MonoBehaviour:
   DisableControllerOnDeath: 1
   DisableModelOnDeath: 1
   DisableCollisionsOnDeath: 1
-  DisableChildCollisionsOnDeath: 0
+  DisableChildCollisionsOnDeath: 1
   ChangeLayerOnDeath: 0
   ChangeLayersRecursivelyOnDeath: 0
   LayerOnDeath:
@@ -527,7 +526,7 @@ MonoBehaviour:
   NestDrawnHealthBar: 0
   Billboard: 0
   InstantiatedOnDeath: {fileID: 0}
-  HealthBarOffset: {x: 0, y: 1.3, z: 0}
+  HealthBarOffset: {x: 0, y: 1.4, z: 0}
   AlwaysVisible: 1
   DisplayDurationOnHit: 1
   HideBarAtZero: 1
@@ -563,7 +562,8 @@ Transform:
   m_LocalPosition: {x: 0, y: -0.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4116384897439144732}
   m_Father: {fileID: 7731685012594323577}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &5697736494530095567
@@ -716,12 +716,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2543965896307576131}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7731685012594323577}
+  m_Father: {fileID: 222102980037628042}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5290465110267507853
 MonoBehaviour:

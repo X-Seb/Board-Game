@@ -94,6 +94,11 @@ PrefabInstance:
       propertyPath: managedReferences[2694893308341911555].Timing.ConstantIntensity
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4924273329214902431, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: HealthBarOffset.y
+      value: 1.4
+      objectReference: {fileID: 0}
     - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: MaxDamageCaused
@@ -163,6 +168,11 @@ PrefabInstance:
         type: 3}
       propertyPath: MaximumHealth
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271282181270349910, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: DisableChildCollisionsOnDeath
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7416169228160445950, guid: 83495f77c31594c5bba0325a249fb7d7, type: 3}
