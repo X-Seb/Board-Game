@@ -109,6 +109,16 @@ PrefabInstance:
       propertyPath: MinDamageCaused
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: DamageCausedKnockbackForce.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: DamageCausedKnockbackForce.y
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7731685012594323577, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: m_LocalPosition.x

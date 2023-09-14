@@ -6712,7 +6712,7 @@ MonoBehaviour:
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
-  DamageCausedKnockbackForce: {x: 15, y: 15, z: 15}
+  DamageCausedKnockbackForce: {x: 15, y: 15, z: 3}
   InvincibilityDuration: 0.5
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
@@ -12830,7 +12830,7 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 6876653269793434362}
         DebugActive: 0
-        ShakeDuration: 0.2
+        ShakeDuration: 0.4
         ResetShakerValuesAfterShake: 1
         ResetTargetValuesAfterShake: 1
         RelativeValues: 1
@@ -12868,7 +12868,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         RemapIntensityZero: 0
-        RemapIntensityOne: 1
+        RemapIntensityOne: 4
         ShakeThreshold:
           serializedVersion: 2
           m_Curve:
@@ -13502,7 +13502,7 @@ MonoBehaviour:
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
-  DamageCausedKnockbackForce: {x: 4, y: 4, z: 4}
+  DamageCausedKnockbackForce: {x: 4, y: 4, z: 3}
   InvincibilityDuration: 0
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
