@@ -41,7 +41,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165940107291371048}
-  m_Mesh: {fileID: -1148459133770432101, guid: 74f3b555b3fcaab4fae328f25e4aa162, type: 3}
+  m_Mesh: {fileID: 5051204839692517457, guid: fa457bf1e88911e43881e143ca1c475e, type: 3}
 --- !u!23 &2593527608795727257
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62,8 +62,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 2100000, guid: 0fb954d2442c04138a7dbf9678f3eafb, type: 2}
   - {fileID: 2100000, guid: 0bd840691d93147a6829aacc8fa5011f, type: 2}
-  - {fileID: 2100000, guid: f429192c1ea3e42a7a5c687e3b005953, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -130,11 +130,10 @@ GameObject:
   - component: {fileID: 3677997461627118052}
   - component: {fileID: 8475036552516892904}
   - component: {fileID: 2463313217052962309}
-  - component: {fileID: 3772479763986049283}
   - component: {fileID: 1448737379208827606}
   - component: {fileID: 2305715626076803401}
   m_Layer: 18
-  m_Name: Projectile_Dice20
+  m_Name: Projectile_Dice8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -255,7 +254,7 @@ MonoBehaviour:
   Owner: {fileID: 0}
   TriggerFilter: 195
   MinDamageCaused: 1
-  MaxDamageCaused: 20
+  MaxDamageCaused: 8
   TypedDamages: []
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
@@ -330,26 +329,6 @@ MonoBehaviour:
   TargetDamageResistanceProcessor: {fileID: 0}
   TargetAnimator: {fileID: 0}
   DisableAnimatorLogs: 1
---- !u!114 &3772479763986049283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1303676275303563734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72de0b0360096ea41a18d17864ecb963, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BoundsBasedOn: 0
-  ExecuteOnEnable:
-    m_PersistentCalls:
-      m_Calls: []
-  ExecuteOnDisable:
-    m_PersistentCalls:
-      m_Calls: []
-  LifeTime: 3
 --- !u!114 &1448737379208827606
 MonoBehaviour:
   m_ObjectHideFlags: 0

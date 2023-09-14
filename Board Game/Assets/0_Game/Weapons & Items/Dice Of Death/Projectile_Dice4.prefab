@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 165940107291371048}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.098, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41,7 +41,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165940107291371048}
-  m_Mesh: {fileID: -1365505374734108808, guid: 97b126818cdad5647857dd7096b5aef1, type: 3}
+  m_Mesh: {fileID: 3638480907044418739, guid: 9101b7a54614a894d8f8d603baa85ad9, type: 3}
 --- !u!23 &2593527608795727257
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 859eccd94920e49a6897f5fc5a015f86, type: 2}
+  - {fileID: 2100000, guid: 8168a2ac3ff9c4e4e87af8cb70a9636b, type: 2}
   - {fileID: 2100000, guid: 0bd840691d93147a6829aacc8fa5011f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -130,11 +130,10 @@ GameObject:
   - component: {fileID: 3677997461627118052}
   - component: {fileID: 8475036552516892904}
   - component: {fileID: 2463313217052962309}
-  - component: {fileID: 3772479763986049283}
   - component: {fileID: 1448737379208827606}
   - component: {fileID: 2305715626076803401}
   m_Layer: 18
-  m_Name: Projectile_Dice6
+  m_Name: Projectile_Dice4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -255,7 +254,7 @@ MonoBehaviour:
   Owner: {fileID: 0}
   TriggerFilter: 195
   MinDamageCaused: 1
-  MaxDamageCaused: 6
+  MaxDamageCaused: 4
   TypedDamages: []
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
@@ -330,26 +329,6 @@ MonoBehaviour:
   TargetDamageResistanceProcessor: {fileID: 0}
   TargetAnimator: {fileID: 0}
   DisableAnimatorLogs: 1
---- !u!114 &3772479763986049283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1303676275303563734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72de0b0360096ea41a18d17864ecb963, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BoundsBasedOn: 0
-  ExecuteOnEnable:
-    m_PersistentCalls:
-      m_Calls: []
-  ExecuteOnDisable:
-    m_PersistentCalls:
-      m_Calls: []
-  LifeTime: 3
 --- !u!114 &1448737379208827606
 MonoBehaviour:
   m_ObjectHideFlags: 0

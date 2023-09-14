@@ -507,8 +507,8 @@ MonoBehaviour:
         PlayMethod: 0
         PoolSize: 10
         StopSoundOnFeedbackStop: 1
-        MinVolume: 0.55
-        MaxVolume: 0.65
+        MinVolume: 0.5
+        MaxVolume: 0.6
         MinPitch: 0.6
         MaxPitch: 1.2
         SfxAudioMixerGroup: {fileID: -3165942800488051908, guid: 7e984f512e89b60468e829489e8883e3,

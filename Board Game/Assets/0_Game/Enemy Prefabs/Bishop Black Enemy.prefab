@@ -948,12 +948,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InitializationMode: 0
   Label: 
-  MaximumDurationInADirection: 0.7
+  MaximumDurationInADirection: 0.4
   ObstacleLayerMask:
     serializedVersion: 2
     m_Bits: 8448
   ObstaclesDetectionDistance: 1
-  ObstaclesCheckFrequency: 0.1
+  ObstaclesCheckFrequency: 0.15
   MinimumRandomDirection: {x: -1, y: -1}
   MaximumRandomDirection: {x: 1, y: 1}
 --- !u!114 &8097043479057098175
@@ -999,7 +999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
-  Radius: 5
+  Radius: 6
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayerMask:
     serializedVersion: 2

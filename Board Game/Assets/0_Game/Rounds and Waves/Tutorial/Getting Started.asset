@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
-  m_Name: Pawn Attack
+  m_Name: Getting Started
   m_EditorClassIdentifier: 
-  roundName: PAWN ATTACK
-  roundDescription: Fear the might of the pawns!
+  roundName: GETTING STARTED
+  roundDescription: Aim with your mouse. Left click to shoot.
   roundDifficulty: 1
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
   m_waves:
-  - {fileID: 11400000, guid: 090ff62f659c64547aa99ac850c11c4b, type: 2}
-  - {fileID: 11400000, guid: 70a046d2e53294114b6bff2d89415bf8, type: 2}
-  - {fileID: 11400000, guid: 55bb3f5424d8842e48cb9e35adca9e81, type: 2}
+  - {fileID: 11400000, guid: fb51d0ac9fd4147f58188a0b80f378f4, type: 2}
+  - {fileID: 11400000, guid: b4ab3d548db6841f290b9e6bbece7963, type: 2}
+  - {fileID: 11400000, guid: 183eea517849a4df488345c98eda70fe, type: 2}
+  - {fileID: 11400000, guid: 38f20c4ac9f164943b94479fd2829602, type: 2}
+  - {fileID: 11400000, guid: 2594c5922d6f44daf82073f9fbd51111, type: 2}

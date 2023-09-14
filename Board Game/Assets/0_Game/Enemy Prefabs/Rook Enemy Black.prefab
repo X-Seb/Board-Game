@@ -5163,8 +5163,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: WaitAfterDash
-  AfterTimeMin: 0.8
-  AfterTimeMax: 1
+  AfterTimeMin: 0.7
+  AfterTimeMax: 0.8
 --- !u!114 &5633092442178700570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5206,7 +5206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
-  Radius: 8
+  Radius: 9
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayerMask:
     serializedVersion: 2
@@ -5855,7 +5855,7 @@ MonoBehaviour:
   InputAuthorized: 1
   AnalogInput: 0
   ScriptDrivenInput: 0
-  WalkSpeed: 4
+  WalkSpeed: 5
   ShouldSetMovement: 1
   IdleThreshold: 0.05
   Acceleration: 20
@@ -5921,8 +5921,8 @@ MonoBehaviour:
   DashMode: 4
   DashSpace: 1
   DashDirection: {x: 0, y: 0, z: 1}
-  DashDistance: 14
-  DashDuration: 0.6
+  DashDistance: 16
+  DashDuration: 0.4
   DashCurve:
     serializedVersion: 2
     m_Curve:
@@ -7933,7 +7933,7 @@ MonoBehaviour:
         DebugActive: 0
         Mode: 0
         AnimateScaleTarget: {fileID: 1660709174052681172}
-        AnimateScaleDuration: 1.2
+        AnimateScaleDuration: 1
         RemapCurveZero: 1
         RemapCurveOne: 1.2
         Offset: 0

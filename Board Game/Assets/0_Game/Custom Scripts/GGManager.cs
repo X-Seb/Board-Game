@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class GGManager : MonoBehaviour
 {
@@ -68,6 +69,11 @@ public class GGManager : MonoBehaviour
     public bool IsPlaying() { return m_currentGameState == GameState.playing; }
 
     public bool IsPaused() { return m_currentGameState == GameState.paused; }
+
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 
     #endregion
 
