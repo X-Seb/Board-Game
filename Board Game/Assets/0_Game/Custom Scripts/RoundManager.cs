@@ -125,8 +125,7 @@ public class RoundManager : MonoBehaviour
     public void WaveStart()
     {
         m_targetsRemainingInWave = m_currentWave.NumberOfEnemies();
-        GameObject[] enemies = m_currentWave.GetEnemies();
-        StartCoroutine(SpawnEnemies(enemies));
+        StartCoroutine(SpawnEnemies(m_currentWave));
     }
 
     // Will update + animate UI, wait, and eventually start the current wave
@@ -139,13 +138,60 @@ public class RoundManager : MonoBehaviour
     }
 
     // Will start spawning the enemies (from the current wave)
-    IEnumerator SpawnEnemies(GameObject[] enemies)
+    // Will check if the spawner is overriden for the current wave
+    // Will check if the spawn intervals are overriden for the current wave
+    IEnumerator SpawnEnemies(Wave wave)
     {
-        foreach (GameObject enemy in enemies) {
-            EnemySpawner spawner = GetRandomValidSpawner();
-            spawner.Spawn(enemy);
-            yield return new WaitForSeconds(m_currentWave.GetSpawnInterval());
+        GameObject[] enemies = wave.GetEnemies();
+        bool spawnerOverride = wave.IsSpawnerOverride();
+        bool intervalOverride = wave.IsSpawnIntervalOverride();
+
+        // Spawn enemies in the correct spawner mode and spawn interval time
+        if (!spawnerOverride && !intervalOverride)
+        {
+            float spawnInterval = wave.GetSpawnInterval();
+            foreach (GameObject enemy in enemies)
+            {
+                EnemySpawner spawner = GetRandomValidSpawner();
+                spawner.Spawn(enemy);
+                yield return new WaitForSeconds(spawnInterval);
+            }
         }
+        else if (!spawnerOverride && intervalOverride)
+        {
+            float[] newSpawnIntervals = wave.GetOverridenSpawnIntervals();
+            int i = -1; // Start at -1 since we're adding 1 before accessing the spawn interval
+            foreach (GameObject enemy in enemies)
+            {
+                EnemySpawner spawner = GetRandomValidSpawner();
+                spawner.Spawn(enemy);
+                i++;
+                yield return new WaitForSeconds(newSpawnIntervals[i]);
+            }
+        }
+        else if (spawnerOverride && !intervalOverride)
+        {
+            float spawnInterval = wave.GetSpawnInterval();
+            EnemySpawner spawner = wave.GetOverrideSpawner();
+            foreach (GameObject enemy in enemies)
+            {
+                spawner.Spawn(enemy);
+                yield return new WaitForSeconds(spawnInterval);
+            }
+        }
+        else if (spawnerOverride && intervalOverride)
+        {
+            EnemySpawner spawner = wave.GetOverrideSpawner();
+            float[] newSpawnIntervals = wave.GetOverridenSpawnIntervals();
+            int i = -1; // Start at -1 since we're adding 1 before accessing the spawn interval
+            foreach (GameObject enemy in enemies)
+            {
+                spawner.Spawn(enemy);
+                i++;
+                yield return new WaitForSeconds(newSpawnIntervals[i]);
+            }
+        }
+
         yield return null;
     }
 
