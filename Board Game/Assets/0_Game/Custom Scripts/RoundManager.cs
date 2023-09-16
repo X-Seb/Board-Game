@@ -12,6 +12,8 @@ public class RoundManager : MonoBehaviour
     #region Variables
     [Header("Testing: ")]
     [SerializeField] private bool m_shouldSpawnWaves;
+    [Header("Round to start with: (won't do anything if left empty)")]
+    [SerializeField] private Round m_startingRound;
     [Header("Round Setup: ")]
     [SerializeField] private Round[] m_tutorialRounds;
     [SerializeField] private Round[] m_easyRounds;
@@ -74,6 +76,11 @@ public class RoundManager : MonoBehaviour
         //Reshuffle(m_insaneRounds);
         Reshuffle(m_enemySpawners);
 
+        if (m_startingRound != null)
+        {
+            m_currentRound = m_startingRound;
+        }
+
         if (m_shouldSpawnWaves) { m_startGameFeedback.PlayFeedbacks(); }
     }
 
@@ -116,19 +123,25 @@ public class RoundManager : MonoBehaviour
 
         // If the round is over and there are no more rounds of that type => next category, random round, wave 1
         //TODO: do this
-        // If there are no more rounds => you win!
-        //TODO: do this too!
+        else if (m_currentRoundType == RoundType.insane && m_roundsFromCurrentCategory < GetRoundsFromType(m_currentRoundType).Length)
+        {
+            Win();
+        }
     }
 
-    // Will start spawning the enemies from the given wave
-    // Sets the # of enemies you have to kill to end the wave
+    /// <summary>
+    /// Will start spawning the enemies from the given wave
+    /// Sets the # of enemies you have to kill to end the wave
+    /// </summary>
     public void WaveStart()
     {
         m_targetsRemainingInWave = m_currentWave.NumberOfEnemies();
         StartCoroutine(SpawnEnemies(m_currentWave));
     }
 
-    // Will update + animate UI, wait, and eventually start the current wave
+    /// <summary>
+    /// Will update + animate UI, wait, and eventually start the current wave
+    /// </summary>
     public void RoundStart(Round round)
     {
         m_roundNameText.text = round.roundName;
@@ -137,9 +150,11 @@ public class RoundManager : MonoBehaviour
         m_roundStartFeedback.PlayFeedbacks();
     }
 
-    // Will start spawning the enemies (from the current wave)
-    // Will check if the spawner is overriden for the current wave
-    // Will check if the spawn intervals are overriden for the current wave
+    /// <summary>
+    /// Will start spawning the enemies (from the current wave)
+    /// Will check if the spawner is overriden for the current wave
+    /// Will check if the spawn intervals are overriden for the current wave
+    /// </summary>
     IEnumerator SpawnEnemies(Wave wave)
     {
         GameObject[] enemies = wave.GetEnemies();
@@ -152,9 +167,9 @@ public class RoundManager : MonoBehaviour
             float spawnInterval = wave.GetSpawnInterval();
             foreach (GameObject enemy in enemies)
             {
+                yield return new WaitForSeconds(spawnInterval);
                 EnemySpawner spawner = GetRandomValidSpawner();
                 spawner.Spawn(enemy);
-                yield return new WaitForSeconds(spawnInterval);
             }
         }
         else if (!spawnerOverride && intervalOverride)
@@ -163,10 +178,10 @@ public class RoundManager : MonoBehaviour
             int i = -1; // Start at -1 since we're adding 1 before accessing the spawn interval
             foreach (GameObject enemy in enemies)
             {
+                yield return new WaitForSeconds(newSpawnIntervals[i]);
                 EnemySpawner spawner = GetRandomValidSpawner();
                 spawner.Spawn(enemy);
                 i++;
-                yield return new WaitForSeconds(newSpawnIntervals[i]);
             }
         }
         else if (spawnerOverride && !intervalOverride)
@@ -175,8 +190,8 @@ public class RoundManager : MonoBehaviour
             EnemySpawner spawner = wave.GetOverrideSpawner();
             foreach (GameObject enemy in enemies)
             {
-                spawner.Spawn(enemy);
                 yield return new WaitForSeconds(spawnInterval);
+                spawner.Spawn(enemy);
             }
         }
         else if (spawnerOverride && intervalOverride)
@@ -186,16 +201,18 @@ public class RoundManager : MonoBehaviour
             int i = -1; // Start at -1 since we're adding 1 before accessing the spawn interval
             foreach (GameObject enemy in enemies)
             {
+                yield return new WaitForSeconds(newSpawnIntervals[i]);
                 spawner.Spawn(enemy);
                 i++;
-                yield return new WaitForSeconds(newSpawnIntervals[i]);
             }
         }
 
         yield return null;
     }
 
-    // Will return an enemy spawner that didn't just spawn an enemy (in the last 0.5 seconds)
+    /// <summary>
+    /// Will return an enemy spawner that didn't just spawn an enemy (in the last 0.5 seconds)
+    /// </summary>
     public EnemySpawner GetRandomValidSpawner()
     {
         for (int i = 0; i < 40; i++)
@@ -224,6 +241,17 @@ public class RoundManager : MonoBehaviour
         {
             m_waveEndFeedback.PlayFeedbacks(); // Play SFX, wait, StartNextRoundOrWave
         }
+    }
+
+    public void AddToTargetCount(int amountToAdd)
+    {
+        m_targetsRemainingInWave += amountToAdd;
+        m_targetsRemainingText.text = m_targetsRemainingInWave.ToString();
+    }
+
+    private void Win()
+    {
+        Debug.Log("You win!");
     }
 
     // Returns the array of rounds of the given round type

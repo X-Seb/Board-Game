@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MoreMountains.Feedbacks;
+using MoreMountains.Tools;
 
 public class EnemySpawner : MonoBehaviour
 {
     [Header("Setup: ")]
     [SerializeField] private Transform m_spawnPosition;
     [SerializeField] private MMFeedbacks m_spawnFeedback;
+
+    [Header("Settings: ")]
+    [SerializeField] private bool m_spawnFromPool;
+    [SerializeField] private MMMultipleObjectPooler m_objectPooler;
 
     [Header("Just Spawned delay: ")]
     [SerializeField] private bool m_justSpawned = false;
@@ -16,7 +21,17 @@ public class EnemySpawner : MonoBehaviour
     public void Spawn(GameObject objectToSpawn)
     {
         m_spawnFeedback.PlayFeedbacks();
-        Instantiate(objectToSpawn, m_spawnPosition);
+        Transform position = m_spawnPosition;
+        Instantiate(objectToSpawn, position);
+        StartCoroutine(UpdateJustSpawned());
+    }
+
+    public void Spawn()
+    {
+        Debug.Log("Spawned object! ");
+        GameObject objectToSpawn = m_objectPooler.GetPooledGameObject();
+        objectToSpawn.transform.position = m_spawnPosition.transform.position;
+        objectToSpawn.SetActive(true);
         StartCoroutine(UpdateJustSpawned());
     }
 

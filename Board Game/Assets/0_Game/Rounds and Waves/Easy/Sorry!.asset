@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
   m_Name: Sorry!
   m_EditorClassIdentifier: 
-  roundName: 
-  roundDescription: 
-  roundDifficulty: 0
+  roundName: SORRY!
+  roundDescription: THESE GUYS LIKE TO EXPLODE...
+  roundDifficulty: 2
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
-  m_waves: []
+  m_waves:
+  - {fileID: 11400000, guid: 21e0fe16f908a4b44849e26861e7d3f3, type: 2}
+  - {fileID: 11400000, guid: a98488d55d48f41e386d7c955c840a72, type: 2}
+  - {fileID: 11400000, guid: d90be065d26c1425db9f01dc94496f65, type: 2}

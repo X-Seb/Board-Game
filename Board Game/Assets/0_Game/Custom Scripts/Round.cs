@@ -19,7 +19,9 @@ public class Round : ScriptableObject
     [Header("Waves of enemies: ")]
     [SerializeField] private Wave[] m_waves;
 
-    // Returns wave from the round (starts at 1)
+    /// <summary>
+    /// Returns the wave from the round (STARTS at 1, not 0)
+    /// </summary>
     public Wave GetWave(int waveNum)
     {
         return m_waves[waveNum - 1];
