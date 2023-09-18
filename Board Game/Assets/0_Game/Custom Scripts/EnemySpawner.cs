@@ -21,8 +21,8 @@ public class EnemySpawner : MonoBehaviour
     public void Spawn(GameObject objectToSpawn)
     {
         m_spawnFeedback.PlayFeedbacks();
-        Transform position = m_spawnPosition;
-        Instantiate(objectToSpawn, position);
+        Vector3 position = m_spawnPosition.position;
+        Instantiate(objectToSpawn, position, new Quaternion(0,0,0,0));
         StartCoroutine(UpdateJustSpawned());
     }
 

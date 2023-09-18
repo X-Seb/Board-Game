@@ -81,6 +81,7 @@ public class RoundManager : MonoBehaviour
         {
             m_currentRound = m_startingRound;
         }
+        //else if (PlayerPrefs.GetString("Difficulty"))
 
         if (m_shouldSpawnWaves) { m_startGameFeedback.PlayFeedbacks(); }
     }
