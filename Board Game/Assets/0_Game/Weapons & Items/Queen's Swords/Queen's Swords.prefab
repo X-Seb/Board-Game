@@ -1392,7 +1392,7 @@ MonoBehaviour:
   SpawnTransforms:
   - {fileID: 2408237865068921479}
   SpawnTransformsMode: 1
-  Spread: {x: 0, y: 20, z: 0}
+  Spread: {x: 0, y: 25, z: 0}
   RotateWeaponOnSpread: 0
   RandomSpread: 1
   SpawnPosition: {x: 0, y: 0, z: 0}

@@ -36,6 +36,7 @@ public class RoundManager : MonoBehaviour
     [Header("Feedbacks: ")]
     public MMFeedbacks m_startGameFeedback;
     public MMFeedbacks m_roundStartFeedback;
+    public MMFeedbacks m_waveStartFeedback;
     public MMFeedbacks m_waveEndFeedback;
     public MMFeedbacks m_killedEnemyFeedback;
 
@@ -136,6 +137,7 @@ public class RoundManager : MonoBehaviour
     public void WaveStart()
     {
         m_targetsRemainingInWave = m_currentWave.NumberOfEnemies();
+        m_waveStartFeedback.PlayFeedbacks();
         StartCoroutine(SpawnEnemies(m_currentWave));
     }
 
