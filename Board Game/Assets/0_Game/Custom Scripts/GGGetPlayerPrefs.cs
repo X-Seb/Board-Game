@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class GGPlayerPrefsTool : MonoBehaviour
+public class GGGetPlayerPrefs : MonoBehaviour
 {
     [Header("The name and type of the key: ")]
     [SerializeField] private string m_keyName;
