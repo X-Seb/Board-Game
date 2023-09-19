@@ -20,6 +20,21 @@ public class GGSetPlayerPrefs : MonoBehaviour
         stringType
     }
 
+    public void SetBoolAsInt(bool value)
+    {
+        if (m_keyName != null)
+        {
+            if (value)
+            {
+                PlayerPrefs.SetInt(m_keyName, 1);
+            }
+            else
+            {
+                PlayerPrefs.SetInt(m_keyName, 0);
+            }
+        }
+    }
+
     public void SetKey()
     {
         if (m_keyName != null)
