@@ -138,6 +138,7 @@ public class RoundManager : MonoBehaviour
     public void WaveStart()
     {
         m_targetsRemainingInWave = m_currentWave.NumberOfEnemies();
+        m_targetsRemainingText.text = m_targetsRemainingInWave.ToString();
         m_waveStartFeedback.PlayFeedbacks();
         StartCoroutine(SpawnEnemies(m_currentWave));
     }

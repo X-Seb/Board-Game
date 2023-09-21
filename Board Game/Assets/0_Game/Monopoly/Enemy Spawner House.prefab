@@ -201,7 +201,7 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 2119267111416238870}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: 83829ff414f47a048b5387e4ab33571c, type: 3}
+        Sfx: {fileID: 8300000, guid: 8ab1140fd9a9540e49bc349f4a53780e, type: 3}
         RandomSfx: []
         TestPlayButton:
           ButtonText: Debug Play Sound
@@ -210,10 +210,10 @@ MonoBehaviour:
         PlayMethod: 0
         PoolSize: 10
         StopSoundOnFeedbackStop: 1
-        MinVolume: 2
-        MaxVolume: 2
-        MinPitch: 0.8
-        MaxPitch: 1.1
+        MinVolume: 1.3
+        MaxVolume: 1.5
+        MinPitch: 0.7
+        MaxPitch: 1
         SfxAudioMixerGroup: {fileID: -3165942800488051908, guid: 7e984f512e89b60468e829489e8883e3,
           type: 2}
         Priority: 128
@@ -5735,6 +5735,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_spawnPosition: {fileID: 3278688993765245223}
   m_spawnFeedback: {fileID: 2119267111416238870}
+  m_spawnFromPool: 0
+  m_objectPooler: {fileID: 0}
   m_justSpawned: 0
   m_waitSeconds: 0
 --- !u!65 &1063117407865056495
