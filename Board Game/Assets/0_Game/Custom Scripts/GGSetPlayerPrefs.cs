@@ -55,4 +55,14 @@ public class GGSetPlayerPrefs : MonoBehaviour
             }
         }
     }
+
+    public void SetFloat(float value)
+    {
+        if (m_keyName != null) { PlayerPrefs.SetFloat(m_keyName, value); }
+    }
+
+    public void SetInt(int value)
+    {
+        if (m_keyName != null) { PlayerPrefs.SetInt(m_keyName, value); }
+    }
 }

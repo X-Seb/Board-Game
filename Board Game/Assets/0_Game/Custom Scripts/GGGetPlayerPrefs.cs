@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class GGGetPlayerPrefs : MonoBehaviour
 {
     [Header("The name and type of the key: ")]
     [SerializeField] private string m_keyName;
     [SerializeField] private KeyType m_keyType;
+    [Header("When to trigger events? ")]
+    [SerializeField] private TriggerTime m_triggerTime;
     [Header("General Events: ")]
     [SerializeField] private UnityEvent m_hasKeyEvent;
     [SerializeField] private UnityEvent m_doesNotHaveKeyEvent;
@@ -27,6 +30,13 @@ public class GGGetPlayerPrefs : MonoBehaviour
     [SerializeField] private UnityEvent m_comparisonTrueEvent;
     [SerializeField] private UnityEvent m_comparisonFalseEvent;
 
+    #region enums
+    public enum TriggerTime
+    {
+        Awake,
+        Start,
+    }
+
     public enum KeyType
     {
         intType,
@@ -42,14 +52,31 @@ public class GGGetPlayerPrefs : MonoBehaviour
         smaller,
         smallerOrEqual
     }
+    #endregion
 
     private void Awake()
     {
-        KeyExistsEvents(m_keyName);
-
-        if (m_shouldCompare && PlayerPrefs.HasKey(m_keyName))
+        if (m_triggerTime == TriggerTime.Awake)
         {
-            KeyCompareEvents(m_keyName);
+            KeyExistsEvents(m_keyName);
+
+            if (m_shouldCompare && PlayerPrefs.HasKey(m_keyName))
+            {
+                KeyCompareEvents(m_keyName);
+            }
+        }
+    }
+
+    private void Start()
+    {
+        if (m_triggerTime == TriggerTime.Start)
+        {
+            KeyExistsEvents(m_keyName);
+
+            if (m_shouldCompare && PlayerPrefs.HasKey(m_keyName))
+            {
+                KeyCompareEvents(m_keyName);
+            }
         }
     }
 
@@ -135,5 +162,15 @@ public class GGGetPlayerPrefs : MonoBehaviour
         {
             m_comparisonFalseEvent.Invoke();
         }
+    }
+
+    public void SetSliderFloatValue(Slider slider)
+    {
+        if (m_keyName != null) { slider.value = PlayerPrefs.GetFloat(m_keyName); }
+    }
+
+    public void SetSliderIntValue(Slider slider)
+    {
+        if (m_keyName != null) { slider.value = PlayerPrefs.GetInt(m_keyName); }
     }
 }
