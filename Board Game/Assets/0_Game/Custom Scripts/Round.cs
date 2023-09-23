@@ -27,8 +27,5 @@ public class Round : ScriptableObject
         return m_waves[waveNum - 1];
     }
 
-    public int GetNumberOfWaves()
-    {
-        return m_waves.Length;
-    }
+    public int GetNumberOfWaves() { return m_waves.Length; }
 }

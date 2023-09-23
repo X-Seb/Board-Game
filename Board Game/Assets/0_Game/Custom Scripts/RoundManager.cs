@@ -15,14 +15,12 @@ public class RoundManager : MonoBehaviour
     [Header("Round to start with: (won't do anything if left empty)")]
     [SerializeField] private Round m_startingRound;
     [Header("Round Setup: ")]
-    [SerializeField] private Round[] m_tutorialRounds;
-    [SerializeField] private Round[] m_easyRounds;
-    [SerializeField] private Round[] m_mediumRounds;
-    [SerializeField] private Round[] m_hardRounds;
-    [SerializeField] private Round[] m_insaneRounds;
+    [SerializeField] private RoundGroup[] m_roundGroups;
 
-    [Header("Enemy Spawners")]
+    [Header("Enemy Spawners: ")]
     [SerializeField] private EnemySpawner[] m_enemySpawners;
+    [Header("Enemy Spawner for bosses: ")]
+    [SerializeField] private EnemySpawner m_bossSpawner;
 
     [Header("RoundUI Elements: ")]
     [SerializeField] private TextMeshProUGUI m_roundNameText;
@@ -39,30 +37,18 @@ public class RoundManager : MonoBehaviour
     public MMFeedbacks m_waveStartFeedback;
     public MMFeedbacks m_waveEndFeedback;
     public MMFeedbacks m_killedEnemyFeedback;
+    public MMFeedbacks m_winFeedback;
 
     [Header("For reference: ")]
-    [SerializeField] private RoundType m_currentRoundType;
+    [SerializeField] private int m_currentRoundGroup;
     [SerializeField] private Round m_currentRound;
     [SerializeField] private Wave m_currentWave;
     [SerializeField] private int m_currentWaveNumber;
-    [SerializeField] private int m_roundsFromCurrentCategory;
+    [SerializeField] private int m_roundsFromCurrentGroup;
     [SerializeField] private int m_totalEnemiesKilled;
     [SerializeField] private int m_targetsRemainingInWave;
     [SerializeField] private int m_totalRoundNumber;
     [SerializeField] private float m_totalTimeElapsed;
-
-    #endregion
-
-    #region Enum
-
-    enum RoundType
-    {
-        tutorial,
-        easy,
-        medium,
-        hard,
-        insane
-    }
 
     #endregion
 
@@ -71,10 +57,8 @@ public class RoundManager : MonoBehaviour
         m_totalEnemiesKilledText.text = "0";
         m_targetsRemainingText.text = "0";
         m_currentRoundText.text = "Round 0";
-        Reshuffle(m_easyRounds);
-        //Reshuffle(m_mediumRounds);
-        //Reshuffle(m_hardRounds);
-        //Reshuffle(m_insaneRounds);
+
+        ShuffleRoundGroups();
         Reshuffle(m_enemySpawners);
 
         if (m_startingRound != null)
@@ -97,11 +81,11 @@ public class RoundManager : MonoBehaviour
         // If we just started => start tutorial 1, wave 1
         if (m_currentRound == null)
         {
-            m_currentRoundType = RoundType.tutorial;
-            m_roundsFromCurrentCategory = 1;
+            m_currentRoundGroup = 0;
+            m_roundsFromCurrentGroup = 1;
             m_totalRoundNumber = 1;
             m_currentWaveNumber = 1;
-            m_currentRound = m_tutorialRounds[m_roundsFromCurrentCategory - 1];
+            m_currentRound = m_roundGroups[0].GetRounds()[0];
             m_currentWave = m_currentRound.GetWave(1);
             RoundStart(m_currentRound);
         }
@@ -113,22 +97,27 @@ public class RoundManager : MonoBehaviour
             WaveStart();
         }
         // If the round is over and there are more rounds of that type => next round, wave 1
-        else if (m_roundsFromCurrentCategory < GetRoundsFromType(m_currentRoundType).Length)
+        else if (m_roundsFromCurrentGroup < m_roundGroups[m_currentRoundGroup].GetNumberOfRounds())
         {
-            m_roundsFromCurrentCategory++;
+            m_roundsFromCurrentGroup++;
             m_totalRoundNumber++;
             m_currentWaveNumber = 1;
-            m_currentRound = GetRoundsFromType(m_currentRoundType)[m_roundsFromCurrentCategory - 1];
+            m_currentRound = m_roundGroups[m_currentRoundGroup].GetRounds()[m_roundsFromCurrentGroup - 1];
             m_currentWave = m_currentRound.GetWave(1);
             RoundStart(m_currentRound);
         }
 
         // If the round is over and there are no more rounds of that type => next category, random round, wave 1
         //TODO: do this
-        else if (m_currentRoundType == RoundType.insane && m_roundsFromCurrentCategory < GetRoundsFromType(m_currentRoundType).Length)
+        else if (m_roundsFromCurrentGroup >= m_roundGroups[m_currentRoundGroup].GetNumberOfRounds())
         {
-            Win();
+
         }
+
+        //else if ()
+        //{
+        //    Win();
+        //}
     }
 
     /// <summary>
@@ -191,22 +180,20 @@ public class RoundManager : MonoBehaviour
         else if (spawnerOverride && !intervalOverride)
         {
             float spawnInterval = wave.GetSpawnInterval();
-            EnemySpawner spawner = wave.GetOverrideSpawner();
             foreach (GameObject enemy in enemies)
             {
                 yield return new WaitForSeconds(spawnInterval);
-                spawner.Spawn(enemy);
+                m_bossSpawner.Spawn(enemy);
             }
         }
         else if (spawnerOverride && intervalOverride)
         {
-            EnemySpawner spawner = wave.GetOverrideSpawner();
             float[] newSpawnIntervals = wave.GetOverridenSpawnIntervals();
             int i = -1; // Start at -1 since we're adding 1 before accessing the spawn interval
             foreach (GameObject enemy in enemies)
             {
                 yield return new WaitForSeconds(newSpawnIntervals[i]);
-                spawner.Spawn(enemy);
+                m_bossSpawner.Spawn(enemy);
                 i++;
             }
         }
@@ -256,38 +243,73 @@ public class RoundManager : MonoBehaviour
     private void Win()
     {
         Debug.Log("You win!");
+        m_winFeedback.PlayFeedbacks();
     }
+
+    //private RoundType GetNextType(RoundType type)
+    //{
+    //    switch (type)
+    //    {
+    //        case RoundType.tutorial:
+    //            return RoundType.easy;
+    //        case RoundType.easy:
+    //            return RoundType.medium;
+    //        case RoundType.hard:
+    //            return RoundType.insane;
+    //        case RoundType.insane:
+    //            break;
+    //        default:
+    //            return null;
+    //    }
+    //}
 
     // Returns the array of rounds of the given round type
-    private Round[] GetRoundsFromType(RoundType type)
+    //private Round[] GetRoundsFromType(RoundType type)
+    //{
+    //    switch (type)
+    //    {
+    //        case RoundType.tutorial:
+    //            return m_tutorialRounds;
+    //        case RoundType.easy:
+    //            return m_easyRounds;
+    //        case RoundType.medium:
+    //            return m_mediumRounds;
+    //        case RoundType.hard:
+    //            return m_hardRounds;
+    //        case RoundType.insane:
+    //            return m_insaneRounds;
+    //        default:
+    //            return null;
+    //    }
+    //}
+    
+    /// <summary>
+    /// Will shuffle the round groups that should be reshuffled
+    /// </summary>
+    private void ShuffleRoundGroups()
     {
-        switch (type)
+        for (int i = 0; i < m_roundGroups.Length; i++)
         {
-            case RoundType.tutorial:
-                return m_tutorialRounds;
-            case RoundType.easy:
-                return m_easyRounds;
-            case RoundType.medium:
-                return m_mediumRounds;
-            case RoundType.hard:
-                return m_hardRounds;
-            case RoundType.insane:
-                return m_insaneRounds;
-            default:
-                return null;
+            if (m_roundGroups[i].ShouldReshuffle())
+            {
+                m_roundGroups[i].SetRounds(Reshuffle(m_roundGroups[i].GetRounds()));
+            }
         }
     }
 
-    private void Reshuffle(Round[] rounds)
+    private Round[] Reshuffle(Round[] rounds)
     {
+        Round[] final = rounds;
         // Knuth shuffle algorithm
-        for (int t = 0; t < rounds.Length; t++)
+        for (int t = 0; t < final.Length; t++)
         {
-            Round tmp = rounds[t];
-            int r = Random.Range(t, rounds.Length);
-            rounds[t] = rounds[r];
-            rounds[r] = tmp;
+            Round tmp = final[t]; 
+            int r = Random.Range(t, final.Length); //Get new value from the rest of the array
+            final[t] = final[r]; // Set the current value to the new random one
+            final[r] = tmp;
         }
+
+        return final;
     }
 
     private void Reshuffle(EnemySpawner[] spawner)
