@@ -14,6 +14,7 @@ public class GGManager : MonoBehaviour
     [Header("Game")]
     [SerializeField] private GameState m_currentGameState;
     [Header("Audio")]
+    [SerializeField] private bool m_modifyAudio;
     [SerializeField] private AudioSource m_globalAudioSource;
     [SerializeField] private AudioMixer m_mainMixer;
     [SerializeField] private string m_volumeParameterName;
@@ -47,11 +48,15 @@ public class GGManager : MonoBehaviour
     private void Start()
     {
         m_currentGameState = m_startingGameState;
-        if (PlayerPrefs.HasKey(m_volumeParameterName))
+
+        if (m_modifyAudio)
         {
-            SetVolume(PlayerPrefs.GetFloat(m_volumeParameterName));
+            if (PlayerPrefs.HasKey(m_volumeParameterName))
+            {
+                SetVolume(PlayerPrefs.GetFloat(m_volumeParameterName));
+            }
+            else { SetVolume(0.0f); }
         }
-        else { SetVolume(0.0f); }
     }
 
     #endregion
