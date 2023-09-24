@@ -40,6 +40,7 @@ public class RoundManager : MonoBehaviour
     public MMFeedbacks m_winFeedback;
 
     [Header("For reference: ")]
+    [SerializeField] private bool m_firstPlay;
     [SerializeField] private int m_roundGroupIndex;
     [SerializeField] private RoundGroup m_currentRoundGroup;
     [SerializeField] private Round m_currentRound;
@@ -62,10 +63,26 @@ public class RoundManager : MonoBehaviour
         ShuffleRoundGroups();
         Reshuffle(m_enemySpawners);
 
-        if (PlayerPrefs.HasKey("StartingRoundGroup"))
+        // Start at the correct round group index
+        if (PlayerPrefs.HasKey("StartingRoundGroupIndex"))
         {
-
+            m_roundGroupIndex = PlayerPrefs.GetInt("StartingRoundGroupIndex");
         }
+        else
+        {
+            m_roundGroupIndex = 0;
+        }
+
+        // Setup
+        m_totalTimeElapsed = 0.0f;
+        m_totalEnemiesKilled = 0;
+        m_currentRoundGroup = m_roundGroups[m_roundGroupIndex];
+        m_roundsFromCurrentGroup = 1;
+        m_totalRoundNumber = 1;
+        m_currentWaveNumber = 1;
+        m_currentRound = m_currentRoundGroup.GetRounds()[0];
+        m_currentWave = m_currentRound.GetWave(1);
+        m_firstPlay = true;
 
         if (m_shouldSpawnWaves) { m_startGameFeedback.PlayFeedbacks(); }
     }
@@ -79,15 +96,9 @@ public class RoundManager : MonoBehaviour
     public void StartNextWaveOrRound()
     {
         // If we just started => start tutorial 1, wave 1
-        if (m_currentRound == null)
+        if (m_firstPlay == true)
         {
-            m_roundGroupIndex = 0;
-            m_currentRoundGroup = m_roundGroups[0];
-            m_roundsFromCurrentGroup = 1;
-            m_totalRoundNumber = 1;
-            m_currentWaveNumber = 1;
-            m_currentRound = m_roundGroups[0].GetRounds()[0];
-            m_currentWave = m_currentRound.GetWave(1);
+            m_firstPlay = false;
             RoundStart(m_currentRound);
         }
         // If the round is in progress => next wave

@@ -65,4 +65,9 @@ public class GGSetPlayerPrefs : MonoBehaviour
     {
         if (m_keyName != null) { PlayerPrefs.SetInt(m_keyName, value); }
     }
+
+    public void SaveAllPlayerPrefs()
+    {
+        PlayerPrefs.Save();
+    }
 }
