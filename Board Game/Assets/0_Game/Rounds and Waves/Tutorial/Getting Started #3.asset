@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
+  m_Name: Getting Started #3
+  m_EditorClassIdentifier: 
+  roundName: 
+  roundDescription: Your health regenerates over time. Good luck and don't die!
+  roundDifficulty: 1
+  overrideSFX: 0
+  roundStartSFX: {fileID: 0}
+  roundEndSFX: {fileID: 0}
+  m_waves:
+  - {fileID: 11400000, guid: 48e750ede643b40fd957cd445a7999c8, type: 2}
+  - {fileID: 11400000, guid: 4aa99dd8e3f3a4e17b1b7dfb4f22fbbf, type: 2}
+  - {fileID: 11400000, guid: 92271c935616f4b19906a977aeebd634, type: 2}

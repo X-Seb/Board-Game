@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
+  m_Name: Rook Intro
+  m_EditorClassIdentifier: 
+  roundName: 
+  roundDescription: 
+  roundDifficulty: 0
+  overrideSFX: 0
+  roundStartSFX: {fileID: 0}
+  roundEndSFX: {fileID: 0}
+  m_waves:
+  - {fileID: 11400000, guid: f4f8f154a414549c28f15c1d512d1ee7, type: 2}
+  - {fileID: 11400000, guid: ff0b53066c1e34bbd976b23edb8590f5, type: 2}
+  - {fileID: 11400000, guid: 2428db9b6d06546ff9ab0d3fb93c104f, type: 2}
