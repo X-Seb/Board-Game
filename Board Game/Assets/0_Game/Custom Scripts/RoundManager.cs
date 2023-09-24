@@ -51,6 +51,7 @@ public class RoundManager : MonoBehaviour
     [SerializeField] private int m_targetsRemainingInWave;
     [SerializeField] private int m_totalRoundNumber;
     [SerializeField] private float m_totalTimeElapsed;
+    [SerializeField] private bool m_isTimerCounting = true;
 
     #endregion
 
@@ -74,6 +75,7 @@ public class RoundManager : MonoBehaviour
         }
 
         // Setup
+        m_isTimerCounting = true;
         m_totalTimeElapsed = 0.0f;
         m_totalEnemiesKilled = 0;
         m_currentRoundGroup = m_roundGroups[m_roundGroupIndex];
@@ -87,6 +89,20 @@ public class RoundManager : MonoBehaviour
         if (m_shouldSpawnWaves) { m_startGameFeedback.PlayFeedbacks(); }
     }
 
+    private void Update()
+    {
+        if (m_isTimerCounting)
+        {
+            m_totalTimeElapsed += Time.deltaTime;
+
+            int hours = ((int)m_totalTimeElapsed) / 3600;
+            int mins = (((int)m_totalTimeElapsed) % 3600) / 60;
+            int sec = (((int)m_totalTimeElapsed) % 60);
+
+            m_elapsedTimeText.text = string.Format("{0:D2}:{1:D2}:{2:D2}", hours, mins, sec);
+        }
+    }
+
     /// <summary>
     /// Very important function
     /// Determines the order in which rounds and waves are played
@@ -95,7 +111,7 @@ public class RoundManager : MonoBehaviour
     /// </summary>
     public void StartNextWaveOrRound()
     {
-        // If we just started => start tutorial 1, wave 1
+        // If we just started => start current round
         if (m_firstPlay == true)
         {
             m_firstPlay = false;
@@ -108,7 +124,7 @@ public class RoundManager : MonoBehaviour
             m_currentWave = m_currentRound.GetWave(m_currentWaveNumber);
             WaveStart();
         }
-        // If the round is over and there are more rounds of that type => next round, wave 1
+        // If the round is over and there are more rounds in the current round group => next round, wave 1
         else if (m_roundsFromCurrentGroup < m_currentRoundGroup.GetNumberOfRounds())
         {
             m_roundsFromCurrentGroup++;
@@ -119,7 +135,7 @@ public class RoundManager : MonoBehaviour
             RoundStart(m_currentRound);
         }
 
-        // If the round is over and there are no more rounds of that type => next category, random round, wave 1
+        // If the round is over and there are no more rounds of that type => next round group, first round, wave 1
         //TODO: do this
         else if (m_roundsFromCurrentGroup >= m_currentRoundGroup.GetNumberOfRounds() && m_roundGroupIndex < m_roundGroups.Length - 1)
         {
@@ -257,6 +273,8 @@ public class RoundManager : MonoBehaviour
         m_targetsRemainingInWave += amountToAdd;
         m_targetsRemainingText.text = m_targetsRemainingInWave.ToString();
     }
+
+    public void IsTimerCounting(bool value) { m_isTimerCounting = value; }
 
     private void Win()
     {
