@@ -31,14 +31,14 @@ MonoBehaviour:
     MasterVolume: 1
     MasterOn: 1
     MutedMasterVolume: 0
-    MusicVolume: 1
+    MusicVolume: 0.78533375
     MusicOn: 1
     MutedMusicVolume: 0
     SfxVolume: 1
-    SfxOn: 0
-    MutedSfxVolume: -80
-    UIVolume: 1
+    SfxOn: 1
+    MutedSfxVolume: 0
+    UIVolume: 0.8909934
     UIOn: 1
     MutedUIVolume: 0
     AutoLoad: 1
-    AutoSave: 0
+    AutoSave: 1

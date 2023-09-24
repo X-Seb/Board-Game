@@ -40,7 +40,8 @@ public class RoundManager : MonoBehaviour
     public MMFeedbacks m_winFeedback;
 
     [Header("For reference: ")]
-    [SerializeField] private int m_currentRoundGroup;
+    [SerializeField] private int m_roundGroupIndex;
+    [SerializeField] private RoundGroup m_currentRoundGroup;
     [SerializeField] private Round m_currentRound;
     [SerializeField] private Wave m_currentWave;
     [SerializeField] private int m_currentWaveNumber;
@@ -61,11 +62,10 @@ public class RoundManager : MonoBehaviour
         ShuffleRoundGroups();
         Reshuffle(m_enemySpawners);
 
-        if (m_startingRound != null)
+        if (PlayerPrefs.HasKey("StartingRoundGroup"))
         {
-            m_currentRound = m_startingRound;
+
         }
-        //else if (PlayerPrefs.GetString("Difficulty"))
 
         if (m_shouldSpawnWaves) { m_startGameFeedback.PlayFeedbacks(); }
     }
@@ -81,7 +81,8 @@ public class RoundManager : MonoBehaviour
         // If we just started => start tutorial 1, wave 1
         if (m_currentRound == null)
         {
-            m_currentRoundGroup = 0;
+            m_roundGroupIndex = 0;
+            m_currentRoundGroup = m_roundGroups[0];
             m_roundsFromCurrentGroup = 1;
             m_totalRoundNumber = 1;
             m_currentWaveNumber = 1;
@@ -97,27 +98,33 @@ public class RoundManager : MonoBehaviour
             WaveStart();
         }
         // If the round is over and there are more rounds of that type => next round, wave 1
-        else if (m_roundsFromCurrentGroup < m_roundGroups[m_currentRoundGroup].GetNumberOfRounds())
+        else if (m_roundsFromCurrentGroup < m_currentRoundGroup.GetNumberOfRounds())
         {
             m_roundsFromCurrentGroup++;
             m_totalRoundNumber++;
-            m_currentWaveNumber = 1;
-            m_currentRound = m_roundGroups[m_currentRoundGroup].GetRounds()[m_roundsFromCurrentGroup - 1];
+            m_currentWaveNumber = 1; //Go back to wave 1, of the new round
+            m_currentRound = m_currentRoundGroup.GetRounds()[m_roundsFromCurrentGroup - 1];
             m_currentWave = m_currentRound.GetWave(1);
             RoundStart(m_currentRound);
         }
 
         // If the round is over and there are no more rounds of that type => next category, random round, wave 1
         //TODO: do this
-        else if (m_roundsFromCurrentGroup >= m_roundGroups[m_currentRoundGroup].GetNumberOfRounds())
+        else if (m_roundsFromCurrentGroup >= m_currentRoundGroup.GetNumberOfRounds() && m_roundGroupIndex < m_roundGroups.Length - 1)
         {
-
+            m_roundGroupIndex++;
+            m_roundsFromCurrentGroup = 1;
+            m_totalRoundNumber++;
+            m_currentWaveNumber = 1;
+            m_currentRoundGroup = m_roundGroups[m_roundGroupIndex];
+            m_currentRound = m_currentRoundGroup.GetRounds()[0];
+            m_currentWave = m_currentRound.GetWave(1);
+            RoundStart(m_currentRound);
         }
-
-        //else if ()
-        //{
-        //    Win();
-        //}
+        else if (m_roundsFromCurrentGroup >= m_currentRoundGroup.GetNumberOfRounds())
+        {
+            Win();
+        }
     }
 
     /// <summary>
@@ -168,7 +175,7 @@ public class RoundManager : MonoBehaviour
         else if (!spawnerOverride && intervalOverride)
         {
             float[] newSpawnIntervals = wave.GetOverridenSpawnIntervals();
-            int i = -1; // Start at -1 since we're adding 1 before accessing the spawn interval
+            int i = 0;
             foreach (GameObject enemy in enemies)
             {
                 yield return new WaitForSeconds(newSpawnIntervals[i]);
@@ -189,7 +196,7 @@ public class RoundManager : MonoBehaviour
         else if (spawnerOverride && intervalOverride)
         {
             float[] newSpawnIntervals = wave.GetOverridenSpawnIntervals();
-            int i = -1; // Start at -1 since we're adding 1 before accessing the spawn interval
+            int i = 0;
             foreach (GameObject enemy in enemies)
             {
                 yield return new WaitForSeconds(newSpawnIntervals[i]);
@@ -245,43 +252,6 @@ public class RoundManager : MonoBehaviour
         Debug.Log("You win!");
         m_winFeedback.PlayFeedbacks();
     }
-
-    //private RoundType GetNextType(RoundType type)
-    //{
-    //    switch (type)
-    //    {
-    //        case RoundType.tutorial:
-    //            return RoundType.easy;
-    //        case RoundType.easy:
-    //            return RoundType.medium;
-    //        case RoundType.hard:
-    //            return RoundType.insane;
-    //        case RoundType.insane:
-    //            break;
-    //        default:
-    //            return null;
-    //    }
-    //}
-
-    // Returns the array of rounds of the given round type
-    //private Round[] GetRoundsFromType(RoundType type)
-    //{
-    //    switch (type)
-    //    {
-    //        case RoundType.tutorial:
-    //            return m_tutorialRounds;
-    //        case RoundType.easy:
-    //            return m_easyRounds;
-    //        case RoundType.medium:
-    //            return m_mediumRounds;
-    //        case RoundType.hard:
-    //            return m_hardRounds;
-    //        case RoundType.insane:
-    //            return m_insaneRounds;
-    //        default:
-    //            return null;
-    //    }
-    //}
     
     /// <summary>
     /// Will shuffle the round groups that should be reshuffled

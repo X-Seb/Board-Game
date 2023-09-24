@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb8534e8eb9444a73b29d47b5e03965d, type: 3}
-  m_Name: Easy
+  m_Script: {fileID: 11500000, guid: 4b85c182ee962461d89aa134dc739747, type: 3}
+  m_Name: Rook Wave1
   m_EditorClassIdentifier: 
-  m_groupName: Easy
-  m_shouldReshuffle: 1
-  m_rounds:
-  - {fileID: 11400000, guid: 6a22ef41f1211403a9baa34c941aaf92, type: 2}
-  - {fileID: 11400000, guid: 8ba8153b7d4d646478fa699812fd085a, type: 2}
+  m_enemies:
+  - {fileID: 8310317341608840035, guid: 4a7ca2f124d1e44c5bfd418916890510, type: 3}
+  m_spawnInterval: 1
+  m_overrideSpawner: 0
+  m_overrideSpawnIntervals: 0
+  m_newSpawnIntervals: []

@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b85c182ee962461d89aa134dc739747, type: 3}
-  m_Name: 1 Pawn 3
+  m_Name: Rook Part2 Wave3
   m_EditorClassIdentifier: 
   m_enemies:
-  - {fileID: 1174499198651537194, guid: 3e448d0b64f3945828b7d235b2aad737, type: 3}
-  - {fileID: 1174499198651537194, guid: db9955a306a7b4685bb46dd8e5497a28, type: 3}
-  - {fileID: 1174499198651537194, guid: 3e448d0b64f3945828b7d235b2aad737, type: 3}
-  m_spawnInterval: 1
+  - {fileID: 4030076681947214924, guid: 923ccf9f48ae74d1397d7d91e0334014, type: 3}
+  - {fileID: 8310317341608840035, guid: 4a7ca2f124d1e44c5bfd418916890510, type: 3}
+  - {fileID: 4030076681947214924, guid: 923ccf9f48ae74d1397d7d91e0334014, type: 3}
+  - {fileID: 8310317341608840035, guid: 4a7ca2f124d1e44c5bfd418916890510, type: 3}
+  m_spawnInterval: 2
   m_overrideSpawner: 0
   m_overrideSpawnIntervals: 0
   m_newSpawnIntervals: []

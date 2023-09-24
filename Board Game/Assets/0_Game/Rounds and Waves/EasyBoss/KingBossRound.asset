@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
-  m_Name: Getting Started
+  m_Name: KingBossRound
   m_EditorClassIdentifier: 
-  roundName: Getting Started
-  roundDescription: Aim with your mouse. Left click to shoot.
-  roundDifficulty: 1
+  roundName: For The King!
+  roundDescription: His Loyal Pawns Will Overwhelm You!
+  roundDifficulty: 3
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
   m_waves:
-  - {fileID: 11400000, guid: fb51d0ac9fd4147f58188a0b80f378f4, type: 2}
-  - {fileID: 11400000, guid: 183eea517849a4df488345c98eda70fe, type: 2}
+  - {fileID: 11400000, guid: 6693c1abb891d48d5afd108744f9bdd3, type: 2}

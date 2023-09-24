@@ -10,7 +10,7 @@ public class Wave : ScriptableObject
     [SerializeField] private float m_spawnInterval;
     [Header("Should override the spawner for all enemies?")]
     [SerializeField] private bool m_overrideSpawner;
-    [Header("Should override the spawn interval for each enemy? (make sure the array size >= enemy array size)")]
+    [Header("Should override the spawn interval for each enemy? (make sure the array size >= enemy array size) The spawner wait BEFORE spawning an enemy.")]
     [SerializeField] private bool m_overrideSpawnIntervals;
     [SerializeField] private float[] m_newSpawnIntervals;
 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
   m_Name: Pawn Attack
   m_EditorClassIdentifier: 
-  roundName: PAWN ATTACK
+  roundName: Pawn Attack!
   roundDescription: Fear the might of the pawns!
   roundDifficulty: 1
   overrideSFX: 0

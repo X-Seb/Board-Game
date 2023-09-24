@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb8534e8eb9444a73b29d47b5e03965d, type: 3}
-  m_Name: Easy
+  m_Name: Medium
   m_EditorClassIdentifier: 
-  m_groupName: Easy
+  m_groupName: Medium
   m_shouldReshuffle: 1
   m_rounds:
-  - {fileID: 11400000, guid: 6a22ef41f1211403a9baa34c941aaf92, type: 2}
-  - {fileID: 11400000, guid: 8ba8153b7d4d646478fa699812fd085a, type: 2}
+  - {fileID: 11400000, guid: 3ade720e2054e4d879fc550e2b4bb87c, type: 2}
