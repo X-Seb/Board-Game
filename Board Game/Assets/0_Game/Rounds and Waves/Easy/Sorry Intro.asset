@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
-  m_Name: Rook Intro
+  m_Name: Sorry Intro
   m_EditorClassIdentifier: 
-  roundName: 
-  roundDescription: 
+  roundName: Sorry!
+  roundDescription: Watch out! These guys tend to explode...
   roundDifficulty: 2
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
   m_waves:
-  - {fileID: 11400000, guid: f4f8f154a414549c28f15c1d512d1ee7, type: 2}
-  - {fileID: 11400000, guid: ff0b53066c1e34bbd976b23edb8590f5, type: 2}
-  - {fileID: 11400000, guid: 2428db9b6d06546ff9ab0d3fb93c104f, type: 2}
+  - {fileID: 11400000, guid: 0b8a1df1958d9492989a049e8125bd10, type: 2}
+  - {fileID: 11400000, guid: 6136cb26e41024ecb9bc881f5a5a3f3d, type: 2}
+  - {fileID: 11400000, guid: 692f095d3c3ef4a0c90a59815367b2c4, type: 2}

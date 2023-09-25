@@ -26,8 +26,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.773, y: 0, z: 0.556}
-  m_LocalScale: {x: 0.8333333, y: 0.8333333, z: 0.8333333}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 374565897822967456}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -201,9 +201,9 @@ Transform:
   m_GameObject: {fileID: 1140785338353964944}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.83335}
-  m_LocalScale: {x: 0.8333333, y: 0.8333333, z: 0.8333333}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -0.016, y: 0, z: 0.956}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 374565897822967456}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2548,7 +2548,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 2226647201843857789, guid: 7ebcce69749d34d9fb9bb5920d1b42c8,
+  InitialWeapon: {fileID: 2404434629431758313, guid: 4143004df8fd94b39a9d1bb83352560c,
     type: 3}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}

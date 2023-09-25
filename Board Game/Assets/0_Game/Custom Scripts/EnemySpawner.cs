@@ -20,10 +20,28 @@ public class EnemySpawner : MonoBehaviour
 
     public void Spawn(GameObject objectToSpawn)
     {
-        m_spawnFeedback.PlayFeedbacks();
         Vector3 position = m_spawnPosition.position;
-        Instantiate(objectToSpawn, position, new Quaternion(0,0,0,0));
+        m_spawnFeedback.PlayFeedbacks();
         StartCoroutine(UpdateJustSpawned());
+
+        if (m_spawnFromPool)
+        {
+            GameObject pooledObject = m_objectPooler.GetPooledGameObjectOfType("Poolable " + objectToSpawn.name);
+
+            if (pooledObject == null)
+            {
+                Instantiate(objectToSpawn, position, new Quaternion(0, 0, 0, 0));
+                return;
+            }
+            pooledObject.SetActive(true);
+            pooledObject.transform.position = position;
+            pooledObject.transform.rotation = new Quaternion(0, 0, 0, 0);
+        }
+        else
+        {
+            Instantiate(objectToSpawn, position, new Quaternion(0, 0, 0, 0));
+        }
+        
     }
 
     public void Spawn()

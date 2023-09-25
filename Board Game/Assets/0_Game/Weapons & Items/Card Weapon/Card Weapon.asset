@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9529ae2b2ee0d1e4d802b51d271424c3, type: 3}
-  m_Name: Dice Of Death
+  m_Name: Card Weapon
   m_EditorClassIdentifier: 
-  ItemID: DiceOfDeath
+  ItemID: 
   TargetInventoryName: WeaponInventory
   ForceSlotIndex: 0
   TargetIndex: 0
@@ -20,11 +20,11 @@ MonoBehaviour:
   Consumable: 1
   ConsumeQuantity: 1
   Equippable: 0
-  EquippableIfInventoryIsFull: 1
+  EquippableIfInventoryIsFull: 0
   MoveWhenEquipped: 1
-  Droppable: 1
-  CanMoveObject: 1
-  CanSwapObject: 1
+  Droppable: 0
+  CanMoveObject: 0
+  CanSwapObject: 0
   DisplayProperties:
     DisplayEquipUseButton: 1
     DisplayMoveButton: 1
@@ -33,17 +33,17 @@ MonoBehaviour:
     DisplayUseButton: 1
     DisplayUnequipButton: 1
   Quantity: 1
-  ItemName: Dice of Death
-  ShortDescription: Insert Dice Pun here
-  Description: Who said dice were made to play games?
-  Icon: {fileID: 21300000, guid: dcd973c53b20640a6b20fe08af1b97b9, type: 3}
-  Prefab: {fileID: 1229595596555871739, guid: 7ebcce69749d34d9fb9bb5920d1b42c8, type: 3}
+  ItemName: Card Blade
+  ShortDescription: 'WARNING: Can give lethal paper cuts.'
+  Description: Slice your enemies
+  Icon: {fileID: 21300000, guid: 6e7ab4effcc034797a4f3557f9c80d0d, type: 3}
+  Prefab: {fileID: 1293930670152175365, guid: 4143004df8fd94b39a9d1bb83352560c, type: 3}
   ForcePrefabDropQuantity: 0
   PrefabDropQuantity: 1
   DropProperties:
     Shape: 0
     NormalToSpawnPlane: {x: 0, y: 1, z: 0}
-    MinimumSphereRadius: 1.5
+    MinimumSphereRadius: 1
     MaximumSphereRadius: 2
     MinimumCubeBaseSize: {x: 1, y: 1, z: 1}
     MaximumCubeBaseSize: {x: 2, y: 2, z: 2}
@@ -89,7 +89,7 @@ MonoBehaviour:
   MovedSound: {fileID: 0}
   DroppedSound: {fileID: 0}
   UseDefaultSoundsIfNull: 1
-  EquippableWeapon: {fileID: 2226647201843857789, guid: 7ebcce69749d34d9fb9bb5920d1b42c8,
+  EquippableWeapon: {fileID: 2404434629431758313, guid: 4143004df8fd94b39a9d1bb83352560c,
     type: 3}
   AutoEquipMode: 2
   HandleWeaponID: 1

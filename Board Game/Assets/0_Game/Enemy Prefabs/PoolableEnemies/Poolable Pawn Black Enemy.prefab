@@ -220,7 +220,7 @@ MonoBehaviour:
   ExecuteOnDisable:
     m_PersistentCalls:
       m_Calls: []
-  LifeTime: 999
+  LifeTime: 0
 --- !u!114 &5858041983956007000 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4698148737423942621, guid: 83495f77c31594c5bba0325a249fb7d7,

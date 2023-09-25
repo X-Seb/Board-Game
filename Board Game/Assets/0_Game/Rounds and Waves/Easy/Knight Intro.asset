@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
-  m_Name: Rook Intro
+  m_Name: Knight Intro
   m_EditorClassIdentifier: 
   roundName: 
   roundDescription: 
@@ -19,6 +19,6 @@ MonoBehaviour:
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
   m_waves:
-  - {fileID: 11400000, guid: f4f8f154a414549c28f15c1d512d1ee7, type: 2}
-  - {fileID: 11400000, guid: ff0b53066c1e34bbd976b23edb8590f5, type: 2}
-  - {fileID: 11400000, guid: 2428db9b6d06546ff9ab0d3fb93c104f, type: 2}
+  - {fileID: 11400000, guid: 306936433a8e7478db599829dca749ec, type: 2}
+  - {fileID: 11400000, guid: e948dcc60df83472d9f4c15164c9bca3, type: 2}
+  - {fileID: 11400000, guid: 6f1d82fd8ddfd4ca5b19266e75b6f22e, type: 2}
