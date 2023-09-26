@@ -12,19 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9529ae2b2ee0d1e4d802b51d271424c3, type: 3}
   m_Name: Card Weapon
   m_EditorClassIdentifier: 
-  ItemID: 
-  TargetInventoryName: WeaponInventory
+  ItemID: CardWeapon
+  TargetInventoryName: MainInventory
   ForceSlotIndex: 0
   TargetIndex: 0
   Usable: 0
   Consumable: 1
   ConsumeQuantity: 1
-  Equippable: 0
-  EquippableIfInventoryIsFull: 0
+  Equippable: 1
+  EquippableIfInventoryIsFull: 1
   MoveWhenEquipped: 1
-  Droppable: 0
-  CanMoveObject: 0
-  CanSwapObject: 0
+  Droppable: 1
+  CanMoveObject: 1
+  CanSwapObject: 1
   DisplayProperties:
     DisplayEquipUseButton: 1
     DisplayMoveButton: 1
@@ -37,7 +37,7 @@ MonoBehaviour:
   ShortDescription: 'WARNING: Can give lethal paper cuts.'
   Description: Slice your enemies
   Icon: {fileID: 21300000, guid: 6e7ab4effcc034797a4f3557f9c80d0d, type: 3}
-  Prefab: {fileID: 1293930670152175365, guid: 4143004df8fd94b39a9d1bb83352560c, type: 3}
+  Prefab: {fileID: 0}
   ForcePrefabDropQuantity: 0
   PrefabDropQuantity: 1
   DropProperties:
@@ -83,8 +83,8 @@ MonoBehaviour:
     MaximumScale: {x: 1, y: 1, z: 1}
   MaximumStack: 1
   ItemClass: 2
-  TargetEquipmentInventoryName: 
-  EquippedSound: {fileID: 0}
+  TargetEquipmentInventoryName: WeaponInventory
+  EquippedSound: {fileID: 8300000, guid: d374a31daaed52e4bb3deca131120f63, type: 3}
   UsedSound: {fileID: 0}
   MovedSound: {fileID: 0}
   DroppedSound: {fileID: 0}

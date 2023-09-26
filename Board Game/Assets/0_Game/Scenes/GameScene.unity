@@ -5538,6 +5538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 351400289}
   - component: {fileID: 351400290}
+  - component: {fileID: 351400291}
   m_Layer: 0
   m_Name: WeaponInventory
   m_TagString: Untagged
@@ -5575,12 +5576,24 @@ MonoBehaviour:
   PlayerID: Player1
   Content:
   - {fileID: 0}
-  - {fileID: 0}
   InventoryType: 1
   TargetTransform: {fileID: 0}
-  Persistent: 1
+  Persistent: 0
   ResetThisInventorySaveOnStart: 1
   DrawContentInInspector: 0
+--- !u!114 &351400291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351400288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3876ae77702e24e8e1b06f675c0860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bindings: []
 --- !u!1 &353427867
 GameObject:
   m_ObjectHideFlags: 0
@@ -21174,7 +21187,7 @@ MonoBehaviour:
   - {fileID: 0}
   InventoryType: 0
   TargetTransform: {fileID: 0}
-  Persistent: 1
+  Persistent: 0
   ResetThisInventorySaveOnStart: 1
   DrawContentInInspector: 0
 --- !u!1 &1219171668

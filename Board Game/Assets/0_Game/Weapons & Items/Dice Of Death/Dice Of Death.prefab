@@ -916,7 +916,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         RemapIntensityZero: 0
-        RemapIntensityOne: 1
+        RemapIntensityOne: 3
         ShakeThreshold:
           serializedVersion: 2
           m_Curve:
@@ -1166,7 +1166,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         RemapIntensityZero: 0
-        RemapIntensityOne: 0.06
+        RemapIntensityOne: 0.05
         RelativeIntensity: 1
         InterpolateColor: 0
         ColorCurve:

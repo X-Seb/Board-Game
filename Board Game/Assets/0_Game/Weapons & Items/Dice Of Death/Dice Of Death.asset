@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Dice Of Death
   m_EditorClassIdentifier: 
   ItemID: DiceOfDeath
-  TargetInventoryName: WeaponInventory
+  TargetInventoryName: MainInventory
   ForceSlotIndex: 0
   TargetIndex: 0
   Usable: 0
   Consumable: 1
   ConsumeQuantity: 1
-  Equippable: 0
+  Equippable: 1
   EquippableIfInventoryIsFull: 1
   MoveWhenEquipped: 1
   Droppable: 1
@@ -36,8 +36,8 @@ MonoBehaviour:
   ItemName: Dice of Death
   ShortDescription: Insert Dice Pun here
   Description: Who said dice were made to play games?
-  Icon: {fileID: 21300000, guid: dcd973c53b20640a6b20fe08af1b97b9, type: 3}
-  Prefab: {fileID: 1229595596555871739, guid: 7ebcce69749d34d9fb9bb5920d1b42c8, type: 3}
+  Icon: {fileID: 21300000, guid: 6e7ab4effcc034797a4f3557f9c80d0d, type: 3}
+  Prefab: {fileID: 0}
   ForcePrefabDropQuantity: 0
   PrefabDropQuantity: 1
   DropProperties:
@@ -83,8 +83,8 @@ MonoBehaviour:
     MaximumScale: {x: 1, y: 1, z: 1}
   MaximumStack: 1
   ItemClass: 2
-  TargetEquipmentInventoryName: 
-  EquippedSound: {fileID: 0}
+  TargetEquipmentInventoryName: WeaponInventory
+  EquippedSound: {fileID: 8300000, guid: aa5afae48f35c5f4183d4837e5be751f, type: 3}
   UsedSound: {fileID: 0}
   MovedSound: {fileID: 0}
   DroppedSound: {fileID: 0}

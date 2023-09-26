@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 146926910929117879}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.068, y: 0, z: 1.207}
+  m_LocalPosition: {x: -1, y: 0, z: 1.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -49,15 +49,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   Owner: {fileID: 0}
-  TriggerFilter: 195
+  TriggerFilter: 1
   MinDamageCaused: 4
-  MaxDamageCaused: 5
+  MaxDamageCaused: 6
   TypedDamages: []
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
-  DamageCausedKnockbackForce: {x: 10, y: 2, z: 2}
-  InvincibilityDuration: 0.5
+  DamageCausedKnockbackForce: {x: 12, y: 12, z: 2}
+  InvincibilityDuration: 0.2
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
   DurationBetweenRepeats: 1
@@ -100,7 +100,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 1.4
+  m_Radius: 1.8
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1293930670152175365
 GameObject:
@@ -136,7 +136,6 @@ Transform:
   - {fileID: 265937164410582558}
   - {fileID: 4813656201555753330}
   - {fileID: 6167217013799585196}
-  - {fileID: 4296767601074310012}
   - {fileID: 6462947327581515511}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -156,9 +155,9 @@ MonoBehaviour:
   WeaponCurrentlyActive: 1
   InputAuthorized: 1
   TriggerMode: 0
-  DelayBeforeUse: 0.08
+  DelayBeforeUse: 0.05
   DelayBeforeUseReleaseInterruption: 0
-  TimeBetweenUses: 0.5
+  TimeBetweenUses: 0.45
   TimeBetweenUsesReleaseInterruption: 1
   UseBurstMode: 0
   BurstLength: 3
@@ -192,9 +191,9 @@ MonoBehaviour:
   MirrorCharacterAnimatorParameters: 0
   WeaponAnimationID: 0
   IdleAnimationParameter: 
-  StartAnimationParameter: 
+  StartAnimationParameter: Attack
   DelayBeforeUseAnimationParameter: 
-  SingleUseAnimationParameter: Attack
+  SingleUseAnimationParameter: 
   UseAnimationParameter: 
   DelayBetweenUsesAnimationParameter: 
   StopAnimationParameter: 
@@ -299,8 +298,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4433754846161822929}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.000000009313225, w: 1}
+  m_LocalPosition: {x: -2.3850513, y: 0.00020539388, z: -0.2710994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5184,12 +5183,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5197377665046804251}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.072930135, y: -0.31159338, z: -0.8752127, w: 0.36275825}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 136476578792537651}
+  m_Father: {fileID: 8923674633260349926}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &2911960403608734563
 Light:
@@ -5203,8 +5202,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.24056602, b: 0.24056602, a: 1}
-  m_Intensity: 2
-  m_Range: 6
+  m_Intensity: 1.2
+  m_Range: 4.5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -5264,7 +5263,7 @@ GameObject:
   - component: {fileID: 265937164410582558}
   - component: {fileID: 2329788742057671860}
   m_Layer: 0
-  m_Name: Modle Holder
+  m_Name: Model Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5279,7 +5278,7 @@ Transform:
   m_GameObject: {fileID: 5518100384597896033}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5514,7 +5513,7 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 4141427945872280598}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: 7d176df610ca34c4c878590f3dc014a1, type: 3}
+        Sfx: {fileID: 8300000, guid: c5955b1ca51d47245ae5e5e10395d910, type: 3}
         RandomSfx:
         - {fileID: 8300000, guid: c5955b1ca51d47245ae5e5e10395d910, type: 3}
         - {fileID: 8300000, guid: 80502e18f68bb734b9dded7bb8d2e750, type: 3}
@@ -5715,8 +5714,8 @@ MonoBehaviour:
         Owner: {fileID: 4141427945872280598}
         DebugActive: 0
         FlashColor: {r: 0.83137256, g: 0.13725488, b: 0.14371994, a: 1}
-        FlashDuration: 0.05
-        FlashAlpha: 0.08
+        FlashDuration: 0.1
+        FlashAlpha: 0.1
         FlashID: 0
     - rid: 2694893662926536728
       type: {class: MMF_CinemachineImpulse, ns: MoreMountains.FeedbacksForThirdParty,
@@ -5801,7 +5800,7 @@ MonoBehaviour:
           m_DissipationRate: 0
           m_RawSignal: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4,
             type: 2}
-          m_AmplitudeGain: 0.9
+          m_AmplitudeGain: 1
           m_FrequencyGain: 1
           m_RepeatMode: 0
           m_Randomize: 1
@@ -5936,7 +5935,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         RemapIntensityZero: 0
-        RemapIntensityOne: 1
+        RemapIntensityOne: 4
         ShakeThreshold:
           serializedVersion: 2
           m_Curve:
@@ -6041,7 +6040,7 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 4141427945872280598}
         DebugActive: 0
-        Duration: 0.1
+        Duration: 0.2
         ResetShakerValuesAfterShake: 1
         ResetTargetValuesAfterShake: 1
         RemapIntensityZero: 0
@@ -6079,7 +6078,7 @@ MonoBehaviour:
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-        Amplitude: 0.708
+        Amplitude: 0.9
         RelativeIntensity: 0
     - rid: 2694893662926536731
       type: {class: MMF_Vignette, ns: MoreMountains.FeedbacksForThirdParty, asm: MoreMountains.Feedbacks.PostProcessing}
@@ -6149,7 +6148,7 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 4141427945872280598}
         DebugActive: 0
-        Duration: 0.08
+        Duration: 0.1
         ResetShakerValuesAfterShake: 1
         ResetTargetValuesAfterShake: 1
         Intensity:
@@ -6232,7 +6231,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         RemapColorZero: 0
-        RemapColorOne: 0.41
+        RemapColorOne: 0.4
         TargetColor: {r: 0, g: 0, b: 0, a: 1}
     - rid: 2694893662926536732
       type: {class: MMF_Light, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
@@ -7131,7 +7130,8 @@ Transform:
   m_LocalPosition: {x: -1.664, y: -0.05, z: -0.281}
   m_LocalScale: {x: 2000.0004, y: 2000.0001, z: 1999.9999}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 4296767601074310012}
   m_Father: {fileID: 265937164410582558}
   m_LocalEulerAnglesHint: {x: -36.751, y: 7.055, z: 132.628}
 --- !u!33 &2906624366408501995
