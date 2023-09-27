@@ -36,7 +36,7 @@ MonoBehaviour:
   ItemName: Dice of Death
   ShortDescription: Insert Dice Pun here
   Description: Who said dice were made to play games?
-  Icon: {fileID: 21300000, guid: 6e7ab4effcc034797a4f3557f9c80d0d, type: 3}
+  Icon: {fileID: 21300000, guid: f393e739c46744981882e0b239eedf74, type: 3}
   Prefab: {fileID: 0}
   ForcePrefabDropQuantity: 0
   PrefabDropQuantity: 1

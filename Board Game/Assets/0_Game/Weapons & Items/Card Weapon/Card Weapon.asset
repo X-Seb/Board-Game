@@ -36,7 +36,7 @@ MonoBehaviour:
   ItemName: Card Blade
   ShortDescription: 'WARNING: Can give lethal paper cuts.'
   Description: Slice your enemies
-  Icon: {fileID: 21300000, guid: 6e7ab4effcc034797a4f3557f9c80d0d, type: 3}
+  Icon: {fileID: 21300000, guid: 522731d072b964addbc3a4b59fbe2ea6, type: 2}
   Prefab: {fileID: 0}
   ForcePrefabDropQuantity: 0
   PrefabDropQuantity: 1
