@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
-  m_Name: Getting Started #3
+  m_Name: Getting Started 3
   m_EditorClassIdentifier: 
   roundName: 
-  roundDescription: Your health regenerates over time. Good luck and don't die!
+  roundDescription: Destroy all enemies from each wave to move to the next.
   roundDifficulty: 1
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
@@ -21,4 +21,3 @@ MonoBehaviour:
   m_waves:
   - {fileID: 11400000, guid: 48e750ede643b40fd957cd445a7999c8, type: 2}
   - {fileID: 11400000, guid: 4aa99dd8e3f3a4e17b1b7dfb4f22fbbf, type: 2}
-  - {fileID: 11400000, guid: 92271c935616f4b19906a977aeebd634, type: 2}

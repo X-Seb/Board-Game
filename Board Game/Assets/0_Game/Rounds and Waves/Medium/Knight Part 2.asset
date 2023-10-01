@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
-  m_Name: Getting Started #2
+  m_Name: Knight Part 2
   m_EditorClassIdentifier: 
   roundName: 
-  roundDescription: Destroy all enemies from each wave to move to the next.
-  roundDifficulty: 1
+  roundDescription: 
+  roundDifficulty: 0
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
   m_waves:
-  - {fileID: 11400000, guid: 183eea517849a4df488345c98eda70fe, type: 2}
-  - {fileID: 11400000, guid: 48e750ede643b40fd957cd445a7999c8, type: 2}
+  - {fileID: 11400000, guid: 57588fcf8a2604203b6761361d6825fd, type: 2}
+  - {fileID: 11400000, guid: 75272f678c3ff4a4da18f98b8e84fc96, type: 2}
+  - {fileID: 11400000, guid: 5f3383b6db9064bb1829daf50a001c67, type: 2}
