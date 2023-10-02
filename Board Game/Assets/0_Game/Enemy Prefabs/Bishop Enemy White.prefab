@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 8271282181270349910}
   - component: {fileID: 4924273329214902431}
   m_Layer: 13
-  m_Name: Bishop Black Enemy
+  m_Name: Bishop Enemy White
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -321,8 +321,8 @@ MonoBehaviour:
   Model: {fileID: 2093422333673364802}
   CurrentHealth: 100
   Invulnerable: 0
-  InitialHealth: 26
-  MaximumHealth: 26
+  InitialHealth: 34
+  MaximumHealth: 34
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 4258168009356082337}
@@ -615,7 +615,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093422333673364802}
-  m_Mesh: {fileID: 3811053669902914943, guid: cf6b3a073579ea14ea9259ec645214f1, type: 3}
+  m_Mesh: {fileID: -632972855434581787, guid: 2939d7866d94f014a887e798621fef4c, type: 3}
 --- !u!114 &5733011107357719982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,8 +740,8 @@ MonoBehaviour:
     m_Bits: 1024
   Owner: {fileID: 0}
   TriggerFilter: 195
-  MinDamageCaused: 10
-  MaxDamageCaused: 14
+  MinDamageCaused: 7
+  MaxDamageCaused: 10
   TypedDamages: []
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
@@ -948,12 +948,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InitializationMode: 0
   Label: 
-  MaximumDurationInADirection: 0.4
+  MaximumDurationInADirection: 0.7
   ObstacleLayerMask:
     serializedVersion: 2
-    m_Bits: 8448
+    m_Bits: 256
   ObstaclesDetectionDistance: 1
-  ObstaclesCheckFrequency: 0.15
+  ObstaclesCheckFrequency: 0.1
   MinimumRandomDirection: {x: -1, y: -1}
   MaximumRandomDirection: {x: 1, y: 1}
 --- !u!114 &8097043479057098175
@@ -999,14 +999,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
-  Radius: 6
+  Radius: 5
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayerMask:
     serializedVersion: 2
     m_Bits: 1024
   ObstacleMask:
     serializedVersion: 2
-    m_Bits: 8448
+    m_Bits: 256
   TargetCheckFrequency: 0.3
   CanTargetSelf: 0
   OverlapMaximum: 10

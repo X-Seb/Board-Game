@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
-  m_Name: Knight Intro
+  m_Name: TinyButMighty
   m_EditorClassIdentifier: 
-  roundName: 
+  roundName: Tiny but Mighty!
   roundDescription: 
-  roundDifficulty: 2
+  roundDifficulty: 4
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
   m_waves:
-  - {fileID: 11400000, guid: e948dcc60df83472d9f4c15164c9bca3, type: 2}
-  - {fileID: 11400000, guid: 6f1d82fd8ddfd4ca5b19266e75b6f22e, type: 2}
+  - {fileID: 11400000, guid: 746e98ad2a41c4b1397626bf9102e6b3, type: 2}
+  - {fileID: 11400000, guid: 75561833948a94dbdbb78aecec27383a, type: 2}

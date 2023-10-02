@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
-  m_Name: Knight Intro
+  m_Name: DoubleQueen
   m_EditorClassIdentifier: 
-  roundName: 
+  roundName: Double Queen Smackdown
   roundDescription: 
-  roundDifficulty: 2
+  roundDifficulty: 7
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
   m_waves:
-  - {fileID: 11400000, guid: e948dcc60df83472d9f4c15164c9bca3, type: 2}
-  - {fileID: 11400000, guid: 6f1d82fd8ddfd4ca5b19266e75b6f22e, type: 2}
+  - {fileID: 11400000, guid: 03067aabb07434a20a512c6193126aa1, type: 2}

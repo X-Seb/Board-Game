@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
-  m_Name: Knight Intro
+  m_Name: TeamUpTactics
   m_EditorClassIdentifier: 
-  roundName: 
+  roundName: Team Up Tactics
   roundDescription: 
-  roundDifficulty: 2
+  roundDifficulty: 5
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
   m_waves:
-  - {fileID: 11400000, guid: e948dcc60df83472d9f4c15164c9bca3, type: 2}
-  - {fileID: 11400000, guid: 6f1d82fd8ddfd4ca5b19266e75b6f22e, type: 2}
+  - {fileID: 11400000, guid: 8b0e1e9a87ceb4ee59986ae958118138, type: 2}
+  - {fileID: 11400000, guid: 02c8b37a908ce49989efd6df7a0ab595, type: 2}

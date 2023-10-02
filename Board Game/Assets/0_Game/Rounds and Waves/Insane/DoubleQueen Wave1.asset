@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b85c182ee962461d89aa134dc739747, type: 3}
-  m_Name: Sorry Wave 3
+  m_Name: DoubleQueen Wave1
   m_EditorClassIdentifier: 
   m_enemies:
-  - {fileID: 7642241211362050468, guid: 799be9a9f4ca74909ba9a36442f7c651, type: 3}
-  - {fileID: 4188638761764245406, guid: aeb3d27aedcd841cb956765afc2b95aa, type: 3}
-  - {fileID: 2044095050259213304, guid: 7b3645bffe6dc415493c61491eb42a8d, type: 3}
-  m_spawnInterval: 2
-  m_overrideSpawner: 0
-  m_overrideSpawnIntervals: 0
-  m_newSpawnIntervals: []
+  - {fileID: 4445940100281750750, guid: acdf0695717314e43a0c6018e0cba8d8, type: 3}
+  - {fileID: 1873821884445454322, guid: a91775165ddfa4d6b9d3eb9453b2f376, type: 3}
+  m_spawnInterval: 0
+  m_overrideSpawner: 1
+  m_overrideSpawnIntervals: 1
+  m_newSpawnIntervals:
+  - 1
+  - 3

@@ -157,7 +157,7 @@ MonoBehaviour:
   DelayBeforeUse: 0.05
   DelayBeforeUseReleaseInterruption: 0
   TimeBetweenUses: 0.45
-  TimeBetweenUsesReleaseInterruption: 1
+  TimeBetweenUsesReleaseInterruption: 0
   UseBurstMode: 0
   BurstLength: 3
   BurstTimeBetweenShots: 0.1

@@ -10,12 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb8534e8eb9444a73b29d47b5e03965d, type: 3}
-  m_Name: Medium
+  m_Name: Insane
   m_EditorClassIdentifier: 
-  m_groupName: Medium
+  m_groupName: Insane
   m_shouldReshuffle: 1
   m_rounds:
-  - {fileID: 11400000, guid: 3ade720e2054e4d879fc550e2b4bb87c, type: 2}
-  - {fileID: 11400000, guid: bd93080111fd84fa3a7fdcee98eb7dee, type: 2}
-  - {fileID: 11400000, guid: 4f1a45f11a7bf4d6d8b7bc5ab6745fff, type: 2}
-  - {fileID: 11400000, guid: 292bd72a299bb4695ab2d8c82bf830b0, type: 2}
+  - {fileID: 11400000, guid: ea87c3c49d9164496930f80b6e550038, type: 2}

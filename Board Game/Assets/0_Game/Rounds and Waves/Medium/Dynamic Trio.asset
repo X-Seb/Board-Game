@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
-  m_Name: Knight Intro
+  m_Name: Dynamic Trio
   m_EditorClassIdentifier: 
-  roundName: 
+  roundName: Dynamic Trio
   roundDescription: 
-  roundDifficulty: 2
+  roundDifficulty: 3
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
   m_waves:
-  - {fileID: 11400000, guid: e948dcc60df83472d9f4c15164c9bca3, type: 2}
-  - {fileID: 11400000, guid: 6f1d82fd8ddfd4ca5b19266e75b6f22e, type: 2}
+  - {fileID: 11400000, guid: 55fe8dc93474e47c98e6c4cfdf1d3d44, type: 2}
+  - {fileID: 11400000, guid: c63b7e88b9c304ec8b5256719b70e909, type: 2}
