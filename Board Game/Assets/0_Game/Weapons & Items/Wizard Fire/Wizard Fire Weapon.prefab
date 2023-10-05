@@ -5124,19 +5124,18 @@ MonoBehaviour:
   InitializeOnStart: 0
   Interruptable: 0
   Flipped: 0
-  ProjectileSpawnOffset: {x: 0, y: 0, z: 0.2}
+  ProjectileSpawnOffset: {x: 0, y: 0, z: 0}
   DefaultProjectileDirection: {x: 0, y: 0, z: 1}
   ProjectilesPerShot: 1
   SpawnTransforms:
   - {fileID: 5436925189376041027}
   SpawnTransformsMode: 1
-  Spread: {x: 0, y: 20, z: 0}
+  Spread: {x: 0, y: 180, z: 0}
   RotateWeaponOnSpread: 0
-  RandomSpread: 1
+  RandomSpread: 0
   SpawnPosition: {x: 0, y: 0, z: 0}
   ObjectPooler: {fileID: 4711596881243270861}
-  SpawnFeedbacks:
-  - {fileID: 0}
+  SpawnFeedbacks: []
   TestShootButton: 0
 --- !u!114 &4711596881243270861
 MonoBehaviour:

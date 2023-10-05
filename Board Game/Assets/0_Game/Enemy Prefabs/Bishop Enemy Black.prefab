@@ -38,8 +38,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 222102980037628042}
   - {fileID: 8307363430491205631}
+  - {fileID: 222102980037628042}
   - {fileID: 4492869978732425817}
   - {fileID: 1992583399722807602}
   m_Father: {fileID: 0}
@@ -810,7 +810,7 @@ GameObject:
   - component: {fileID: 5140130036397608155}
   - component: {fileID: 8514047533557938888}
   m_Layer: 13
-  m_Name: AI Decisions
+  m_Name: AI Brain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -920,7 +920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitializationMode: 0
-  Label: 
+  Label: DoNothing
 --- !u!114 &7667621359171266281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -933,7 +933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f21b170839d044b8b9bf160d1be05b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Label: 
+  Label: TargetIsAlive
 --- !u!114 &7416169228160445950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -947,13 +947,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitializationMode: 0
-  Label: 
+  Label: MoveRandomly
   MaximumDurationInADirection: 0.4
   ObstacleLayerMask:
     serializedVersion: 2
-    m_Bits: 8448
+    m_Bits: 256
   ObstaclesDetectionDistance: 1
-  ObstaclesCheckFrequency: 0.15
+  ObstaclesCheckFrequency: 0.2
   MinimumRandomDirection: {x: -1, y: -1}
   MaximumRandomDirection: {x: 1, y: 1}
 --- !u!114 &8097043479057098175
