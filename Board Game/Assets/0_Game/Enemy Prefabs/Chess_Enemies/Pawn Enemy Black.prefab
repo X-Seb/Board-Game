@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 14768138973613231, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: m_Name
-      value: Pawn Black Enemy
+      value: Pawn Enemy Black
       objectReference: {fileID: 0}
     - target: {fileID: 14768138973613231, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
@@ -82,6 +82,16 @@ PrefabInstance:
         type: 3}
       propertyPath: States.Array.data[2].Transitions.array.Array.data[1].FalseState
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105846786817688101, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: ShouldRotateToFaceWeaponDirection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105846786817688101, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: RotateToFaceMovementDirectionSpeed
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3314266508474342411, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}

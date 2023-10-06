@@ -230,9 +230,9 @@ MonoBehaviour:
   ModelDirection: {x: 0, y: 0, z: 0}
   ModelAngles: {x: 0, y: 0, z: 0}
   ShouldRotateToFaceWeaponDirection: 1
-  WeaponRotationSpeed: 0
+  WeaponRotationSpeed: 1
   WeaponRotatingModel: {fileID: 2093422333673364802}
-  RotateToFaceWeaponDirectionSpeed: 10
+  RotateToFaceWeaponDirectionSpeed: 15
   AbsoluteThresholdWeapon: 0.5
   LockVerticalRotation: 1
   RotationSpeedResetSpeed: 2

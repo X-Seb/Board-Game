@@ -5625,7 +5625,7 @@ Transform:
   m_GameObject: {fileID: 4030076681947214924}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.53, y: 0.82, z: 3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5814,9 +5814,9 @@ MonoBehaviour:
   RotationMode: 1
   CharacterRotationAuthorized: 1
   ShouldRotateToFaceMovementDirection: 1
-  MovementRotationSpeed: 0
+  MovementRotationSpeed: 1
   MovementRotatingModel: {fileID: 4030076681947214924}
-  RotateToFaceMovementDirectionSpeed: 10
+  RotateToFaceMovementDirectionSpeed: 15
   AbsoluteThresholdMovement: 0.5
   ModelDirection: {x: 0, y: 0, z: 0}
   ModelAngles: {x: 0, y: 0, z: 0}

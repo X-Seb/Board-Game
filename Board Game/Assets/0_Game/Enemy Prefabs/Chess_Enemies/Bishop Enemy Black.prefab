@@ -223,7 +223,7 @@ MonoBehaviour:
   RotationMode: 0
   CharacterRotationAuthorized: 1
   ShouldRotateToFaceMovementDirection: 1
-  MovementRotationSpeed: 0
+  MovementRotationSpeed: 1
   MovementRotatingModel: {fileID: 2093422333673364802}
   RotateToFaceMovementDirectionSpeed: 10
   AbsoluteThresholdMovement: 0.5
@@ -232,7 +232,7 @@ MonoBehaviour:
   ShouldRotateToFaceWeaponDirection: 1
   WeaponRotationSpeed: 0
   WeaponRotatingModel: {fileID: 2093422333673364802}
-  RotateToFaceWeaponDirectionSpeed: 10
+  RotateToFaceWeaponDirectionSpeed: 15
   AbsoluteThresholdWeapon: 0.5
   LockVerticalRotation: 1
   RotationSpeedResetSpeed: 2
