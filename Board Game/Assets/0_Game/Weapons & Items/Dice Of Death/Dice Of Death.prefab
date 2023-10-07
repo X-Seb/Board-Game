@@ -56,7 +56,7 @@ MonoBehaviour:
   TriggerMode: 1
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 0.333
+  TimeBetweenUses: 0.3
   TimeBetweenUsesReleaseInterruption: 1
   UseBurstMode: 0
   BurstLength: 3
@@ -174,43 +174,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73098ca8f002adc4f9debdbe47a78c9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MutualizeWaitingPools: 0
-  NestWaitingPool: 1
+  MutualizeWaitingPools: 1
+  NestWaitingPool: 0
   NestUnderThis: 0
   Pool:
   - GameObjectToPool: {fileID: 1303676275303563734, guid: cefdb9d4fa15547a8840ff20ec9f5152,
       type: 3}
-    PoolSize: 6
-    PoolCanExpand: 0
+    PoolSize: 5
+    PoolCanExpand: 1
     Enabled: 1
   - GameObjectToPool: {fileID: 1303676275303563734, guid: af799fe7ee7434836857ca69afc1e9d2,
       type: 3}
     PoolSize: 4
-    PoolCanExpand: 0
+    PoolCanExpand: 1
     Enabled: 1
   - GameObjectToPool: {fileID: 1303676275303563734, guid: bcfee845439d44b90a1ef555b30ef45f,
       type: 3}
     PoolSize: 3
-    PoolCanExpand: 0
+    PoolCanExpand: 1
     Enabled: 1
   - GameObjectToPool: {fileID: 1303676275303563734, guid: 0679b4b0a7c4b422a852de064dce5f06,
       type: 3}
     PoolSize: 2
-    PoolCanExpand: 0
+    PoolCanExpand: 1
     Enabled: 1
   - GameObjectToPool: {fileID: 1303676275303563734, guid: 1d833b97286224ef79f40ad78488e35d,
       type: 3}
     PoolSize: 2
-    PoolCanExpand: 0
+    PoolCanExpand: 1
     Enabled: 1
   - GameObjectToPool: {fileID: 1303676275303563734, guid: 4231ff7d5ddd2419eb87b2f539281994,
       type: 3}
     PoolSize: 1
-    PoolCanExpand: 0
+    PoolCanExpand: 1
     Enabled: 1
   PoolingMethod: 3
   CanPoolSameObjectTwice: 0
-  MutualizedPoolName: 
+  MutualizedPoolName: DiceOfDeath_Pool
 --- !u!1 &1965030226280718971
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,7 +781,7 @@ MonoBehaviour:
           m_DissipationRate: 0
           m_RawSignal: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4,
             type: 2}
-          m_AmplitudeGain: 0.9
+          m_AmplitudeGain: 0.6
           m_FrequencyGain: 1
           m_RepeatMode: 0
           m_Randomize: 1
@@ -808,7 +808,7 @@ MonoBehaviour:
           m_DissipationMode: 2
           m_DissipationDistance: 1000
           m_PropagationSpeed: 343
-        Velocity: {x: 0.5, y: 0.5, z: 0.5}
+        Velocity: {x: 0.4, y: 0.4, z: 0.4}
         ClearImpulseOnStop: 0
     - rid: 2694893150061723662
       type: {class: MMF_Bloom, ns: MoreMountains.FeedbacksForThirdParty, asm: MoreMountains.Feedbacks.PostProcessing}
@@ -1284,7 +1284,7 @@ MonoBehaviour:
         DebugActive: 0
         BoundLight: {fileID: 4502234819266507442}
         Mode: 0
-        Duration: 0.2
+        Duration: 0.15
         StartsOff: 1
         DisableOnStop: 1
         RelativeValues: 1

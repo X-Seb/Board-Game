@@ -8093,5 +8093,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: IsDead
   TrueIfHealthIs: 0
-  HealthValue: 1
+  HealthValue: 0
   OnlyOnce: 1

@@ -156,7 +156,7 @@ MonoBehaviour:
   TriggerMode: 0
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 0
-  TimeBetweenUses: 0.4
+  TimeBetweenUses: 0.28
   TimeBetweenUsesReleaseInterruption: 0
   UseBurstMode: 0
   BurstLength: 0
@@ -180,10 +180,10 @@ MonoBehaviour:
   LeftHandHandle: {fileID: 0}
   RightHandHandle: {fileID: 0}
   ModifyMovementWhileAttacking: 1
-  MovementMultiplier: 0.9
+  MovementMultiplier: 0.8
   PreventAllMovementWhileInUse: 0
   PreventAllAimWhileInUse: 0
-  RecoilForce: 0.5
+  RecoilForce: 2
   Animators:
   - {fileID: 2329788742057671860}
   PerformAnimatorSanityChecks: 0

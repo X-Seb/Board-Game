@@ -13144,14 +13144,14 @@ MonoBehaviour:
         Owner: {fileID: 6876653269793434362}
         DebugActive: 0
         Mode: 0
-        ObjectPoolSize: 5
+        ObjectPoolSize: 1
         MutualizePools: 0
         ParentTransform: {fileID: 0}
         CachedRecycle: 1
         ParticlesPrefab: {fileID: 7415344032298132670, guid: a6ad62dfbb7ea824b97d73e42c9b769e,
           type: 3}
         RandomParticlePrefabs: []
-        ForceSetActiveOnPlay: 0
+        ForceSetActiveOnPlay: 1
         StopOnReset: 0
         DeclaredDuration: 0
         PositionMode: 0

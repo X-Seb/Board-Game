@@ -977,8 +977,8 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 6354887466304663706}
         DebugActive: 0
-        Mode: 2
-        ObjectPoolSize: 2
+        Mode: 0
+        ObjectPoolSize: 1
         MutualizePools: 1
         ParentTransform: {fileID: 0}
         CachedRecycle: 1

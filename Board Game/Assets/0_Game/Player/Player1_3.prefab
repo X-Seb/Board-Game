@@ -761,7 +761,7 @@ MonoBehaviour:
     Unlimited: 0
     ConsumptionDuration: 0.35
     PauseOnEmptyDuration: 0.1
-    RefillDuration: 1.2
+    RefillDuration: 0.8
     CanInterruptRefill: 0
     CooldownState: 0
     CurrentDurationLeft: 0
