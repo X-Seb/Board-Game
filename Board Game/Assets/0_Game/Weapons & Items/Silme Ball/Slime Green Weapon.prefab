@@ -86,8 +86,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cefb2661e65fc8c4c9c9e8319d6e9912, type: 2}
-  - {fileID: 2100000, guid: e7422ce407ab04d8cbeef83b6636b6f5, type: 2}
+  - {fileID: 2100000, guid: 90b4a85560efd8044ba3c7c82bef32f5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -327,8 +326,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.5283019, g: 0, b: 0.039572913, a: 1}
-      maxColor: {r: 1, g: 0.43643156, b: 0.3915094, a: 1}
+      minColor: {r: 0.051108263, g: 0.5294118, b: 0, a: 1}
+      maxColor: {r: 0.42075586, g: 1, b: 0.39215684, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -3955,7 +3954,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 768
+      m_Bits: 9984
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -4097,13 +4096,13 @@ ParticleSystem:
         m_RotationOrder: 4
     maxLights: 20
   TrailModule:
-    enabled: 1
+    enabled: 0
     mode: 0
     ratio: 1
     lifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.4
+      scalar: 0.3
       minScalar: 0.2
       maxCurve:
         serializedVersion: 2
@@ -4234,7 +4233,7 @@ ParticleSystem:
     widthOverTrail:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.05
+      scalar: 0.1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -5023,11 +5022,11 @@ GameObject:
   m_Component:
   - component: {fileID: 318965428339897265}
   - component: {fileID: 8799078823544382132}
-  - component: {fileID: 2138518973739581876}
+  - component: {fileID: -6080072621552392590}
   - component: {fileID: 5383742116122680335}
   - component: {fileID: 5046402203008829492}
   m_Layer: 0
-  m_Name: Wizard Fire Weapon Purple
+  m_Name: Slime Green Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5070,11 +5069,11 @@ MonoBehaviour:
   TriggerMode: 1
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 0.8
+  TimeBetweenUses: 0.7
   TimeBetweenUsesReleaseInterruption: 1
-  UseBurstMode: 0
-  BurstLength: 0
-  BurstTimeBetweenShots: 0
+  UseBurstMode: 1
+  BurstLength: 5
+  BurstTimeBetweenShots: 0.06
   MagazineBased: 0
   MagazineSize: 30
   AutoReload: 0
@@ -5127,18 +5126,18 @@ MonoBehaviour:
   Flipped: 0
   ProjectileSpawnOffset: {x: 0, y: 0, z: 0}
   DefaultProjectileDirection: {x: 0, y: 0, z: 1}
-  ProjectilesPerShot: 4
+  ProjectilesPerShot: 1
   SpawnTransforms:
   - {fileID: 5436925189376041027}
   SpawnTransformsMode: 1
-  Spread: {x: 0, y: 60, z: 0}
+  Spread: {x: 0, y: 45, z: 0}
   RotateWeaponOnSpread: 0
-  RandomSpread: 0
+  RandomSpread: 1
   SpawnPosition: {x: 0, y: 0, z: 0}
-  ObjectPooler: {fileID: 2138518973739581876}
+  ObjectPooler: {fileID: -6080072621552392590}
   SpawnFeedbacks: []
   TestShootButton: 0
---- !u!114 &2138518973739581876
+--- !u!114 &-6080072621552392590
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5153,9 +5152,9 @@ MonoBehaviour:
   MutualizeWaitingPools: 1
   NestWaitingPool: 1
   NestUnderThis: 0
-  GameObjectToPool: {fileID: 1101516573661286827, guid: 60756069b143b430f8eae894185d3a7a,
+  GameObjectToPool: {fileID: 603301004197400376, guid: 563e156deb3df4a0287258526bc0ef9a,
     type: 3}
-  PoolSize: 6
+  PoolSize: 10
   PoolCanExpand: 1
 --- !u!114 &5383742116122680335
 MonoBehaviour:
@@ -5213,7 +5212,7 @@ MonoBehaviour:
     m_Bits: 1024
   ObstacleMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 8448
   ScanRadius: 15
   LineOfFireBoxcastSize: {x: 0.1, y: 0.1}
   DurationBetweenScans: 0.5
@@ -5438,7 +5437,7 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 9011070535307224888}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: a652877b012108e41871f867ada9f176, type: 3}
+        Sfx: {fileID: 8300000, guid: ac6034ade498bb94b87620cdf6eac48b, type: 3}
         RandomSfx: []
         TestPlayButton:
           ButtonText: Debug Play Sound
@@ -5447,8 +5446,8 @@ MonoBehaviour:
         PlayMethod: 0
         PoolSize: 10
         StopSoundOnFeedbackStop: 1
-        MinVolume: 0.55
-        MaxVolume: 0.65
+        MinVolume: 0.2
+        MaxVolume: 0.25
         MinPitch: 0.9
         MaxPitch: 1
         SfxAudioMixerGroup: {fileID: -3165942800488051908, guid: 7e984f512e89b60468e829489e8883e3,
