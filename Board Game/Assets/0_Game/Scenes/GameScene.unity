@@ -1736,7 +1736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AutoAttributePlayerIDs: 1
   PlayerPrefabs:
-  - {fileID: 4723638334434171992, guid: 0848cceeb82bf496f8e877d3a573c8e3, type: 3}
+  - {fileID: 8938702396071364282, guid: 3d2a1bcfd0e2a41b3bd2766a122bd063, type: 3}
   SceneCharacters: []
   InitialSpawnPoint: {fileID: 1618121293}
   CurrentCheckpoint: {fileID: 0}
@@ -20519,7 +20519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b7277539b95c0d45895792ecc99ce66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MutualizeWaitingPools: 0
+  MutualizeWaitingPools: 1
   NestWaitingPool: 1
   NestUnderThis: 1
   GameObjectToPool: {fileID: 7415344032298132664, guid: a6ad62dfbb7ea824b97d73e42c9b769e,
@@ -63152,79 +63152,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927019370809694848}
   m_Mesh: {fileID: -2270052434563093077, guid: 6e52cf5db35094e96b52649baeeb1a9f, type: 3}
---- !u!1001 &5765466551765509483
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 318965428339897265, guid: 6d00e8b68f5ec43599089c11e8a15668,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 318965428339897265, guid: 6d00e8b68f5ec43599089c11e8a15668,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 318965428339897265, guid: 6d00e8b68f5ec43599089c11e8a15668,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 318965428339897265, guid: 6d00e8b68f5ec43599089c11e8a15668,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 318965428339897265, guid: 6d00e8b68f5ec43599089c11e8a15668,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 318965428339897265, guid: 6d00e8b68f5ec43599089c11e8a15668,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 318965428339897265, guid: 6d00e8b68f5ec43599089c11e8a15668,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 318965428339897265, guid: 6d00e8b68f5ec43599089c11e8a15668,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 318965428339897265, guid: 6d00e8b68f5ec43599089c11e8a15668,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 318965428339897265, guid: 6d00e8b68f5ec43599089c11e8a15668,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7409132237196341927, guid: 6d00e8b68f5ec43599089c11e8a15668,
-        type: 3}
-      propertyPath: m_Name
-      value: Wizard Fire Weapon
-      objectReference: {fileID: 0}
-    - target: {fileID: 7409132237196341927, guid: 6d00e8b68f5ec43599089c11e8a15668,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6d00e8b68f5ec43599089c11e8a15668, type: 3}
 --- !u!23 &5772461696219720871
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -78430,4 +78357,3 @@ SceneRoots:
   - {fileID: 892273350}
   - {fileID: 4847470036273939}
   - {fileID: 945502838}
-  - {fileID: 5765466551765509483}
