@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb8534e8eb9444a73b29d47b5e03965d, type: 3}
   m_Name: InsaneBoss
   m_EditorClassIdentifier: 
-  m_groupName: 
+  m_groupName: InsaneBoss
   m_shouldReshuffle: 0
-  m_rounds: []
+  m_rounds:
+  - {fileID: 11400000, guid: 09251242330fb46d596eaa3b0d706a1f, type: 2}

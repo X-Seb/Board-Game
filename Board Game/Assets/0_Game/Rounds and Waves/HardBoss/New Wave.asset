@@ -9,10 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb8534e8eb9444a73b29d47b5e03965d, type: 3}
-  m_Name: HardBoss
+  m_Script: {fileID: 11500000, guid: 4b85c182ee962461d89aa134dc739747, type: 3}
+  m_Name: New Wave
   m_EditorClassIdentifier: 
-  m_groupName: HardBoss
-  m_shouldReshuffle: 0
-  m_rounds:
-  - {fileID: 11400000, guid: a02ec867eeb7648a4abab48aa707ded4, type: 2}
+  m_enemies:
+  - {fileID: 8618052376476974722, guid: 096fcde78dacb4da4b11667cd7c1f02f, type: 3}
+  m_spawnInterval: 1
+  m_overrideSpawner: 1
+  m_overrideSpawnIntervals: 0
+  m_newSpawnIntervals: []
