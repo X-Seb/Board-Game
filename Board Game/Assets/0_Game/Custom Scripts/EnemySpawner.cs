@@ -21,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
     public void Spawn(GameObject objectToSpawn)
     {
         Vector3 position = m_spawnPosition.position;
-        m_spawnFeedback.PlayFeedbacks();
+        m_spawnFeedback?.PlayFeedbacks();
         StartCoroutine(UpdateJustSpawned());
 
         if (m_spawnFromPool)

@@ -210,7 +210,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   Owner: {fileID: 0}
-  TriggerFilter: 195
+  TriggerFilter: 3
   MinDamageCaused: 8
   MaxDamageCaused: 10
   TypedDamages: []
@@ -485,6 +485,9 @@ MonoBehaviour:
       - Decision: {fileID: 7833482922785565642}
         TrueState: Hunting
         FalseState: 
+      - Decision: {fileID: 6658578272310507818}
+        TrueState: Dead
+        FalseState: 
   - StateName: Hunting
     Actions:
       array:
@@ -503,30 +506,8 @@ MonoBehaviour:
       - Decision: {fileID: 6975915843194803687}
         TrueState: MoveRandomly
         FalseState: 
-  - StateName: BeforeDash
-    Actions:
-      array:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 4440008344409404326}
-    Transitions:
-      array:
-      - Decision: {fileID: 0}
-        TrueState: Dashing
-        FalseState: 
-  - StateName: Dashing
-    Actions:
-      array:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-    Transitions:
-      array:
-      - Decision: {fileID: 0}
-        TrueState: 
-        FalseState: DoNothing
-      - Decision: {fileID: 0}
-        TrueState: DoNothing
+      - Decision: {fileID: 6658578272310507818}
+        TrueState: Dead
         FalseState: 
   - StateName: Shooting
     Actions:
@@ -547,6 +528,9 @@ MonoBehaviour:
       - Decision: {fileID: 6975915843194803687}
         TrueState: MoveRandomly
         FalseState: 
+      - Decision: {fileID: 6658578272310507818}
+        TrueState: Dead
+        FalseState: 
   - StateName: MoveRandomly
     Actions:
       array:
@@ -562,6 +546,15 @@ MonoBehaviour:
       - Decision: {fileID: 6425674835837193597}
         TrueState: Hunting
         FalseState: 
+      - Decision: {fileID: 6658578272310507818}
+        TrueState: Dead
+        FalseState: 
+  - StateName: Dead
+    Actions:
+      array:
+      - {fileID: 3917628370093211601}
+    Transitions:
+      array: []
   TimeInThisState: 0
   Target: {fileID: 0}
   _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
@@ -7936,6 +7929,7 @@ GameObject:
   - component: {fileID: 3970545268196834726}
   - component: {fileID: 6975915843194803687}
   - component: {fileID: 6989716359318671708}
+  - component: {fileID: 6658578272310507818}
   m_Layer: 13
   m_Name: AI General Actions/Decisions
   m_TagString: Untagged
@@ -8084,4 +8078,20 @@ MonoBehaviour:
   Label: HealthLowerThan25
   TrueIfHealthIs: 0
   HealthValue: 25
+  OnlyOnce: 1
+--- !u!114 &6658578272310507818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8284470754764472131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a01f7a39a54b94881d5543847cf71c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Label: IsDead
+  TrueIfHealthIs: 0
+  HealthValue: 1
   OnlyOnce: 1

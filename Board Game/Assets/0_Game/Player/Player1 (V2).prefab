@@ -1896,7 +1896,7 @@ MonoBehaviour:
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
   DamageCausedKnockbackForce: {x: 8, y: 4, z: 8}
-  InvincibilityDuration: 0
+  InvincibilityDuration: 0.4
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
   DurationBetweenRepeats: 1
@@ -2161,8 +2161,8 @@ MonoBehaviour:
   Model: {fileID: 1167032800569869313}
   CurrentHealth: 100
   Invulnerable: 0
-  InitialHealth: 100
-  MaximumHealth: 100
+  InitialHealth: 1000
+  MaximumHealth: 1000
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 3860495200179574592}

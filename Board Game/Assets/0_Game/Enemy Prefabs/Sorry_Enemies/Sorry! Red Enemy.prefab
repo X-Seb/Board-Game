@@ -977,15 +977,15 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 6354887466304663706}
         DebugActive: 0
-        Mode: 0
-        ObjectPoolSize: 5
-        MutualizePools: 0
+        Mode: 2
+        ObjectPoolSize: 2
+        MutualizePools: 1
         ParentTransform: {fileID: 0}
         CachedRecycle: 1
         ParticlesPrefab: {fileID: 7415344032298132670, guid: a6ad62dfbb7ea824b97d73e42c9b769e,
           type: 3}
         RandomParticlePrefabs: []
-        ForceSetActiveOnPlay: 0
+        ForceSetActiveOnPlay: 1
         StopOnReset: 0
         DeclaredDuration: 0
         PositionMode: 0
@@ -1065,7 +1065,7 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 6354887466304663706}
         DebugActive: 0
-        PauseDuration: 0.3
+        PauseDuration: 0.15
         RandomizePauseDuration: 0
         MinPauseDuration: 1
         MaxPauseDuration: 3
@@ -1363,7 +1363,7 @@ MonoBehaviour:
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
-  DamageCausedKnockbackForce: {x: 12, y: 5, z: 12}
+  DamageCausedKnockbackForce: {x: 10, y: 5, z: 10}
   InvincibilityDuration: 0.5
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
@@ -1451,9 +1451,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8431437253390286253}
   - {fileID: 3036425248696767189}
   - {fileID: 1733562011545509236}
-  - {fileID: 8431437253390286253}
   - {fileID: 3742349028501921422}
   - {fileID: 8730240212011428411}
   m_Father: {fileID: 0}
@@ -1634,16 +1634,16 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  RotationMode: 0
+  RotationMode: 1
   CharacterRotationAuthorized: 1
   ShouldRotateToFaceMovementDirection: 1
-  MovementRotationSpeed: 0
+  MovementRotationSpeed: 1
   MovementRotatingModel: {fileID: 2671076397047266886}
-  RotateToFaceMovementDirectionSpeed: 10
+  RotateToFaceMovementDirectionSpeed: 15
   AbsoluteThresholdMovement: 0.5
   ModelDirection: {x: 0, y: 0, z: 0}
   ModelAngles: {x: 0, y: 0, z: 0}
-  ShouldRotateToFaceWeaponDirection: 1
+  ShouldRotateToFaceWeaponDirection: 0
   WeaponRotationSpeed: 0
   WeaponRotatingModel: {fileID: 2671076397047266886}
   RotateToFaceWeaponDirectionSpeed: 10
@@ -1681,7 +1681,7 @@ MonoBehaviour:
   WalkSpeed: 11
   ShouldSetMovement: 1
   IdleThreshold: 0.05
-  Acceleration: 20
+  Acceleration: 40
   Deceleration: 20
   InterpolateMovementSpeed: 0
   WalkParticles: []
@@ -1735,8 +1735,8 @@ MonoBehaviour:
   Model: {fileID: 2671076397047266886}
   CurrentHealth: 100
   Invulnerable: 0
-  InitialHealth: 15
-  MaximumHealth: 15
+  InitialHealth: 1
+  MaximumHealth: 5
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 8250807436152097367}
@@ -1781,7 +1781,7 @@ MonoBehaviour:
   TimeScale: 0
   HealthBarPrefab: {fileID: 0}
   TargetProgressBar: {fileID: 0}
-  Size: {x: 1.2, y: 0.25}
+  Size: {x: 0.6, y: 0.2}
   BackgroundPadding: {x: 0.03, y: 0.03}
   InitialRotationAngles: {x: 0, y: 0, z: 0}
   ForegroundColor:
@@ -1961,14 +1961,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   Owner: {fileID: 0}
-  TriggerFilter: 195
-  MinDamageCaused: 3
-  MaxDamageCaused: 5
+  TriggerFilter: 3
+  MinDamageCaused: 1
+  MaxDamageCaused: 1
   TypedDamages: []
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
-  DamageCausedKnockbackForce: {x: 10, y: 10, z: 3}
+  DamageCausedKnockbackForce: {x: 2, y: 2, z: 2}
   InvincibilityDuration: 0
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
@@ -7772,7 +7772,7 @@ GameObject:
   - component: {fileID: 7342191412781812434}
   - component: {fileID: 7612669460173366826}
   m_Layer: 13
-  m_Name: AI Decisions
+  m_Name: AI Brain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
