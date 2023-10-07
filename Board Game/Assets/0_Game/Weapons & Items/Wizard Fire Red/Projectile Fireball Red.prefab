@@ -5867,7 +5867,7 @@ MonoBehaviour:
   Rotating: 1
   RotationSpace: 1
   UpdateMode: 2
-  RotationSpeed: {x: 0, y: 80, z: 0}
+  RotationSpeed: {x: 0, y: 200, z: 0}
   Orbiting: 0
   AdditiveOrbitRotation: 0
   OrbitCenterTransform: {fileID: 0}

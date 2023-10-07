@@ -643,7 +643,7 @@ GameObject:
   - component: {fileID: 1663579281562172597}
   - component: {fileID: 2829521811682230999}
   m_Layer: 13
-  m_Name: AI Decisions
+  m_Name: AI Brain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -939,7 +939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: TimeBeforeSpawningEnemy
-  AfterTimeMin: 3
+  AfterTimeMin: 3.5
   AfterTimeMax: 4.5
 --- !u!114 &2646245819419997233
 MonoBehaviour:

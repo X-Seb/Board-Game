@@ -43,7 +43,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.797703, g: 0.4719206, b: 0.990566, a: 1}
+  m_Color: {r: 0.47058818, g: 0.99215686, b: 0.4861508, a: 1}
   m_Intensity: 1.5
   m_Range: 6
   m_SpotAngle: 30
@@ -370,7 +370,7 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 6548892518914727831}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: d1698dd553af8ef4d887bc83b9687173, type: 3}
+        Sfx: {fileID: 8300000, guid: cfe159e00034e4ec598c9fa31faaff78, type: 3}
         RandomSfx: []
         TestPlayButton:
           ButtonText: Debug Play Sound
@@ -585,7 +585,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.5, y: 0.5, z: 1}
+  m_Size: {x: 0.3, y: 0.5, z: 0.7}
   m_Center: {x: 0, y: 0, z: 0.07499999}
 --- !u!114 &6096662291996813888
 MonoBehaviour:
@@ -610,8 +610,8 @@ MonoBehaviour:
   FaceDirection: 1
   FaceMovement: 1
   MovementVector: 0
-  Speed: 250
-  Acceleration: -10
+  Speed: 220
+  Acceleration: 0
   Direction: {x: 0, y: 0, z: 1}
   DirectionCanBeChangedBySpawner: 1
   FlipValue: {x: 1, y: 1, z: 1}
@@ -635,8 +635,8 @@ MonoBehaviour:
     m_Bits: 199936
   Owner: {fileID: 0}
   TriggerFilter: 195
-  MinDamageCaused: 10
-  MaxDamageCaused: 12
+  MinDamageCaused: 8
+  MaxDamageCaused: 10
   TypedDamages: []
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
@@ -807,7 +807,7 @@ Transform:
   m_GameObject: {fileID: 3628349362292895732}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0.3}
+  m_LocalPosition: {x: 0, y: 0.435, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -835,7 +835,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: cefb2661e65fc8c4c9c9e8319d6e9912, type: 2}
-  - {fileID: 2100000, guid: 8ba5664c848294d53960fe3afc9cd5d3, type: 2}
+  - {fileID: 2100000, guid: 7e08d5fc3603549009f51be0fb56c346, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1075,8 +1075,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.37832847, g: 0.110137075, b: 0.5188679, a: 1}
-      maxColor: {r: 0.71996576, g: 0.39215684, b: 1, a: 1}
+      minColor: {r: 0.109803915, g: 0.5176471, b: 0.12947796, a: 1}
+      maxColor: {r: 0.39215684, g: 1, b: 0.42496437, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5742,7 +5742,7 @@ TrailRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Time: 0.2
-  m_PreviewTimeScale: 1
+  m_PreviewTimeScale: 0
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -5772,8 +5772,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.82099926, g: 0.27843142, b: 1, a: 0}
-      key1: {r: 0.70336735, g: 0.36470592, b: 1, a: 0.9019608}
+      key0: {r: 0.34636888, g: 1, b: 0.27843142, a: 0}
+      key1: {r: 0.514151, g: 1, b: 0.5189915, a: 0.9019608}
       key2: {r: 1, g: 0.537373, b: 0.36320752, a: 0.9019608}
       key3: {r: 0, g: 0, b: 0, a: 0.43137255}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -5872,9 +5872,9 @@ Transform:
   m_GameObject: {fileID: 5351406262126279326}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0.005, z: 0.636}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: -0.005, z: 0.493}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2705143847963565971}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -5906,9 +5906,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eb65932005e5f4837acae98d74be0abb, type: 2}
-  - {fileID: 2100000, guid: 21715f95190b241a384507c2b0c2a7e9, type: 2}
-  - {fileID: 2100000, guid: a54f274e6ee794aabab70cc2ada75aeb, type: 2}
+  - {fileID: 2100000, guid: b13229f7f0fdc4a7787ed72f62e5184d, type: 2}
+  - {fileID: 2100000, guid: c086edb042dba43b388301457ff602a5, type: 2}
+  - {fileID: 2100000, guid: dc2eaa1777d154dfe84f968d152f201c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5945,7 +5945,7 @@ MonoBehaviour:
   Rotating: 1
   RotationSpace: 1
   UpdateMode: 2
-  RotationSpeed: {x: 0, y: 200, z: 0}
+  RotationSpeed: {x: 0, y: 120, z: 0}
   Orbiting: 0
   AdditiveOrbitRotation: 0
   OrbitCenterTransform: {fileID: 0}
@@ -10739,7 +10739,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: cefb2661e65fc8c4c9c9e8319d6e9912, type: 2}
-  - {fileID: 2100000, guid: 8ba5664c848294d53960fe3afc9cd5d3, type: 2}
+  - {fileID: 2100000, guid: 7e08d5fc3603549009f51be0fb56c346, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
