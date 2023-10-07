@@ -583,7 +583,7 @@ GameObject:
   - component: {fileID: 5511900798136424461}
   - component: {fileID: 1024640134922520393}
   m_Layer: 18
-  m_Name: Projectile Swords
+  m_Name: Projectile IceSword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
