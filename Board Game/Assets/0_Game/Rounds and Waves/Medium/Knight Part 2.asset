@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Knight Part 2
   m_EditorClassIdentifier: 
   roundName: Knights' Return
-  roundDescription: 
+  roundDescription: They still like jumping around...
   roundDifficulty: 3
   overrideSFX: 0
   roundStartSFX: {fileID: 0}

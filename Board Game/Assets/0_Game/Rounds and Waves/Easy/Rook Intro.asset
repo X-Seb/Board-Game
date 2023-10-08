@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
   m_Name: Rook Intro
   m_EditorClassIdentifier: 
-  roundName: 
-  roundDescription: 
+  roundName: Rook Power!
+  roundDescription: Don't stand still...
   roundDifficulty: 2
   overrideSFX: 0
   roundStartSFX: {fileID: 0}

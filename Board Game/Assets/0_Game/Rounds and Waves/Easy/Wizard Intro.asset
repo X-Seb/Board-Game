@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wizard Intro
   m_EditorClassIdentifier: 
   roundName: Dungeons and Wizards
-  roundDescription: 
+  roundDescription: Magic is back in style.
   roundDifficulty: 2
   overrideSFX: 0
   roundStartSFX: {fileID: 0}

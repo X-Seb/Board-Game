@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b85c182ee962461d89aa134dc739747, type: 3}
+  m_Name: Slime Wave 1
+  m_EditorClassIdentifier: 
+  m_enemies:
+  - {fileID: 5597999330980822728, guid: 08ac37e6b07624b9e951198250b1522f, type: 3}
+  - {fileID: 5597999330980822728, guid: 08ac37e6b07624b9e951198250b1522f, type: 3}
+  m_spawnInterval: 1
+  m_overrideSpawner: 0
+  m_overrideSpawnIntervals: 0
+  m_newSpawnIntervals: []

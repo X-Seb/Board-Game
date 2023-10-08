@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TinyButMighty
   m_EditorClassIdentifier: 
   roundName: Tiny but Mighty!
-  roundDescription: 
+  roundDescription: Don't let them overwhelm you!
   roundDifficulty: 4
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
