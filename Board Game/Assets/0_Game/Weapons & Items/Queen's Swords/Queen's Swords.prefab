@@ -1357,7 +1357,7 @@ MonoBehaviour:
   MovementMultiplier: 0.7
   PreventAllMovementWhileInUse: 0
   PreventAllAimWhileInUse: 0
-  RecoilForce: 0
+  RecoilForce: 2
   Animators: []
   PerformAnimatorSanityChecks: 0
   MirrorCharacterAnimatorParameters: 0

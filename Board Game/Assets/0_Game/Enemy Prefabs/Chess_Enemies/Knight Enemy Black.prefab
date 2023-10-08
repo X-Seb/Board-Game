@@ -11939,7 +11939,7 @@ MonoBehaviour:
   InputAuthorized: 1
   AnalogInput: 0
   ScriptDrivenInput: 0
-  WalkSpeed: 6
+  WalkSpeed: 7.5
   ShouldSetMovement: 1
   IdleThreshold: 0.05
   Acceleration: 20
