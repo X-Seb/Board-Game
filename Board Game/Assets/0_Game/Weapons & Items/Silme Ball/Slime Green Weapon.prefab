@@ -6223,7 +6223,7 @@ MonoBehaviour:
         DebugActive: 0
         BoundLight: {fileID: 1983086608606374607}
         Mode: 0
-        Duration: 0.9
+        Duration: 0.7
         StartsOff: 1
         DisableOnStop: 1
         RelativeValues: 1

@@ -13294,7 +13294,7 @@ MonoBehaviour:
   InputAuthorized: 1
   AnalogInput: 1
   ScriptDrivenInput: 0
-  WalkSpeed: 8
+  WalkSpeed: 9
   ShouldSetMovement: 1
   IdleThreshold: 0.05
   Acceleration: 18
@@ -13357,7 +13357,7 @@ MonoBehaviour:
   Cooldown:
     Unlimited: 0
     ConsumptionDuration: 0.35
-    PauseOnEmptyDuration: 0.1
+    PauseOnEmptyDuration: 0
     RefillDuration: 0.8
     CanInterruptRefill: 0
     CooldownState: 0

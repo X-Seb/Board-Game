@@ -5023,11 +5023,11 @@ GameObject:
   m_Component:
   - component: {fileID: 318965428339897265}
   - component: {fileID: 8799078823544382132}
-  - component: {fileID: 4711596881243270861}
+  - component: {fileID: 477509104284743383}
   - component: {fileID: 5383742116122680335}
   - component: {fileID: 5046402203008829492}
   m_Layer: 0
-  m_Name: Wizard Fire Weapon Red
+  m_Name: Canon Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5064,17 +5064,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d7ce0b8cf4b34859b9e359283b2e7f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeaponName: FireBalls
+  WeaponName: Cannon
   WeaponCurrentlyActive: 1
   InputAuthorized: 1
   TriggerMode: 1
   DelayBeforeUse: 0.1
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 1
+  TimeBetweenUses: 0.8
   TimeBetweenUsesReleaseInterruption: 1
-  UseBurstMode: 1
-  BurstLength: 3
-  BurstTimeBetweenShots: 0.1
+  UseBurstMode: 0
+  BurstLength: 0
+  BurstTimeBetweenShots: 0
   MagazineBased: 0
   MagazineSize: 30
   AutoReload: 0
@@ -5127,18 +5127,18 @@ MonoBehaviour:
   Flipped: 0
   ProjectileSpawnOffset: {x: 0, y: 0, z: 0}
   DefaultProjectileDirection: {x: 0, y: 0, z: 1}
-  ProjectilesPerShot: 1
+  ProjectilesPerShot: 3
   SpawnTransforms:
   - {fileID: 5436925189376041027}
   SpawnTransformsMode: 1
-  Spread: {x: 0, y: 10, z: 0}
+  Spread: {x: 0, y: 40, z: 0}
   RotateWeaponOnSpread: 0
   RandomSpread: 1
   SpawnPosition: {x: 0, y: 0, z: 0}
-  ObjectPooler: {fileID: 4711596881243270861}
+  ObjectPooler: {fileID: 477509104284743383}
   SpawnFeedbacks: []
   TestShootButton: 0
---- !u!114 &4711596881243270861
+--- !u!114 &477509104284743383
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5147,21 +5147,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7409132237196341927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73098ca8f002adc4f9debdbe47a78c9a, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b7277539b95c0d45895792ecc99ce66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MutualizeWaitingPools: 1
   NestWaitingPool: 1
   NestUnderThis: 0
-  Pool:
-  - GameObjectToPool: {fileID: 1101516573661286827, guid: ecdbec9421b14474db9318c568fec1bd,
-      type: 3}
-    PoolSize: 6
-    PoolCanExpand: 1
-    Enabled: 1
-  PoolingMethod: 0
-  CanPoolSameObjectTwice: 1
-  MutualizedPoolName: 
+  GameObjectToPool: {fileID: 1101516573661286827, guid: 6622e817f698e46e3a2289ca49bd059d,
+    type: 3}
+  PoolSize: 12
+  PoolCanExpand: 1
 --- !u!114 &5383742116122680335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5443,7 +5438,7 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 9011070535307224888}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: a652877b012108e41871f867ada9f176, type: 3}
+        Sfx: {fileID: 8300000, guid: f6580294a0cfc5f47a743ac2553f8f67, type: 3}
         RandomSfx: []
         TestPlayButton:
           ButtonText: Debug Play Sound
@@ -6229,7 +6224,7 @@ MonoBehaviour:
         DebugActive: 0
         BoundLight: {fileID: 1983086608606374607}
         Mode: 0
-        Duration: 0.9
+        Duration: 0.7
         StartsOff: 1
         DisableOnStop: 1
         RelativeValues: 1
