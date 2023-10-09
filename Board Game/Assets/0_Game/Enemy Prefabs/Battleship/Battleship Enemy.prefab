@@ -1421,7 +1421,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 8799078823544382132, guid: 6d00e8b68f5ec43599089c11e8a15668,
+  InitialWeapon: {fileID: 8799078823544382132, guid: 55093eb6b7b114317a165da67f7454d0,
     type: 3}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
@@ -1456,8 +1456,8 @@ MonoBehaviour:
   Model: {fileID: 3517876627066234752}
   CurrentHealth: 100
   Invulnerable: 0
-  InitialHealth: 40
-  MaximumHealth: 40
+  InitialHealth: 60
+  MaximumHealth: 60
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 8018362551921797050}
@@ -7261,7 +7261,7 @@ MonoBehaviour:
   - rid: 2694893150061723682
   - rid: 2694893308341911581
   - rid: 917653660728557571
-  KeepPlayModeChanges: 1
+  KeepPlayModeChanges: 0
   PerformanceMode: 0
   StopFeedbacksOnDisable: 0
   PlayCount: 0
@@ -7908,8 +7908,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: MoveRandomlyTime
-  AfterTimeMin: 1.5
-  AfterTimeMax: 2
+  AfterTimeMin: 0.9
+  AfterTimeMax: 0.9
 --- !u!1 &4704737811416389821
 GameObject:
   m_ObjectHideFlags: 0
@@ -8186,7 +8186,7 @@ Transform:
   m_GameObject: {fileID: 5006498794711071479}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.607}
+  m_LocalPosition: {x: 0, y: 0.27, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8737,7 +8737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: ShootDetectTargetRadius
-  Radius: 15
+  Radius: 17
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayerMask:
     serializedVersion: 2
@@ -9483,7 +9483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InitializationMode: 0
   Label: MoveRandomly
-  MaximumDurationInADirection: 0.25
+  MaximumDurationInADirection: 0.3
   ObstacleLayerMask:
     serializedVersion: 2
     m_Bits: 8448
@@ -9532,7 +9532,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 15
+          m_FloatArgument: 12
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -9563,7 +9563,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 12
+          m_FloatArgument: 10
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -9594,7 +9594,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 7
+          m_FloatArgument: 6
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -9625,7 +9625,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 5
+          m_FloatArgument: 4
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -9656,7 +9656,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 3
+          m_FloatArgument: 2
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
