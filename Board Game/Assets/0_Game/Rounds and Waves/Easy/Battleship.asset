@@ -20,3 +20,4 @@ MonoBehaviour:
   roundEndSFX: {fileID: 0}
   m_waves:
   - {fileID: 11400000, guid: 75477fbeed88a4f41b34f115d5090af9, type: 2}
+  - {fileID: 11400000, guid: 24ad9bc3ddd6e4b5e93f2abd3d1269d1, type: 2}
