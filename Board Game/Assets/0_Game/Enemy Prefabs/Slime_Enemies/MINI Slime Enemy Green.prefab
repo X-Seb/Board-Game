@@ -2021,7 +2021,7 @@ MonoBehaviour:
   TimeScale: 0
   HealthBarPrefab: {fileID: 0}
   TargetProgressBar: {fileID: 0}
-  Size: {x: 0.8, y: 0.15}
+  Size: {x: 1.1, y: 0.15}
   BackgroundPadding: {x: 0.03, y: 0.03}
   InitialRotationAngles: {x: 0, y: 0, z: 0}
   ForegroundColor:

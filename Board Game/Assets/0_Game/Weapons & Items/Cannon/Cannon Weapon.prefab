@@ -5027,7 +5027,7 @@ GameObject:
   - component: {fileID: 5383742116122680335}
   - component: {fileID: 5046402203008829492}
   m_Layer: 0
-  m_Name: Canon Weapon
+  m_Name: Cannon Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5127,13 +5127,13 @@ MonoBehaviour:
   Flipped: 0
   ProjectileSpawnOffset: {x: 0, y: 0, z: 0}
   DefaultProjectileDirection: {x: 0, y: 0, z: 1}
-  ProjectilesPerShot: 3
+  ProjectilesPerShot: 1
   SpawnTransforms:
   - {fileID: 5436925189376041027}
   SpawnTransformsMode: 1
-  Spread: {x: 0, y: 40, z: 0}
+  Spread: {x: 0, y: 0, z: 0}
   RotateWeaponOnSpread: 0
-  RandomSpread: 1
+  RandomSpread: 0
   SpawnPosition: {x: 0, y: 0, z: 0}
   ObjectPooler: {fileID: 477509104284743383}
   SpawnFeedbacks: []
@@ -5213,7 +5213,7 @@ MonoBehaviour:
     m_Bits: 1024
   ObstacleMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 8448
   ScanRadius: 15
   LineOfFireBoxcastSize: {x: 0.1, y: 0.1}
   DurationBetweenScans: 0.5

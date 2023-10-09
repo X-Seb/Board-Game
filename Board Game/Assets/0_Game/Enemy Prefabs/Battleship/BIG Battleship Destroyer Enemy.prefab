@@ -137,22 +137,27 @@ PrefabInstance:
     - target: {fileID: 2867892608413136960, guid: 12befc7050048423b8eb997254066537,
         type: 3}
       propertyPath: m_Name
-      value: BIG Battleship Multiple Enemy
+      value: BIG Battleship Destroyer Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3565574614206629941, guid: 12befc7050048423b8eb997254066537,
         type: 3}
       propertyPath: InitialHealth
-      value: 80
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3565574614206629941, guid: 12befc7050048423b8eb997254066537,
         type: 3}
       propertyPath: MaximumHealth
-      value: 80
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3681967432739926457, guid: 12befc7050048423b8eb997254066537,
         type: 3}
       propertyPath: TargetEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5220585983852464673, guid: 12befc7050048423b8eb997254066537,
+        type: 3}
+      propertyPath: Size.x
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 5521043462821452778, guid: 12befc7050048423b8eb997254066537,
         type: 3}

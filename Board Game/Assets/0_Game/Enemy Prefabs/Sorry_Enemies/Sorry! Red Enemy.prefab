@@ -1874,7 +1874,7 @@ MonoBehaviour:
   TimeScale: 0
   HealthBarPrefab: {fileID: 0}
   TargetProgressBar: {fileID: 0}
-  Size: {x: 0.6, y: 0.2}
+  Size: {x: 0.4, y: 0.2}
   BackgroundPadding: {x: 0.03, y: 0.03}
   InitialRotationAngles: {x: 0, y: 0, z: 0}
   ForegroundColor:
