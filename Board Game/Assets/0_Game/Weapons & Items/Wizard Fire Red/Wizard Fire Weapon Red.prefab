@@ -775,7 +775,7 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.28
-    m_Position: {x: 0, y: -0.55, z: 0}
+    m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 90, y: 0, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
@@ -5074,7 +5074,7 @@ MonoBehaviour:
   TimeBetweenUsesReleaseInterruption: 1
   UseBurstMode: 1
   BurstLength: 3
-  BurstTimeBetweenShots: 0.1
+  BurstTimeBetweenShots: 0.13
   MagazineBased: 0
   MagazineSize: 30
   AutoReload: 0

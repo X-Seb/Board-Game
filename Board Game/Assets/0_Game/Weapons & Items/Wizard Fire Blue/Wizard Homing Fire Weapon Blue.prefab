@@ -87,7 +87,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: cefb2661e65fc8c4c9c9e8319d6e9912, type: 2}
-  - {fileID: 2100000, guid: 6c46dd32157234770a1ed49f2e6ca8ba, type: 2}
+  - {fileID: 2100000, guid: 45359969468fd4c5e9a2f1c526e5c573, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -327,8 +327,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.5248513, g: 0.04209684, b: 0.8113208, a: 1}
-      maxColor: {r: 0.80487126, g: 0.39215684, b: 1, a: 1}
+      minColor: {r: 0.03604484, g: 0.13240166, b: 0.8490566, a: 1}
+      maxColor: {r: 0.39215684, g: 0.6379495, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4962,7 +4962,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.7211332, g: 0.2216981, b: 1, a: 1}
+  m_Color: {r: 0.3726415, g: 0.39316455, b: 1, a: 1}
   m_Intensity: 2
   m_Range: 6
   m_SpotAngle: 30
@@ -5023,11 +5023,11 @@ GameObject:
   m_Component:
   - component: {fileID: 318965428339897265}
   - component: {fileID: 8799078823544382132}
-  - component: {fileID: 2138518973739581876}
+  - component: {fileID: 5454255693410347903}
   - component: {fileID: 5383742116122680335}
   - component: {fileID: 5046402203008829492}
   m_Layer: 0
-  m_Name: Wizard Fire Weapon Purple
+  m_Name: Wizard Homing Fire Weapon Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5064,17 +5064,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d7ce0b8cf4b34859b9e359283b2e7f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeaponName: FireBalls
+  WeaponName: Homing Fireballs Blue
   WeaponCurrentlyActive: 1
   InputAuthorized: 1
   TriggerMode: 1
-  DelayBeforeUse: 0
+  DelayBeforeUse: 0.1
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 1.2
+  TimeBetweenUses: 1.4
   TimeBetweenUsesReleaseInterruption: 1
-  UseBurstMode: 0
-  BurstLength: 0
-  BurstTimeBetweenShots: 0
+  UseBurstMode: 1
+  BurstLength: 4
+  BurstTimeBetweenShots: 0.13
   MagazineBased: 0
   MagazineSize: 30
   AutoReload: 0
@@ -5127,18 +5127,18 @@ MonoBehaviour:
   Flipped: 0
   ProjectileSpawnOffset: {x: 0, y: 0, z: 0}
   DefaultProjectileDirection: {x: 0, y: 0, z: 1}
-  ProjectilesPerShot: 4
+  ProjectilesPerShot: 1
   SpawnTransforms:
   - {fileID: 5436925189376041027}
   SpawnTransformsMode: 1
-  Spread: {x: 0, y: 45, z: 0}
+  Spread: {x: 0, y: 15, z: 0}
   RotateWeaponOnSpread: 0
-  RandomSpread: 0
+  RandomSpread: 1
   SpawnPosition: {x: 0, y: 0, z: 0}
-  ObjectPooler: {fileID: 2138518973739581876}
+  ObjectPooler: {fileID: 5454255693410347903}
   SpawnFeedbacks: []
   TestShootButton: 0
---- !u!114 &2138518973739581876
+--- !u!114 &5454255693410347903
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5153,9 +5153,9 @@ MonoBehaviour:
   MutualizeWaitingPools: 1
   NestWaitingPool: 1
   NestUnderThis: 0
-  GameObjectToPool: {fileID: 1101516573661286827, guid: 60756069b143b430f8eae894185d3a7a,
+  GameObjectToPool: {fileID: 1101516573661286827, guid: 62a9b43bfde6b4928921335c0562bfc2,
     type: 3}
-  PoolSize: 6
+  PoolSize: 8
   PoolCanExpand: 1
 --- !u!114 &5383742116122680335
 MonoBehaviour:
@@ -5449,8 +5449,8 @@ MonoBehaviour:
         StopSoundOnFeedbackStop: 1
         MinVolume: 0.55
         MaxVolume: 0.65
-        MinPitch: 0.9
-        MaxPitch: 1
+        MinPitch: 1.2
+        MaxPitch: 1.3
         SfxAudioMixerGroup: {fileID: -3165942800488051908, guid: 7e984f512e89b60468e829489e8883e3,
           type: 2}
         Priority: 128

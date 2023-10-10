@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b85c182ee962461d89aa134dc739747, type: 3}
-  m_Name: Testing Wave1
+  m_Name: Wizards Wave3
   m_EditorClassIdentifier: 
   m_enemies:
   - {fileID: 6501561028228726192, guid: 7a3227a39e6fe49bd84cd4b96e0ec4a1, type: 3}
