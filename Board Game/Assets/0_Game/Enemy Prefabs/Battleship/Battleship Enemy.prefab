@@ -1541,8 +1541,8 @@ MonoBehaviour:
   Model: {fileID: 3517876627066234752}
   CurrentHealth: 100
   Invulnerable: 0
-  InitialHealth: 60
-  MaximumHealth: 60
+  InitialHealth: 50
+  MaximumHealth: 50
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 8018362551921797050}
@@ -1587,7 +1587,7 @@ MonoBehaviour:
   TimeScale: 0
   HealthBarPrefab: {fileID: 0}
   TargetProgressBar: {fileID: 0}
-  Size: {x: 1.2, y: 0.25}
+  Size: {x: 1.4, y: 0.25}
   BackgroundPadding: {x: 0.03, y: 0.03}
   InitialRotationAngles: {x: 0, y: 0, z: 0}
   ForegroundColor:
@@ -11386,7 +11386,7 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 8018362551921797050}
         DebugActive: 0
-        TargetShaker: {fileID: 0}
+        TargetShaker: {fileID: 2163247639273515011}
         Duration: 0.3
         ResetShakerValuesAfterShake: 1
         ResetTargetValuesAfterShake: 1

@@ -10,13 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b85c182ee962461d89aa134dc739747, type: 3}
-  m_Name: BIG Battleship Wave1
+  m_Name: Combo Battleships Wave1
   m_EditorClassIdentifier: 
   m_enemies:
-  - {fileID: 7178828548022852193, guid: 629a5c93d5b604fa3993fd1db70a0b8d, type: 3}
-  - {fileID: 2867892608413136960, guid: 2e5ed418aaaac4bd59ef36854c175c50, type: 3}
-  - {fileID: 2867892608413136960, guid: 2e5ed418aaaac4bd59ef36854c175c50, type: 3}
-  - {fileID: 2867892608413136960, guid: 2e5ed418aaaac4bd59ef36854c175c50, type: 3}
+  - {fileID: 2867892608413136960, guid: b846d9ced1d0f4999982c3aa6e7a554f, type: 3}
   m_spawnInterval: 1
   m_overrideSpawner: 1
   m_overrideSpawnIntervals: 1

@@ -6305,7 +6305,7 @@ MonoBehaviour:
         RemapIntensityOne: 1
         InstantIntensity: 0
         ToDestinationIntensity: 1
-        ModifyRange: 1
+        ModifyRange: 0
         RangeCurve:
           serializedVersion: 2
           m_Curve:
