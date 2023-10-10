@@ -40,6 +40,7 @@ public class RoundManager : MonoBehaviour
     public MMFeedbacks m_winFeedback;
 
     [Header("For reference: ")]
+    [SerializeField] private int m_currentScore;
     [SerializeField] private bool m_firstPlay;
     [SerializeField] private int m_roundGroupIndex;
     [SerializeField] private RoundGroup m_currentRoundGroup;
@@ -272,6 +273,11 @@ public class RoundManager : MonoBehaviour
     {
         m_targetsRemainingInWave += amountToAdd;
         m_targetsRemainingText.text = m_targetsRemainingInWave.ToString();
+    }
+
+    public void AddToScore(int amountToAdd)
+    {
+        m_currentScore += amountToAdd;
     }
 
     public void IsTimerCounting(bool value) { m_isTimerCounting = value; }

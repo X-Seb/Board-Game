@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 728041
+  controlID: 762124
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 728042
+  controlID: 762125
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 728043
+  controlID: 762126
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 728044
+  controlID: 762127
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -652,9 +652,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.41933873, y: 0.061924256, z: -0.028916, w: -0.90525377}
   m_Size:
-    m_Target: 67.051
+    m_Target: 72.05058
     speed: 2
-    m_Value: 67.051
+    m_Value: 72.05058
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -672,7 +672,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 0
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.3564604, y: 0.039992433, z: -0.015481281, w: -0.93338954}
+  m_LastSceneViewRotation: {x: -0.33795413, y: -0.5700869, z: 0.276471, w: -0.6960672}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -1204,7 +1204,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/0_Game/Weapons & Items/Cannon
+    - Assets/0_Game/Enemy Prefabs/Battleship
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1212,15 +1212,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 85
   m_LastFolders:
-  - Assets/0_Game/Weapons & Items/Cannon
+  - Assets/0_Game/Enemy Prefabs/Battleship
   m_LastFoldersGridSize: 85
   m_LastProjectPath: /Users/seb/Desktop/Unity/Unity Games/Board-Game repo/Board Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 497.9994}
-    m_SelectedIDs: f4701100
-    m_LastClickedID: 1143028
+    scrollPos: {x: 0, y: 201.99893}
+    m_SelectedIDs: 56da0c00
+    m_LastClickedID: 842326
     m_ExpandedIDs: 0000000080750000827500008475000088750000907500009275000094750000987500009a7500009c7500009e750000a4750000a6750000a8750000ac750000b07500005e7600006a7600006e760000be550b0000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1276,7 +1276,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000086740000ca7400005cf2000036f10000a4f10000ecba00002aa60000ecb4000008780000ac0d0300
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1293,7 +1293,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 17}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0

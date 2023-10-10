@@ -1628,7 +1628,7 @@ MonoBehaviour:
   FaceDirection: 1
   FaceMovement: 1
   MovementVector: 0
-  Speed: 220
+  Speed: 200
   Acceleration: -20
   Direction: {x: 0, y: 0, z: 1}
   DirectionCanBeChangedBySpawner: 1
