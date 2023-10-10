@@ -1023,7 +1023,7 @@ PrefabInstance:
     - target: {fileID: 7805206448076335770, guid: 50c501147572a49e18f4fb21e88715a9,
         type: 3}
       propertyPath: m_Name
-      value: Enemy Spawner House (5)
+      value: Enemy Spawner House Yellow Left
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5309,6 +5309,8 @@ Transform:
   - {fileID: 1485950259}
   - {fileID: 1453475145}
   - {fileID: 1810459102}
+  - {fileID: 1639948629}
+  - {fileID: 1709358245}
   - {fileID: 116879310}
   - {fileID: 1374522685}
   - {fileID: 1574876452}
@@ -6015,7 +6017,7 @@ PrefabInstance:
     - target: {fileID: 7805206448076335770, guid: 50c501147572a49e18f4fb21e88715a9,
         type: 3}
       propertyPath: m_Name
-      value: Enemy Spawner Boss
+      value: Enemy Spawner Purple Middle
       objectReference: {fileID: 0}
     - target: {fileID: 7805206448076335770, guid: 50c501147572a49e18f4fb21e88715a9,
         type: 3}
@@ -8119,7 +8121,7 @@ PrefabInstance:
     - target: {fileID: 7805206448076335770, guid: 50c501147572a49e18f4fb21e88715a9,
         type: 3}
       propertyPath: m_Name
-      value: Enemy Spawner House (2)
+      value: Enemy Spawner House Green Bottom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10886,7 +10888,7 @@ PrefabInstance:
     - target: {fileID: 7805206448076335770, guid: 50c501147572a49e18f4fb21e88715a9,
         type: 3}
       propertyPath: m_Name
-      value: Enemy Spawner House (1)
+      value: Enemy Spawner House Yellow Right
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15678,7 +15680,7 @@ PrefabInstance:
     - target: {fileID: 7805206448076335770, guid: 50c501147572a49e18f4fb21e88715a9,
         type: 3}
       propertyPath: m_Name
-      value: Enemy Spawner House
+      value: Enemy Spawner House Red
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25124,95 +25126,6 @@ MonoBehaviour:
     type: 3}
   PoolSize: 6
   PoolCanExpand: 1
---- !u!1001 &1377558355
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1754882446}
-    m_Modifications:
-    - target: {fileID: 1300233050493153137, guid: 50c501147572a49e18f4fb21e88715a9,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7d14d39036cba418a9a41a34a5b01d50, type: 2}
-    - target: {fileID: 2119267111416238870, guid: 50c501147572a49e18f4fb21e88715a9,
-        type: 3}
-      propertyPath: managedReferences[2694893308341911584].EventOriginTransform
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4078518187331712616, guid: 50c501147572a49e18f4fb21e88715a9,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4078518187331712616, guid: 50c501147572a49e18f4fb21e88715a9,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.5000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 4078518187331712616, guid: 50c501147572a49e18f4fb21e88715a9,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -16.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4078518187331712616, guid: 50c501147572a49e18f4fb21e88715a9,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7485708
-      objectReference: {fileID: 0}
-    - target: {fileID: 4078518187331712616, guid: 50c501147572a49e18f4fb21e88715a9,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000016360545
-      objectReference: {fileID: 0}
-    - target: {fileID: 4078518187331712616, guid: 50c501147572a49e18f4fb21e88715a9,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.66305494
-      objectReference: {fileID: 0}
-    - target: {fileID: 4078518187331712616, guid: 50c501147572a49e18f4fb21e88715a9,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.000000014491531
-      objectReference: {fileID: 0}
-    - target: {fileID: 4078518187331712616, guid: 50c501147572a49e18f4fb21e88715a9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4078518187331712616, guid: 50c501147572a49e18f4fb21e88715a9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -83.067
-      objectReference: {fileID: 0}
-    - target: {fileID: 4078518187331712616, guid: 50c501147572a49e18f4fb21e88715a9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7805206448076335770, guid: 50c501147572a49e18f4fb21e88715a9,
-        type: 3}
-      propertyPath: m_Name
-      value: Enemy Spawner House (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7805206448076335770, guid: 50c501147572a49e18f4fb21e88715a9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 50c501147572a49e18f4fb21e88715a9, type: 3}
---- !u!4 &1377558356 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4078518187331712616, guid: 50c501147572a49e18f4fb21e88715a9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1377558355}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1385118158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34612,6 +34525,56 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627648178}
   m_Mesh: {fileID: 950422106875355252, guid: 6e52cf5db35094e96b52649baeeb1a9f, type: 3}
+--- !u!1 &1639948628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1639948629}
+  - component: {fileID: 1639948630}
+  m_Layer: 0
+  m_Name: PurpleSpawnPFX_MiniPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1639948629
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639948628}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 304220561}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1639948630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639948628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2e3aab8bd306249afbd26c52205f46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameObjectToPool: {fileID: 5246760438080891852, guid: f51355dc7bc104af298d649767f5238c,
+    type: 3}
+  PoolSize: 8
+  PoolCanExpand: 1
+  MutualizeWaitingPools: 1
+  NestWaitingPool: 1
 --- !u!1 &1640254598
 GameObject:
   m_ObjectHideFlags: 0
@@ -36106,6 +36069,56 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708133005}
   m_Mesh: {fileID: -3831573307418741989, guid: 6e52cf5db35094e96b52649baeeb1a9f, type: 3}
+--- !u!1 &1709358244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1709358245}
+  - component: {fileID: 1709358246}
+  m_Layer: 0
+  m_Name: GreenSpawnPFX_MiniPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1709358245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709358244}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 304220561}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1709358246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709358244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2e3aab8bd306249afbd26c52205f46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameObjectToPool: {fileID: 7361128329742918421, guid: d1fc6cdc15768458f9b4e8f70f4baf46,
+    type: 3}
+  PoolSize: 4
+  PoolCanExpand: 1
+  MutualizeWaitingPools: 1
+  NestWaitingPool: 1
 --- !u!1 &1716274737
 GameObject:
   m_ObjectHideFlags: 0
@@ -37983,7 +37996,6 @@ Transform:
   - {fileID: 2030961174}
   - {fileID: 1581892841}
   - {fileID: 61413629}
-  - {fileID: 1377558356}
   m_Father: {fileID: 139856175}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1755331132 stripped
@@ -38821,7 +38833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameObjectToPool: {fileID: 4486679036608257794, guid: e69f42fa89be24b2fb2e5d9712af4037,
     type: 3}
-  PoolSize: 12
+  PoolSize: 10
   PoolCanExpand: 1
   MutualizeWaitingPools: 1
   NestWaitingPool: 1
@@ -42067,7 +42079,7 @@ PrefabInstance:
     - target: {fileID: 7805206448076335770, guid: 50c501147572a49e18f4fb21e88715a9,
         type: 3}
       propertyPath: m_Name
-      value: Enemy Spawner House
+      value: Enemy Spawner House Green Top
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43494,7 +43506,7 @@ PrefabInstance:
     - target: {fileID: 7805206448076335770, guid: 50c501147572a49e18f4fb21e88715a9,
         type: 3}
       propertyPath: m_Name
-      value: Enemy Spawner House (4)
+      value: Enemy Spawner House Red Bottom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -67770,7 +67782,7 @@ PrefabInstance:
     - target: {fileID: 7805206448076335770, guid: 50c501147572a49e18f4fb21e88715a9,
         type: 3}
       propertyPath: m_Name
-      value: Enemy Spawner House
+      value: Enemy Spawner House Blue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
