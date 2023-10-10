@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5408397630387760084
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 174559474334416094, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.153
+      objectReference: {fileID: 0}
+    - target: {fileID: 174559474334416094, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.841
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082434276771834315, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: TargetEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711913782430129067, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: InitialWeapon
+      value: 
+      objectReference: {fileID: 8063591404715846449, guid: a826e211000354112842d053cf054f72,
+        type: 3}
+    - target: {fileID: 2820632622202567553, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: Size.x
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855279933326028120, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855279933326028120, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855279933326028120, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855279933326028120, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855279933326028120, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855279933326028120, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855279933326028120, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855279933326028120, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855279933326028120, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2855279933326028120, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3244567930299894739, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 4362962105363994262, guid: 0b74c4444231d4894937deb79f6a1639,
+        type: 3}
+    - target: {fileID: 3783744421330685545, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: TargetEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795087077349971914, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: InitialHealth
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795087077349971914, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: MaximumHealth
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4420582628550649365, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: TargetEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399558244043135894, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434388820115058327, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: TargetEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5449574907768190307, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: TargetEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714037770935538673, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714037770935538673, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714037770935538673, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714037770935538673, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5719164965788555218, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: MaxDamageCaused
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5719164965788555218, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: MinDamageCaused
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5765793011367982943, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: m_Name
+      value: BIG Wizard Enemy Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 6975915843194803687, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: Label
+      value: HitFourTimes
+      objectReference: {fileID: 0}
+    - target: {fileID: 6975915843194803687, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: NumberOfHits
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 836a90f6a785c4ff898628c64298e70d, type: 3}

@@ -217,8 +217,8 @@ MonoBehaviour:
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
-  DamageCausedKnockbackForce: {x: 6, y: 6, z: 3}
-  InvincibilityDuration: 0
+  DamageCausedKnockbackForce: {x: 4, y: 3, z: 4}
+  InvincibilityDuration: 0.2
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
   DurationBetweenRepeats: 1

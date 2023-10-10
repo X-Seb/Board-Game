@@ -83,7 +83,7 @@ MonoBehaviour:
   MovementMultiplier: 0.6
   PreventAllMovementWhileInUse: 0
   PreventAllAimWhileInUse: 0
-  RecoilForce: 0.1
+  RecoilForce: 1
   Animators: []
   PerformAnimatorSanityChecks: 0
   MirrorCharacterAnimatorParameters: 0
@@ -152,8 +152,8 @@ MonoBehaviour:
   MouseDeadZoneRadius: 0.5
   DisplayReticle: 1
   MoveCameraTargetTowardsReticle: 1
-  CameraTargetOffset: 0.33
-  CameraTargetMaxDistance: 10
+  CameraTargetOffset: 0.3
+  CameraTargetMaxDistance: 11
   CameraTargetSpeed: 5
   Unrestricted3DAim: 0
   ReticleMovesWithSlopes: 0
@@ -1365,7 +1365,7 @@ MonoBehaviour:
         RemapIntensityOne: 1
         InstantIntensity: 0
         ToDestinationIntensity: 1
-        ModifyRange: 1
+        ModifyRange: 0
         RangeCurve:
           serializedVersion: 2
           m_Curve:
@@ -1403,7 +1403,7 @@ MonoBehaviour:
         RemapRangeOne: 10
         InstantRange: 0
         ToDestinationRange: 10
-        ModifyShadowStrength: 1
+        ModifyShadowStrength: 0
         ShadowStrengthCurve:
           serializedVersion: 2
           m_Curve:

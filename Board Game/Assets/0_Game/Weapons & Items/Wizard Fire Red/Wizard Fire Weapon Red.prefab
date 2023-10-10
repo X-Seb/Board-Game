@@ -5073,8 +5073,8 @@ MonoBehaviour:
   TimeBetweenUses: 1
   TimeBetweenUsesReleaseInterruption: 1
   UseBurstMode: 1
-  BurstLength: 3
-  BurstTimeBetweenShots: 0.13
+  BurstLength: 6
+  BurstTimeBetweenShots: 0.11
   MagazineBased: 0
   MagazineSize: 30
   AutoReload: 0
@@ -5131,7 +5131,7 @@ MonoBehaviour:
   SpawnTransforms:
   - {fileID: 5436925189376041027}
   SpawnTransformsMode: 1
-  Spread: {x: 0, y: 10, z: 0}
+  Spread: {x: 0, y: 18, z: 0}
   RotateWeaponOnSpread: 0
   RandomSpread: 1
   SpawnPosition: {x: 0, y: 0, z: 0}
@@ -5156,7 +5156,7 @@ MonoBehaviour:
   Pool:
   - GameObjectToPool: {fileID: 1101516573661286827, guid: ecdbec9421b14474db9318c568fec1bd,
       type: 3}
-    PoolSize: 6
+    PoolSize: 9
     PoolCanExpand: 1
     Enabled: 1
   PoolingMethod: 0

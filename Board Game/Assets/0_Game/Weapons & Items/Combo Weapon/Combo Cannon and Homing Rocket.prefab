@@ -1,5 +1,90 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &231586160240902453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7668641254303548581}
+  m_Layer: 0
+  m_Name: Object Poolers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7668641254303548581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231586160240902453}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6122493479950567058}
+  - {fileID: 997371211438471307}
+  - {fileID: 3838842087216483980}
+  m_Father: {fileID: 318965428339897265}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &788739192303820897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6122493479950567058}
+  - component: {fileID: 6294167725707093292}
+  m_Layer: 0
+  m_Name: Cannon ObjectPooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6122493479950567058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788739192303820897}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7668641254303548581}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6294167725707093292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788739192303820897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b7277539b95c0d45895792ecc99ce66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MutualizeWaitingPools: 1
+  NestWaitingPool: 1
+  NestUnderThis: 0
+  GameObjectToPool: {fileID: 1101516573661286827, guid: 6622e817f698e46e3a2289ca49bd059d,
+    type: 3}
+  PoolSize: 6
+  PoolCanExpand: 1
 --- !u!1 &1411535182583685338
 GameObject:
   m_ObjectHideFlags: 0
@@ -33,6 +118,57 @@ Transform:
   - {fileID: 2909186644138314127}
   m_Father: {fileID: 318965428339897265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2904957477833421606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3838842087216483980}
+  - component: {fileID: 5773503868734487578}
+  m_Layer: 0
+  m_Name: Homing Rocket ObjectPooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3838842087216483980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2904957477833421606}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7668641254303548581}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5773503868734487578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2904957477833421606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b7277539b95c0d45895792ecc99ce66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MutualizeWaitingPools: 1
+  NestWaitingPool: 1
+  NestUnderThis: 0
+  GameObjectToPool: {fileID: 1101516573661286827, guid: 40688ae879d3645ceb17ad39f826eae1,
+    type: 3}
+  PoolSize: 2
+  PoolCanExpand: 1
 --- !u!1 &3422525632149358033
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,7 +912,7 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.28
-    m_Position: {x: 0, y: -0.55, z: 0}
+    m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 90, y: 0, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
@@ -1655,7 +1791,7 @@ ParticleSystem:
     flipU: 0
     flipV: 0
   VelocityModule:
-    enabled: 1
+    enabled: 0
     x:
       serializedVersion: 2
       minMaxState: 0
@@ -5821,6 +5957,57 @@ MonoBehaviour:
         RemapShadowStrengthOne: 1
         InstantShadowStrength: 0
         ToDestinationShadowStrength: 1
+--- !u!1 &6821055229985429415
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 997371211438471307}
+  - component: {fileID: 2549934370262662624}
+  m_Layer: 0
+  m_Name: Rocket ObjectPooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &997371211438471307
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6821055229985429415}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7668641254303548581}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2549934370262662624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6821055229985429415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b7277539b95c0d45895792ecc99ce66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MutualizeWaitingPools: 1
+  NestWaitingPool: 1
+  NestUnderThis: 0
+  GameObjectToPool: {fileID: 1101516573661286827, guid: ee23e22d82d944fc0882eb04d3ab55fd,
+    type: 3}
+  PoolSize: 4
+  PoolCanExpand: 1
 --- !u!1 &7409132237196341927
 GameObject:
   m_ObjectHideFlags: 0
@@ -5830,13 +6017,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 318965428339897265}
-  - component: {fileID: 680507608473709074}
   - component: {fileID: 900668105790673812}
   - component: {fileID: 9065758908346556699}
   - component: {fileID: 8799078823544382132}
-  - component: {fileID: 6467680835191391195}
-  - component: {fileID: 3906770782945476457}
-  - component: {fileID: 4608717579435213446}
+  - component: {fileID: 680507608473709074}
   - component: {fileID: 5383742116122680335}
   - component: {fileID: 5046402203008829492}
   m_Layer: 0
@@ -5863,26 +6047,9 @@ Transform:
   - {fileID: 21894159868093009}
   - {fileID: 3724099980588687739}
   - {fileID: 5436925189376041027}
+  - {fileID: 7668641254303548581}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &680507608473709074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7409132237196341927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72343fc0e13ec114196ab09ea808900e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DroppableCombo: 1
-  DropComboDelay: 5
-  ComboInProgressAnimationParameter: ComboInProgress
-  Weapons: []
-  OwnerCharacterHandleWeapon: {fileID: 0}
-  TimeSinceLastWeaponStopped: 0
 --- !u!114 &900668105790673812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5966,7 +6133,7 @@ MonoBehaviour:
   RotateWeaponOnSpread: 0
   RandomSpread: 0
   SpawnPosition: {x: 0, y: 0, z: 0}
-  ObjectPooler: {fileID: 6467680835191391195}
+  ObjectPooler: {fileID: 6294167725707093292}
   SpawnFeedbacks: []
   TestShootButton: 0
 --- !u!114 &9065758908346556699
@@ -6048,11 +6215,11 @@ MonoBehaviour:
   SpawnTransforms:
   - {fileID: 5436925189376041027}
   SpawnTransformsMode: 1
-  Spread: {x: 0, y: 25, z: 0}
+  Spread: {x: 0, y: 15, z: 0}
   RotateWeaponOnSpread: 0
   RandomSpread: 1
   SpawnPosition: {x: 0, y: 0, z: 0}
-  ObjectPooler: {fileID: 3906770782945476457}
+  ObjectPooler: {fileID: 2549934370262662624}
   SpawnFeedbacks: []
   TestShootButton: 0
 --- !u!114 &8799078823544382132
@@ -6073,7 +6240,7 @@ MonoBehaviour:
   TriggerMode: 1
   DelayBeforeUse: 0.1
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 1.3
+  TimeBetweenUses: 1.2
   TimeBetweenUsesReleaseInterruption: 1
   UseBurstMode: 0
   BurstLength: 0
@@ -6138,10 +6305,10 @@ MonoBehaviour:
   RotateWeaponOnSpread: 0
   RandomSpread: 0
   SpawnPosition: {x: 0, y: 0, z: 0}
-  ObjectPooler: {fileID: 4608717579435213446}
+  ObjectPooler: {fileID: 5773503868734487578}
   SpawnFeedbacks: []
   TestShootButton: 0
---- !u!114 &6467680835191391195
+--- !u!114 &680507608473709074
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6150,54 +6317,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7409132237196341927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b7277539b95c0d45895792ecc99ce66, type: 3}
+  m_Script: {fileID: 11500000, guid: 72343fc0e13ec114196ab09ea808900e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MutualizeWaitingPools: 1
-  NestWaitingPool: 1
-  NestUnderThis: 0
-  GameObjectToPool: {fileID: 1101516573661286827, guid: 6622e817f698e46e3a2289ca49bd059d,
-    type: 3}
-  PoolSize: 6
-  PoolCanExpand: 1
---- !u!114 &3906770782945476457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7409132237196341927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b7277539b95c0d45895792ecc99ce66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MutualizeWaitingPools: 1
-  NestWaitingPool: 1
-  NestUnderThis: 0
-  GameObjectToPool: {fileID: 1101516573661286827, guid: ee23e22d82d944fc0882eb04d3ab55fd,
-    type: 3}
-  PoolSize: 4
-  PoolCanExpand: 1
---- !u!114 &4608717579435213446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7409132237196341927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b7277539b95c0d45895792ecc99ce66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MutualizeWaitingPools: 1
-  NestWaitingPool: 1
-  NestUnderThis: 0
-  GameObjectToPool: {fileID: 1101516573661286827, guid: 40688ae879d3645ceb17ad39f826eae1,
-    type: 3}
-  PoolSize: 2
-  PoolCanExpand: 1
+  DroppableCombo: 0
+  DropComboDelay: 5
+  ComboInProgressAnimationParameter: ComboInProgress
+  Weapons: []
+  OwnerCharacterHandleWeapon: {fileID: 0}
+  TimeSinceLastWeaponStopped: 0
 --- !u!114 &5383742116122680335
 MonoBehaviour:
   m_ObjectHideFlags: 0

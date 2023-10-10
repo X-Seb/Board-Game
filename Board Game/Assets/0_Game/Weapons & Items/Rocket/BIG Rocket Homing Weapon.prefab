@@ -5027,7 +5027,7 @@ GameObject:
   - component: {fileID: 5383742116122680335}
   - component: {fileID: 5046402203008829492}
   m_Layer: 0
-  m_Name: Rocket Homing Weapon
+  m_Name: BIG Rocket Homing Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5064,7 +5064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d7ce0b8cf4b34859b9e359283b2e7f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeaponName: Rocket Homing Weapon
+  WeaponName: BIG Rocket Homing Weapon
   WeaponCurrentlyActive: 1
   InputAuthorized: 1
   TriggerMode: 1
@@ -5072,9 +5072,9 @@ MonoBehaviour:
   DelayBeforeUseReleaseInterruption: 1
   TimeBetweenUses: 1.5
   TimeBetweenUsesReleaseInterruption: 1
-  UseBurstMode: 0
-  BurstLength: 0
-  BurstTimeBetweenShots: 0
+  UseBurstMode: 1
+  BurstLength: 3
+  BurstTimeBetweenShots: 0.2
   MagazineBased: 0
   MagazineSize: 30
   AutoReload: 0
@@ -5131,7 +5131,7 @@ MonoBehaviour:
   SpawnTransforms:
   - {fileID: 5436925189376041027}
   SpawnTransformsMode: 1
-  Spread: {x: 0, y: 0, z: 0}
+  Spread: {x: 0, y: 20, z: 0}
   RotateWeaponOnSpread: 0
   RandomSpread: 1
   SpawnPosition: {x: 0, y: 0, z: 0}
@@ -5155,7 +5155,7 @@ MonoBehaviour:
   NestUnderThis: 0
   GameObjectToPool: {fileID: 1101516573661286827, guid: 40688ae879d3645ceb17ad39f826eae1,
     type: 3}
-  PoolSize: 5
+  PoolSize: 6
   PoolCanExpand: 1
 --- !u!114 &5383742116122680335
 MonoBehaviour:
