@@ -5306,6 +5306,7 @@ Transform:
   m_Children:
   - {fileID: 2091359493}
   - {fileID: 208918140}
+  - {fileID: 1485950259}
   - {fileID: 116879310}
   - {fileID: 1453475145}
   - {fileID: 1374522685}
@@ -31325,6 +31326,67 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484747760}
   m_Mesh: {fileID: -1550514412580984892, guid: e47b54091525e4ec4bb4a940c43ac3c3, type: 3}
+--- !u!1 &1485950258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1485950259}
+  - component: {fileID: 1485950260}
+  m_Layer: 0
+  m_Name: MultipleRocketPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1485950259
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485950258}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 304220561}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1485950260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485950258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73098ca8f002adc4f9debdbe47a78c9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MutualizeWaitingPools: 1
+  NestWaitingPool: 1
+  NestUnderThis: 1
+  Pool:
+  - GameObjectToPool: {fileID: 1101516573661286827, guid: ee23e22d82d944fc0882eb04d3ab55fd,
+      type: 3}
+    PoolSize: 5
+    PoolCanExpand: 1
+    Enabled: 1
+  - GameObjectToPool: {fileID: 1101516573661286827, guid: 40688ae879d3645ceb17ad39f826eae1,
+      type: 3}
+    PoolSize: 2
+    PoolCanExpand: 1
+    Enabled: 1
+  PoolingMethod: 3
+  CanPoolSameObjectTwice: 1
+  MutualizedPoolName: 
 --- !u!1 &1487981570
 GameObject:
   m_ObjectHideFlags: 0
@@ -38138,6 +38200,7 @@ MonoBehaviour:
   m_waveEndFeedback: {fileID: 1574244600}
   m_killedEnemyFeedback: {fileID: 1846455387}
   m_winFeedback: {fileID: 1231644967}
+  m_currentScore: 0
   m_firstPlay: 0
   m_roundGroupIndex: 0
   m_currentRoundGroup: {fileID: 0}
