@@ -12495,6 +12495,89 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!1 &5769398517878995634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3829560227121768266}
+  - component: {fileID: 4823125264539192197}
+  - component: {fileID: 6784144496833627608}
+  m_Layer: 10
+  m_Name: Damage Resistance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3829560227121768266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5769398517878995634}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3312077474899445299}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4823125264539192197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5769398517878995634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a6f32aaa00064e488ee9421aeb0d5f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AutoFillDamageResistanceList: 0
+  IgnoreDisabledResistances: 1
+  IgnoreUnknownDamageTypes: 0
+  DamageResistanceList:
+  - {fileID: 6784144496833627608}
+--- !u!114 &6784144496833627608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5769398517878995634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aba29e69abb9854eb38bd7085b3f72c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Priority: 0
+  Label: Poison
+  DamageTypeMode: 1
+  TypeResistance: {fileID: 11400000, guid: 7e7e563f1c6154833be36265f0e8be10, type: 2}
+  DamageModifierMode: 0
+  DamageMultiplier: 1
+  FlatDamageReduction: 10
+  ClampDamage: 0
+  DamageModifierClamps: {x: 0, y: 10}
+  PreventCharacterConditionChange: 0
+  PreventMovementModifier: 0
+  ImmuneToKnockback: 0
+  KnockbackModifierMode: 0
+  KnockbackMultiplier: 1
+  FlatKnockbackMagnitudeReduction: 10
+  ClampKnockback: 0
+  KnockbackMaxMagnitude: 10
+  OnDamageReceived: {fileID: 0}
+  InterruptibleFeedback: 0
+  AlwaysInterruptFeedbackBeforePlay: 0
+  TriggerFeedbackIfDamageIsZero: 0
 --- !u!1 &6097192761438218286
 GameObject:
   m_ObjectHideFlags: 0
@@ -12803,8 +12886,8 @@ GameObject:
   - component: {fileID: 7929610306212826364}
   - component: {fileID: 1969808659710791926}
   - component: {fileID: 8131498719021055117}
-  - component: {fileID: 4471185309773010957}
   - component: {fileID: 1548201527305415672}
+  - component: {fileID: 4471185309773010957}
   m_Layer: 10
   m_Name: Player1_3
   m_TagString: Player
@@ -12827,6 +12910,7 @@ Transform:
   m_Children:
   - {fileID: 3376910339291383565}
   - {fileID: 2998116433135532424}
+  - {fileID: 3829560227121768266}
   - {fileID: 888030245265466176}
   - {fileID: 1909228600005550483}
   m_Father: {fileID: 0}
@@ -13028,7 +13112,7 @@ MonoBehaviour:
   ColorMaterialPropertyName: _Color
   UseMaterialPropertyBlocks: 0
   MasterHealth: {fileID: 0}
-  TargetDamageResistanceProcessor: {fileID: 0}
+  TargetDamageResistanceProcessor: {fileID: 4823125264539192197}
   TargetAnimator: {fileID: 0}
   DisableAnimatorLogs: 1
 --- !u!114 &5543825268380555290
@@ -13262,7 +13346,7 @@ MonoBehaviour:
   ShouldRotateToFaceWeaponDirection: 1
   WeaponRotationSpeed: 1
   WeaponRotatingModel: {fileID: 6549296154298028368}
-  RotateToFaceWeaponDirectionSpeed: 12
+  RotateToFaceWeaponDirectionSpeed: 15
   AbsoluteThresholdWeapon: 0.5
   LockVerticalRotation: 1
   RotationSpeedResetSpeed: 2
@@ -13297,8 +13381,8 @@ MonoBehaviour:
   WalkSpeed: 9
   ShouldSetMovement: 1
   IdleThreshold: 0.05
-  Acceleration: 18
-  Deceleration: 8
+  Acceleration: 25
+  Deceleration: 10
   InterpolateMovementSpeed: 0
   WalkParticles: []
   TouchTheGroundParticles: []
@@ -13461,29 +13545,6 @@ MonoBehaviour:
   OnUnpause:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4471185309773010957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6694907259331095607}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a87ffdd7d8febb24b817b1d3d350bef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartSfx: {fileID: 0}
-  AbilityInProgressSfx: {fileID: 0}
-  AbilityStopSfx: {fileID: 0}
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  BlockingWeaponStates: 
-  PreventJumpInButtonActivatedZone: 1
-  ButtonActivatedZone: {fileID: 0}
 --- !u!114 &1548201527305415672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13512,14 +13573,37 @@ MonoBehaviour:
   InventoryTransform: {fileID: 3312077474899445299}
   WeaponRotationMode: 0
   AutoPickItems:
-  - Item: {fileID: 11400000, guid: d593b0d87befe4fe48897efcb97702fa, type: 2}
-    Quantity: 1
   - Item: {fileID: 11400000, guid: 416b52eb5ff52497398b4f43f3d566a8, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: d593b0d87befe4fe48897efcb97702fa, type: 2}
     Quantity: 1
   AutoPickOnlyIfMainInventoryIsEmpty: 0
   AutoEquipWeaponOnStart: {fileID: 0}
   AutoEquipOnlyIfMainInventoryIsEmpty: 0
   CharacterHandleWeapon: {fileID: 7929610306212826364}
+--- !u!114 &4471185309773010957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6694907259331095607}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a87ffdd7d8febb24b817b1d3d350bef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartSfx: {fileID: 0}
+  AbilityInProgressSfx: {fileID: 0}
+  AbilityStopSfx: {fileID: 0}
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  PreventJumpInButtonActivatedZone: 1
+  ButtonActivatedZone: {fileID: 0}
 --- !u!1 &7555269637412211625
 GameObject:
   m_ObjectHideFlags: 0

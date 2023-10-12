@@ -23,6 +23,16 @@ PrefabInstance:
       propertyPath: WalkSpeed
       value: 6.5
       objectReference: {fileID: 0}
+    - target: {fileID: 844675530073811170, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: Acceleration
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 844675530073811170, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: Deceleration
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 2055519518907867145, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: States.Array.size
@@ -83,6 +93,11 @@ PrefabInstance:
       propertyPath: States.Array.data[2].Transitions.array.Array.data[1].FalseState
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2327863839972875810, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3105846786817688101, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: ShouldRotateToFaceWeaponDirection
@@ -117,22 +132,83 @@ PrefabInstance:
     - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: MaxDamageCaused
-      value: 11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: MinDamageCaused
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: InvincibilityDuration
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: TypedDamages.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: DamageCausedKnockbackForce.x
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: DamageCausedKnockbackForce.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: DamageCausedKnockbackForce.z
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: TypedDamages.Array.data[0].ForcedCondition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: TypedDamages.Array.data[0].MaxDamageCaused
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: TypedDamages.Array.data[0].MinDamageCaused
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: TypedDamages.Array.data[0].AssociatedDamageType
+      value: 
+      objectReference: {fileID: 11400000, guid: ab9e0ebb78c7c4e79b937ed13ea23393,
+        type: 2}
+    - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: TypedDamages.Array.data[0].ForceCharacterCondition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096447069044271406, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: FeedbacksList.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096447069044271406, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: FeedbacksList.Array.data[2]
+      value: 2694893150061723682
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096447069044271406, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: FeedbacksList.Array.data[3]
+      value: 917653660728557657
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096447069044271406, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: FeedbacksList.Array.data[4]
+      value: 2694893308341911581
       objectReference: {fileID: 0}
     - target: {fileID: 7731685012594323577, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}

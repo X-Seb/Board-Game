@@ -31,17 +31,17 @@ PrefabInstance:
     - target: {fileID: 4030076681947214924, guid: 923ccf9f48ae74d1397d7d91e0334014,
         type: 3}
       propertyPath: m_Name
-      value: Rook Enemy White Variant
+      value: Rook Enemy White
       objectReference: {fileID: 0}
     - target: {fileID: 6689446176706522386, guid: 923ccf9f48ae74d1397d7d91e0334014,
         type: 3}
       propertyPath: InitialHealth
-      value: 50
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 6689446176706522386, guid: 923ccf9f48ae74d1397d7d91e0334014,
         type: 3}
       propertyPath: MaximumHealth
-      value: 50
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 6921993073916396638, guid: 923ccf9f48ae74d1397d7d91e0334014,
         type: 3}
@@ -99,6 +99,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8001796373284864489, guid: 62267a35b63e20d43b82ec328640eef0,
         type: 3}
+    - target: {fileID: 8032844498021886907, guid: 923ccf9f48ae74d1397d7d91e0334014,
+        type: 3}
+      propertyPath: Size.x
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

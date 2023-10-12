@@ -131,7 +131,7 @@ MonoBehaviour:
   - rid: 917653660728557580
   - rid: 917653660728557581
   - rid: 917653660728557583
-  KeepPlayModeChanges: 1
+  KeepPlayModeChanges: 0
   PerformanceMode: 0
   StopFeedbacksOnDisable: 0
   PlayCount: 0
