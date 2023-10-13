@@ -636,14 +636,26 @@ MonoBehaviour:
     m_Bits: 199936
   Owner: {fileID: 0}
   TriggerFilter: 195
-  MinDamageCaused: 8
-  MaxDamageCaused: 10
-  TypedDamages: []
+  MinDamageCaused: 0
+  MaxDamageCaused: 0
+  TypedDamages:
+  - AssociatedDamageType: {fileID: 11400000, guid: 6ad3aba9e6a074b3498f14e9080c1351,
+      type: 2}
+    MinDamageCaused: 8
+    MaxDamageCaused: 10
+    ForceCharacterCondition: 0
+    ForcedCondition: 0
+    DisableGravity: 0
+    ResetControllerForces: 0
+    ForcedConditionDuration: 0
+    ApplyMovementMultiplier: 1
+    MovementMultiplier: 0.5
+    MovementMultiplierDuration: 3
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
   DamageCausedKnockbackForce: {x: 5, y: 3, z: 5}
-  InvincibilityDuration: 0.2
+  InvincibilityDuration: 0
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
   DurationBetweenRepeats: 1
