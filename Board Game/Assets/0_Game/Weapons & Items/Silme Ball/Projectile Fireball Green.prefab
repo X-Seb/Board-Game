@@ -137,19 +137,31 @@ MonoBehaviour:
     m_Bits: 199936
   Owner: {fileID: 0}
   TriggerFilter: 195
-  MinDamageCaused: 4
-  MaxDamageCaused: 5
-  TypedDamages: []
+  MinDamageCaused: 0
+  MaxDamageCaused: 0
+  TypedDamages:
+  - AssociatedDamageType: {fileID: 11400000, guid: 7e7e563f1c6154833be36265f0e8be10,
+      type: 2}
+    MinDamageCaused: 1
+    MaxDamageCaused: 1
+    ForceCharacterCondition: 0
+    ForcedCondition: 0
+    DisableGravity: 0
+    ResetControllerForces: 0
+    ForcedConditionDuration: 0
+    ApplyMovementMultiplier: 1
+    MovementMultiplier: 0.8
+    MovementMultiplierDuration: 0.6
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
-  DamageCausedKnockbackForce: {x: 4, y: 3, z: 4}
-  InvincibilityDuration: 0.3
-  RepeatDamageOverTime: 0
-  AmountOfRepeats: 3
-  DurationBetweenRepeats: 1
+  DamageCausedKnockbackForce: {x: 3, y: 3, z: 3}
+  InvincibilityDuration: 0
+  RepeatDamageOverTime: 1
+  AmountOfRepeats: 8
+  DurationBetweenRepeats: 0.5
   DamageOverTimeInterruptible: 1
-  RepeatedDamageType: {fileID: 0}
+  RepeatedDamageType: {fileID: 11400000, guid: 7e7e563f1c6154833be36265f0e8be10, type: 2}
   DamageTakenEveryTime: 100
   DamageTakenDamageable: 0
   DamageTakenNonDamageable: 0
