@@ -641,8 +641,8 @@ MonoBehaviour:
   TypedDamages:
   - AssociatedDamageType: {fileID: 11400000, guid: 6ad3aba9e6a074b3498f14e9080c1351,
       type: 2}
-    MinDamageCaused: 8
-    MaxDamageCaused: 10
+    MinDamageCaused: 6
+    MaxDamageCaused: 8
     ForceCharacterCondition: 0
     ForcedCondition: 0
     DisableGravity: 0

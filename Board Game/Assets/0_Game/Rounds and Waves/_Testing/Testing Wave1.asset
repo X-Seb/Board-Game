@@ -13,11 +13,15 @@ MonoBehaviour:
   m_Name: Testing Wave1
   m_EditorClassIdentifier: 
   m_enemies:
-  - {fileID: 5597999330980822728, guid: 48f4da9b26b5d400191aac0011aea06e, type: 3}
+  - {fileID: 3095849369095809815, guid: 4d87cbd22a9ab4a43a030fc584f40c63, type: 3}
+  - {fileID: 1948452043460385931, guid: 36d419256681a45f9a0d1cbede8d865d, type: 3}
+  - {fileID: 2867892608413136960, guid: 12befc7050048423b8eb997254066537, type: 3}
+  - {fileID: 5168825772273566436, guid: 22d8627f12cbf44c39cb1079e6562803, type: 3}
   m_spawnInterval: 1
   m_overrideSpawner: 1
   m_overrideSpawnIntervals: 1
   m_newSpawnIntervals:
   - 1
+  - 15
   - 15
   - 15

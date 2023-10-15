@@ -82,12 +82,12 @@ PrefabInstance:
     - target: {fileID: 5534411549099936958, guid: 50a54bbb3da2d46558f94bc91b0967aa,
         type: 3}
       propertyPath: MaxDamageCaused
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5534411549099936958, guid: 50a54bbb3da2d46558f94bc91b0967aa,
         type: 3}
       propertyPath: MinDamageCaused
-      value: 13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5832640078387480686, guid: 50a54bbb3da2d46558f94bc91b0967aa,
         type: 3}
