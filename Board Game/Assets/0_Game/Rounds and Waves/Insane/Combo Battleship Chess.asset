@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
-  m_Name: Rook Overload
+  m_Name: Combo Battleship Chess
   m_EditorClassIdentifier: 
-  roundName: Rook Overload!
+  roundName: Battleship and Magic Combo!
   roundDescription: 
-  roundDifficulty: 6
+  roundDifficulty: 7
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
   m_waves:
-  - {fileID: 11400000, guid: 113e08a63bcda419f8429a266f551e6d, type: 2}
+  - {fileID: 11400000, guid: 2c5d90c37e50e42f391461f0a97a2f51, type: 2}

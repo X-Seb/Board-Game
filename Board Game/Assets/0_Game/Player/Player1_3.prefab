@@ -63552,9 +63552,9 @@ MonoBehaviour:
   ForceWeaponAimControl: 0
   ForcedWeaponAimControl: 0
   ForceAlwaysShoot: 0
-  BufferInput: 0
+  BufferInput: 1
   NewInputExtendsBuffer: 0
-  MaximumBufferDuration: 0.2
+  MaximumBufferDuration: 0.1
   RequiresPerfectTile: 0
   CurrentWeapon: {fileID: 0}
 --- !u!114 &1969808659710791926

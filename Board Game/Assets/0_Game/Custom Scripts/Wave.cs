@@ -7,6 +7,7 @@ public class Wave : ScriptableObject
 {
     [Header("Essential information: ")]
     [SerializeField] private GameObject[] m_enemies;
+    [SerializeField] private int m_pointReward;
     [SerializeField] private float m_spawnInterval;
     [Header("Should override the spawner for all enemies?")]
     [SerializeField] private bool m_overrideSpawner;
@@ -18,6 +19,8 @@ public class Wave : ScriptableObject
     {
         return m_enemies.Length;
     }
+
+    public int GetPointReward() { return m_pointReward; }
     public float GetSpawnInterval() { return m_spawnInterval; }
     public GameObject[] GetEnemies() { return m_enemies; }
 

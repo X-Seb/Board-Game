@@ -10,11 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b85c182ee962461d89aa134dc739747, type: 3}
-  m_Name: New Wave
+  m_Name: BIG Wizard Trio Wave1
   m_EditorClassIdentifier: 
   m_enemies:
-  - {fileID: 8618052376476974722, guid: 096fcde78dacb4da4b11667cd7c1f02f, type: 3}
-  m_spawnInterval: 1
+  - {fileID: 1258462196515774035, guid: 37d4d38e1a4614001aa483314b24a97a, type: 3}
+  - {fileID: 3095849369095809815, guid: 4d87cbd22a9ab4a43a030fc584f40c63, type: 3}
+  - {fileID: 1948452043460385931, guid: 36d419256681a45f9a0d1cbede8d865d, type: 3}
+  m_spawnInterval: 0
   m_overrideSpawner: 1
-  m_overrideSpawnIntervals: 0
-  m_newSpawnIntervals: []
+  m_overrideSpawnIntervals: 1
+  m_newSpawnIntervals:
+  - 1
+  - 8
+  - 8

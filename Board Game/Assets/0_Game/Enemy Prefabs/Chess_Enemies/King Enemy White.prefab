@@ -37,8 +37,14 @@ PrefabInstance:
     - target: {fileID: 8862513430222133648, guid: 96bf32791e80a4a1894dd5d1c1b5238f,
         type: 3}
       propertyPath: m_Name
-      value: King Enemy White Variant
+      value: King Enemy White
       objectReference: {fileID: 0}
+    - target: {fileID: 8904123546054237437, guid: 96bf32791e80a4a1894dd5d1c1b5238f,
+        type: 3}
+      propertyPath: managedReferences[917653660728557665].GameObjectToInstantiate
+      value: 
+      objectReference: {fileID: 1174499198651537194, guid: 3e448d0b64f3945828b7d235b2aad737,
+        type: 3}
     - target: {fileID: 8997413387830912156, guid: 96bf32791e80a4a1894dd5d1c1b5238f,
         type: 3}
       propertyPath: m_LocalPosition.x

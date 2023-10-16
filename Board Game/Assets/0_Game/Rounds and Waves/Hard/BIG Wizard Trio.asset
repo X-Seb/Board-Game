@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
-  m_Name: Pawn Attack
+  m_Name: BIG Wizard Trio
   m_EditorClassIdentifier: 
-  roundName: Pawn Attack!
-  roundDescription: Fear the might of the pawns!
-  roundDifficulty: 1
+  roundName: Ultimate Magical Team-up!
+  roundDescription: 
+  roundDifficulty: 6
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
   m_waves:
-  - {fileID: 11400000, guid: 090ff62f659c64547aa99ac850c11c4b, type: 2}
+  - {fileID: 11400000, guid: 129f1cfdfbbed47b99c9bf412972ed61, type: 2}

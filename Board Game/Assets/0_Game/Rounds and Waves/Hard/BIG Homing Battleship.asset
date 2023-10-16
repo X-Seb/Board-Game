@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
   m_Name: BIG Homing Battleship
   m_EditorClassIdentifier: 
-  roundName: Big Rocket Smackdown!
+  roundName: Homing Rocket Nightmare
   roundDescription: 
   roundDifficulty: 6
   overrideSFX: 0

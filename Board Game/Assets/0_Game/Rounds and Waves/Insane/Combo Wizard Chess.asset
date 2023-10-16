@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
-  m_Name: TeamUpTactics
+  m_Name: Combo Wizard Chess
   m_EditorClassIdentifier: 
-  roundName: Team Up Tactics
+  roundName: Magic and Chess Combo!
   roundDescription: 
-  roundDifficulty: 5
+  roundDifficulty: 7
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
   m_waves:
-  - {fileID: 11400000, guid: 8b0e1e9a87ceb4ee59986ae958118138, type: 2}
-  - {fileID: 11400000, guid: 02c8b37a908ce49989efd6df7a0ab595, type: 2}
+  - {fileID: 11400000, guid: 887d9515116b84bcf866c4412760af39, type: 2}

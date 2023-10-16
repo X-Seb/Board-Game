@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roundName: Double Queen Smackdown
   roundDescription: 
-  roundDifficulty: 7
+  roundDifficulty: 8
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}

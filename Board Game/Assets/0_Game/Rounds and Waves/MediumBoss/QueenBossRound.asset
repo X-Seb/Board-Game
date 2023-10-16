@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roundName: Queen's Wrath
   roundDescription: Suffer!
-  roundDifficulty: 5
+  roundDifficulty: 6
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}

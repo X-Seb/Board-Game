@@ -29,6 +29,8 @@ public class RoundManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI m_totalEnemiesKilledText;
     [SerializeField] private TextMeshProUGUI m_currentRoundText;
     [SerializeField] private TextMeshProUGUI m_targetsRemainingText;
+    [SerializeField] private TextMeshProUGUI m_currentScoreText;
+    [SerializeField] private TextMeshProUGUI m_deathUIbestScoreText;
     [SerializeField] private TextMeshProUGUI m_elapsedTimeText;
 
     [Header("Feedbacks: ")]
@@ -155,6 +157,13 @@ public class RoundManager : MonoBehaviour
         }
     }
 
+    public void WaveEnd()
+    {
+        m_currentScore += m_currentWave.GetPointReward();
+
+        m_waveEndFeedback.PlayFeedbacks();
+    }
+
     /// <summary>
     /// Will start spawning the enemies from the given wave
     /// Sets the # of enemies you have to kill to end the wave
@@ -265,7 +274,7 @@ public class RoundManager : MonoBehaviour
 
         if (m_targetsRemainingInWave <= 0)
         {
-            m_waveEndFeedback.PlayFeedbacks(); // Play SFX, wait, StartNextRoundOrWave
+            WaveEnd(); // Update Score, play SFX, wait, StartNextRoundOrWave
         }
     }
 
