@@ -5458,8 +5458,8 @@ MonoBehaviour:
         Owner: {fileID: 2362368694352960259}
         DebugActive: 0
         FlashColor: {r: 0.3537736, g: 1, b: 0.97220534, a: 1}
-        FlashDuration: 3.1
-        FlashAlpha: 0.2
+        FlashDuration: 3.3
+        FlashAlpha: 0.23
         FlashID: 3
     - rid: 917653660728557703
       type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
@@ -38919,7 +38919,7 @@ MonoBehaviour:
         DebugActive: 0
         FlashColor: {r: 1, g: 0.24056602, b: 0.29308012, a: 1}
         FlashDuration: 0.1
-        FlashAlpha: 0.1
+        FlashAlpha: 0.25
         FlashID: 1
     - rid: 917653660728557713
       type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
@@ -50718,7 +50718,7 @@ MonoBehaviour:
         DebugActive: 0
         FlashColor: {r: 0.32584286, g: 1, b: 0, a: 1}
         FlashDuration: 0.1
-        FlashAlpha: 0.1
+        FlashAlpha: 0.15
         FlashID: 2
     - rid: 917653660728557696
       type: {class: MMF_Vignette, ns: MoreMountains.FeedbacksForThirdParty, asm: MoreMountains.Feedbacks.PostProcessing}
@@ -62552,7 +62552,7 @@ MonoBehaviour:
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
   DamageCausedKnockbackForce: {x: 8, y: 4, z: 8}
-  InvincibilityDuration: 0.4
+  InvincibilityDuration: 0.2
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
   DurationBetweenRepeats: 1
@@ -63153,8 +63153,8 @@ MonoBehaviour:
   Model: {fileID: 6549296154298028368}
   CurrentHealth: 100
   Invulnerable: 0
-  InitialHealth: 500
-  MaximumHealth: 500
+  InitialHealth: 300
+  MaximumHealth: 300
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 4018100821653258981}
@@ -64206,8 +64206,8 @@ MonoBehaviour:
         Owner: {fileID: 512301809706351051}
         DebugActive: 0
         FlashColor: {r: 1, g: 0.971142, b: 0.4764151, a: 1}
-        FlashDuration: 0.1
-        FlashAlpha: 0.1
+        FlashDuration: 0.15
+        FlashAlpha: 0.3
         FlashID: 0
     - rid: 917653660728557723
       type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}

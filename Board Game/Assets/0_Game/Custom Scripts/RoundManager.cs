@@ -61,8 +61,8 @@ public class RoundManager : MonoBehaviour
     public int GetScore() { return m_currentScore; }
     public int GetEnemiesKilled() { return m_totalEnemiesKilled; }
     public int GetTotalRoundNumber() { return m_totalRoundNumber; }
+    public int GetTotalRoundsCompleted() { return m_totalRoundNumber - 1; }
     public float GetTotalTimeElapsed() { return m_totalTimeElapsed; }
-
 
     public void Start()
     {
