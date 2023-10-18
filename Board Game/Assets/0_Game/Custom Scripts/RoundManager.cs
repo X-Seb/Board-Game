@@ -58,6 +58,12 @@ public class RoundManager : MonoBehaviour
 
     #endregion
 
+    public int GetScore() { return m_currentScore; }
+    public int GetEnemiesKilled() { return m_totalEnemiesKilled; }
+    public int GetTotalRoundNumber() { return m_totalRoundNumber; }
+    public float GetTotalTimeElapsed() { return m_totalTimeElapsed; }
+
+
     public void Start()
     {
         m_totalEnemiesKilledText.text = "0";
@@ -94,15 +100,11 @@ public class RoundManager : MonoBehaviour
 
     private void Update()
     {
+        // Update the timer
         if (m_isTimerCounting)
         {
             m_totalTimeElapsed += Time.deltaTime;
-
-            int hours = ((int)m_totalTimeElapsed) / 3600;
-            int mins = (((int)m_totalTimeElapsed) % 3600) / 60;
-            int sec = (((int)m_totalTimeElapsed) % 60);
-
-            m_elapsedTimeText.text = string.Format("{0:D2}:{1:D2}:{2:D2}", hours, mins, sec);
+            m_elapsedTimeText.text = GetTimeElapsedStringFormat(m_totalTimeElapsed);
         }
     }
 
@@ -160,7 +162,6 @@ public class RoundManager : MonoBehaviour
     public void WaveEnd()
     {
         m_currentScore += m_currentWave.GetPointReward();
-
         m_waveEndFeedback.PlayFeedbacks();
     }
 
@@ -291,9 +292,41 @@ public class RoundManager : MonoBehaviour
 
     public void IsTimerCounting(bool value) { m_isTimerCounting = value; }
 
+    public void UpdateBestScore()
+    {
+        if (!PlayerPrefs.HasKey("BestScore") || m_currentScore > PlayerPrefs.GetInt("BestScore"))
+        {
+            PlayerPrefs.SetInt("BestScore", m_currentScore);
+            PlayerPrefs.Save();
+        }
+    }
+
+    public string GetTimeElapsedWithMilisStringFormat()
+    {
+        return GetTimeElapsedStringFormat(m_totalTimeElapsed, true);
+    }
+
+    private string GetTimeElapsedStringFormat(float timeInSec, bool showMiliseconds = false)
+    {
+        int hours = ((int)timeInSec) / 3600;
+        int mins = (((int)timeInSec) % 3600) / 60;
+        int sec = (((int)timeInSec) % 60);
+
+        if (!showMiliseconds)
+        {
+            return string.Format("{0:D2}:{1:D2}:{2:D2}", hours, mins, sec);
+        }
+        else
+        {
+            int milis = (int)(timeInSec * 1000) % 1000;
+            return string.Format("{0:D2}:{1:D2}:{2:D2}:{3:D2}", hours, mins, sec, milis);
+        }
+    }
+
     private void Win()
     {
         Debug.Log("You win!");
+        UpdateBestScore();
         m_winFeedback.PlayFeedbacks();
     }
     

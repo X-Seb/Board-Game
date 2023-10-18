@@ -33,8 +33,9 @@ public class GGGetPlayerPrefs : MonoBehaviour
     #region enums
     public enum TriggerTime
     {
-        Awake,
-        Start,
+        none,
+        awake,
+        start,
     }
 
     public enum KeyType
@@ -56,7 +57,7 @@ public class GGGetPlayerPrefs : MonoBehaviour
 
     private void Awake()
     {
-        if (m_triggerTime == TriggerTime.Awake)
+        if (m_triggerTime == TriggerTime.awake)
         {
             KeyExistsEvents(m_keyName);
 
@@ -69,7 +70,7 @@ public class GGGetPlayerPrefs : MonoBehaviour
 
     private void Start()
     {
-        if (m_triggerTime == TriggerTime.Start)
+        if (m_triggerTime == TriggerTime.start)
         {
             KeyExistsEvents(m_keyName);
 
@@ -80,8 +81,35 @@ public class GGGetPlayerPrefs : MonoBehaviour
         }
     }
 
+    public string GetStringFromKey()
+    {
+        if (PlayerPrefs.HasKey(m_keyName))
+        {
+            return PlayerPrefs.GetString(m_keyName);
+        }
+        else { return ""; }
+    }
+
+    public float GetFloatFromKey()
+    {
+        if (PlayerPrefs.HasKey(m_keyName))
+        {
+            return PlayerPrefs.GetFloat(m_keyName);
+        }
+        else { return 0.0f; }
+    }
+
+    public int GetIntFromKey()
+    {
+        if (PlayerPrefs.HasKey(m_keyName))
+        {
+            return PlayerPrefs.GetInt(m_keyName);
+        }
+        else { return 0; }
+    }
+
     /// <summary>
-    /// Will check if the key exists and invoke the corresponding event
+    /// Will check if the key exists to invoke the corresponding unity event.
     /// </summary>
     public void KeyExistsEvents(string key)
     {
@@ -97,7 +125,7 @@ public class GGGetPlayerPrefs : MonoBehaviour
 
     /// <summary>
     /// Will compare the key value with the other set value using the set comparison method
-    /// and invoke the corresponding event
+    /// to then invoke the corresponding unity event.
     /// </summary>
     public void KeyCompareEvents(string key)
     {
