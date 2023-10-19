@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enemies:
   - {fileID: 2867892608413136960, guid: 12befc7050048423b8eb997254066537, type: 3}
+  m_pointReward: 10
   m_spawnInterval: 1
   m_overrideSpawner: 1
   m_overrideSpawnIntervals: 0

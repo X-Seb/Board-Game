@@ -16,11 +16,11 @@ MonoBehaviour:
   - {fileID: 1258462196515774035, guid: 37d4d38e1a4614001aa483314b24a97a, type: 3}
   - {fileID: 3095849369095809815, guid: 4d87cbd22a9ab4a43a030fc584f40c63, type: 3}
   - {fileID: 1948452043460385931, guid: 36d419256681a45f9a0d1cbede8d865d, type: 3}
-  m_pointReward: 0
+  m_pointReward: 18
   m_spawnInterval: 0
   m_overrideSpawner: 1
   m_overrideSpawnIntervals: 1
   m_newSpawnIntervals:
   - 1
-  - 9
-  - 9
+  - 10
+  - 10

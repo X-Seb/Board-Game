@@ -17,7 +17,12 @@ MonoBehaviour:
   - {fileID: 8310317341608840035, guid: 4a7ca2f124d1e44c5bfd418916890510, type: 3}
   - {fileID: 4030076681947214924, guid: 923ccf9f48ae74d1397d7d91e0334014, type: 3}
   - {fileID: 8310317341608840035, guid: 4a7ca2f124d1e44c5bfd418916890510, type: 3}
-  m_spawnInterval: 2
+  m_pointReward: 13
+  m_spawnInterval: 0
   m_overrideSpawner: 0
   m_overrideSpawnIntervals: 0
-  m_newSpawnIntervals: []
+  m_newSpawnIntervals:
+  - 1
+  - 5
+  - 5
+  - 5

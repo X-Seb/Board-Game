@@ -1687,13 +1687,13 @@ MonoBehaviour:
     m_Bits: 199936
   Owner: {fileID: 0}
   TriggerFilter: 195
-  MinDamageCaused: 1
-  MaxDamageCaused: 1
+  MinDamageCaused: 0
+  MaxDamageCaused: 0
   TypedDamages: []
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
-  DamageCausedKnockbackForce: {x: 8, y: 3, z: 8}
+  DamageCausedKnockbackForce: {x: 3, y: 3, z: 3}
   InvincibilityDuration: 0
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3

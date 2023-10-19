@@ -17,6 +17,7 @@ MonoBehaviour:
   - {fileID: 2867892608413136960, guid: 2e5ed418aaaac4bd59ef36854c175c50, type: 3}
   - {fileID: 2867892608413136960, guid: 2e5ed418aaaac4bd59ef36854c175c50, type: 3}
   - {fileID: 2867892608413136960, guid: 2e5ed418aaaac4bd59ef36854c175c50, type: 3}
+  m_pointReward: 17
   m_spawnInterval: 1
   m_overrideSpawner: 1
   m_overrideSpawnIntervals: 1

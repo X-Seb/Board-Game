@@ -15,6 +15,7 @@ MonoBehaviour:
   m_enemies:
   - {fileID: 4445940100281750750, guid: acdf0695717314e43a0c6018e0cba8d8, type: 3}
   - {fileID: 1873821884445454322, guid: a91775165ddfa4d6b9d3eb9453b2f376, type: 3}
+  m_pointReward: 25
   m_spawnInterval: 0
   m_overrideSpawner: 1
   m_overrideSpawnIntervals: 1
