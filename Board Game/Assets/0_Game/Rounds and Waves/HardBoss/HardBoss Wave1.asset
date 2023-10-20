@@ -14,15 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enemies:
   - {fileID: 7178828548022852193, guid: b69056471a161421a83060eba9c6bb80, type: 3}
+  - {fileID: 2867892608413136960, guid: 12befc7050048423b8eb997254066537, type: 3}
+  - {fileID: 1913801374311127724, guid: 882a4555604724445ac5ddf533f683a5, type: 3}
+  - {fileID: 8924562730082605882, guid: 41d31fb0baeef458fb95f9dc877f6b50, type: 3}
   - {fileID: 7178828548022852193, guid: b69056471a161421a83060eba9c6bb80, type: 3}
   - {fileID: 2867892608413136960, guid: 12befc7050048423b8eb997254066537, type: 3}
   - {fileID: 1913801374311127724, guid: 882a4555604724445ac5ddf533f683a5, type: 3}
   - {fileID: 8924562730082605882, guid: 41d31fb0baeef458fb95f9dc877f6b50, type: 3}
-  - {fileID: 2867892608413136960, guid: 12befc7050048423b8eb997254066537, type: 3}
-  - {fileID: 1913801374311127724, guid: 882a4555604724445ac5ddf533f683a5, type: 3}
-  - {fileID: 8924562730082605882, guid: 41d31fb0baeef458fb95f9dc877f6b50, type: 3}
-  m_pointReward: 36
+  m_pointReward: 24
   m_spawnInterval: 1
   m_overrideSpawner: 1
-  m_overrideSpawnIntervals: 0
-  m_newSpawnIntervals: []
+  m_overrideSpawnIntervals: 1
+  m_newSpawnIntervals:
+  - 1
+  - 10
+  - 4
+  - 4
+  - 12
+  - 4
+  - 4
+  - 4

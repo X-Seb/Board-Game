@@ -38859,7 +38859,7 @@ MonoBehaviour:
         AnimateScaleTarget: {fileID: 2089474193}
         AnimateScaleDuration: 1.5
         RemapCurveZero: 1
-        RemapCurveOne: 1.5
+        RemapCurveOne: 1.2
         Offset: 0
         AnimateX: 1
         AnimateScaleTweenX:
@@ -38937,7 +38937,7 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
-        AnimateZ: 1
+        AnimateZ: 0
         AnimateScaleTweenZ:
           MMTweenDefinitionType: 1
           MMTweenCurve: 4
@@ -39069,7 +39069,7 @@ MonoBehaviour:
         AnimateScaleTarget: {fileID: 1573088627}
         AnimateScaleDuration: 1.5
         RemapCurveZero: 1
-        RemapCurveOne: 1.5
+        RemapCurveOne: 1.2
         Offset: 0
         AnimateX: 1
         AnimateScaleTweenX:
@@ -39147,7 +39147,7 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
-        AnimateZ: 1
+        AnimateZ: 0
         AnimateScaleTweenZ:
           MMTweenDefinitionType: 1
           MMTweenCurve: 4
