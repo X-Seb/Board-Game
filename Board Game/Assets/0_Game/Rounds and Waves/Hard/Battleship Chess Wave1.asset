@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b85c182ee962461d89aa134dc739747, type: 3}
+  m_Name: Battleship Chess Wave1
+  m_EditorClassIdentifier: 
+  m_enemies:
+  - {fileID: 8310317341608840035, guid: 4a7ca2f124d1e44c5bfd418916890510, type: 3}
+  - {fileID: 2867892608413136960, guid: 12befc7050048423b8eb997254066537, type: 3}
+  - {fileID: 14768138973613231, guid: e1fa1fc6a6c564f1384d63f7ede29ea1, type: 3}
+  - {fileID: 8924562730082605882, guid: 41d31fb0baeef458fb95f9dc877f6b50, type: 3}
+  - {fileID: 4328191732094124907, guid: c9c2bfedcfb734c9c85ca0c5b248ab95, type: 3}
+  - {fileID: 1913801374311127724, guid: 882a4555604724445ac5ddf533f683a5, type: 3}
+  m_pointReward: 18
+  m_spawnInterval: 0
+  m_overrideSpawner: 0
+  m_overrideSpawnIntervals: 1
+  m_newSpawnIntervals:
+  - 1
+  - 3
+  - 10
+  - 3
+  - 10
+  - 3

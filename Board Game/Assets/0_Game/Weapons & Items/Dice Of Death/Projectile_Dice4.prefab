@@ -176,7 +176,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.2, y: 1.2, z: 1.2}
+  m_Size: {x: 1.25, y: 1.2, z: 1.25}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1295273878117305246
 Rigidbody:
@@ -228,7 +228,7 @@ MonoBehaviour:
   FaceDirection: 0
   FaceMovement: 0
   MovementVector: 0
-  Speed: 250
+  Speed: 270
   Acceleration: 0
   Direction: {x: 1, y: 0, z: 0}
   DirectionCanBeChangedBySpawner: 1

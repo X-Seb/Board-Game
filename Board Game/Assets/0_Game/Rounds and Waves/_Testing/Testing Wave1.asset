@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b85c182ee962461d89aa134dc739747, type: 3}
+  m_Name: Testing Wave1
+  m_EditorClassIdentifier: 
+  m_enemies:
+  - {fileID: 3095849369095809815, guid: 4d87cbd22a9ab4a43a030fc584f40c63, type: 3}
+  - {fileID: 1948452043460385931, guid: 36d419256681a45f9a0d1cbede8d865d, type: 3}
+  - {fileID: 2867892608413136960, guid: 12befc7050048423b8eb997254066537, type: 3}
+  - {fileID: 5168825772273566436, guid: 22d8627f12cbf44c39cb1079e6562803, type: 3}
+  m_spawnInterval: 1
+  m_overrideSpawner: 1
+  m_overrideSpawnIntervals: 1
+  m_newSpawnIntervals:
+  - 1
+  - 15
+  - 15
+  - 15

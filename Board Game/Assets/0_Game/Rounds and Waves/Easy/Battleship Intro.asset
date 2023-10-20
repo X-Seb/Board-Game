@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
+  m_Name: Battleship Intro
+  m_EditorClassIdentifier: 
+  roundName: Battleships!
+  roundDescription: 
+  roundDifficulty: 2
+  overrideSFX: 0
+  roundStartSFX: {fileID: 0}
+  roundEndSFX: {fileID: 0}
+  m_waves:
+  - {fileID: 11400000, guid: 6b1c319428dc84792aec4d3d78b7d4e5, type: 2}
+  - {fileID: 11400000, guid: aa2c4df19e5494f5f9bdc6fd7e2c451b, type: 2}

@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enemies:
   - {fileID: 8862513430222133648, guid: 96bf32791e80a4a1894dd5d1c1b5238f, type: 3}
-  - {fileID: 14768138973613231, guid: 83495f77c31594c5bba0325a249fb7d7, type: 3}
   - {fileID: 5832640078387480686, guid: 50a54bbb3da2d46558f94bc91b0967aa, type: 3}
+  - {fileID: 14768138973613231, guid: 83495f77c31594c5bba0325a249fb7d7, type: 3}
   - {fileID: 4030076681947214924, guid: 923ccf9f48ae74d1397d7d91e0334014, type: 3}
+  m_pointReward: 12
   m_spawnInterval: 0
   m_overrideSpawner: 1
   m_overrideSpawnIntervals: 1
   m_newSpawnIntervals:
   - 1
-  - 8
-  - 3
-  - 3
+  - 10
+  - 4
+  - 4

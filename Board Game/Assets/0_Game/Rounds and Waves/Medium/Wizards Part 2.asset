@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
+  m_Name: Wizards Part 2
+  m_EditorClassIdentifier: 
+  roundName: Bigger, Wizer Wizards!
+  roundDescription: They've been training their magic...
+  roundDifficulty: 4
+  overrideSFX: 0
+  roundStartSFX: {fileID: 0}
+  roundEndSFX: {fileID: 0}
+  m_waves:
+  - {fileID: 11400000, guid: 866a554704c18454999126914b0ff192, type: 2}
+  - {fileID: 11400000, guid: 648c5367905fa4b64ae1c346e1cac332, type: 2}
+  - {fileID: 11400000, guid: eb4f70dc89cc74058bbae7dd625d3f0f, type: 2}

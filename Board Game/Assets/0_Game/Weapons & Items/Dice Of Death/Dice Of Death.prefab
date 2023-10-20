@@ -32,8 +32,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8339466911542422619}
   - {fileID: 1200518777852279189}
+  - {fileID: 8339466911542422619}
   - {fileID: 1362538038048015532}
   - {fileID: 350440013444422439}
   m_Father: {fileID: 0}
@@ -56,7 +56,7 @@ MonoBehaviour:
   TriggerMode: 1
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 0.333
+  TimeBetweenUses: 0.3
   TimeBetweenUsesReleaseInterruption: 1
   UseBurstMode: 0
   BurstLength: 3
@@ -83,7 +83,7 @@ MonoBehaviour:
   MovementMultiplier: 0.6
   PreventAllMovementWhileInUse: 0
   PreventAllAimWhileInUse: 0
-  RecoilForce: 0.1
+  RecoilForce: 1
   Animators: []
   PerformAnimatorSanityChecks: 0
   MirrorCharacterAnimatorParameters: 0
@@ -152,8 +152,8 @@ MonoBehaviour:
   MouseDeadZoneRadius: 0.5
   DisplayReticle: 1
   MoveCameraTargetTowardsReticle: 1
-  CameraTargetOffset: 0.33
-  CameraTargetMaxDistance: 10
+  CameraTargetOffset: 0.3
+  CameraTargetMaxDistance: 11
   CameraTargetSpeed: 5
   Unrestricted3DAim: 0
   ReticleMovesWithSlopes: 0
@@ -174,43 +174,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73098ca8f002adc4f9debdbe47a78c9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MutualizeWaitingPools: 0
-  NestWaitingPool: 1
+  MutualizeWaitingPools: 1
+  NestWaitingPool: 0
   NestUnderThis: 0
   Pool:
   - GameObjectToPool: {fileID: 1303676275303563734, guid: cefdb9d4fa15547a8840ff20ec9f5152,
       type: 3}
     PoolSize: 6
-    PoolCanExpand: 0
+    PoolCanExpand: 1
     Enabled: 1
   - GameObjectToPool: {fileID: 1303676275303563734, guid: af799fe7ee7434836857ca69afc1e9d2,
       type: 3}
     PoolSize: 4
-    PoolCanExpand: 0
+    PoolCanExpand: 1
     Enabled: 1
   - GameObjectToPool: {fileID: 1303676275303563734, guid: bcfee845439d44b90a1ef555b30ef45f,
       type: 3}
     PoolSize: 3
-    PoolCanExpand: 0
+    PoolCanExpand: 1
     Enabled: 1
   - GameObjectToPool: {fileID: 1303676275303563734, guid: 0679b4b0a7c4b422a852de064dce5f06,
       type: 3}
     PoolSize: 2
-    PoolCanExpand: 0
+    PoolCanExpand: 1
     Enabled: 1
   - GameObjectToPool: {fileID: 1303676275303563734, guid: 1d833b97286224ef79f40ad78488e35d,
       type: 3}
     PoolSize: 2
-    PoolCanExpand: 0
+    PoolCanExpand: 1
     Enabled: 1
   - GameObjectToPool: {fileID: 1303676275303563734, guid: 4231ff7d5ddd2419eb87b2f539281994,
       type: 3}
     PoolSize: 1
-    PoolCanExpand: 0
+    PoolCanExpand: 1
     Enabled: 1
   PoolingMethod: 3
   CanPoolSameObjectTwice: 0
-  MutualizedPoolName: 
+  MutualizedPoolName: DiceOfDeath_MultiplePool
 --- !u!1 &1965030226280718971
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,7 +781,7 @@ MonoBehaviour:
           m_DissipationRate: 0
           m_RawSignal: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4,
             type: 2}
-          m_AmplitudeGain: 0.9
+          m_AmplitudeGain: 0.6
           m_FrequencyGain: 1
           m_RepeatMode: 0
           m_Randomize: 1
@@ -808,7 +808,7 @@ MonoBehaviour:
           m_DissipationMode: 2
           m_DissipationDistance: 1000
           m_PropagationSpeed: 343
-        Velocity: {x: 0.5, y: 0.5, z: 0.5}
+        Velocity: {x: 0.4, y: 0.4, z: 0.4}
         ClearImpulseOnStop: 0
     - rid: 2694893150061723662
       type: {class: MMF_Bloom, ns: MoreMountains.FeedbacksForThirdParty, asm: MoreMountains.Feedbacks.PostProcessing}
@@ -916,7 +916,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         RemapIntensityZero: 0
-        RemapIntensityOne: 1
+        RemapIntensityOne: 3
         ShakeThreshold:
           serializedVersion: 2
           m_Curve:
@@ -1166,7 +1166,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         RemapIntensityZero: 0
-        RemapIntensityOne: 0.06
+        RemapIntensityOne: 0.05
         RelativeIntensity: 1
         InterpolateColor: 0
         ColorCurve:
@@ -1284,7 +1284,7 @@ MonoBehaviour:
         DebugActive: 0
         BoundLight: {fileID: 4502234819266507442}
         Mode: 0
-        Duration: 0.2
+        Duration: 0.15
         StartsOff: 1
         DisableOnStop: 1
         RelativeValues: 1
@@ -1365,7 +1365,7 @@ MonoBehaviour:
         RemapIntensityOne: 1
         InstantIntensity: 0
         ToDestinationIntensity: 1
-        ModifyRange: 1
+        ModifyRange: 0
         RangeCurve:
           serializedVersion: 2
           m_Curve:
@@ -1403,7 +1403,7 @@ MonoBehaviour:
         RemapRangeOne: 10
         InstantRange: 0
         ToDestinationRange: 10
-        ModifyShadowStrength: 1
+        ModifyShadowStrength: 0
         ShadowStrengthCurve:
           serializedVersion: 2
           m_Curve:
@@ -1484,7 +1484,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.7647059, g: 0.14117646, b: 0.45182353, a: 1}
+  m_Color: {r: 0.8962264, g: 0.2494215, b: 0.44716045, a: 1}
   m_Intensity: 2
   m_Range: 5
   m_SpotAngle: 30
@@ -5457,7 +5457,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 768
+      m_Bits: 8960
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5

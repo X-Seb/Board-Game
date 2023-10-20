@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
   m_Name: Rooks Part 2
   m_EditorClassIdentifier: 
-  roundName: Rook Revenge
-  roundDescription: 
+  roundName: Rooks' Revenge
+  roundDescription: They always seem mad for some reason...
   roundDifficulty: 3
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
   m_waves:
-  - {fileID: 11400000, guid: 1b3632e796d2e4b719e08dc3729c721b, type: 2}
-  - {fileID: 11400000, guid: e89d73deeb18042fab4319188456afe9, type: 2}
   - {fileID: 11400000, guid: 314e111aaba5641e884f291bfd1d7273, type: 2}

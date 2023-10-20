@@ -29,6 +29,8 @@ public class RoundManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI m_totalEnemiesKilledText;
     [SerializeField] private TextMeshProUGUI m_currentRoundText;
     [SerializeField] private TextMeshProUGUI m_targetsRemainingText;
+    [SerializeField] private TextMeshProUGUI m_currentScoreText;
+    [SerializeField] private TextMeshProUGUI m_deathUIbestScoreText;
     [SerializeField] private TextMeshProUGUI m_elapsedTimeText;
 
     [Header("Feedbacks: ")]
@@ -40,6 +42,8 @@ public class RoundManager : MonoBehaviour
     public MMFeedbacks m_winFeedback;
 
     [Header("For reference: ")]
+    [SerializeField] private int m_currentScore;
+    [SerializeField] private bool m_firstPlay;
     [SerializeField] private int m_roundGroupIndex;
     [SerializeField] private RoundGroup m_currentRoundGroup;
     [SerializeField] private Round m_currentRound;
@@ -50,8 +54,15 @@ public class RoundManager : MonoBehaviour
     [SerializeField] private int m_targetsRemainingInWave;
     [SerializeField] private int m_totalRoundNumber;
     [SerializeField] private float m_totalTimeElapsed;
+    [SerializeField] private bool m_isTimerCounting = true;
 
     #endregion
+
+    public int GetScore() { return m_currentScore; }
+    public int GetEnemiesKilled() { return m_totalEnemiesKilled; }
+    public int GetTotalRoundNumber() { return m_totalRoundNumber; }
+    public int GetTotalRoundsCompleted() { return m_totalRoundNumber - 1; }
+    public float GetTotalTimeElapsed() { return m_totalTimeElapsed; }
 
     public void Start()
     {
@@ -62,12 +73,39 @@ public class RoundManager : MonoBehaviour
         ShuffleRoundGroups();
         Reshuffle(m_enemySpawners);
 
-        if (PlayerPrefs.HasKey("StartingRoundGroup"))
+        // Start at the correct round group index
+        if (PlayerPrefs.HasKey("StartingRoundGroupIndex"))
         {
-
+            m_roundGroupIndex = PlayerPrefs.GetInt("StartingRoundGroupIndex");
+        }
+        else
+        {
+            m_roundGroupIndex = 0;
         }
 
+        // Setup
+        m_isTimerCounting = true;
+        m_totalTimeElapsed = 0.0f;
+        m_totalEnemiesKilled = 0;
+        m_currentRoundGroup = m_roundGroups[m_roundGroupIndex];
+        m_roundsFromCurrentGroup = 1;
+        m_totalRoundNumber = 1;
+        m_currentWaveNumber = 1;
+        m_currentRound = m_currentRoundGroup.GetRounds()[0];
+        m_currentWave = m_currentRound.GetWave(1);
+        m_firstPlay = true;
+
         if (m_shouldSpawnWaves) { m_startGameFeedback.PlayFeedbacks(); }
+    }
+
+    private void Update()
+    {
+        // Update the timer
+        if (m_isTimerCounting)
+        {
+            m_totalTimeElapsed += Time.deltaTime;
+            m_elapsedTimeText.text = GetTimeElapsedStringFormat(m_totalTimeElapsed);
+        }
     }
 
     /// <summary>
@@ -78,16 +116,10 @@ public class RoundManager : MonoBehaviour
     /// </summary>
     public void StartNextWaveOrRound()
     {
-        // If we just started => start tutorial 1, wave 1
-        if (m_currentRound == null)
+        // If we just started => start current round
+        if (m_firstPlay == true)
         {
-            m_roundGroupIndex = 0;
-            m_currentRoundGroup = m_roundGroups[0];
-            m_roundsFromCurrentGroup = 1;
-            m_totalRoundNumber = 1;
-            m_currentWaveNumber = 1;
-            m_currentRound = m_roundGroups[0].GetRounds()[0];
-            m_currentWave = m_currentRound.GetWave(1);
+            m_firstPlay = false;
             RoundStart(m_currentRound);
         }
         // If the round is in progress => next wave
@@ -97,7 +129,7 @@ public class RoundManager : MonoBehaviour
             m_currentWave = m_currentRound.GetWave(m_currentWaveNumber);
             WaveStart();
         }
-        // If the round is over and there are more rounds of that type => next round, wave 1
+        // If the round is over and there are more rounds in the current round group => next round, wave 1
         else if (m_roundsFromCurrentGroup < m_currentRoundGroup.GetNumberOfRounds())
         {
             m_roundsFromCurrentGroup++;
@@ -108,7 +140,7 @@ public class RoundManager : MonoBehaviour
             RoundStart(m_currentRound);
         }
 
-        // If the round is over and there are no more rounds of that type => next category, random round, wave 1
+        // If the round is over and there are no more rounds of that type => next round group, first round, wave 1
         //TODO: do this
         else if (m_roundsFromCurrentGroup >= m_currentRoundGroup.GetNumberOfRounds() && m_roundGroupIndex < m_roundGroups.Length - 1)
         {
@@ -125,6 +157,12 @@ public class RoundManager : MonoBehaviour
         {
             Win();
         }
+    }
+
+    public void WaveEnd()
+    {
+        m_currentScore += m_currentWave.GetPointReward();
+        m_waveEndFeedback.PlayFeedbacks();
     }
 
     /// <summary>
@@ -237,7 +275,7 @@ public class RoundManager : MonoBehaviour
 
         if (m_targetsRemainingInWave <= 0)
         {
-            m_waveEndFeedback.PlayFeedbacks(); // Play SFX, wait, StartNextRoundOrWave
+            WaveEnd(); // Update Score, play SFX, wait, StartNextRoundOrWave
         }
     }
 
@@ -247,9 +285,48 @@ public class RoundManager : MonoBehaviour
         m_targetsRemainingText.text = m_targetsRemainingInWave.ToString();
     }
 
+    public void AddToScore(int amountToAdd)
+    {
+        m_currentScore += amountToAdd;
+    }
+
+    public void IsTimerCounting(bool value) { m_isTimerCounting = value; }
+
+    public void UpdateBestScore()
+    {
+        if (!PlayerPrefs.HasKey("BestScore") || m_currentScore > PlayerPrefs.GetInt("BestScore"))
+        {
+            PlayerPrefs.SetInt("BestScore", m_currentScore);
+            PlayerPrefs.Save();
+        }
+    }
+
+    public string GetTimeElapsedWithMilisStringFormat()
+    {
+        return GetTimeElapsedStringFormat(m_totalTimeElapsed, true);
+    }
+
+    private string GetTimeElapsedStringFormat(float timeInSec, bool showMiliseconds = false)
+    {
+        int hours = ((int)timeInSec) / 3600;
+        int mins = (((int)timeInSec) % 3600) / 60;
+        int sec = (((int)timeInSec) % 60);
+
+        if (!showMiliseconds)
+        {
+            return string.Format("{0:D2}:{1:D2}:{2:D2}", hours, mins, sec);
+        }
+        else
+        {
+            int milis = (int)(timeInSec * 1000) % 1000;
+            return string.Format("{0:D2}:{1:D2}:{2:D2}:{3:D2}", hours, mins, sec, milis);
+        }
+    }
+
     private void Win()
     {
         Debug.Log("You win!");
+        UpdateBestScore();
         m_winFeedback.PlayFeedbacks();
     }
     

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b85c182ee962461d89aa134dc739747, type: 3}
+  m_Name: Projectile Enemies 1
+  m_EditorClassIdentifier: 
+  m_enemies:
+  - {fileID: 5765793011367982943, guid: 836a90f6a785c4ff898628c64298e70d, type: 3}
+  - {fileID: 3163172427798067701, guid: 1d545b9f3e899443289162231e6c8694, type: 3}
+  - {fileID: 5597999330980822728, guid: 48f4da9b26b5d400191aac0011aea06e, type: 3}
+  m_spawnInterval: 1
+  m_overrideSpawner: 1
+  m_overrideSpawnIntervals: 0
+  m_newSpawnIntervals: []

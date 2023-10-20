@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
+  m_Name: Dynamic Trio
+  m_EditorClassIdentifier: 
+  roundName: Dynamic Trio
+  roundDescription: They basically BFFs...
+  roundDifficulty: 3
+  overrideSFX: 0
+  roundStartSFX: {fileID: 0}
+  roundEndSFX: {fileID: 0}
+  m_waves:
+  - {fileID: 11400000, guid: 55fe8dc93474e47c98e6c4cfdf1d3d44, type: 2}
+  - {fileID: 11400000, guid: c63b7e88b9c304ec8b5256719b70e909, type: 2}
