@@ -78747,7 +78747,7 @@ MonoBehaviour:
         MoveToPosition: 0
         ActivateOnPlay: 1
         StopSystemOnInit: 1
-        DeclaredDuration: 0
+        DeclaredDuration: 0.6
         ForceSimulationSpeed: 0
         ForcedSimulationSpeed: {x: 0.1, y: 1}
     - rid: 917653660728557720
