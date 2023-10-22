@@ -8496,7 +8496,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 668133596}
-  - component: {fileID: 668133597}
   - component: {fileID: 668133598}
   m_Layer: 0
   m_Name: DoOnAwake
@@ -8520,34 +8519,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1918232351}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &668133597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668133595}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 084a638ada7b640b893329980dad3d43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_triggerTime: 0
-  m_event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1734572836}
-        m_TargetAssemblyTypeName: MoreMountains.Tools.MMSoundManager, MoreMountains.Tools
-        m_MethodName: SetVolumeMaster
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &668133598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8555,24 +8526,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668133595}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8079f7745e807461aa14c2fb1d1df036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_keyName: MasterVolume
   m_keyType: 1
-  m_triggerTime: 0
+  m_triggerTime: 1
   m_hasKeyEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1734572836}
-        m_TargetAssemblyTypeName: MoreMountains.Tools.MMSoundManager, MoreMountains.Tools
-        m_MethodName: SetVolumeMaster
-        m_Mode: 4
+      - m_Target: {fileID: 537766356}
+        m_TargetAssemblyTypeName: GGGetPlayerPrefs, Assembly-CSharp
+        m_MethodName: SetSliderFloatValue
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 537766355}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -30097,7 +30068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55a9829731bf3d3458319a5a829f1f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mode: 1
+  Mode: 0
   StateOnStart: 0
   TargetObjects:
   - {fileID: 784234798}
@@ -30117,7 +30088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55a9829731bf3d3458319a5a829f1f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mode: 1
+  Mode: 0
   StateOnStart: 1
   TargetObjects:
   - {fileID: 460226593}

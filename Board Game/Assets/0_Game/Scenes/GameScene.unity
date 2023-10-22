@@ -18492,7 +18492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_keyName: MasterVolume
   m_keyType: 1
-  m_triggerTime: 0
+  m_triggerTime: 1
   m_hasKeyEvent:
     m_PersistentCalls:
       m_Calls:

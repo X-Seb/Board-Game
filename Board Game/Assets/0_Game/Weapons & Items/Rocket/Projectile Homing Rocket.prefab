@@ -7228,9 +7228,9 @@ MonoBehaviour:
     DisableGravity: 0
     ResetControllerForces: 0
     ForcedConditionDuration: 0
-    ApplyMovementMultiplier: 0
-    MovementMultiplier: 0
-    MovementMultiplierDuration: 0
+    ApplyMovementMultiplier: 1
+    MovementMultiplier: 0.3
+    MovementMultiplierDuration: 0.5
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
