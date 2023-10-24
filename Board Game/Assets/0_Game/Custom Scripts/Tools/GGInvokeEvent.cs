@@ -16,7 +16,7 @@ public class GGInvokeEvent : MonoBehaviour
         Start,
     }
 
-    void Awake()
+    private void Awake()
     {
         if (m_triggerTime == TriggerTime.Awake)
         {
@@ -24,11 +24,16 @@ public class GGInvokeEvent : MonoBehaviour
         }
     }
 
-    void Start()
+    private void Start()
     {
         if (m_triggerTime == TriggerTime.Start)
         {
             m_event?.Invoke();
         }
+    }
+
+    public void InvokeEvent()
+    {
+        m_event?.Invoke();
     }
 }

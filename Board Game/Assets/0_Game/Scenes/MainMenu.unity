@@ -213,6 +213,9 @@ MonoBehaviour:
   m_stringValue: 
   m_intValue: 1
   m_floatValue: 0
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray: []
 --- !u!114 &1118171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,6 +260,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 668133600}
+        m_TargetAssemblyTypeName: GGInvokeEvent, Assembly-CSharp
+        m_MethodName: InvokeEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2016858571}
         m_TargetAssemblyTypeName: MoreMountains.Feedbacks.MMF_Player, MoreMountains.Feedbacks
         m_MethodName: PlayFeedbacks
@@ -708,6 +723,9 @@ MonoBehaviour:
   m_stringValue: 
   m_intValue: 0
   m_floatValue: 0
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray: []
 --- !u!1 &25465917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,7 +1885,7 @@ GameObject:
   - component: {fileID: 116529377}
   - component: {fileID: 116529376}
   m_Layer: 5
-  m_Name: Dropdown
+  m_Name: Round Dropdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1912,6 +1930,9 @@ MonoBehaviour:
   m_stringValue: 
   m_intValue: 0
   m_floatValue: 0
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray: []
 --- !u!114 &116529377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1985,18 +2006,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: GGSetPlayerPrefs, Assembly-CSharp
         m_MethodName: SetInt
         m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 116529376}
-        m_TargetAssemblyTypeName: GGSetPlayerPrefs, Assembly-CSharp
-        m_MethodName: SaveAllPlayerPrefs
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4421,6 +4430,9 @@ MonoBehaviour:
   m_stringValue: 
   m_intValue: 0
   m_floatValue: 0
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray: []
 --- !u!114 &324710403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7418,6 +7430,9 @@ MonoBehaviour:
   m_stringValue: 
   m_intValue: 0
   m_floatValue: 0
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray: []
 --- !u!1 &503981050
 GameObject:
   m_ObjectHideFlags: 0
@@ -7590,7 +7605,7 @@ GameObject:
   - component: {fileID: 513495206}
   - component: {fileID: 513495205}
   m_Layer: 5
-  m_Name: Dropdown
+  m_Name: HealthRegen Dropdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7630,11 +7645,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b04198065cc2247fb8ecfda5b10f5157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_keyName: StartingRoundGroupIndex
-  m_keyType: 0
+  m_keyName: HealthRefillAmount
+  m_keyType: 1
   m_stringValue: 
   m_intValue: 0
   m_floatValue: 0
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray:
+  - 0
+  - 1
+  - 2.5
+  - 4
+  - 5.5
+  - 8
+  - 15
 --- !u!114 &513495206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7687,9 +7712,9 @@ MonoBehaviour:
     m_Options:
     - m_Text: Disabled
       m_Image: {fileID: 0}
-    - m_Text: Very Slow
+    - m_Text: Very Low
       m_Image: {fileID: 0}
-    - m_Text: Slow
+    - m_Text: Low
       m_Image: {fileID: 0}
     - m_Text: Default
       m_Image: {fileID: 0}
@@ -7702,6 +7727,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 513495205}
+        m_TargetAssemblyTypeName: GGSetPlayerPrefs, Assembly-CSharp
+        m_MethodName: SetKeyFromArrayIndex
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2016858571}
         m_TargetAssemblyTypeName: MoreMountains.Feedbacks.MMF_Player, MoreMountains.Feedbacks
         m_MethodName: PlayFeedbacks
@@ -8207,6 +8244,9 @@ MonoBehaviour:
   m_stringValue: 
   m_intValue: 0
   m_floatValue: 0
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray: []
 --- !u!1 &539698597
 GameObject:
   m_ObjectHideFlags: 0
@@ -9512,7 +9552,6 @@ GameObject:
   - component: {fileID: 651223069}
   - component: {fileID: 651223068}
   - component: {fileID: 651223067}
-  - component: {fileID: 651223066}
   m_Layer: 5
   m_Name: Dropdown
   m_TagString: Untagged
@@ -9542,20 +9581,6 @@ RectTransform:
   m_AnchoredPosition: {x: -214, y: 0}
   m_SizeDelta: {x: 400, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &651223066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651223064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7486747e1e6ed4f3badfe560a5a573e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_whenToSetQuality: 1
-  m_dropdown: {fileID: 651223067}
 --- !u!114 &651223067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9615,19 +9640,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 651223066}
-        m_TargetAssemblyTypeName: GGSetQualityTool, Assembly-CSharp
-        m_MethodName: SetQualityLevel
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 651223066}
+      - m_Target: {fileID: 668133599}
         m_TargetAssemblyTypeName: GGSetQualityTool, Assembly-CSharp
         m_MethodName: SetQualityLevel
         m_Mode: 0
@@ -10120,8 +10133,10 @@ GameObject:
   m_Component:
   - component: {fileID: 668133596}
   - component: {fileID: 668133598}
+  - component: {fileID: 668133600}
+  - component: {fileID: 668133599}
   m_Layer: 0
-  m_Name: DoOnAwake
+  m_Name: DoOnAwakeOrStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10149,7 +10164,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668133595}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8079f7745e807461aa14c2fb1d1df036, type: 3}
   m_Name: 
@@ -10186,6 +10201,96 @@ MonoBehaviour:
   m_comparisonFalseEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &668133599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668133595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7486747e1e6ed4f3badfe560a5a573e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_whenToSetQuality: 1
+  m_dropdown: {fileID: 651223067}
+--- !u!114 &668133600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668133595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084a638ada7b640b893329980dad3d43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_triggerTime: 1
+  m_event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 116529377}
+        m_TargetAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+        m_MethodName: set_value
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1855005331}
+        m_TargetAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+        m_MethodName: set_value
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 782106560}
+        m_TargetAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+        m_MethodName: set_value
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 513495206}
+        m_TargetAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
+        m_MethodName: set_value
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1383453224}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+        m_MethodName: set_value
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 300
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &670910025 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71071680557654ef7aa63d4736bdc336,
@@ -10346,6 +10451,7 @@ GameObject:
   - component: {fileID: 684723634}
   - component: {fileID: 684723636}
   - component: {fileID: 684723635}
+  - component: {fileID: 684723637}
   m_Layer: 5
   m_Name: Number
   m_TagString: Untagged
@@ -10369,7 +10475,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -63.4, y: 0}
+  m_AnchoredPosition: {x: -63.399994, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &684723635
@@ -10471,6 +10577,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 684723633}
   m_CullTransparentMesh: 1
+--- !u!114 &684723637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684723633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a1b0417fc324b99b1f46a32e7898e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_text: {fileID: 684723635}
+  m_replaceWith: '{}'
+  m_componentInfoFetcher: {fileID: 0}
+  m_objectToGetFrom: {fileID: 0}
+  m_componentName: 
+  m_getterMethodName: 
+  m_infoType: 1
 --- !u!1 &687478157
 GameObject:
   m_ObjectHideFlags: 0
@@ -12271,7 +12396,7 @@ GameObject:
   - component: {fileID: 782106560}
   - component: {fileID: 782106559}
   m_Layer: 5
-  m_Name: Dropdown
+  m_Name: Dash Dropdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12311,11 +12436,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b04198065cc2247fb8ecfda5b10f5157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_keyName: StartingRoundGroupIndex
-  m_keyType: 0
+  m_keyName: DashCooldown
+  m_keyType: 1
   m_stringValue: 
   m_intValue: 0
   m_floatValue: 0
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray:
+  - 1.6
+  - 1.2
+  - 0.8
+  - 0.6
+  - 0.35
+  - 0
 --- !u!114 &782106560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12366,7 +12500,7 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: No Dashing
+    - m_Text: Very Slow
       m_Image: {fileID: 0}
     - m_Text: Slow
       m_Image: {fileID: 0}
@@ -12376,11 +12510,23 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Very Fast
       m_Image: {fileID: 0}
-    - m_Text: Insanely High
+    - m_Text: Unlimited
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 782106559}
+        m_TargetAssemblyTypeName: GGSetPlayerPrefs, Assembly-CSharp
+        m_MethodName: SetKeyFromArrayIndex
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2016858571}
         m_TargetAssemblyTypeName: MoreMountains.Feedbacks.MMF_Player, MoreMountains.Feedbacks
         m_MethodName: PlayFeedbacks
@@ -12747,6 +12893,9 @@ MonoBehaviour:
   m_stringValue: 
   m_intValue: 0
   m_floatValue: 0
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray: []
 --- !u!1 &798636180
 GameObject:
   m_ObjectHideFlags: 0
@@ -13507,6 +13656,9 @@ MonoBehaviour:
   m_stringValue: 
   m_intValue: 0
   m_floatValue: 0
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray: []
 --- !u!1 &858068203
 GameObject:
   m_ObjectHideFlags: 0
@@ -15064,7 +15216,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: No Dashing
+  m_text: Very Slow
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 75afa24bf4bea4d4d9a0a0255ce5878c, type: 2}
   m_sharedMaterial: {fileID: 802993357999365756, guid: 75afa24bf4bea4d4d9a0a0255ce5878c,
@@ -19723,6 +19875,9 @@ MonoBehaviour:
   m_stringValue: 
   m_intValue: 1
   m_floatValue: 0
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray: []
 --- !u!114 &1315830689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21106,9 +21261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1383453220}
   - component: {fileID: 1383453224}
-  - component: {fileID: 1383453223}
   - component: {fileID: 1383453222}
-  - component: {fileID: 1383453221}
   m_Layer: 5
   m_Name: Health Slider
   m_TagString: Untagged
@@ -21138,50 +21291,6 @@ RectTransform:
   m_AnchoredPosition: {x: -324, y: 0}
   m_SizeDelta: {x: 170, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1383453221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383453219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8079f7745e807461aa14c2fb1d1df036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_keyName: MasterVolume
-  m_keyType: 1
-  m_triggerTime: 1
-  m_hasKeyEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1383453221}
-        m_TargetAssemblyTypeName: GGGetPlayerPrefs, Assembly-CSharp
-        m_MethodName: SetSliderFloatValue
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1383453224}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_doesNotHaveKeyEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_shouldCompare: 0
-  m_comparisonType: 0
-  m_compareToString: 
-  m_compareToInt: 0
-  m_compareToFloat: 0
-  m_comparisonTrueEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_comparisonFalseEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1383453222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21194,32 +21303,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b04198065cc2247fb8ecfda5b10f5157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_keyName: MasterVolume
-  m_keyType: 1
+  m_keyName: MaxHealth
+  m_keyType: 0
   m_stringValue: 
   m_intValue: 0
   m_floatValue: 0
---- !u!114 &1383453223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383453219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 487bb7f14f728c74ca3bfc0020509b6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Track: 3
-  MinVolume: 0
-  MaxVolume: 1
-  Mode: 1
-  ChangeModeOnTrackFade: 1
-  ChangeModeOnMute: 1
-  ChangeModeOnUnmute: 1
-  ChangeModeOnTrackVolumeChange: 1
-  ModeSwitchBufferTime: 0.05
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray: []
 --- !u!114 &1383453224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21265,16 +21356,15 @@ MonoBehaviour:
   m_HandleRect: {fileID: 368137412}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 1
+  m_MaxValue: 1000
+  m_WholeNumbers: 1
+  m_Value: 1000
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1383453223}
-        m_TargetAssemblyTypeName: MoreMountains.Tools.MMSoundManagerTrackVolumeSlider,
-          MoreMountains.Tools
-        m_MethodName: UpdateVolume
+      - m_Target: {fileID: 1383453222}
+        m_TargetAssemblyTypeName: GGSetPlayerPrefs, Assembly-CSharp
+        m_MethodName: SetIntFromFloat
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21284,9 +21374,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1383453222}
-        m_TargetAssemblyTypeName: GGSetPlayerPrefs, Assembly-CSharp
-        m_MethodName: SetFloat
+      - m_Target: {fileID: 684723637}
+        m_TargetAssemblyTypeName: GGReplaceTextTool, Assembly-CSharp
+        m_MethodName: SetTextWithFloat
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21800,6 +21890,9 @@ MonoBehaviour:
   m_stringValue: 
   m_intValue: 1
   m_floatValue: 0
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray: []
 --- !u!114 &1411253794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21846,7 +21939,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1411253793}
         m_TargetAssemblyTypeName: GGSetPlayerPrefs, Assembly-CSharp
-        m_MethodName: SetKey
+        m_MethodName: SetKeyFromPredeterminedValue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27944,6 +28037,9 @@ MonoBehaviour:
   m_stringValue: 
   m_intValue: 0
   m_floatValue: 0
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray: []
 --- !u!114 &1823130948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27993,7 +28089,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1823130947}
         m_TargetAssemblyTypeName: GGSetPlayerPrefs, Assembly-CSharp
-        m_MethodName: SetBoolAsInt
+        m_MethodName: SetIntFromBool
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28220,7 +28316,7 @@ GameObject:
   - component: {fileID: 1855005331}
   - component: {fileID: 1855005330}
   m_Layer: 5
-  m_Name: Dropdown
+  m_Name: Speed Dropdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28260,11 +28356,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b04198065cc2247fb8ecfda5b10f5157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_keyName: StartingRoundGroupIndex
-  m_keyType: 0
+  m_keyName: MovementSpeed
+  m_keyType: 1
   m_stringValue: 
   m_intValue: 0
   m_floatValue: 0
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray:
+  - 5
+  - 7
+  - 9
+  - 11
+  - 13
+  - 16
 --- !u!114 &1855005331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28330,6 +28435,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1855005330}
+        m_TargetAssemblyTypeName: GGSetPlayerPrefs, Assembly-CSharp
+        m_MethodName: SetKeyFromArrayIndex
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2016858571}
         m_TargetAssemblyTypeName: MoreMountains.Feedbacks.MMF_Player, MoreMountains.Feedbacks
         m_MethodName: PlayFeedbacks
