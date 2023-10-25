@@ -41,7 +41,6 @@ public class EnemySpawner : MonoBehaviour
         {
             Instantiate(objectToSpawn, position, new Quaternion(0, 0, 0, 0));
         }
-        
     }
 
     public void Spawn()

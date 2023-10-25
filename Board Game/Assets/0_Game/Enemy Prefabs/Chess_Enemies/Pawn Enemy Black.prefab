@@ -132,22 +132,22 @@ PrefabInstance:
     - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: MaxDamageCaused
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: MinDamageCaused
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: InvincibilityDuration
-      value: 0.3
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: TypedDamages.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5290465110267507853, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}

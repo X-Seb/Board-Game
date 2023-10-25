@@ -1677,7 +1677,7 @@ MonoBehaviour:
   InitialSpawnPoint: {fileID: 1618121293}
   CurrentCheckpoint: {fileID: 0}
   PointsOfEntry: []
-  IntroFadeDuration: 0.8
+  IntroFadeDuration: 1
   SpawnDelay: 0
   OutroFadeDuration: 0.1
   FaderID: 0
@@ -14182,6 +14182,7 @@ GameObject:
   - component: {fileID: 676828228}
   - component: {fileID: 676828229}
   - component: {fileID: 676828230}
+  - component: {fileID: 676828231}
   m_Layer: 0
   m_Name: DoOnStart
   m_TagString: Untagged
@@ -14370,6 +14371,7 @@ MonoBehaviour:
   DebugActive: 0
   FeedbacksList:
   - rid: 917654018414346241
+  - rid: 917654088004141056
   - rid: 917654018414346242
   KeepPlayModeChanges: 0
   PerformanceMode: 0
@@ -14446,7 +14448,7 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 676828230}
         DebugActive: 0
-        PauseDuration: 0.1
+        PauseDuration: 2
         RandomizePauseDuration: 0
         MinPauseDuration: 1
         MaxPauseDuration: 3
@@ -14537,6 +14539,18 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+            - m_Target: {fileID: 676828231}
+              m_TargetAssemblyTypeName: GGDebugLogScript, Assembly-CSharp
+              m_MethodName: SimpleDebugLogMessage
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
         StopEvents:
           m_PersistentCalls:
             m_Calls: []
@@ -14546,6 +14560,91 @@ MonoBehaviour:
         ResetEvents:
           m_PersistentCalls:
             m_Calls: []
+    - rid: 917654088004141056
+      type: {class: MMF_DebugLog, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
+      data:
+        Active: 1
+        UniqueID: -2058678850
+        Label: Log
+        ChannelMode: 0
+        Channel: 0
+        MMChannelDefinition: {fileID: 0}
+        Chance: 100
+        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
+        Timing:
+          TimescaleMode: 0
+          ExcludeFromHoldingPauses: 0
+          ContributeToTotalDuration: 1
+          InitialDelay: 0
+          CooldownDuration: 0
+          InterruptsOnStop: 1
+          NumberOfRepeats: 0
+          RepeatForever: 0
+          DelayBetweenRepeats: 1
+          MMFeedbacksDirectionCondition: 0
+          PlayDirection: 0
+          ConstantIntensity: 0
+          UseIntensityInterval: 0
+          IntensityIntervalMin: 0
+          IntensityIntervalMax: 0
+          Sequence: {fileID: 0}
+          TrackID: 0
+          Quantized: 0
+          TargetBPM: 120
+        AutomatedTargetAcquisition:
+          Mode: 0
+          ChildIndex: 0
+        RandomizeOutput: 0
+        RandomMultiplier: {x: 0.8, y: 1}
+        RandomizeDuration: 0
+        RandomDurationMultiplier: {x: 0.5, y: 2}
+        UseRange: 0
+        RangeDistance: 5
+        UseRangeFalloff: 0
+        RangeFalloff:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        RemapRangeFalloff: {x: 0, y: 1}
+        Owner: {fileID: 676828230}
+        DebugActive: 0
+        DebugLogMode: 0
+        DebugMessage: Set Player Stats (Custom Run)
+        DebugColor: {r: 0, g: 1, b: 1, a: 1}
+        DisplayFrameCount: 1
+--- !u!114 &676828231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676828225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3048f5e5d536749e38b9ecba3587f31e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_simpleMessage: 'Unity Event: Custom Run Set PlayerStats'
 --- !u!1 &679479992
 GameObject:
   m_ObjectHideFlags: 0
@@ -44607,7 +44706,7 @@ GameObject:
   - component: {fileID: 1919321265}
   m_Layer: 0
   m_Name: AchievementRules
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53244,7 +53343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -545.9992, y: -98.18207}
+  m_AnchoredPosition: {x: -545.999, y: -98.18208}
   m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224429691925131679
@@ -53268,7 +53367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 256, y: -28.000122}
+  m_AnchoredPosition: {x: 256, y: -28.000137}
   m_SizeDelta: {x: 1297.9999, y: 932.36975}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224435348787466601
@@ -53406,7 +53505,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -581.9992, y: -150.68207}
+  m_AnchoredPosition: {x: -581.999, y: -150.68208}
   m_SizeDelta: {x: 512, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224720082643025791

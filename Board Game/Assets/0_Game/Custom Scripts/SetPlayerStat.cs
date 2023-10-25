@@ -18,8 +18,9 @@ public class SetPlayerStat : MonoBehaviour
 
     private void Start()
     {
-        m_character = LevelManager.Instance.Players[0];
-        m_player = m_character.gameObject;
+        //m_character = LevelManager.Instance.Players[0];
+        //m_player = m_character.gameObject;
+        m_player = GameObject.Find("Player");
         m_movement = m_player.GetComponent<CharacterMovement>();
         m_health = m_player.GetComponent<Health>();
         m_healthAutoRefill = m_player.GetComponent<HealthAutoRefill>();
@@ -49,9 +50,9 @@ public class SetPlayerStat : MonoBehaviour
         {
             Bar_x_size = Mathf.Lerp(0.5f, 1.5f, health / 300.0f);
         }
-        m_healthBar.Size.x = Bar_x_size;
+        m_healthBar.Size = new Vector2(Bar_x_size, m_healthBar.Size.y);
         m_health.MaximumHealth = health;
-        m_health.CurrentHealth = health;
+        m_health.SetHealth(health);
     }
 
     public void SetHealthRefillAmountFromPlayerPrefs()
