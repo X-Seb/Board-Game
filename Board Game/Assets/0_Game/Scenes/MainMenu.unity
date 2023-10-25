@@ -2668,9 +2668,9 @@ RectTransform:
   - {fileID: 1855005329}
   m_Father: {fileID: 1972478717}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 525, y: -277.14285}
   m_SizeDelta: {x: 1000, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &201762322
@@ -5519,8 +5519,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 496408085}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7242,9 +7242,8 @@ GameObject:
   - component: {fileID: 499903274}
   - component: {fileID: 499903273}
   - component: {fileID: 499903276}
-  - component: {fileID: 499903275}
   m_Layer: 5
-  m_Name: Volume Slider
+  m_Name: Music Volume Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7369,50 +7368,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &499903275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 499903271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8079f7745e807461aa14c2fb1d1df036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_keyName: MusicVolume
-  m_keyType: 1
-  m_triggerTime: 1
-  m_hasKeyEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 499903275}
-        m_TargetAssemblyTypeName: GGGetPlayerPrefs, Assembly-CSharp
-        m_MethodName: SetSliderFloatValue
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 499903274}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_doesNotHaveKeyEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_shouldCompare: 0
-  m_comparisonType: 0
-  m_compareToString: 
-  m_compareToInt: 0
-  m_compareToFloat: 0
-  m_comparisonTrueEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_comparisonFalseEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &499903276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7467,9 +7422,9 @@ RectTransform:
   - {fileID: 782106558}
   m_Father: {fileID: 1972478717}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 525, y: -389.99997}
   m_SizeDelta: {x: 1000, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &503981052
@@ -8056,9 +8011,8 @@ GameObject:
   - component: {fileID: 537766355}
   - component: {fileID: 537766354}
   - component: {fileID: 537766357}
-  - component: {fileID: 537766356}
   m_Layer: 5
-  m_Name: Volume Slider
+  m_Name: Master Volume Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8183,50 +8137,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &537766356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537766352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8079f7745e807461aa14c2fb1d1df036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_keyName: MasterVolume
-  m_keyType: 1
-  m_triggerTime: 1
-  m_hasKeyEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 537766356}
-        m_TargetAssemblyTypeName: GGGetPlayerPrefs, Assembly-CSharp
-        m_MethodName: SetSliderFloatValue
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 537766355}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_doesNotHaveKeyEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_shouldCompare: 0
-  m_comparisonType: 0
-  m_compareToString: 
-  m_compareToInt: 0
-  m_compareToFloat: 0
-  m_comparisonTrueEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_comparisonFalseEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &537766357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10132,7 +10042,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 668133596}
-  - component: {fileID: 668133598}
   - component: {fileID: 668133600}
   - component: {fileID: 668133599}
   m_Layer: 0
@@ -10157,50 +10066,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1918232351}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &668133598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668133595}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8079f7745e807461aa14c2fb1d1df036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_keyName: MasterVolume
-  m_keyType: 1
-  m_triggerTime: 1
-  m_hasKeyEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 537766356}
-        m_TargetAssemblyTypeName: GGGetPlayerPrefs, Assembly-CSharp
-        m_MethodName: SetSliderFloatValue
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 537766355}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_doesNotHaveKeyEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_shouldCompare: 0
-  m_comparisonType: 0
-  m_compareToString: 
-  m_compareToInt: 0
-  m_compareToFloat: 0
-  m_comparisonTrueEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_comparisonFalseEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &668133599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12705,9 +12570,8 @@ GameObject:
   - component: {fileID: 795409488}
   - component: {fileID: 795409487}
   - component: {fileID: 795409490}
-  - component: {fileID: 795409489}
   m_Layer: 5
-  m_Name: Volume Slider
+  m_Name: SFX Volume Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12832,50 +12696,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &795409489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795409485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8079f7745e807461aa14c2fb1d1df036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_keyName: SFXVolume
-  m_keyType: 1
-  m_triggerTime: 1
-  m_hasKeyEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 795409489}
-        m_TargetAssemblyTypeName: GGGetPlayerPrefs, Assembly-CSharp
-        m_MethodName: SetSliderFloatValue
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 795409488}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_doesNotHaveKeyEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_shouldCompare: 0
-  m_comparisonType: 0
-  m_compareToString: 
-  m_compareToInt: 0
-  m_compareToFloat: 0
-  m_comparisonTrueEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_comparisonFalseEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &795409490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13468,9 +13288,8 @@ GameObject:
   - component: {fileID: 850300243}
   - component: {fileID: 850300242}
   - component: {fileID: 850300245}
-  - component: {fileID: 850300244}
   m_Layer: 5
-  m_Name: Volume Slider
+  m_Name: UI Volume Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13595,50 +13414,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &850300244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 850300240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8079f7745e807461aa14c2fb1d1df036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_keyName: UIVolume
-  m_keyType: 1
-  m_triggerTime: 1
-  m_hasKeyEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 850300244}
-        m_TargetAssemblyTypeName: GGGetPlayerPrefs, Assembly-CSharp
-        m_MethodName: SetSliderFloatValue
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 850300243}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_doesNotHaveKeyEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_shouldCompare: 0
-  m_comparisonType: 0
-  m_compareToString: 
-  m_compareToInt: 0
-  m_compareToFloat: 0
-  m_comparisonTrueEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_comparisonFalseEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &850300245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15992,9 +15767,9 @@ RectTransform:
   - {fileID: 513495204}
   m_Father: {fileID: 1972478717}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 525, y: -502.85712}
   m_SizeDelta: {x: 1000, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1056895326
@@ -17617,9 +17392,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1972478717}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 525, y: -53.92857}
   m_SizeDelta: {x: 700, y: 95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211999822
@@ -18512,9 +18287,9 @@ RectTransform:
   - {fileID: 116529375}
   m_Father: {fileID: 1972478717}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 525, y: -164.2857}
   m_SizeDelta: {x: 1000, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1265756853
@@ -19416,7 +19191,7 @@ RectTransform:
   m_Father: {fileID: 1681054312}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -0.36999512, y: 0}
   m_SizeDelta: {x: 9.26, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -21590,7 +21365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1405268197
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21686,9 +21461,9 @@ RectTransform:
   - {fileID: 684723634}
   m_Father: {fileID: 1972478717}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 525, y: -615.7143}
   m_SizeDelta: {x: 1000, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1408038341
@@ -28297,9 +28072,9 @@ RectTransform:
   - {fileID: 1411253790}
   m_Father: {fileID: 1972478717}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 525, y: -736.0714}
   m_SizeDelta: {x: 1016, y: 115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1855005328
@@ -29593,6 +29368,7 @@ Transform:
   - {fileID: 612343371}
   - {fileID: 357775975}
   - {fileID: 668133596}
+  - {fileID: 1930427365}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1919321263
@@ -29776,6 +29552,217 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1921851830}
   m_CullTransparentMesh: 1
+--- !u!1 &1930427364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1930427365}
+  - component: {fileID: 1930427369}
+  - component: {fileID: 1930427368}
+  - component: {fileID: 1930427367}
+  - component: {fileID: 1930427366}
+  m_Layer: 0
+  m_Name: DoOnStart_TrackVolume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1930427365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930427364}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1918232351}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1930427366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930427364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8079f7745e807461aa14c2fb1d1df036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keyName: SFXVolume
+  m_keyType: 1
+  m_triggerTime: 2
+  m_hasKeyEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1930427366}
+        m_TargetAssemblyTypeName: GGGetPlayerPrefs, Assembly-CSharp
+        m_MethodName: SetSliderFloatValue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 795409488}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_doesNotHaveKeyEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shouldCompare: 0
+  m_comparisonType: 0
+  m_compareToString: 
+  m_compareToInt: 0
+  m_compareToFloat: 0
+  m_comparisonTrueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_comparisonFalseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1930427367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930427364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8079f7745e807461aa14c2fb1d1df036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keyName: UIVolume
+  m_keyType: 1
+  m_triggerTime: 2
+  m_hasKeyEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1930427367}
+        m_TargetAssemblyTypeName: GGGetPlayerPrefs, Assembly-CSharp
+        m_MethodName: SetSliderFloatValue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 850300243}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_doesNotHaveKeyEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shouldCompare: 0
+  m_comparisonType: 0
+  m_compareToString: 
+  m_compareToInt: 0
+  m_compareToFloat: 0
+  m_comparisonTrueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_comparisonFalseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1930427368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930427364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8079f7745e807461aa14c2fb1d1df036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keyName: MusicVolume
+  m_keyType: 1
+  m_triggerTime: 2
+  m_hasKeyEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1930427368}
+        m_TargetAssemblyTypeName: GGGetPlayerPrefs, Assembly-CSharp
+        m_MethodName: SetSliderFloatValue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 499903274}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_doesNotHaveKeyEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shouldCompare: 0
+  m_comparisonType: 0
+  m_compareToString: 
+  m_compareToInt: 0
+  m_compareToFloat: 0
+  m_comparisonTrueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_comparisonFalseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1930427369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930427364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8079f7745e807461aa14c2fb1d1df036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keyName: MasterVolume
+  m_keyType: 1
+  m_triggerTime: 2
+  m_hasKeyEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1930427369}
+        m_TargetAssemblyTypeName: GGGetPlayerPrefs, Assembly-CSharp
+        m_MethodName: SetSliderFloatValue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 537766355}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_doesNotHaveKeyEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shouldCompare: 0
+  m_comparisonType: 0
+  m_compareToString: 
+  m_compareToInt: 0
+  m_compareToFloat: 0
+  m_comparisonTrueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_comparisonFalseEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1936089784
 PrefabInstance:
   m_ObjectHideFlags: 0
