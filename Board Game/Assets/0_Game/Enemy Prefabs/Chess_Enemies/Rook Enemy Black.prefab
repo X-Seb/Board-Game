@@ -1008,7 +1008,7 @@ MonoBehaviour:
   DashSpace: 1
   DashDirection: {x: 0, y: 0, z: 1}
   DashDistance: 16
-  DashDuration: 0.4
+  DashDuration: 0.36
   DashCurve:
     serializedVersion: 2
     m_Curve:

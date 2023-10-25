@@ -815,12 +815,12 @@ PrefabInstance:
     - target: {fileID: 4867189637602265928, guid: 48f4da9b26b5d400191aac0011aea06e,
         type: 3}
       propertyPath: InitialHealth
-      value: 160
+      value: 145
       objectReference: {fileID: 0}
     - target: {fileID: 4867189637602265928, guid: 48f4da9b26b5d400191aac0011aea06e,
         type: 3}
       propertyPath: MaximumHealth
-      value: 160
+      value: 145
       objectReference: {fileID: 0}
     - target: {fileID: 4989949907248844525, guid: 48f4da9b26b5d400191aac0011aea06e,
         type: 3}
@@ -880,7 +880,7 @@ PrefabInstance:
     - target: {fileID: 6277468605324831117, guid: 48f4da9b26b5d400191aac0011aea06e,
         type: 3}
       propertyPath: Size.x
-      value: 1.9
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 6277468605324831117, guid: 48f4da9b26b5d400191aac0011aea06e,
         type: 3}

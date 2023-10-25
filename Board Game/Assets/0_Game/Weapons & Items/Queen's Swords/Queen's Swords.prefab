@@ -1330,7 +1330,7 @@ MonoBehaviour:
   TriggerMode: 1
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 1
+  TimeBetweenUses: 1.15
   TimeBetweenUsesReleaseInterruption: 1
   UseBurstMode: 1
   BurstLength: 8

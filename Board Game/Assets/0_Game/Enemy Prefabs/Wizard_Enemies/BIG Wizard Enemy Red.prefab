@@ -170,6 +170,11 @@ PrefabInstance:
       propertyPath: NumberOfHits
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7228363777365760486, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: Radius
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

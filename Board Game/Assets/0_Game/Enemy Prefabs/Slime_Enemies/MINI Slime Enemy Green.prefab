@@ -769,7 +769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: ShootDetectTargetRadius
-  Radius: 12
+  Radius: 10
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayerMask:
     serializedVersion: 2
@@ -1953,8 +1953,8 @@ MonoBehaviour:
   Model: {fileID: 3712777945580154889}
   CurrentHealth: 100
   Invulnerable: 0
-  InitialHealth: 20
-  MaximumHealth: 20
+  InitialHealth: 14
+  MaximumHealth: 14
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 4578943688102665342}
@@ -1999,7 +1999,7 @@ MonoBehaviour:
   TimeScale: 0
   HealthBarPrefab: {fileID: 0}
   TargetProgressBar: {fileID: 0}
-  Size: {x: 1.1, y: 0.15}
+  Size: {x: 0.8, y: 0.15}
   BackgroundPadding: {x: 0.03, y: 0.03}
   InitialRotationAngles: {x: 0, y: 0, z: 0}
   ForegroundColor:

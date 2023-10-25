@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enemies:
   - {fileID: 1923645982188993700, guid: a07698acde26f4344921b75d6b115e0d, type: 3}
-  - {fileID: 1873821884445454322, guid: a91775165ddfa4d6b9d3eb9453b2f376, type: 3}
-  - {fileID: 7178828548022852193, guid: 629a5c93d5b604fa3993fd1db70a0b8d, type: 3}
-  - {fileID: 7030082010935928248, guid: 88de881467b854c8b932d751f7973743, type: 3}
+  - {fileID: 4445940100281750750, guid: acdf0695717314e43a0c6018e0cba8d8, type: 3}
   - {fileID: 7178828548022852193, guid: b69056471a161421a83060eba9c6bb80, type: 3}
-  - {fileID: 1948452043460385931, guid: 36d419256681a45f9a0d1cbede8d865d, type: 3}
+  - {fileID: 7030082010935928248, guid: 88de881467b854c8b932d751f7973743, type: 3}
+  - {fileID: 7178828548022852193, guid: 629a5c93d5b604fa3993fd1db70a0b8d, type: 3}
   - {fileID: 1258462196515774035, guid: 37d4d38e1a4614001aa483314b24a97a, type: 3}
   - {fileID: 3095849369095809815, guid: 4d87cbd22a9ab4a43a030fc584f40c63, type: 3}
+  - {fileID: 1948452043460385931, guid: 36d419256681a45f9a0d1cbede8d865d, type: 3}
   m_pointReward: 30
   m_spawnInterval: 1
   m_overrideSpawner: 0
@@ -28,9 +28,9 @@ MonoBehaviour:
   m_newSpawnIntervals:
   - 1
   - 6
-  - 12
-  - 5
-  - 5
-  - 12
-  - 5
-  - 5
+  - 16
+  - 7
+  - 7
+  - 16
+  - 7
+  - 7

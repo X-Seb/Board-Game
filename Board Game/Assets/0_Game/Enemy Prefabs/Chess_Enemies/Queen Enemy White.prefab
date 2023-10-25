@@ -16,7 +16,7 @@ PrefabInstance:
     - target: {fileID: 4445940100281750750, guid: acdf0695717314e43a0c6018e0cba8d8,
         type: 3}
       propertyPath: m_Name
-      value: Queen Enemy White Variant
+      value: Queen Enemy White
       objectReference: {fileID: 0}
     - target: {fileID: 6025071213366229684, guid: acdf0695717314e43a0c6018e0cba8d8,
         type: 3}
@@ -82,12 +82,12 @@ PrefabInstance:
     - target: {fileID: 8770235630074047316, guid: acdf0695717314e43a0c6018e0cba8d8,
         type: 3}
       propertyPath: InitialHealth
-      value: 250
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8770235630074047316, guid: acdf0695717314e43a0c6018e0cba8d8,
         type: 3}
       propertyPath: MaximumHealth
-      value: 250
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

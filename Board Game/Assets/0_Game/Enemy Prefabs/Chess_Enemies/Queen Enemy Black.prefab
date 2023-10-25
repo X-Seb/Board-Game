@@ -2180,7 +2180,7 @@ MonoBehaviour:
   DashSpace: 1
   DashDirection: {x: 0, y: 0, z: 1}
   DashDistance: 14
-  DashDuration: 0.4
+  DashDuration: 0.36
   DashCurve:
     serializedVersion: 2
     m_Curve:
@@ -2319,7 +2319,7 @@ MonoBehaviour:
   TimeScale: 0
   HealthBarPrefab: {fileID: 0}
   TargetProgressBar: {fileID: 0}
-  Size: {x: 2, y: 0.4}
+  Size: {x: 2.2, y: 0.4}
   BackgroundPadding: {x: 0.03, y: 0.03}
   InitialRotationAngles: {x: 0, y: 0, z: 0}
   ForegroundColor:
@@ -8075,7 +8075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: DashRadius
-  Radius: 6.5
+  Radius: 7
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayerMask:
     serializedVersion: 2

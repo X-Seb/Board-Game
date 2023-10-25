@@ -13,17 +13,16 @@ MonoBehaviour:
   m_Name: Rook Part2 Wave1
   m_EditorClassIdentifier: 
   m_enemies:
+  - {fileID: 4030076681947214924, guid: 923ccf9f48ae74d1397d7d91e0334014, type: 3}
   - {fileID: 8310317341608840035, guid: 4a7ca2f124d1e44c5bfd418916890510, type: 3}
+  - {fileID: 4030076681947214924, guid: 923ccf9f48ae74d1397d7d91e0334014, type: 3}
   - {fileID: 8310317341608840035, guid: 4a7ca2f124d1e44c5bfd418916890510, type: 3}
-  - {fileID: 1174499198651537194, guid: 3e448d0b64f3945828b7d235b2aad737, type: 3}
-  - {fileID: 1174499198651537194, guid: 3e448d0b64f3945828b7d235b2aad737, type: 3}
-  - {fileID: 1174499198651537194, guid: 3e448d0b64f3945828b7d235b2aad737, type: 3}
+  m_pointReward: 13
   m_spawnInterval: 0
   m_overrideSpawner: 0
-  m_overrideSpawnIntervals: 1
+  m_overrideSpawnIntervals: 0
   m_newSpawnIntervals:
   - 1
-  - 1
-  - 5
-  - 1
-  - 1
+  - 5.5
+  - 5.5
+  - 5.5
