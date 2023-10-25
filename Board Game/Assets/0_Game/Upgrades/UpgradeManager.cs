@@ -12,6 +12,4 @@ public class UpgradeManager : MonoBehaviour
     [SerializeField] private GameObject m_legendaryUpgrades;
     [SerializeField] private Inventory m_availableUpgradeInventory;
     [SerializeField] private Inventory m_aquiredUpgradeInventory;
-
-
 }

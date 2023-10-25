@@ -10,7 +10,7 @@ public class UpgradeHolder : MonoBehaviour
     [SerializeField] private string m_rarity;
     [SerializeField] private UnityEvent m_upgradeGainedEvent;
 
-    public void InvokeEvent()
+    public void InvokeUpgradeGainedEvent()
     {
         m_upgradeGainedEvent.Invoke();
     }

@@ -14276,8 +14276,10 @@ MonoBehaviour:
   m_character: {fileID: 0}
   m_health: {fileID: 0}
   m_healthAutoRefill: {fileID: 0}
+  m_healthBar: {fileID: 0}
   m_movement: {fileID: 0}
   m_damageDash: {fileID: 0}
+  m_handleWeapon: {fileID: 0}
 --- !u!114 &676828230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28783,7 +28785,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301834318}
         m_TargetAssemblyTypeName: GGReplaceTextTool, Assembly-CSharp
-        m_MethodName: SetText
+        m_MethodName: SetTextByUsingReflection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28842,7 +28844,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1301834318}
         m_TargetAssemblyTypeName: GGReplaceTextTool, Assembly-CSharp
-        m_MethodName: SetText
+        m_MethodName: SetTextByUsingReflection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49260,6 +49262,11 @@ GameObject:
   - component: {fileID: 114917630287894105}
   - component: {fileID: 224755029742580132}
   - component: {fileID: 224755029742580133}
+  - component: {fileID: 224755029742580138}
+  - component: {fileID: 224755029742580137}
+  - component: {fileID: 224755029742580136}
+  - component: {fileID: 224755029742580135}
+  - component: {fileID: 224755029742580134}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -53237,7 +53244,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -545.99915, y: -98.18207}
+  m_AnchoredPosition: {x: -545.9992, y: -98.18207}
   m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224429691925131679
@@ -53399,7 +53406,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -581.99915, y: -150.68207}
+  m_AnchoredPosition: {x: -581.9992, y: -150.68207}
   m_SizeDelta: {x: 512, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224720082643025791
@@ -53503,6 +53510,185 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &224755029742580134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578255826648197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3048f5e5d536749e38b9ecba3587f31e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_simpleMessage: MouseExit
+--- !u!114 &224755029742580135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578255826648197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3048f5e5d536749e38b9ecba3587f31e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_simpleMessage: MouseEntered
+--- !u!114 &224755029742580136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578255826648197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b69e4219f8a33d46b034129f4d3ddea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  PointerExit:
+    m_PersistentCalls:
+      m_Calls: []
+  PointerDown:
+    m_PersistentCalls:
+      m_Calls: []
+  PointerUp:
+    m_PersistentCalls:
+      m_Calls: []
+  PointerClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!61 &224755029742580137
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578255826648197}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 160, y: 160}
+  m_EdgeRadius: 0
+--- !u!114 &224755029742580138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578255826648197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80361f5e0185bb247a814457c589c1f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnMouseDownEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnMouseDragEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnMouseEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 224755029742580135}
+        m_TargetAssemblyTypeName: GGDebugLogScript, Assembly-CSharp
+        m_MethodName: SimpleDebugLogMessage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 676828229}
+        m_TargetAssemblyTypeName: SetPlayerStat, Assembly-CSharp
+        m_MethodName: DisableHandleWeapon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnMouseExitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 224755029742580134}
+        m_TargetAssemblyTypeName: GGDebugLogScript, Assembly-CSharp
+        m_MethodName: SimpleDebugLogMessage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 676828229}
+        m_TargetAssemblyTypeName: SetPlayerStat, Assembly-CSharp
+        m_MethodName: EnableHandleWeapon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnMouseOverEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnMouseUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnMouseUpAsButtonEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &224801698488360731
 RectTransform:
   m_ObjectHideFlags: 0

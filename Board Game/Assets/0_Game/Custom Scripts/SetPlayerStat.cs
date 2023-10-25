@@ -14,6 +14,7 @@ public class SetPlayerStat : MonoBehaviour
     [SerializeField] private MMHealthBar m_healthBar;
     [SerializeField] private CharacterMovement m_movement;
     [SerializeField] private CharacterDamageDash3D m_damageDash;
+    [SerializeField] private CharacterHandleWeapon m_handleWeapon;
 
     private void Start()
     {
@@ -24,6 +25,7 @@ public class SetPlayerStat : MonoBehaviour
         m_healthAutoRefill = m_player.GetComponent<HealthAutoRefill>();
         m_healthBar = m_player.GetComponent<MMHealthBar>();
         m_damageDash = m_player.GetComponent<CharacterDamageDash3D>();
+        m_handleWeapon = m_player.GetComponent<CharacterHandleWeapon>();
     }
 
     public void SetAllStatsFromPlayerPrefs()
@@ -65,5 +67,15 @@ public class SetPlayerStat : MonoBehaviour
     public void SetDamageDashCooldownFromPlayerPrefs()
     {
         m_damageDash.Cooldown.RefillDuration = PlayerPrefs.GetFloat("DashCooldown");
+    }
+
+    public void DisableHandleWeapon()
+    {
+        m_handleWeapon.AbilityPermitted = false;
+    }
+
+    public void EnableHandleWeapon()
+    {
+        m_handleWeapon.AbilityPermitted = true;
     }
 }
