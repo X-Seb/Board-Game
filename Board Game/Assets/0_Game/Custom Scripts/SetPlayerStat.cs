@@ -6,6 +6,7 @@ using MoreMountains.Tools;
 
 public class SetPlayerStat : MonoBehaviour
 {
+    [SerializeField] private bool m_setStatsOnStart;
     [Header("Reference Only: ")]
     [SerializeField] private GameObject m_player;
     [SerializeField] private Character m_character;
@@ -21,12 +22,19 @@ public class SetPlayerStat : MonoBehaviour
         //m_character = LevelManager.Instance.Players[0];
         //m_player = m_character.gameObject;
         m_player = GameObject.Find("Player");
+        m_character = m_player.GetComponent<Character>();
         m_movement = m_player.GetComponent<CharacterMovement>();
         m_health = m_player.GetComponent<Health>();
         m_healthAutoRefill = m_player.GetComponent<HealthAutoRefill>();
         m_healthBar = m_player.GetComponent<MMHealthBar>();
         m_damageDash = m_player.GetComponent<CharacterDamageDash3D>();
         m_handleWeapon = m_player.GetComponent<CharacterHandleWeapon>();
+
+        if (m_setStatsOnStart)
+        {
+            SetAllStatsFromPlayerPrefs();
+            Debug.Log("SetAllStatsFromPlayerPrefs at Start");
+        }
     }
 
     public void SetAllStatsFromPlayerPrefs()
@@ -51,8 +59,10 @@ public class SetPlayerStat : MonoBehaviour
             Bar_x_size = Mathf.Lerp(0.5f, 1.5f, health / 300.0f);
         }
         m_healthBar.Size = new Vector2(Bar_x_size, m_healthBar.Size.y);
+        m_healthBar.Initialization();
         m_health.MaximumHealth = health;
         m_health.SetHealth(health);
+        //m_health.InitializeCurrentHealth();
     }
 
     public void SetHealthRefillAmountFromPlayerPrefs()
@@ -63,11 +73,22 @@ public class SetPlayerStat : MonoBehaviour
     public void SetMovementSpeedFromPlayerPrefs()
     {
         m_movement.MovementSpeed = PlayerPrefs.GetFloat("MovementSpeed");
+        m_movement.ForceInitialization();
     }
 
     public void SetDamageDashCooldownFromPlayerPrefs()
     {
-        m_damageDash.Cooldown.RefillDuration = PlayerPrefs.GetFloat("DashCooldown");
+        float cooldown = PlayerPrefs.GetFloat("DashCooldown");
+
+        if (cooldown == 0.0f)
+        {
+            m_damageDash.Cooldown.Unlimited = true;
+        }
+        else
+        {
+            m_damageDash.Cooldown.RefillDuration = cooldown;
+        }
+        //m_damageDash.ForceInitialization();
     }
 
     public void DisableHandleWeapon()

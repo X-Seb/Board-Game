@@ -14689,7 +14689,6 @@ GameObject:
   m_Component:
   - component: {fileID: 676828226}
   - component: {fileID: 676828227}
-  - component: {fileID: 676828228}
   - component: {fileID: 676828229}
   - component: {fileID: 676828230}
   - component: {fileID: 676828231}
@@ -14722,7 +14721,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676828225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8079f7745e807461aa14c2fb1d1df036, type: 3}
   m_Name: 
@@ -14759,18 +14758,6 @@ MonoBehaviour:
   m_comparisonFalseEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &676828228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676828225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e05d38bb279404d48b621aa684814d05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &676828229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14783,6 +14770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e859ad13e1a40456eaa4e39317da3c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_setStatsOnStart: 1
   m_player: {fileID: 0}
   m_character: {fileID: 0}
   m_health: {fileID: 0}
@@ -14798,7 +14786,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676828225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6da43522623d4704e979466dc7650b65, type: 3}
   m_Name: 
@@ -54631,7 +54619,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -545.999, y: -98.18207}
+  m_AnchoredPosition: {x: -545.99896, y: -98.18207}
   m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224429691925131679
@@ -54793,7 +54781,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -581.999, y: -150.68207}
+  m_AnchoredPosition: {x: -581.99896, y: -150.68207}
   m_SizeDelta: {x: 512, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224720082643025791
