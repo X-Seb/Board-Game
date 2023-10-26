@@ -24,6 +24,11 @@ public class GGReplaceTextTool : MonoBehaviour
         boolType
     }
 
+    public void SetTextWithInt(int valueToInsert)
+    {
+        m_text.text = m_replaceWith.Replace("{}", valueToInsert.ToString());
+    }
+
     public void SetTextWithFloat(float valueToInsert)
     {
         m_text.text = m_replaceWith.Replace("{}", valueToInsert.ToString());

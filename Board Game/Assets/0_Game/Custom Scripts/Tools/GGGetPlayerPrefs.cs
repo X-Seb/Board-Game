@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using MoreMountains.Tools;
 
 public class GGGetPlayerPrefs : MonoBehaviour
 {
@@ -11,9 +12,14 @@ public class GGGetPlayerPrefs : MonoBehaviour
     [SerializeField] private KeyType m_keyType;
     [Header("When to trigger events? ")]
     [SerializeField] private TriggerTime m_triggerTime;
+
+    [MMInspectorGroup("General Events", true, 11)]
+
     [Header("General Events: ")]
     [SerializeField] private UnityEvent m_hasKeyEvent;
     [SerializeField] private UnityEvent m_doesNotHaveKeyEvent;
+
+    [MMInspectorGroup("Comparison Events", true, 12)]
 
     [Header("Should run comparrison? ")]
     [SerializeField] private bool m_shouldCompare;
