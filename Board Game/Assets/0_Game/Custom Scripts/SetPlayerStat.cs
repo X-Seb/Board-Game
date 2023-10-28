@@ -62,7 +62,6 @@ public class SetPlayerStat : MonoBehaviour
         m_healthBar.Initialization();
         m_health.MaximumHealth = health;
         m_health.SetHealth(health);
-        //m_health.InitializeCurrentHealth();
     }
 
     public void SetHealthRefillAmountFromPlayerPrefs()
@@ -73,6 +72,8 @@ public class SetPlayerStat : MonoBehaviour
     public void SetMovementSpeedFromPlayerPrefs()
     {
         m_movement.MovementSpeed = PlayerPrefs.GetFloat("MovementSpeed");
+        m_movement.WalkSpeed = PlayerPrefs.GetFloat("MovementSpeed");
+        m_movement.ResetSpeed();
         m_movement.ForceInitialization();
     }
 
@@ -88,6 +89,7 @@ public class SetPlayerStat : MonoBehaviour
         {
             m_damageDash.Cooldown.RefillDuration = cooldown;
         }
+        //m_damageDash.Cooldown.Initialization();
         //m_damageDash.ForceInitialization();
     }
 
