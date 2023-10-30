@@ -30,7 +30,7 @@ public class SetPlayerStat : MonoBehaviour
         m_damageDash = m_player.GetComponent<CharacterDamageDash3D>();
         m_handleWeapon = m_player.GetComponent<CharacterHandleWeapon>();
 
-        if (m_setStatsOnStart)
+        if (m_setStatsOnStart && PlayerPrefs.GetInt("CustomRun") == 1)
         {
             SetAllStatsFromPlayerPrefs();
             Debug.Log("SetAllStatsFromPlayerPrefs at Start");
@@ -49,17 +49,22 @@ public class SetPlayerStat : MonoBehaviour
     {
         int health = PlayerPrefs.GetInt("MaxHealth");
         float difference = health - 300.0f;
-        float Bar_x_size;
+        float bar_x_scale;
+        float bar_y_scale;
         if (difference > 0)
         {
-            Bar_x_size = Mathf.Lerp(1.5f, 2.5f, difference / 700.0f);
+            bar_x_scale = Mathf.Lerp(1.0f, 1.7f, difference / 700.0f);
+            bar_y_scale = Mathf.Lerp(1.0f, 1.5f, difference / 700.0f);
         }
         else
         {
-            Bar_x_size = Mathf.Lerp(0.5f, 1.5f, health / 300.0f);
+            bar_x_scale = Mathf.Lerp(0.6f, 1.0f, health / 300.0f);
+            bar_y_scale = Mathf.Lerp(0.7f, 1.0f, health / 300.0f);
         }
-        m_healthBar.Size = new Vector2(Bar_x_size, m_healthBar.Size.y);
-        m_healthBar.Initialization();
+
+        //m_healthBar.TargetProgressBar.gameObject.transform.localScale = new Vector3(bar_x_scale, bar_y_scale, 1);
+
+        m_health.InitialHealth = health;
         m_health.MaximumHealth = health;
         m_health.SetHealth(health);
     }
@@ -89,8 +94,7 @@ public class SetPlayerStat : MonoBehaviour
         {
             m_damageDash.Cooldown.RefillDuration = cooldown;
         }
-        //m_damageDash.Cooldown.Initialization();
-        //m_damageDash.ForceInitialization();
+        m_damageDash.Cooldown.Initialization();
     }
 
     public void DisableHandleWeapon()

@@ -12308,11 +12308,11 @@ MonoBehaviour:
   m_stringArray: []
   m_intArray: 
   m_floatArray:
-  - 1.6
-  - 1.2
-  - 0.8
-  - 0.6
-  - 0.35
+  - 1.4
+  - 0.9
+  - 0.65
+  - 0.4
+  - 0.15
   - 0
 --- !u!114 &782106560
 MonoBehaviour:
@@ -17393,7 +17393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 525, y: -53.92857}
+  m_AnchoredPosition: {x: 525, y: -53.92856}
   m_SizeDelta: {x: 700, y: 95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211999822
