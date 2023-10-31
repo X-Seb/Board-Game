@@ -14792,7 +14792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Feedbacks: []
-  InitializationMode: 2
+  InitializationMode: 1
   AutoInitialization: 1
   SafeMode: 3
   Direction: 0
@@ -42488,7 +42488,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_shouldSpawnWaves: 1
-  m_startingRound: {fileID: 0}
+  m_testStartingRound: {fileID: 11400000, guid: 83c85bed060474f4a9787aaa1c3c1436,
+    type: 2}
   m_roundGroups:
   - {fileID: 11400000, guid: 3cf27e6b6f3aa487ab51c84adf404e5e, type: 2}
   - {fileID: 11400000, guid: 0a49e094c1011406b9326f3cb2f10a28, type: 2}
@@ -54968,7 +54969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -545.99896, y: -98.18207}
+  m_AnchoredPosition: {x: -545.999, y: -98.18207}
   m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224429691925131679
@@ -55130,7 +55131,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -581.99896, y: -150.68207}
+  m_AnchoredPosition: {x: -581.999, y: -150.68207}
   m_SizeDelta: {x: 512, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224720082643025791

@@ -7288,7 +7288,7 @@ MonoBehaviour:
   BlockingConditionStates: 
   BlockingWeaponStates: 
   Target: {fileID: 0}
-  DistanceToWaypointThreshold: 0.2
+  DistanceToWaypointThreshold: 0.5
   ClosestPointThreshold: 3
   MinimumDelayBeforePollingNavmesh: 0.1
   PathRefreshMode: 0
@@ -9023,7 +9023,7 @@ MonoBehaviour:
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
   DamageCausedKnockbackForce: {x: 4, y: 3, z: 4}
-  InvincibilityDuration: 0
+  InvincibilityDuration: 0.05
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
   DurationBetweenRepeats: 1

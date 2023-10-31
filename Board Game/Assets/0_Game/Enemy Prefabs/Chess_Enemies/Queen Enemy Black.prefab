@@ -1794,9 +1794,21 @@ MonoBehaviour:
     m_Bits: 1024
   Owner: {fileID: 0}
   TriggerFilter: 195
-  MinDamageCaused: 16
-  MaxDamageCaused: 18
-  TypedDamages: []
+  MinDamageCaused: 1
+  MaxDamageCaused: 1
+  TypedDamages:
+  - AssociatedDamageType: {fileID: 11400000, guid: 24ab1a36dce01284295baa6aa3db3e2d,
+      type: 2}
+    MinDamageCaused: 10
+    MaxDamageCaused: 12
+    ForceCharacterCondition: 0
+    ForcedCondition: 0
+    DisableGravity: 0
+    ResetControllerForces: 0
+    ForcedConditionDuration: 0
+    ApplyMovementMultiplier: 1
+    MovementMultiplier: 0.5
+    MovementMultiplierDuration: 3
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0

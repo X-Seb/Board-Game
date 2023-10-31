@@ -1658,7 +1658,7 @@ MonoBehaviour:
   ExecuteOnDisable:
     m_PersistentCalls:
       m_Calls: []
-  LifeTime: 3
+  LifeTime: 0
   FaceDirection: 1
   FaceMovement: 1
   MovementVector: 0
@@ -7215,9 +7215,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   Owner: {fileID: 0}
-  TriggerFilter: 195
-  MinDamageCaused: 0
-  MaxDamageCaused: 0
+  TriggerFilter: 65
+  MinDamageCaused: 1
+  MaxDamageCaused: 1
   TypedDamages:
   - AssociatedDamageType: {fileID: 11400000, guid: b38d450374c0a430c839d30e691a1049,
       type: 2}
@@ -7234,8 +7234,8 @@ MonoBehaviour:
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
-  DamageCausedKnockbackForce: {x: 14, y: 6, z: 14}
-  InvincibilityDuration: 0
+  DamageCausedKnockbackForce: {x: 10, y: 3, z: 10}
+  InvincibilityDuration: 0.1
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
   DurationBetweenRepeats: 1
