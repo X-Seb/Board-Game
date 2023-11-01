@@ -930,6 +930,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.15
       objectReference: {fileID: 0}
+    - target: {fileID: 7899266660121155540, guid: 48f4da9b26b5d400191aac0011aea06e,
+        type: 3}
+      propertyPath: DistanceToWaypointThreshold
+      value: 1.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

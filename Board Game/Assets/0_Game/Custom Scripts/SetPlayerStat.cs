@@ -19,9 +19,8 @@ public class SetPlayerStat : MonoBehaviour
 
     private void Start()
     {
-        //m_character = LevelManager.Instance.Players[0];
-        //m_player = m_character.gameObject;
-        m_player = GameObject.Find("Player");
+        m_character = LevelManager.Instance.Players[0];
+        m_player = m_character.gameObject;
         m_character = m_player.GetComponent<Character>();
         m_movement = m_player.GetComponent<CharacterMovement>();
         m_health = m_player.GetComponent<Health>();
@@ -58,11 +57,12 @@ public class SetPlayerStat : MonoBehaviour
         }
         else
         {
-            bar_x_scale = Mathf.Lerp(0.6f, 1.0f, health / 300.0f);
+            bar_x_scale = Mathf.Lerp(0.4f, 1.0f, health / 300.0f);
             bar_y_scale = Mathf.Lerp(0.7f, 1.0f, health / 300.0f);
         }
 
         //m_healthBar.TargetProgressBar.gameObject.transform.localScale = new Vector3(bar_x_scale, bar_y_scale, 1);
+        //GameObject.Find($"HealthBar|{m_player.name}(Clone)").GetComponentInChildren<Transform>().localScale = new Vector3(bar_x_scale, bar_y_scale, 1);
 
         m_health.InitialHealth = health;
         m_health.MaximumHealth = health;

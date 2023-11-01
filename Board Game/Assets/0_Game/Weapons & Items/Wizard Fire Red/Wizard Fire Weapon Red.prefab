@@ -5073,7 +5073,7 @@ MonoBehaviour:
   TimeBetweenUses: 1
   TimeBetweenUsesReleaseInterruption: 1
   UseBurstMode: 1
-  BurstLength: 6
+  BurstLength: 3
   BurstTimeBetweenShots: 0.11
   MagazineBased: 0
   MagazineSize: 30

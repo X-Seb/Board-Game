@@ -84,6 +84,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2942436729002100656, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: DistanceToWaypointThreshold
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3244567930299894739, guid: 836a90f6a785c4ff898628c64298e70d,
         type: 3}
       propertyPath: m_Materials.Array.data[2]
