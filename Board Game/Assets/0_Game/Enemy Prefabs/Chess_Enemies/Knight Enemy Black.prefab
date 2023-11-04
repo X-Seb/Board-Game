@@ -9362,8 +9362,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitializationMode: 0
-  Label: 
-  MinimumDistance: 2
+  Label: MoveTowardsTargetButNotTooClose
+  MinimumDistance: 3
 --- !u!114 &5160058514016094488
 MonoBehaviour:
   m_ObjectHideFlags: 0

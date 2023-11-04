@@ -5939,7 +5939,6 @@ GameObject:
   m_Component:
   - component: {fileID: 351400289}
   - component: {fileID: 351400290}
-  - component: {fileID: 351400291}
   m_Layer: 0
   m_Name: WeaponInventory
   m_TagString: Untagged
@@ -5982,29 +5981,6 @@ MonoBehaviour:
   Persistent: 0
   ResetThisInventorySaveOnStart: 1
   DrawContentInInspector: 0
---- !u!114 &351400291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 351400288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af3876ae77702e24e8e1b06f675c0860, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bindings:
-  - TargetKey: 0
-    OnKeyDown:
-      m_PersistentCalls:
-        m_Calls: []
-    OnKey:
-      m_PersistentCalls:
-        m_Calls: []
-    OnKeyUp:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!1 &353427867
 GameObject:
   m_ObjectHideFlags: 0
@@ -12525,7 +12501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AutomaticallyUnparentOnAwake: 1
-  TargetFrameRate: 100
+  TargetFrameRate: 60
   MaximumLives: 0
   CurrentLives: 0
   GameOverScene: 
@@ -14493,7 +14469,6 @@ MonoBehaviour:
   m_character: {fileID: 0}
   m_health: {fileID: 0}
   m_healthAutoRefill: {fileID: 0}
-  m_healthBar: {fileID: 0}
   m_healthBarObject: {fileID: 0}
   m_movement: {fileID: 0}
   m_damageDash: {fileID: 0}

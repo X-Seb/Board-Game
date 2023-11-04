@@ -1473,9 +1473,9 @@ MonoBehaviour:
     DisableGravity: 0
     ResetControllerForces: 0
     ForcedConditionDuration: 0
-    ApplyMovementMultiplier: 0
-    MovementMultiplier: 0
-    MovementMultiplierDuration: 0
+    ApplyMovementMultiplier: 1
+    MovementMultiplier: 0.3
+    MovementMultiplierDuration: 0.5
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
@@ -2077,8 +2077,8 @@ MonoBehaviour:
     m_Bits: 1024
   Owner: {fileID: 0}
   TriggerFilter: 3
-  MinDamageCaused: 1
-  MaxDamageCaused: 1
+  MinDamageCaused: 0
+  MaxDamageCaused: 0
   TypedDamages: []
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1

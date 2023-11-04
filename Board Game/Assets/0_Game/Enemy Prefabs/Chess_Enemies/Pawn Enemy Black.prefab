@@ -110,8 +110,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2327863839972875810, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
+      propertyPath: m_Size.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2327863839972875810, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
       propertyPath: m_Size.y
       value: 2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2327863839972875810, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 3105846786817688101, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
@@ -204,6 +214,11 @@ PrefabInstance:
         type: 3}
       propertyPath: TypedDamages.Array.data[0].ForceCharacterCondition
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096447069044271406, guid: 83495f77c31594c5bba0325a249fb7d7,
+        type: 3}
+      propertyPath: KeepPlayModeChanges
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7096447069044271406, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
