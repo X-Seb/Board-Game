@@ -1663,7 +1663,7 @@ MonoBehaviour:
   FaceMovement: 1
   MovementVector: 0
   Speed: 180
-  Acceleration: -15
+  Acceleration: -20
   Direction: {x: 0, y: 0, z: 1}
   DirectionCanBeChangedBySpawner: 1
   FlipValue: {x: 1, y: 1, z: 1}

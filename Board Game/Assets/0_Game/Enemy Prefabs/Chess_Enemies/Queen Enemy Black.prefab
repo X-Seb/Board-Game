@@ -1794,10 +1794,10 @@ MonoBehaviour:
     m_Bits: 1024
   Owner: {fileID: 0}
   TriggerFilter: 195
-  MinDamageCaused: 1
-  MaxDamageCaused: 1
+  MinDamageCaused: 0
+  MaxDamageCaused: 0
   TypedDamages:
-  - AssociatedDamageType: {fileID: 11400000, guid: 24ab1a36dce01284295baa6aa3db3e2d,
+  - AssociatedDamageType: {fileID: 11400000, guid: 6ad3aba9e6a074b3498f14e9080c1351,
       type: 2}
     MinDamageCaused: 10
     MaxDamageCaused: 12
@@ -2639,8 +2639,8 @@ MonoBehaviour:
     m_Bits: 1024
   Owner: {fileID: 0}
   TriggerFilter: 195
-  MinDamageCaused: 8
-  MaxDamageCaused: 10
+  MinDamageCaused: 7
+  MaxDamageCaused: 9
   TypedDamages: []
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
