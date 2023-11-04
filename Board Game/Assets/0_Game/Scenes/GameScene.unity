@@ -1635,7 +1635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &103233083
 Transform:
   m_ObjectHideFlags: 0
@@ -1728,7 +1728,7 @@ MonoBehaviour:
   RandomOrder: 1
   RandomizeOrderSeed: 1
   Endless: 1
-  PlayOnStart: 1
+  PlayOnStart: 0
   VolumeMultiplier: 1
   AutoHandleApplicationPause: 1
   Persistent: 0
@@ -42164,7 +42164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d034f12be84454268b30dbec21d510ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_shouldSpawnWaves: 0
+  m_shouldSpawnWaves: 1
   m_testStartingRound: {fileID: 0}
   m_roundGroups:
   - {fileID: 11400000, guid: 3cf27e6b6f3aa487ab51c84adf404e5e, type: 2}
@@ -54643,7 +54643,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -545.999, y: -98.18207}
+  m_AnchoredPosition: {x: -545.9991, y: -98.18207}
   m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224429691925131679
@@ -54805,7 +54805,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -581.999, y: -150.68207}
+  m_AnchoredPosition: {x: -581.9991, y: -150.68207}
   m_SizeDelta: {x: 512, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224720082643025791
