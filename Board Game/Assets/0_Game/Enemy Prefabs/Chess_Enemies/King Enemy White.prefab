@@ -27,12 +27,12 @@ PrefabInstance:
     - target: {fileID: 4566305674191880414, guid: 96bf32791e80a4a1894dd5d1c1b5238f,
         type: 3}
       propertyPath: AfterTimeMax
-      value: 5
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 4566305674191880414, guid: 96bf32791e80a4a1894dd5d1c1b5238f,
         type: 3}
       propertyPath: AfterTimeMin
-      value: 3.4
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 8862513430222133648, guid: 96bf32791e80a4a1894dd5d1c1b5238f,
         type: 3}

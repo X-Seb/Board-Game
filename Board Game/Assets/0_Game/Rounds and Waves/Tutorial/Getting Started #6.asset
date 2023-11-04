@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8df48d5d74fe49ebae04135156ce390, type: 3}
-  m_Name: Getting Started 3
+  m_Name: Getting Started #6
   m_EditorClassIdentifier: 
   roundName: 
-  roundDescription: Destroy all enemies from each wave to move to the next.
+  roundDescription: Destroy all enemies from each wave to continue.
   roundDifficulty: 1
   overrideSFX: 0
   roundStartSFX: {fileID: 0}

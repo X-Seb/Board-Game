@@ -26,9 +26,9 @@ MonoBehaviour:
   m_overrideSpawnIntervals: 1
   m_newSpawnIntervals:
   - 1
-  - 3
+  - 4
   - 5
-  - 8
-  - 18
+  - 10
+  - 16
   - 5
   - 5
