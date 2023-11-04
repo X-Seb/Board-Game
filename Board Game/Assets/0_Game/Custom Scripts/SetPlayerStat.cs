@@ -12,7 +12,6 @@ public class SetPlayerStat : MonoBehaviour
     [SerializeField] private Character m_character;
     [SerializeField] private Health m_health;
     [SerializeField] private HealthAutoRefill m_healthAutoRefill;
-    [SerializeField] private MMHealthBar m_healthBar;
     [SerializeField] private GameObject m_healthBarObject;
     [SerializeField] private CharacterMovement m_movement;
     [SerializeField] private CharacterDamageDash3D m_damageDash;
@@ -26,7 +25,6 @@ public class SetPlayerStat : MonoBehaviour
         m_movement = m_player.GetComponent<CharacterMovement>();
         m_health = m_player.GetComponent<Health>();
         m_healthAutoRefill = m_player.GetComponent<HealthAutoRefill>();
-        m_healthBar = m_player.GetComponent<MMHealthBar>();
         m_damageDash = m_player.GetComponent<CharacterDamageDash3D>();
         m_handleWeapon = m_player.GetComponent<CharacterHandleWeapon>();
 
@@ -58,14 +56,12 @@ public class SetPlayerStat : MonoBehaviour
         }
         else
         {
-            bar_x_scale = Mathf.Lerp(0.4f, 1.0f, health / 300.0f);
-            bar_y_scale = Mathf.Lerp(0.7f, 1.0f, health / 300.0f);
+            bar_x_scale = Mathf.Lerp(0.1f, 1.0f, health / 300.0f);
+            bar_y_scale = Mathf.Lerp(0.6f, 1.0f, health / 300.0f);
         }
 
-        //m_healthBar.TargetProgressBar.gameObject.transform.localScale = new Vector3(bar_x_scale, bar_y_scale, 1);
         m_healthBarObject = GameObject.Find($"HealthBar|{m_player.name}(Clone)");
-        //m_healthBarObject.transform.GetChild(0).gameObject.transform
-        m_healthBarObject.GetComponentInChildren<Transform>().localScale = new Vector3(bar_x_scale, bar_y_scale, 1);
+        m_healthBarObject.transform.GetChild(0).gameObject.transform.localScale = new Vector3(bar_x_scale, bar_y_scale, 1);
 
         m_health.InitialHealth = health;
         m_health.MaximumHealth = health;

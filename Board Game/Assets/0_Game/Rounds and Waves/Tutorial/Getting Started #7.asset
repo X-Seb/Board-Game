@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: Getting Started #7
   m_EditorClassIdentifier: 
   roundName: 
-  roundDescription: Destroy all enemies from each wave to continue.
+  roundDescription: Good Luck and don't die!
   roundDifficulty: 1
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
   m_waves:
-  - {fileID: 11400000, guid: 48e750ede643b40fd957cd445a7999c8, type: 2}
-  - {fileID: 11400000, guid: 4aa99dd8e3f3a4e17b1b7dfb4f22fbbf, type: 2}
+  - {fileID: 11400000, guid: 92271c935616f4b19906a977aeebd634, type: 2}
