@@ -13,6 +13,7 @@ public class SetPlayerStat : MonoBehaviour
     [SerializeField] private Health m_health;
     [SerializeField] private HealthAutoRefill m_healthAutoRefill;
     [SerializeField] private MMHealthBar m_healthBar;
+    [SerializeField] private GameObject m_healthBarObject;
     [SerializeField] private CharacterMovement m_movement;
     [SerializeField] private CharacterDamageDash3D m_damageDash;
     [SerializeField] private CharacterHandleWeapon m_handleWeapon;
@@ -62,7 +63,9 @@ public class SetPlayerStat : MonoBehaviour
         }
 
         //m_healthBar.TargetProgressBar.gameObject.transform.localScale = new Vector3(bar_x_scale, bar_y_scale, 1);
-        //GameObject.Find($"HealthBar|{m_player.name}(Clone)").GetComponentInChildren<Transform>().localScale = new Vector3(bar_x_scale, bar_y_scale, 1);
+        m_healthBarObject = GameObject.Find($"HealthBar|{m_player.name}(Clone)");
+        //m_healthBarObject.transform.GetChild(0).gameObject.transform
+        m_healthBarObject.GetComponentInChildren<Transform>().localScale = new Vector3(bar_x_scale, bar_y_scale, 1);
 
         m_health.InitialHealth = health;
         m_health.MaximumHealth = health;

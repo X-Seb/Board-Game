@@ -1824,7 +1824,7 @@ MonoBehaviour:
   BlockingConditionStates: 
   BlockingWeaponStates: 
   Target: {fileID: 0}
-  DistanceToWaypointThreshold: 1.5
+  DistanceToWaypointThreshold: 1.7
   ClosestPointThreshold: 3
   MinimumDelayBeforePollingNavmesh: 0.1
   PathRefreshMode: 0
