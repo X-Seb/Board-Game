@@ -195,6 +195,7 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		protected override void Awake()
 		{
+			Debug.Log("GameManager Awake()");
 			base.Awake ();
 			PointsOfEntry = new List<PointsOfEntryStorage> ();
 		}
@@ -204,7 +205,8 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		protected virtual void Start()
 		{
-			Application.targetFrameRate = TargetFrameRate;
+            Debug.Log("GameManager Start()");
+            Application.targetFrameRate = TargetFrameRate;
 			_initialCurrentLives = CurrentLives;
 			_initialMaximumLives = MaximumLives;
 		}
@@ -214,7 +216,8 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		public virtual void Reset()
 		{
-			Points = 0;
+            Debug.Log("GameManager Reset()");
+            Points = 0;
 			MMTimeScaleEvent.Trigger(MMTimeScaleMethods.Reset, 1f, 0f, false, 0f, true);
 			Paused = false;
 		}
@@ -288,7 +291,8 @@ namespace MoreMountains.TopDownEngine
 		/// <param name="status"></param>
 		protected virtual void SetActiveInventoryInputManager(bool status)
 		{
-			_inventoryInputManager = GameObject.FindObjectOfType<InventoryInputManager> ();
+            Debug.Log("GameManager SetActiveInventoryInputManager()");
+            _inventoryInputManager = GameObject.FindObjectOfType<InventoryInputManager> ();
 			if (_inventoryInputManager != null)
 			{
 				_inventoryInputManager.enabled = status;
@@ -299,8 +303,9 @@ namespace MoreMountains.TopDownEngine
 		/// Pauses the game or unpauses it depending on the current state
 		/// </summary>
 		public virtual void Pause(PauseMethods pauseMethod = PauseMethods.PauseMenu, bool unpauseIfPaused = true)
-		{	
-			if ((pauseMethod == PauseMethods.PauseMenu) && _inventoryOpen)
+		{
+            Debug.Log("GameManager Pause()");
+            if ((pauseMethod == PauseMethods.PauseMenu) && _inventoryOpen)
 			{
 				return;
 			}
@@ -336,7 +341,8 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		public virtual void UnPause(PauseMethods pauseMethod = PauseMethods.PauseMenu)
 		{
-			MMTimeScaleEvent.Trigger(MMTimeScaleMethods.Unfreeze, 1f, 0f, false, 0f, false);
+            Debug.Log("GameManager UnPause()");
+            MMTimeScaleEvent.Trigger(MMTimeScaleMethods.Unfreeze, 1f, 0f, false, 0f, false);
 			Instance.Paused = false;
 			if ((GUIManager.HasInstance) && (pauseMethod == PauseMethods.PauseMenu))
 			{ 
@@ -359,7 +365,8 @@ namespace MoreMountains.TopDownEngine
 		/// <param name="exitIndex">Exit index.</param>
 		public virtual void StorePointsOfEntry(string levelName, int entryIndex, Character.FacingDirections facingDirection)
 		{
-			if (PointsOfEntry.Count > 0)
+            Debug.Log("GameManager StorePointsOfEntry()");
+            if (PointsOfEntry.Count > 0)
 			{
 				foreach (PointsOfEntryStorage point in PointsOfEntry)
 				{
@@ -381,7 +388,8 @@ namespace MoreMountains.TopDownEngine
 		/// <param name="levelName">Level name.</param>
 		public virtual PointsOfEntryStorage GetPointsOfEntry(string levelName)
 		{
-			if (PointsOfEntry.Count > 0)
+            Debug.Log("GameManager GetPointsOfEntry()");
+            if (PointsOfEntry.Count > 0)
 			{
 				foreach (PointsOfEntryStorage point in PointsOfEntry)
 				{
@@ -400,7 +408,8 @@ namespace MoreMountains.TopDownEngine
 		/// <param name="levelName">Level name.</param>
 		public virtual void ClearPointOfEntry(string levelName)
 		{
-			if (PointsOfEntry.Count > 0)
+            Debug.Log("GameManager ClearPointOfEntry()");
+            if (PointsOfEntry.Count > 0)
 			{
 				foreach (PointsOfEntryStorage point in PointsOfEntry)
 				{
@@ -425,7 +434,8 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		public virtual void ResetAllSaves()
 		{
-			MMSaveLoadManager.DeleteSaveFolder("InventoryEngine");
+            Debug.Log("GameManager ResetAllSaves()");
+            MMSaveLoadManager.DeleteSaveFolder("InventoryEngine");
 			MMSaveLoadManager.DeleteSaveFolder("TopDownEngine");
 			MMSaveLoadManager.DeleteSaveFolder("MMAchievements");
 		}
@@ -436,7 +446,8 @@ namespace MoreMountains.TopDownEngine
 		/// <param name="selectedCharacter">Selected character.</param>
 		public virtual void StoreSelectedCharacter(Character selectedCharacter)
 		{
-			StoredCharacter = selectedCharacter;
+            Debug.Log("GameManager StoreSelectedCharacter()");
+            StoredCharacter = selectedCharacter;
 		}
 
 		/// <summary>
@@ -444,7 +455,8 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		public virtual void ClearSelectedCharacter()
 		{
-			StoredCharacter = null;
+            Debug.Log("GameManager ClearSelectedCharacter()");
+            StoredCharacter = null;
 		}
 		
 		/// <summary>
@@ -453,7 +465,8 @@ namespace MoreMountains.TopDownEngine
 		/// <param name="newCharacter"></param>
 		public virtual void SetPersistentCharacter(Character newCharacter)
 		{
-			PersistentCharacter = newCharacter;
+            Debug.Log("GameManager SetPresistentCharacter()");
+            PersistentCharacter = newCharacter;
 		}
 		
 		/// <summary>
@@ -461,7 +474,8 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		public virtual void DestroyPersistentCharacter()
 		{
-			if (PersistentCharacter != null)
+            Debug.Log("GameManager DestroyPersistentCharacter()");
+            if (PersistentCharacter != null)
 			{
 				Destroy(PersistentCharacter.gameObject);
 				SetPersistentCharacter(null);
@@ -507,10 +521,11 @@ namespace MoreMountains.TopDownEngine
 		/// <param name="engineEvent">TopDownEngineEvent event.</param>
 		public virtual void OnMMEvent(TopDownEngineEvent engineEvent)
 		{
-			switch (engineEvent.EventType)
+            switch (engineEvent.EventType)
 			{
 				case TopDownEngineEventTypes.TogglePause:
-					if (Paused)
+                    Debug.Log("GameManager OnMMEvent: TogglePause()");
+                    if (Paused)
 					{
 						TopDownEngineEvent.Trigger(TopDownEngineEventTypes.UnPause, null);
 					}
@@ -520,11 +535,13 @@ namespace MoreMountains.TopDownEngine
 					}
 					break;
 				case TopDownEngineEventTypes.Pause:
-					Pause ();
+                    Debug.Log("GameManager OnMMEvent: Pause()");
+                    Pause ();
 					break;
 
 				case TopDownEngineEventTypes.UnPause:
-					UnPause ();
+                    Debug.Log("GameManager OnMMEvent: UnPause()");
+                    UnPause ();
 					break;
 			}
 		}
@@ -552,7 +569,8 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		protected virtual void OnEnable()
 		{
-			this.MMEventStartListening<MMGameEvent> ();
+            Debug.Log("GameManager OnEnable()");
+            this.MMEventStartListening<MMGameEvent> ();
 			this.MMEventStartListening<TopDownEngineEvent> ();
 			this.MMEventStartListening<TopDownEnginePointEvent> ();
 		}
@@ -562,7 +580,8 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		protected virtual void OnDisable()
 		{
-			this.MMEventStopListening<MMGameEvent> ();
+            Debug.Log("GameManager OnDisable()");
+            this.MMEventStopListening<MMGameEvent> ();
 			this.MMEventStopListening<TopDownEngineEvent> ();
 			this.MMEventStopListening<TopDownEnginePointEvent> ();
 		}

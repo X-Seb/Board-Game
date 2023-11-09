@@ -24,7 +24,7 @@ namespace MoreMountains.TopDownEngine
 		public bool DestroyPersistentCharacter = false;
 
 		/// <summary>
-		/// Loads the level specified in the inspector
+		/// Loads the level specified in the inspector, will unpause the game too
 		/// </summary>
 		public virtual void GoToLevel()
 		{
@@ -58,9 +58,38 @@ namespace MoreMountains.TopDownEngine
 		}
 
 		/// <summary>
-		/// Restarts the current level, without reloading the whole scene
+		/// Loads the scene specified in the inspector, will try to unpause game, can use level manager or not
 		/// </summary>
-		public virtual void RestartLevel()
+        public void LoadTargetScene()
+        {
+			if (LevelName == null || LevelName == "")
+			{
+				LevelName = SceneManager.GetActiveScene().name;
+            }
+            if (DestroyPersistentCharacter)
+            {
+                GameManager.Instance.DestroyPersistentCharacter();
+            }
+
+            if (GameManager.Instance.Paused)
+            {
+                TopDownEngineEvent.Trigger(TopDownEngineEventTypes.UnPause, null);
+            }
+
+            if (DoNotUseLevelManager)
+            {
+                MMAdditiveSceneLoadingManager.LoadScene(LevelName);
+            }
+            else
+            {
+                LevelManager.Instance.GotoLevel(LevelName);
+            }
+        }
+
+        /// <summary>
+        /// Restarts the current level, without reloading the whole scene
+        /// </summary>
+        public virtual void RestartLevel()
 		{
 			if (GameManager.Instance.Paused)
 			{
@@ -78,6 +107,5 @@ namespace MoreMountains.TopDownEngine
 			TopDownEngineEvent.Trigger(TopDownEngineEventTypes.UnPause, null);
 			LoadScene(SceneManager.GetActiveScene().name);
 		}
-		
 	}
 }
