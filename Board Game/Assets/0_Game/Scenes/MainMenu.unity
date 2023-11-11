@@ -137,8 +137,6 @@ GameObject:
   - component: {fileID: 1118173}
   - component: {fileID: 1118172}
   - component: {fileID: 1118171}
-  - component: {fileID: 1118170}
-  - component: {fileID: 1118169}
   - component: {fileID: 1118168}
   m_Layer: 5
   m_Name: Default Button
@@ -182,40 +180,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0.15686274, g: 0.29797494, b: 0.6039216, a: 0.7529412}
   m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
---- !u!114 &1118169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9251a9f35d2c384a9e26195e0c63ee9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SceneName: GameScene
-  LoadingSceneMode: 1
---- !u!114 &1118170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04198065cc2247fb8ecfda5b10f5157, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_keyName: CustomRun
-  m_keyType: 0
-  m_stringValue: 
-  m_intValue: 1
-  m_floatValue: 0
-  m_stringArray: []
-  m_intArray: 
-  m_floatArray: []
 --- !u!114 &1118171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,7 +572,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 23315971}
         m_TargetAssemblyTypeName: GGSetPlayerPrefs, Assembly-CSharp
-        m_MethodName: SetKey
+        m_MethodName: SetKeyFromPredeterminedValue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21524,7 +21488,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1315830688}
         m_TargetAssemblyTypeName: GGSetPlayerPrefs, Assembly-CSharp
-        m_MethodName: SetKey
+        m_MethodName: SetKeyFromPredeterminedValue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

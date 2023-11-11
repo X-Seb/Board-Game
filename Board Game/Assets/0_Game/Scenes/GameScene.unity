@@ -37881,7 +37881,7 @@ MonoBehaviour:
     OnKeyUp:
       m_PersistentCalls:
         m_Calls: []
-  - TargetKey: 350
+  - TargetKey: 347
     OnKeyDown:
       m_PersistentCalls:
         m_Calls:
