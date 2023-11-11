@@ -74,6 +74,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: fa81a70ad0883473baaa884726127389, type: 2}
+    - target: {fileID: 3795087077349971914, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: InitialHealth
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795087077349971914, guid: 836a90f6a785c4ff898628c64298e70d,
+        type: 3}
+      propertyPath: MaximumHealth
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 5765793011367982943, guid: 836a90f6a785c4ff898628c64298e70d,
         type: 3}
       propertyPath: m_Name

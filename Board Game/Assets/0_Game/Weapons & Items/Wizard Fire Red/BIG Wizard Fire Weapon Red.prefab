@@ -61,7 +61,17 @@ PrefabInstance:
     - target: {fileID: 7409132237196341927, guid: 6d00e8b68f5ec43599089c11e8a15668,
         type: 3}
       propertyPath: m_Name
-      value: Wizard Fire Weapon Red
+      value: BIG Wizard Fire Weapon Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 8799078823544382132, guid: 6d00e8b68f5ec43599089c11e8a15668,
+        type: 3}
+      propertyPath: Spread.y
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 8799078823544382132, guid: 6d00e8b68f5ec43599089c11e8a15668,
+        type: 3}
+      propertyPath: BurstLength
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -28,17 +28,17 @@ MonoBehaviour:
   m_pointReward: 19
   m_spawnInterval: 0
   m_overrideSpawner: 0
-  m_overrideSpawnIntervals: 0
+  m_overrideSpawnIntervals: 1
   m_newSpawnIntervals:
   - 1
   - 2
   - 2
   - 3
-  - 10
+  - 12
   - 2
   - 2
   - 3
-  - 10
+  - 12
   - 2
   - 2
   - 3

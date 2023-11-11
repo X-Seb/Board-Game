@@ -115,7 +115,8 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		protected override void Awake()
 		{
-			base.Awake();
+            Debug.Log("LevelManager Awake()");
+            base.Awake();
 			_collider = this.GetComponent<Collider>();
 			_initialSpawnPointPosition = (InitialSpawnPoint == null) ? Vector3.zero : InitialSpawnPoint.transform.position;
 		}
@@ -125,12 +126,14 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		protected virtual void Start()
 		{
-			StartCoroutine(InitializationCoroutine());
+            Debug.Log("LevelManager Start()");
+            StartCoroutine(InitializationCoroutine());
 		}
 
 		protected virtual IEnumerator InitializationCoroutine()
 		{
-			if (SpawnDelay > 0f)
+            Debug.Log("LevelManager InitializationCoroutine()");
+            if (SpawnDelay > 0f)
 			{
 				yield return MMCoroutine.WaitFor(SpawnDelay);    
 			}
@@ -191,10 +194,12 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		protected virtual void InstantiatePlayableCharacters()
 		{
-			Players = new List<Character> ();
+            Debug.Log("LevelManager InstantiatePlayableCharacters()");
+            Players = new List<Character> ();
 
 			if (GameManager.Instance.PersistentCharacter != null)
 			{
+				Debug.Log("GameManager.Instance.PersistentCharacter");
 				Players.Add(GameManager.Instance.PersistentCharacter);
 				return;
 			}
@@ -202,6 +207,7 @@ namespace MoreMountains.TopDownEngine
 			// we check if there's a stored character in the game manager we should instantiate
 			if (GameManager.Instance.StoredCharacter != null)
 			{
+				Debug.Log("GameManager.Instance.StoredCharacter (Instantiate it)");
 				Character newPlayer = Instantiate(GameManager.Instance.StoredCharacter, _initialSpawnPointPosition, Quaternion.identity);
 				newPlayer.name = GameManager.Instance.StoredCharacter.name;
 				Players.Add(newPlayer);
@@ -212,6 +218,7 @@ namespace MoreMountains.TopDownEngine
 			{
 				foreach (Character character in SceneCharacters)
 				{
+					Debug.Log("Scene character: " + character.name);
 					Players.Add(character);
 				}
 				return;
@@ -224,6 +231,7 @@ namespace MoreMountains.TopDownEngine
 			{ 
 				foreach (Character playerPrefab in PlayerPrefabs)
 				{
+					Debug.Log("Instantiate NEW player from playerPrefab.");
 					Character newPlayer = Instantiate (playerPrefab, _initialSpawnPointPosition, Quaternion.identity);
 					newPlayer.name = playerPrefab.name;
 					Players.Add(newPlayer);
@@ -241,8 +249,9 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		protected virtual void CheckpointAssignment()
 		{
-			// we get all respawnable objects in the scene and attribute them to their corresponding checkpoint
-			IEnumerable<Respawnable> listeners = FindObjectsOfType<MonoBehaviour>(true).OfType<Respawnable>();
+            Debug.Log("LevelManager CheckpointAssignment()");
+            // we get all respawnable objects in the scene and attribute them to their corresponding checkpoint
+            IEnumerable<Respawnable> listeners = FindObjectsOfType<MonoBehaviour>(true).OfType<Respawnable>();
 			AutoRespawn autoRespawn;
 			foreach (Respawnable listener in listeners)
 			{
@@ -281,7 +290,8 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		protected virtual void Initialization()
 		{
-			Checkpoints = FindObjectsOfType<CheckPoint>().OrderBy(o => o.CheckPointOrder).ToList();
+            Debug.Log("LevelManager Initialization()");
+            Checkpoints = FindObjectsOfType<CheckPoint>().OrderBy(o => o.CheckPointOrder).ToList();
 			_savedPoints =GameManager.Instance.Points;
 			_started = DateTime.UtcNow;
 		}
@@ -291,9 +301,11 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		protected virtual void SpawnSingleCharacter()
 		{
-			PointsOfEntryStorage point = GameManager.Instance.GetPointsOfEntry(SceneManager.GetActiveScene().name);
+            Debug.Log("LevelManager SpawnSingleCharacter()");
+            PointsOfEntryStorage point = GameManager.Instance.GetPointsOfEntry(SceneManager.GetActiveScene().name);
 			if ((point != null) && (PointsOfEntry.Length >= (point.PointOfEntryIndex + 1)))
 			{
+				Debug.Log("Player spawn at points of entry.");
 				Players[0].RespawnAt(PointsOfEntry[point.PointOfEntryIndex], point.FacingDirection);
 				TopDownEngineEvent.Trigger(TopDownEngineEventTypes.SpawnComplete, Players[0]);
 				return;
@@ -301,6 +313,7 @@ namespace MoreMountains.TopDownEngine
 
 			if (InitialSpawnPoint != null)
 			{
+				Debug.Log("Player spawn at initialSpawnPoint.");
 				InitialSpawnPoint.SpawnPlayer(Players[0]);
 				TopDownEngineEvent.Trigger(TopDownEngineEventTypes.SpawnComplete, Players[0]);
 				return;
@@ -314,6 +327,7 @@ namespace MoreMountains.TopDownEngine
 		/// <param name="levelName">Level name.</param>
 		public virtual void GotoLevel(string levelName)
 		{
+			Debug.Log("GotoLevel: " + levelName);
 			TriggerEndLevelEvents();
 			StartCoroutine(GotoLevelCo(levelName));
 		}
@@ -323,7 +337,8 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		public virtual void TriggerEndLevelEvents()
 		{
-			TopDownEngineEvent.Trigger(TopDownEngineEventTypes.LevelEnd, null);
+            Debug.Log("LevelManager TriggerEndLevelEvents()");
+            TopDownEngineEvent.Trigger(TopDownEngineEventTypes.LevelEnd, null);
 			MMGameEvent.Trigger("Save");
 		}
 
@@ -334,6 +349,7 @@ namespace MoreMountains.TopDownEngine
 		/// <param name="levelName">Level name.</param>
 		protected virtual IEnumerator GotoLevelCo(string levelName)
 		{
+			Debug.Log("GoToLevelCo()");
 			if (Players != null && Players.Count > 0)
 			{ 
 				foreach (Character player in Players)
@@ -357,13 +373,16 @@ namespace MoreMountains.TopDownEngine
 			switch (LoadingSceneMode)
 			{
 				case MMLoadScene.LoadingSceneModes.UnityNative:
-					SceneManager.LoadScene(destinationScene);			        
+                    Debug.Log("LevelManager SceneManager.LoadScene()");
+                    SceneManager.LoadScene(destinationScene);			        
 					break;
 				case MMLoadScene.LoadingSceneModes.MMSceneLoadingManager:
-					MMSceneLoadingManager.LoadScene(destinationScene, LoadingSceneName);
+                    Debug.Log("LevelManager MMSceneLoadingManager.LoadScene()");
+                    MMSceneLoadingManager.LoadScene(destinationScene, LoadingSceneName);
 					break;
 				case MMLoadScene.LoadingSceneModes.MMAdditiveSceneLoadingManager:
-					MMAdditiveSceneLoadingManager.LoadScene(levelName, AdditiveLoadingSettings);
+                    Debug.Log("LevelManager MMAditiveSceneLoadingManager.LoadScene()");
+                    MMAdditiveSceneLoadingManager.LoadScene(levelName, AdditiveLoadingSettings);
 					break;
 			}
 		}
@@ -373,7 +392,8 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		public virtual void PlayerDead(Character playerCharacter)
 		{
-			if (Players.Count < 2)
+            Debug.Log("LevelManager PlayerDead()");
+            if (Players.Count < 2)
 			{
 				StartCoroutine (PlayerDeadCo ());
 			}
@@ -385,6 +405,7 @@ namespace MoreMountains.TopDownEngine
 		/// <returns></returns>
 		protected virtual IEnumerator PlayerDeadCo()
 		{
+			Debug.Log("PlayerDeadCo()");
 			yield return new WaitForSeconds(DelayBeforeDeathScreen);
 
 			GUIManager.Instance.SetDeathScreen(true);
@@ -395,7 +416,8 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		protected virtual void Respawn()
 		{
-			if (Players.Count < 2)
+            Debug.Log("LevelManager Respawn()");
+            if (Players.Count < 2)
 			{
 				StartCoroutine(SoloModeRestart());
 			}
@@ -407,6 +429,7 @@ namespace MoreMountains.TopDownEngine
 		/// <returns>The player co.</returns>
 		protected virtual IEnumerator SoloModeRestart()
 		{
+			Debug.Log("LevelManager SoloModeRestart()");
 			if ((PlayerPrefabs.Length <= 0) && (SceneCharacters.Count <= 0))
 			{
 				yield break;
@@ -473,6 +496,7 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		public virtual void ToggleCharacterPause()
 		{
+			Debug.Log("ToggleCharacterPause()");
 			foreach (Character player in Players)
 			{
 				CharacterPause characterPause = player.FindAbility<CharacterPause>();
@@ -483,11 +507,13 @@ namespace MoreMountains.TopDownEngine
 
 				if (GameManager.Instance.Paused)
 				{
-					characterPause.PauseCharacter();
+                    Debug.Log("PauseCharacter()");
+                    characterPause.PauseCharacter();
 				}
 				else
 				{
-					characterPause.UnPauseCharacter();
+                    Debug.Log("UnPauseCharacter()");
+                    characterPause.UnPauseCharacter();
 				}
 			}
 		}
@@ -497,6 +523,7 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		public virtual void FreezeCharacters()
 		{
+			Debug.Log("FreezeCharacters()");
 			foreach (Character player in Players)
 			{
 				player.Freeze();
@@ -508,7 +535,8 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		public virtual void UnFreezeCharacters()
 		{
-			foreach (Character player in Players)
+            Debug.Log("UnFreezeCharacters()");
+            foreach (Character player in Players)
 			{
 				player.UnFreeze();
 			}
@@ -520,7 +548,8 @@ namespace MoreMountains.TopDownEngine
 		/// <param name="newCheckPoint"></param>
 		public virtual void SetCurrentCheckpoint(CheckPoint newCheckPoint)
 		{
-			if (newCheckPoint.ForceAssignation)
+            Debug.Log("LevelManager SetCurrentCheckpoint()");
+            if (newCheckPoint.ForceAssignation)
 			{
 				CurrentCheckpoint = newCheckPoint;
 				return;
@@ -545,11 +574,14 @@ namespace MoreMountains.TopDownEngine
 		{
 			switch (engineEvent.EventType)
 			{
-				case TopDownEngineEventTypes.PlayerDeath:
-					PlayerDead(engineEvent.OriginCharacter);
+                case TopDownEngineEventTypes.PlayerDeath:
+					Debug.Log("LevelManager TopDownEngineEvent.PlayerDeath()");
+                    PlayerDead(engineEvent.OriginCharacter);
 					break;
 				case TopDownEngineEventTypes.RespawnStarted:
-					Respawn();
+					Debug.Log("LevelManager TopDownEngineEvent.RespawnStarted()");
+
+                    Respawn();
 					break;
 			}
 		}
@@ -559,7 +591,9 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		protected virtual void OnEnable()
 		{
-			this.MMEventStartListening<TopDownEngineEvent>();
+			Debug.Log("LevelManager OnEnable()");
+
+            this.MMEventStartListening<TopDownEngineEvent>();
 		}
 
 		/// <summary>
@@ -567,7 +601,8 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		protected virtual void OnDisable()
 		{
-			this.MMEventStopListening<TopDownEngineEvent>();
+            Debug.Log("LevelManager OnDisable()");
+            this.MMEventStopListening<TopDownEngineEvent>();
 		}
 	}
 }

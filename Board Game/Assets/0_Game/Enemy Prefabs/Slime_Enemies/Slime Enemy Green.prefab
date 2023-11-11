@@ -1146,7 +1146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: ShootDetectTargetRadius
-  Radius: 15
+  Radius: 14
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayerMask:
     serializedVersion: 2
@@ -2263,7 +2263,7 @@ MonoBehaviour:
   BlockingConditionStates: 
   BlockingWeaponStates: 
   Target: {fileID: 0}
-  DistanceToWaypointThreshold: 2
+  DistanceToWaypointThreshold: 1.5
   ClosestPointThreshold: 3
   MinimumDelayBeforePollingNavmesh: 0.1
   PathRefreshMode: 0
@@ -2330,8 +2330,8 @@ MonoBehaviour:
   Model: {fileID: 3712777945580154889}
   CurrentHealth: 100
   Invulnerable: 0
-  InitialHealth: 45
-  MaximumHealth: 45
+  InitialHealth: 38
+  MaximumHealth: 38
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 4578943688102665342}
@@ -2376,7 +2376,7 @@ MonoBehaviour:
   TimeScale: 0
   HealthBarPrefab: {fileID: 0}
   TargetProgressBar: {fileID: 0}
-  Size: {x: 1.4, y: 0.25}
+  Size: {x: 1.3, y: 0.25}
   BackgroundPadding: {x: 0.03, y: 0.03}
   InitialRotationAngles: {x: 0, y: 0, z: 0}
   ForegroundColor:

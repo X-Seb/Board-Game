@@ -6937,9 +6937,9 @@ MonoBehaviour:
     DisableGravity: 0
     ResetControllerForces: 0
     ForcedConditionDuration: 0
-    ApplyMovementMultiplier: 0
-    MovementMultiplier: 0
-    MovementMultiplierDuration: 0
+    ApplyMovementMultiplier: 1
+    MovementMultiplier: 0.3
+    MovementMultiplierDuration: 0.5
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
@@ -7288,7 +7288,7 @@ MonoBehaviour:
   BlockingConditionStates: 
   BlockingWeaponStates: 
   Target: {fileID: 0}
-  DistanceToWaypointThreshold: 0.2
+  DistanceToWaypointThreshold: 1.5
   ClosestPointThreshold: 3
   MinimumDelayBeforePollingNavmesh: 0.1
   PathRefreshMode: 0
@@ -9023,7 +9023,7 @@ MonoBehaviour:
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
   DamageCausedKnockbackForce: {x: 4, y: 3, z: 4}
-  InvincibilityDuration: 0
+  InvincibilityDuration: 0.05
   RepeatDamageOverTime: 0
   AmountOfRepeats: 3
   DurationBetweenRepeats: 1
@@ -9362,8 +9362,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitializationMode: 0
-  Label: 
-  MinimumDistance: 2
+  Label: MoveTowardsTargetButNotTooClose
+  MinimumDistance: 3
 --- !u!114 &5160058514016094488
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5073,7 +5073,7 @@ MonoBehaviour:
   TimeBetweenUses: 1
   TimeBetweenUsesReleaseInterruption: 1
   UseBurstMode: 1
-  BurstLength: 6
+  BurstLength: 3
   BurstTimeBetweenShots: 0.11
   MagazineBased: 0
   MagazineSize: 30
@@ -5131,7 +5131,7 @@ MonoBehaviour:
   SpawnTransforms:
   - {fileID: 5436925189376041027}
   SpawnTransformsMode: 1
-  Spread: {x: 0, y: 18, z: 0}
+  Spread: {x: 0, y: 20, z: 0}
   RotateWeaponOnSpread: 0
   RandomSpread: 1
   SpawnPosition: {x: 0, y: 0, z: 0}

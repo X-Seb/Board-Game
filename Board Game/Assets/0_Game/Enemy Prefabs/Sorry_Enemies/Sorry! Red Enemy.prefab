@@ -1473,9 +1473,9 @@ MonoBehaviour:
     DisableGravity: 0
     ResetControllerForces: 0
     ForcedConditionDuration: 0
-    ApplyMovementMultiplier: 0
-    MovementMultiplier: 0
-    MovementMultiplierDuration: 0
+    ApplyMovementMultiplier: 1
+    MovementMultiplier: 0.3
+    MovementMultiplierDuration: 0.5
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
@@ -1824,7 +1824,7 @@ MonoBehaviour:
   BlockingConditionStates: 
   BlockingWeaponStates: 
   Target: {fileID: 0}
-  DistanceToWaypointThreshold: 0.2
+  DistanceToWaypointThreshold: 1.7
   ClosestPointThreshold: 3
   MinimumDelayBeforePollingNavmesh: 0.1
   PathRefreshMode: 0
@@ -1896,7 +1896,7 @@ MonoBehaviour:
   TimeScale: 0
   HealthBarPrefab: {fileID: 0}
   TargetProgressBar: {fileID: 0}
-  Size: {x: 0.4, y: 0.2}
+  Size: {x: 0.3, y: 0.2}
   BackgroundPadding: {x: 0.03, y: 0.03}
   InitialRotationAngles: {x: 0, y: 0, z: 0}
   ForegroundColor:
@@ -2077,8 +2077,8 @@ MonoBehaviour:
     m_Bits: 1024
   Owner: {fileID: 0}
   TriggerFilter: 3
-  MinDamageCaused: 1
-  MaxDamageCaused: 1
+  MinDamageCaused: 0
+  MaxDamageCaused: 0
   TypedDamages: []
   DamageDirectionMode: 1
   DamageCausedKnockbackType: 1

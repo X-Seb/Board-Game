@@ -22,7 +22,7 @@ MonoBehaviour:
   - {fileID: 7642241211362050468, guid: 799be9a9f4ca74909ba9a36442f7c651, type: 3}
   - {fileID: 1174499198651537194, guid: 3e448d0b64f3945828b7d235b2aad737, type: 3}
   m_pointReward: 12
-  m_spawnInterval: 0.5
+  m_spawnInterval: 0.9
   m_overrideSpawner: 0
   m_overrideSpawnIntervals: 0
   m_newSpawnIntervals: []

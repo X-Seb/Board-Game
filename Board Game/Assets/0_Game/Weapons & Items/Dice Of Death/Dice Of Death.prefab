@@ -696,7 +696,7 @@ MonoBehaviour:
         DebugActive: 0
         FlashColor: {r: 0.6750596, g: 0.13705944, b: 0.8301887, a: 1}
         FlashDuration: 0.05
-        FlashAlpha: 0.08
+        FlashAlpha: 0.07
         FlashID: 0
     - rid: 2694893150061723661
       type: {class: MMF_CinemachineImpulse, ns: MoreMountains.FeedbacksForThirdParty,
@@ -916,7 +916,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         RemapIntensityZero: 0
-        RemapIntensityOne: 3
+        RemapIntensityOne: 2.5
         ShakeThreshold:
           serializedVersion: 2
           m_Curve:
@@ -1166,7 +1166,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         RemapIntensityZero: 0
-        RemapIntensityOne: 0.05
+        RemapIntensityOne: 0.04
         RelativeIntensity: 1
         InterpolateColor: 0
         ColorCurve:
@@ -1284,7 +1284,7 @@ MonoBehaviour:
         DebugActive: 0
         BoundLight: {fileID: 4502234819266507442}
         Mode: 0
-        Duration: 0.15
+        Duration: 0.13
         StartsOff: 1
         DisableOnStop: 1
         RelativeValues: 1
@@ -1341,8 +1341,8 @@ MonoBehaviour:
             inWeight: 0
             outWeight: 0
           - serializedVersion: 3
-            time: 0.3
-            value: 1
+            time: 0.14076434
+            value: 0.997543
             inSlope: 0
             outSlope: 0
             tangentMode: 0
@@ -1379,8 +1379,8 @@ MonoBehaviour:
             inWeight: 0
             outWeight: 0
           - serializedVersion: 3
-            time: 0.3
-            value: 1
+            time: 0.13014862
+            value: 0.99754304
             inSlope: 0
             outSlope: 0
             tangentMode: 0

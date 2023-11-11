@@ -9,7 +9,7 @@ public class GGReplaceTextTool : MonoBehaviour
     [SerializeField] private TextMeshProUGUI m_text;
     [Header("Use '{}' to replace {} with the variable you're getting.")]
     [SerializeField] private string m_replaceWith;
-    [Header("How to get the variable information: ")]
+    [Header("One way to get the variable information: ")]
     [SerializeField] private GGComponentInfoFetcherTool m_componentInfoFetcher;
     [SerializeField] private GameObject m_objectToGetFrom;
     [SerializeField] private string m_componentName;
@@ -24,7 +24,17 @@ public class GGReplaceTextTool : MonoBehaviour
         boolType
     }
 
-    public void SetText()
+    public void SetTextWithInt(int valueToInsert)
+    {
+        m_text.text = m_replaceWith.Replace("{}", valueToInsert.ToString());
+    }
+
+    public void SetTextWithFloat(float valueToInsert)
+    {
+        m_text.text = m_replaceWith.Replace("{}", valueToInsert.ToString());
+    }
+
+    public void SetTextByUsingReflection()
     {
         switch (m_infoType)
         {

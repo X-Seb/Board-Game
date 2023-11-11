@@ -13,7 +13,7 @@ public class RoundManager : MonoBehaviour
     [Header("Testing: ")]
     [SerializeField] private bool m_shouldSpawnWaves;
     [Header("Round to start with: (won't do anything if left empty)")]
-    [SerializeField] private Round m_startingRound;
+    [SerializeField] private Round m_testStartingRound;
     [Header("Round Setup: ")]
     [SerializeField] private RoundGroup[] m_roundGroups;
 
@@ -91,9 +91,17 @@ public class RoundManager : MonoBehaviour
         m_roundsFromCurrentGroup = 1;
         m_totalRoundNumber = 1;
         m_currentWaveNumber = 1;
-        m_currentRound = m_currentRoundGroup.GetRounds()[0];
-        m_currentWave = m_currentRound.GetWave(1);
         m_firstPlay = true;
+
+        if (m_shouldSpawnWaves && m_testStartingRound)
+        {
+            m_currentRound = m_testStartingRound;
+        }
+        else
+        {
+            m_currentRound = m_currentRoundGroup.GetRounds()[0];
+        }
+        m_currentWave = m_currentRound.GetWave(1);
 
         if (m_shouldSpawnWaves) { m_startGameFeedback.PlayFeedbacks(); }
     }

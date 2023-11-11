@@ -295,7 +295,7 @@ MonoBehaviour:
   BlockingConditionStates: 
   BlockingWeaponStates: 
   Target: {fileID: 0}
-  DistanceToWaypointThreshold: 0.2
+  DistanceToWaypointThreshold: 1.5
   ClosestPointThreshold: 3
   MinimumDelayBeforePollingNavmesh: 0.1
   PathRefreshMode: 0
@@ -321,8 +321,8 @@ MonoBehaviour:
   Model: {fileID: 2093422333673364802}
   CurrentHealth: 100
   Invulnerable: 0
-  InitialHealth: 34
-  MaximumHealth: 34
+  InitialHealth: 30
+  MaximumHealth: 30
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 4258168009356082337}

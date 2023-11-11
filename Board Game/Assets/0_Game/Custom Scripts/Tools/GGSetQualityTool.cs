@@ -6,7 +6,7 @@ using TMPro;
 
 public class GGSetQualityTool : MonoBehaviour
 {
-    [Header("When to automatically set the quality and ")]
+    [Header("When to automatically set the quality")]
     [SerializeField] private TriggerTime m_whenToSetQuality;
     [Header("The dropdown to change the value of: ")]
     [SerializeField] private TMP_Dropdown m_dropdown;
@@ -25,7 +25,7 @@ public class GGSetQualityTool : MonoBehaviour
         }
         else if (m_whenToSetQuality == TriggerTime.awake)
         {
-            SetDropdownValueFromQualityLevel();
+            SetDropdownValueFromCurrentQualityLevel();
         }
     }
 
@@ -42,7 +42,7 @@ public class GGSetQualityTool : MonoBehaviour
         m_dropdown.value = quality;
     }
 
-    private void SetDropdownValueFromQualityLevel()
+    private void SetDropdownValueFromCurrentQualityLevel()
     {
         int quality = QualitySettings.GetQualityLevel();
         PlayerPrefs.SetInt("Quality", quality);

@@ -8,6 +8,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2532961196904199285, guid: acdf0695717314e43a0c6018e0cba8d8,
+        type: 3}
+      propertyPath: MaxDamageCaused
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532961196904199285, guid: acdf0695717314e43a0c6018e0cba8d8,
+        type: 3}
+      propertyPath: MinDamageCaused
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532961196904199285, guid: acdf0695717314e43a0c6018e0cba8d8,
+        type: 3}
+      propertyPath: TypedDamages.Array.data[0].MaxDamageCaused
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532961196904199285, guid: acdf0695717314e43a0c6018e0cba8d8,
+        type: 3}
+      propertyPath: TypedDamages.Array.data[0].MinDamageCaused
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3604469228443476780, guid: acdf0695717314e43a0c6018e0cba8d8,
         type: 3}
       propertyPath: DashDistance
@@ -16,7 +36,7 @@ PrefabInstance:
     - target: {fileID: 4445940100281750750, guid: acdf0695717314e43a0c6018e0cba8d8,
         type: 3}
       propertyPath: m_Name
-      value: Queen Enemy White Variant
+      value: Queen Enemy White
       objectReference: {fileID: 0}
     - target: {fileID: 6025071213366229684, guid: acdf0695717314e43a0c6018e0cba8d8,
         type: 3}
@@ -74,20 +94,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7581321902480580827, guid: acdf0695717314e43a0c6018e0cba8d8,
+        type: 3}
+      propertyPath: MaxDamageCaused
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7581321902480580827, guid: acdf0695717314e43a0c6018e0cba8d8,
+        type: 3}
+      propertyPath: MinDamageCaused
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8471642587410319140, guid: acdf0695717314e43a0c6018e0cba8d8,
         type: 3}
       propertyPath: Size.x
-      value: 2.2
+      value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 8770235630074047316, guid: acdf0695717314e43a0c6018e0cba8d8,
         type: 3}
       propertyPath: InitialHealth
-      value: 250
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 8770235630074047316, guid: acdf0695717314e43a0c6018e0cba8d8,
         type: 3}
       propertyPath: MaximumHealth
-      value: 250
+      value: 240
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

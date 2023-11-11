@@ -18,4 +18,5 @@ MonoBehaviour:
   overrideSFX: 0
   roundStartSFX: {fileID: 0}
   roundEndSFX: {fileID: 0}
-  m_waves: []
+  m_waves:
+  - {fileID: 11400000, guid: 9dd02085c2389477e87aa18d99c8164d, type: 2}
