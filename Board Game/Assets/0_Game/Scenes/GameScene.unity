@@ -1962,7 +1962,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     Initialized: 0
   RespawnDelay: 2
-  DelayBeforeDeathScreen: 3
+  DelayBeforeDeathScreen: 2.7
   UseLevelBounds: 1
   LoadingSceneMode: 1
   LoadingSceneName: LoadingScreen
@@ -17628,7 +17628,7 @@ MonoBehaviour:
     - rid: 917654088004141058
       type: {class: MMF_MMSoundManagerSound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks.MMTools}
       data:
-        Active: 0
+        Active: 1
         UniqueID: 37939119
         Label: Play BG Defeat Music
         ChannelMode: 0
@@ -17693,7 +17693,7 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 824615396}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: 34394f556e8b02e4185d357ff6ab6f26, type: 3}
+        Sfx: {fileID: 8300000, guid: 07544cfb1e2c24979bf71b41bb1030af, type: 3}
         RandomSfx: []
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
@@ -50347,7 +50347,7 @@ GameObject:
   - component: {fileID: 114216556568614815}
   m_Layer: 5
   m_Name: AchievementsVerticalLayoutGroup
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54108,7 +54108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -545.9991, y: -98.18207}
+  m_AnchoredPosition: {x: -545.99915, y: -98.18207}
   m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224429691925131679
@@ -54270,7 +54270,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -581.9991, y: -150.68207}
+  m_AnchoredPosition: {x: -581.99915, y: -150.68207}
   m_SizeDelta: {x: 512, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224720082643025791

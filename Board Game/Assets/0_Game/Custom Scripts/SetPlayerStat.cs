@@ -33,15 +33,6 @@ public class SetPlayerStat : MonoBehaviour
             SetAllStatsFromPlayerPrefs();
             Debug.Log("SetAllStatsFromPlayerPrefs at Start");
         }
-
-        /*Testing stuff
-        CharacterPause characterPause = m_character.FindAbility<CharacterPause>();
-        if (characterPause == null) { Debug.Log("CharacterPause is null"); }
-        else
-        {
-            
-        }
-        */
     }
 
     public void SetAllStatsFromPlayerPrefs()

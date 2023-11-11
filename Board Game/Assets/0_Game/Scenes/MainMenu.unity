@@ -482,6 +482,7 @@ GameObject:
   - component: {fileID: 23315968}
   - component: {fileID: 23315967}
   - component: {fileID: 23315971}
+  - component: {fileID: 23315972}
   - component: {fileID: 23315970}
   - component: {fileID: 23315966}
   m_Layer: 5
@@ -570,6 +571,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 23315972}
+        m_TargetAssemblyTypeName: GGSetPlayerPrefs, Assembly-CSharp
+        m_MethodName: SetKeyFromPredeterminedValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 23315971}
         m_TargetAssemblyTypeName: GGSetPlayerPrefs, Assembly-CSharp
         m_MethodName: SetKeyFromPredeterminedValue
@@ -683,6 +696,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_keyName: StartingRoundGroupIndex
+  m_keyType: 0
+  m_stringValue: 
+  m_intValue: 0
+  m_floatValue: 0
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray: []
+--- !u!114 &23315972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23315964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b04198065cc2247fb8ecfda5b10f5157, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keyName: CustomRun
   m_keyType: 0
   m_stringValue: 
   m_intValue: 0
@@ -2734,9 +2767,9 @@ RectTransform:
   - {fileID: 258438815}
   m_Father: {fileID: 668090700}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 225, y: -200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 390, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &159759354
@@ -5487,9 +5520,9 @@ RectTransform:
   - {fileID: 1921851831}
   m_Father: {fileID: 668090700}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 225, y: -575}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 390, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &336809988
@@ -7058,9 +7091,9 @@ RectTransform:
   - {fileID: 1347746076}
   m_Father: {fileID: 668090700}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 225, y: -325}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 390, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &393806588
@@ -7964,7 +7997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &460226594
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17100,9 +17133,9 @@ RectTransform:
   - {fileID: 1677262778}
   m_Father: {fileID: 668090700}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 225, y: -75}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 390, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1019824120
@@ -21364,6 +21397,7 @@ GameObject:
   - component: {fileID: 1315830690}
   - component: {fileID: 1315830689}
   - component: {fileID: 1315830688}
+  - component: {fileID: 1315830692}
   - component: {fileID: 1315830687}
   - component: {fileID: 1315830686}
   m_Layer: 5
@@ -21486,6 +21520,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1315830692}
+        m_TargetAssemblyTypeName: GGSetPlayerPrefs, Assembly-CSharp
+        m_MethodName: SetKeyFromPredeterminedValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1315830688}
         m_TargetAssemblyTypeName: GGSetPlayerPrefs, Assembly-CSharp
         m_MethodName: SetKeyFromPredeterminedValue
@@ -21572,6 +21618,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315830684}
   m_CullTransparentMesh: 1
+--- !u!114 &1315830692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315830684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b04198065cc2247fb8ecfda5b10f5157, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keyName: CustomRun
+  m_keyType: 0
+  m_stringValue: 
+  m_intValue: 0
+  m_floatValue: 0
+  m_stringArray: []
+  m_intArray: 
+  m_floatArray: []
 --- !u!1001 &1317096887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24511,9 +24577,9 @@ RectTransform:
   - {fileID: 787559098}
   m_Father: {fileID: 668090700}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 225, y: -450}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 390, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1470340685
