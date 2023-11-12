@@ -30286,7 +30286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Space
+  m_text: Spacebar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 75afa24bf4bea4d4d9a0a0255ce5878c, type: 2}
   m_sharedMaterial: {fileID: 802993357999365756, guid: 75afa24bf4bea4d4d9a0a0255ce5878c,
