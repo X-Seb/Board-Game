@@ -41632,7 +41632,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_shouldSpawnWaves: 1
-  m_testStartingRound: {fileID: 0}
+  m_testStartingRound: {fileID: 11400000, guid: 8ba8153b7d4d646478fa699812fd085a,
+    type: 2}
   m_roundGroups:
   - {fileID: 11400000, guid: 3cf27e6b6f3aa487ab51c84adf404e5e, type: 2}
   - {fileID: 11400000, guid: 5b88ce814371a453fb7f77a22a8dacde, type: 2}
