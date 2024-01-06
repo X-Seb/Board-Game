@@ -7011,7 +7011,7 @@ GameObject:
   - component: {fileID: 137764114977643597}
   - component: {fileID: 5550508855310872042}
   m_Layer: 13
-  m_Name: Knight Enemy Black
+  m_Name: TEST Knight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9140,9 +9140,18 @@ MonoBehaviour:
     Transitions:
       array:
       - Decision: {fileID: 8151667124691831053}
-        TrueState: Hunting
+        TrueState: HuntingDecision
         FalseState: 
-  - StateName: Hunting
+  - StateName: HuntingDecision
+    Actions:
+      array:
+      - {fileID: 3764266103373630905}
+    Transitions:
+      array:
+      - Decision: {fileID: 8028036929567683083}
+        TrueState: HuntingNormal
+        FalseState: HuntingPathfinding
+  - StateName: HuntingPathfinding
     Actions:
       array:
       - {fileID: 1897188088216724564}
@@ -9157,6 +9166,24 @@ MonoBehaviour:
       - Decision: {fileID: 5160058514016094488}
         TrueState: Jump
         FalseState: 
+  - StateName: HuntingNormal
+    Actions:
+      array:
+      - {fileID: 1897188088216724564}
+      - {fileID: 8670877532009845402}
+      - {fileID: 5416328586463165254}
+      - {fileID: 5084107527221772881}
+    Transitions:
+      array:
+      - Decision: {fileID: 8151667124691831053}
+        TrueState: 
+        FalseState: DoNothing
+      - Decision: {fileID: 5160058514016094488}
+        TrueState: Jump
+        FalseState: 
+      - Decision: {fileID: 8028036929567683083}
+        TrueState: 
+        FalseState: HuntingPathfinding
   - StateName: Jump
     Actions:
       array:
@@ -9364,7 +9391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InitializationMode: 0
   Label: MoveTowardsTargetButNotTooClose
-  MinimumDistance: 3
+  MinimumDistance: 1.5
 --- !u!114 &5160058514016094488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9492,7 +9519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9e26195b376f4887ba8f3016f22afdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Label: CollidingWithObstacles
+  Label: OnTopOfObstacle
   targetLayerMask:
     serializedVersion: 2
     m_Bits: 256

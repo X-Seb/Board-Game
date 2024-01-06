@@ -192,12 +192,12 @@ PrefabInstance:
     - target: {fileID: 8271282181270349910, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: InitialHealth
-      value: 25
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 8271282181270349910, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
       propertyPath: MaximumHealth
-      value: 25
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 8271282181270349910, guid: 83495f77c31594c5bba0325a249fb7d7,
         type: 3}
