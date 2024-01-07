@@ -60873,11 +60873,11 @@ MonoBehaviour:
           ButtonText: Debug Stop Sound
         PlayMethod: 0
         PoolSize: 10
-        StopSoundOnFeedbackStop: 1
-        MinVolume: 1.6
-        MaxVolume: 1.7
-        MinPitch: 1
-        MaxPitch: 1.1
+        StopSoundOnFeedbackStop: 0
+        MinVolume: 0.9
+        MaxVolume: 1
+        MinPitch: 1.3
+        MaxPitch: 1.5
         SfxAudioMixerGroup: {fileID: -3165942800488051908, guid: 7e984f512e89b60468e829489e8883e3,
           type: 2}
         Priority: 128

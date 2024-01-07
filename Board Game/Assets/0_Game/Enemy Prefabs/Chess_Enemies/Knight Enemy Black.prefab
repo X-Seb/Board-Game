@@ -9095,6 +9095,7 @@ GameObject:
   - component: {fileID: 7621005958521508640}
   - component: {fileID: 6653904618753411365}
   - component: {fileID: 8028036929567683083}
+  - component: {fileID: 57395031159650986}
   m_Layer: 13
   m_Name: AI Brain
   m_TagString: Untagged
@@ -9140,9 +9141,27 @@ MonoBehaviour:
     Transitions:
       array:
       - Decision: {fileID: 8151667124691831053}
-        TrueState: Hunting
+        TrueState: HuntingNormal
         FalseState: 
-  - StateName: Hunting
+  - StateName: HuntingNormal
+    Actions:
+      array:
+      - {fileID: 1897188088216724564}
+      - {fileID: 8670877532009845402}
+      - {fileID: 5416328586463165254}
+      - {fileID: 5084107527221772881}
+    Transitions:
+      array:
+      - Decision: {fileID: 8151667124691831053}
+        TrueState: 
+        FalseState: DoNothing
+      - Decision: {fileID: 5160058514016094488}
+        TrueState: 
+        FalseState: Jump
+      - Decision: {fileID: 57395031159650986}
+        TrueState: HuntingPathfinding
+        FalseState: 
+  - StateName: HuntingPathfinding
     Actions:
       array:
       - {fileID: 1897188088216724564}
@@ -9499,6 +9518,21 @@ MonoBehaviour:
   radiusOfCapsule: 0.3
   p1: {x: 0, y: -1.2, z: 0}
   p2: {x: 0, y: 0.5, z: 0}
+--- !u!114 &57395031159650986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7274553028790374106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21818f4def5bf646bec3d25770336cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Label: TimeBeforePathfinding
+  AfterTimeMin: 0.5
+  AfterTimeMax: 0.5
 --- !u!1 &7434978508040668463
 GameObject:
   m_ObjectHideFlags: 0
