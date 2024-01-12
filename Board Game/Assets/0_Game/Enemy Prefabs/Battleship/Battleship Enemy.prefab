@@ -858,7 +858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: HitThreeTimes
-  NumberOfHits: 3
+  NumberOfHits: 4
 --- !u!114 &7186110878743021388
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5023,7 +5023,6 @@ GameObject:
   m_Component:
   - component: {fileID: 318965428339897265}
   - component: {fileID: 8799078823544382132}
-  - component: {fileID: 7660765268654550730}
   - component: {fileID: 3906770782945476457}
   - component: {fileID: 5383742116122680335}
   - component: {fileID: 5046402203008829492}
@@ -5136,38 +5135,9 @@ MonoBehaviour:
   RotateWeaponOnSpread: 0
   RandomSpread: 0
   SpawnPosition: {x: 0, y: 0, z: 0}
-  ObjectPooler: {fileID: 7660765268654550730}
+  ObjectPooler: {fileID: 3906770782945476457}
   SpawnFeedbacks: []
   TestShootButton: 0
---- !u!114 &7660765268654550730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7409132237196341927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73098ca8f002adc4f9debdbe47a78c9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MutualizeWaitingPools: 1
-  NestWaitingPool: 1
-  NestUnderThis: 0
-  Pool:
-  - GameObjectToPool: {fileID: 1101516573661286827, guid: ee23e22d82d944fc0882eb04d3ab55fd,
-      type: 3}
-    PoolSize: 5
-    PoolCanExpand: 0
-    Enabled: 1
-  - GameObjectToPool: {fileID: 1101516573661286827, guid: 40688ae879d3645ceb17ad39f826eae1,
-      type: 3}
-    PoolSize: 2
-    PoolCanExpand: 0
-    Enabled: 1
-  PoolingMethod: 3
-  CanPoolSameObjectTwice: 1
-  MutualizedPoolName: MultipleRocketPool
 --- !u!114 &3906770782945476457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5175,7 +5145,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7409132237196341927}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b7277539b95c0d45895792ecc99ce66, type: 3}
   m_Name: 

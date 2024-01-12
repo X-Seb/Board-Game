@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Final Battle
   m_EditorClassIdentifier: 
   roundName: The Final Battle...
-  roundDescription: 
+  roundDescription: Good luck.
   roundDifficulty: 10
   overrideSFX: 0
   roundStartSFX: {fileID: 0}

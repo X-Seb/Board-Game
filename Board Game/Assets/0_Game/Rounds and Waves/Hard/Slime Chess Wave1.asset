@@ -18,15 +18,13 @@ MonoBehaviour:
   - {fileID: 5832640078387480686, guid: 50a54bbb3da2d46558f94bc91b0967aa, type: 3}
   - {fileID: 8310317341608840035, guid: 4a7ca2f124d1e44c5bfd418916890510, type: 3}
   - {fileID: 5597999330980822728, guid: 48f4da9b26b5d400191aac0011aea06e, type: 3}
-  - {fileID: 4328191732094124907, guid: c9c2bfedcfb734c9c85ca0c5b248ab95, type: 3}
   m_pointReward: 17
   m_spawnInterval: 0
   m_overrideSpawner: 0
   m_overrideSpawnIntervals: 1
   m_newSpawnIntervals:
   - 1
-  - 4
-  - 4
-  - 18
-  - 4
-  - 4
+  - 6
+  - 6
+  - 16
+  - 6
