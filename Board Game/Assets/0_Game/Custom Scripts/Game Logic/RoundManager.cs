@@ -29,8 +29,8 @@ public class RoundManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI m_totalEnemiesKilledText;
     [SerializeField] private TextMeshProUGUI m_currentRoundText;
     [SerializeField] private TextMeshProUGUI m_targetsRemainingText;
-    [SerializeField] private TextMeshProUGUI m_currentScoreText;
-    [SerializeField] private TextMeshProUGUI m_deathUIbestScoreText;
+    //[SerializeField] private TextMeshProUGUI m_currentScoreText;
+    //[SerializeField] private TextMeshProUGUI m_deathUIbestScoreText;
     [SerializeField] private TextMeshProUGUI m_elapsedTimeText;
 
     [Header("Feedbacks: ")]

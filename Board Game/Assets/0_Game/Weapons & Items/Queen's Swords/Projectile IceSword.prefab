@@ -445,7 +445,7 @@ MonoBehaviour:
           ButtonText: Debug Stop Sound
         PlayMethod: 0
         PoolSize: 10
-        StopSoundOnFeedbackStop: 1
+        StopSoundOnFeedbackStop: 0
         MinVolume: 0.2
         MaxVolume: 0.25
         MinPitch: 0.7

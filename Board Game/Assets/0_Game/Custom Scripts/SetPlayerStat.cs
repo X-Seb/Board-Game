@@ -70,7 +70,12 @@ public class SetPlayerStat : MonoBehaviour
 
     public void SetHealthRefillAmountFromPlayerPrefs()
     {
-        m_healthAutoRefill.HealthPerBurst = PlayerPrefs.GetFloat("HealthRefillAmount");
+        float refill = PlayerPrefs.GetFloat("HealthRefillAmount");
+        m_healthAutoRefill.HealthPerBurst = refill;
+        if (refill == 0)
+        {
+            m_healthAutoRefill.CooldownAfterHit = 9999;
+        }
     }
 
     public void SetMovementSpeedFromPlayerPrefs()

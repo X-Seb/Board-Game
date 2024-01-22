@@ -60874,8 +60874,8 @@ MonoBehaviour:
         PlayMethod: 0
         PoolSize: 10
         StopSoundOnFeedbackStop: 0
-        MinVolume: 0.7
-        MaxVolume: 0.8
+        MinVolume: 0.55
+        MaxVolume: 0.6
         MinPitch: 1.3
         MaxPitch: 1.5
         SfxAudioMixerGroup: {fileID: -3165942800488051908, guid: 7e984f512e89b60468e829489e8883e3,
@@ -72945,10 +72945,10 @@ GameObject:
   - component: {fileID: 4082209260241131596}
   - component: {fileID: 3681840461518745718}
   - component: {fileID: 1350330599706467763}
+  - component: {fileID: 2189578206908193606}
   - component: {fileID: 7647340787457513338}
   - component: {fileID: 5543825268380555290}
   - component: {fileID: 4341207587949116722}
-  - component: {fileID: 2189578206908193606}
   - component: {fileID: 7578259220784413406}
   - component: {fileID: 1760182027788644221}
   - component: {fileID: 7929610306212826364}
@@ -73137,6 +73137,46 @@ MonoBehaviour:
   SlidingSpeed: 15
   SlidingSpeedControl: 0.4
   SlidingDirectionControl: 1
+--- !u!114 &2189578206908193606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6694907259331095607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f2dd01ffdd1cc045a614bd354672723, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartSfx: {fileID: 0}
+  AbilityInProgressSfx: {fileID: 0}
+  AbilityStopSfx: {fileID: 0}
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  RotationMode: 2
+  CharacterRotationAuthorized: 1
+  ShouldRotateToFaceMovementDirection: 0
+  MovementRotationSpeed: 0
+  MovementRotatingModel: {fileID: 6549296154298028368}
+  RotateToFaceMovementDirectionSpeed: 10
+  AbsoluteThresholdMovement: 0.5
+  ModelDirection: {x: 0, y: 0, z: 0}
+  ModelAngles: {x: 0, y: 0, z: 0}
+  ShouldRotateToFaceWeaponDirection: 1
+  WeaponRotationSpeed: 1
+  WeaponRotatingModel: {fileID: 6549296154298028368}
+  RotateToFaceWeaponDirectionSpeed: 15
+  AbsoluteThresholdWeapon: 0.5
+  LockVerticalRotation: 1
+  RotationSpeedResetSpeed: 2
+  RotationOffsetSmoothSpeed: 1
+  ForcedRotation: 0
+  ForcedRotationDirection: {x: 0, y: 0, z: 0}
 --- !u!114 &7647340787457513338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73380,46 +73420,6 @@ MonoBehaviour:
   HealthPerSecond: 0
   HealthPerBurst: 3
   DurationBetweenBursts: 1
---- !u!114 &2189578206908193606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6694907259331095607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f2dd01ffdd1cc045a614bd354672723, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartSfx: {fileID: 0}
-  AbilityInProgressSfx: {fileID: 0}
-  AbilityStopSfx: {fileID: 0}
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  BlockingWeaponStates: 
-  RotationMode: 2
-  CharacterRotationAuthorized: 1
-  ShouldRotateToFaceMovementDirection: 0
-  MovementRotationSpeed: 0
-  MovementRotatingModel: {fileID: 6549296154298028368}
-  RotateToFaceMovementDirectionSpeed: 10
-  AbsoluteThresholdMovement: 0.5
-  ModelDirection: {x: 0, y: 0, z: 0}
-  ModelAngles: {x: 0, y: 0, z: 0}
-  ShouldRotateToFaceWeaponDirection: 1
-  WeaponRotationSpeed: 1
-  WeaponRotatingModel: {fileID: 6549296154298028368}
-  RotateToFaceWeaponDirectionSpeed: 15
-  AbsoluteThresholdWeapon: 0.5
-  LockVerticalRotation: 1
-  RotationSpeedResetSpeed: 2
-  RotationOffsetSmoothSpeed: 1
-  ForcedRotation: 0
-  ForcedRotationDirection: {x: 0, y: 0, z: 0}
 --- !u!114 &7578259220784413406
 MonoBehaviour:
   m_ObjectHideFlags: 0

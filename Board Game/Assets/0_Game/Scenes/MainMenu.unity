@@ -9558,7 +9558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AutomaticallyUnparentOnAwake: 1
-  TargetFrameRate: 60
+  TargetFrameRate: 300
   MaximumLives: 0
   CurrentLives: 0
   GameOverScene: 
@@ -27616,7 +27616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AutomaticallyUnparentOnAwake: 1
   settingsSo: {fileID: 11400000, guid: ab89364b0ec8645fda4ec9a37034d2fe, type: 2}
-  AudioSourcePoolSize: 10
+  AudioSourcePoolSize: 15
   PoolCanExpand: 1
 --- !u!4 &1734572837
 Transform:
@@ -49067,7 +49067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: feb1f9f6501aa2f4fba936867f4dd1a8, type: 2}
+  sharedProfile: {fileID: 11400000, guid: b903b17376f264440bbafd68f7f29b66, type: 2}
   isGlobal: 1
   blendDistance: 0
   weight: 1

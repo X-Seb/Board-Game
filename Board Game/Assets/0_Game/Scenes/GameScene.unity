@@ -875,7 +875,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -2273146209696275378, guid: 7e984f512e89b60468e829489e8883e3,
     type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b731fd8f0372448178e6713fe8b06ef7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1677,54 +1677,10 @@ MonoBehaviour:
     Playing: 0
     Fading: 0
     _initialized: 1
-  - TargetAudioSource: {fileID: 898568371}
-    Volume: {x: 0.4, y: 0.4}
-    InitialDelay: {x: 0, y: 0}
-    CrossFadeDuration: {x: 2, y: 2}
-    Pitch: {x: 1, y: 1}
-    StereoPan: 0
-    SpatialBlend: 0
-    Loop: 0
-    Playing: 0
-    Fading: 0
-    _initialized: 1
-  - TargetAudioSource: {fileID: 1377192026}
-    Volume: {x: 0.4, y: 0.4}
-    InitialDelay: {x: 0, y: 0}
-    CrossFadeDuration: {x: 2, y: 2}
-    Pitch: {x: 1, y: 1}
-    StereoPan: 0
-    SpatialBlend: 0
-    Loop: 0
-    Playing: 0
-    Fading: 0
-    _initialized: 1
-  - TargetAudioSource: {fileID: 323157741}
-    Volume: {x: 0.4, y: 0.4}
-    InitialDelay: {x: 0, y: 0}
-    CrossFadeDuration: {x: 2, y: 2}
-    Pitch: {x: 1, y: 1}
-    StereoPan: 0
-    SpatialBlend: 0
-    Loop: 0
-    Playing: 0
-    Fading: 0
-    _initialized: 1
-  - TargetAudioSource: {fileID: 155700538}
-    Volume: {x: 0.4, y: 0.4}
-    InitialDelay: {x: 0, y: 0}
-    CrossFadeDuration: {x: 2, y: 2}
-    Pitch: {x: 1, y: 1}
-    StereoPan: 0
-    SpatialBlend: 0
-    Loop: 0
-    Playing: 0
-    Fading: 0
-    _initialized: 1
   RandomOrder: 1
   RandomizeOrderSeed: 1
   Endless: 1
-  PlayOnStart: 0
+  PlayOnStart: 1
   VolumeMultiplier: 1
   AutoHandleApplicationPause: 1
   Persistent: 0
@@ -2031,7 +1987,7 @@ MonoBehaviour:
   NestUnderThis: 1
   GameObjectToPool: {fileID: 1101516573661286827, guid: 8bc750019e56c4a0fbabbfae07daf09a,
     type: 3}
-  PoolSize: 20
+  PoolSize: 16
   PoolCanExpand: 1
 --- !u!4 &116879310
 Transform:
@@ -11229,11 +11185,12 @@ MonoBehaviour:
         PlayMethod: 0
         PoolSize: 10
         StopSoundOnFeedbackStop: 1
-        MinVolume: 1.2
-        MaxVolume: 1.4
+        MinVolume: 1.1
+        MaxVolume: 1.2
         MinPitch: 0.9
         MaxPitch: 1
-        SfxAudioMixerGroup: {fileID: 0}
+        SfxAudioMixerGroup: {fileID: -3165942800488051908, guid: 7e984f512e89b60468e829489e8883e3,
+          type: 2}
         Priority: 128
         PanStereo: 0
         SpatialBlend: 0
@@ -12368,7 +12325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AutomaticallyUnparentOnAwake: 1
-  TargetFrameRate: 60
+  TargetFrameRate: 300
   MaximumLives: 0
   CurrentLives: 0
   GameOverScene: 
@@ -20747,7 +20704,7 @@ MonoBehaviour:
   NestUnderThis: 1
   GameObjectToPool: {fileID: 1101516573661286827, guid: ee23e22d82d944fc0882eb04d3ab55fd,
     type: 3}
-  PoolSize: 5
+  PoolSize: 6
   PoolCanExpand: 1
 --- !u!1 &933581397
 GameObject:
@@ -32264,7 +32221,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1485950259
 Transform:
   m_ObjectHideFlags: 0
@@ -34476,8 +34433,8 @@ MonoBehaviour:
         PlayMethod: 0
         PoolSize: 10
         StopSoundOnFeedbackStop: 1
-        MinVolume: 0.9
-        MaxVolume: 1
+        MinVolume: 0.7
+        MaxVolume: 0.75
         MinPitch: 1
         MaxPitch: 1.05
         SfxAudioMixerGroup: {fileID: -3165942800488051908, guid: 7e984f512e89b60468e829489e8883e3,
@@ -39768,8 +39725,8 @@ MonoBehaviour:
         PlayMethod: 0
         PoolSize: 10
         StopSoundOnFeedbackStop: 1
-        MinVolume: 0.8
-        MaxVolume: 1
+        MinVolume: 0.6
+        MaxVolume: 0.7
         MinPitch: 0.95
         MaxPitch: 1.1
         SfxAudioMixerGroup: {fileID: -3165942800488051908, guid: 7e984f512e89b60468e829489e8883e3,
@@ -41116,7 +41073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AutomaticallyUnparentOnAwake: 1
   settingsSo: {fileID: 11400000, guid: ab89364b0ec8645fda4ec9a37034d2fe, type: 2}
-  AudioSourcePoolSize: 10
+  AudioSourcePoolSize: 15
   PoolCanExpand: 1
 --- !u!4 &1734572837
 Transform:
@@ -41646,8 +41603,6 @@ MonoBehaviour:
   m_totalEnemiesKilledText: {fileID: 222223763}
   m_currentRoundText: {fileID: 1564880219}
   m_targetsRemainingText: {fileID: 3738910}
-  m_currentScoreText: {fileID: 0}
-  m_deathUIbestScoreText: {fileID: 0}
   m_elapsedTimeText: {fileID: 1032608721}
   m_startGameFeedback: {fileID: 456875717}
   m_roundStartFeedback: {fileID: 1716274739}
@@ -43335,7 +43290,7 @@ MonoBehaviour:
           ButtonText: Debug Stop Sound
         PlayMethod: 0
         PoolSize: 10
-        StopSoundOnFeedbackStop: 1
+        StopSoundOnFeedbackStop: 0
         MinVolume: 0.5
         MaxVolume: 0.6
         MinPitch: 0.8
@@ -49048,8 +49003,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
-  m_fontSizeBase: 120
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -71257,7 +71212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: feb1f9f6501aa2f4fba936867f4dd1a8, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 7bd6ef2f98306413d843d85cc90959c2, type: 2}
   isGlobal: 1
   blendDistance: 0
   weight: 1
