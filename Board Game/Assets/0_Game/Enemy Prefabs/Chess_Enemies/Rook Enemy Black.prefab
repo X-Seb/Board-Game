@@ -25,6 +25,8 @@ GameObject:
   - component: {fileID: 7645524806157964561}
   - component: {fileID: 5583654015600460281}
   - component: {fileID: 5856714123754012731}
+  - component: {fileID: 8741428368127494816}
+  - component: {fileID: 8669437654300296734}
   m_Layer: 13
   m_Name: AI Decisions
   m_TagString: Untagged
@@ -71,6 +73,9 @@ MonoBehaviour:
       - Decision: {fileID: 325453024355025187}
         TrueState: Hunting
         FalseState: 
+      - Decision: {fileID: 8741428368127494816}
+        TrueState: Dead
+        FalseState: 
   - StateName: Hunting
     Actions:
       array:
@@ -99,6 +104,9 @@ MonoBehaviour:
       - Decision: {fileID: 7645524806157964561}
         TrueState: Dashing
         FalseState: 
+      - Decision: {fileID: 8741428368127494816}
+        TrueState: Dead
+        FalseState: 
   - StateName: Dashing
     Actions:
       array:
@@ -107,12 +115,19 @@ MonoBehaviour:
       - {fileID: 4885159196480063253}
     Transitions:
       array:
-      - Decision: {fileID: 325453024355025187}
-        TrueState: 
-        FalseState: DoNothing
       - Decision: {fileID: 1855325821381370482}
         TrueState: DoNothing
         FalseState: 
+      - Decision: {fileID: 8741428368127494816}
+        TrueState: Dead
+        FalseState: 
+  - StateName: Dead
+    Actions:
+      array:
+      - {fileID: 3885726652961674077}
+      - {fileID: 8669437654300296734}
+    Transitions:
+      array: []
   TimeInThisState: 0
   Target: {fileID: 0}
   _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
@@ -398,6 +413,52 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 2.4
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnlyPlayWhenEnteringState: 1
+--- !u!114 &8741428368127494816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24166737092047343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a01f7a39a54b94881d5543847cf71c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Label: IsDead
+  TrueIfHealthIs: 1
+  HealthValue: 0
+  OnlyOnce: 0
+--- !u!114 &8669437654300296734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24166737092047343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfeeda23b87d1aa479c435dc5d0b4703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationMode: 0
+  Label: Dead
+  TargetEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 110834660736421915}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2

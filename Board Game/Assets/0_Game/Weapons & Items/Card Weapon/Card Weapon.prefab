@@ -6512,7 +6512,7 @@ MonoBehaviour:
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-        Amplitude: 0.9
+        Amplitude: 0.7
         RelativeIntensity: 0
     - rid: 2694893662926536731
       type: {class: MMF_Vignette, ns: MoreMountains.FeedbacksForThirdParty, asm: MoreMountains.Feedbacks.PostProcessing}
@@ -6619,7 +6619,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         RemapIntensityZero: 0
-        RemapIntensityOne: 0.06
+        RemapIntensityOne: 0.04
         RelativeIntensity: 1
         InterpolateColor: 0
         ColorCurve:

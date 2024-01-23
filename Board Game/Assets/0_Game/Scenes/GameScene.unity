@@ -1667,7 +1667,7 @@ MonoBehaviour:
   Channel: 0
   Songs:
   - TargetAudioSource: {fileID: 35009847}
-    Volume: {x: 0.4, y: 0.4}
+    Volume: {x: 0.55, y: 0.5}
     InitialDelay: {x: 0, y: 0}
     CrossFadeDuration: {x: 2, y: 2}
     Pitch: {x: 1, y: 1}
@@ -6151,6 +6151,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1754882446}
     m_Modifications:
+    - target: {fileID: 1063117407865056495, guid: 50c501147572a49e18f4fb21e88715a9,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1300233050493153137, guid: 50c501147572a49e18f4fb21e88715a9,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -41198,7 +41203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AutomaticallyUnparentOnAwake: 1
   settingsSo: {fileID: 11400000, guid: ab89364b0ec8645fda4ec9a37034d2fe, type: 2}
-  AudioSourcePoolSize: 15
+  AudioSourcePoolSize: 25
   PoolCanExpand: 1
 --- !u!4 &1734572837
 Transform:
