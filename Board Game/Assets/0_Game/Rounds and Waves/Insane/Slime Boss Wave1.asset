@@ -14,8 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enemies:
   - {fileID: 7030082010935928248, guid: 88de881467b854c8b932d751f7973743, type: 3}
+  - {fileID: 5597999330980822728, guid: 08ac37e6b07624b9e951198250b1522f, type: 3}
+  - {fileID: 5597999330980822728, guid: 08ac37e6b07624b9e951198250b1522f, type: 3}
+  - {fileID: 5597999330980822728, guid: 08ac37e6b07624b9e951198250b1522f, type: 3}
+  - {fileID: 5597999330980822728, guid: 08ac37e6b07624b9e951198250b1522f, type: 3}
+  - {fileID: 5597999330980822728, guid: 08ac37e6b07624b9e951198250b1522f, type: 3}
   m_pointReward: 23
-  m_spawnInterval: 1
+  m_spawnInterval: 0
   m_overrideSpawner: 1
-  m_overrideSpawnIntervals: 0
-  m_newSpawnIntervals: []
+  m_overrideSpawnIntervals: 1
+  m_newSpawnIntervals:
+  - 1
+  - 4
+  - 4
+  - 4
+  - 4
+  - 4

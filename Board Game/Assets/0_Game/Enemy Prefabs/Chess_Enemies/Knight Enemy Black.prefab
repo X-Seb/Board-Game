@@ -7026,7 +7026,7 @@ Transform:
   m_GameObject: {fileID: 5832640078387480686}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.96, y: 0.82, z: 8.35}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8128,8 +8128,8 @@ MonoBehaviour:
         PlayMethod: 0
         PoolSize: 10
         StopSoundOnFeedbackStop: 1
-        MinVolume: 0.7
-        MaxVolume: 0.8
+        MinVolume: 0.4
+        MaxVolume: 0.5
         MinPitch: 0.5
         MaxPitch: 0.4
         SfxAudioMixerGroup: {fileID: -3165942800488051908, guid: 7e984f512e89b60468e829489e8883e3,
@@ -8253,7 +8253,7 @@ MonoBehaviour:
           m_DissipationRate: 0
           m_RawSignal: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4,
             type: 2}
-          m_AmplitudeGain: 0.7
+          m_AmplitudeGain: 0.5
           m_FrequencyGain: 1
           m_RepeatMode: 0
           m_Randomize: 1
@@ -9094,6 +9094,7 @@ GameObject:
   - component: {fileID: 9061112686970977638}
   - component: {fileID: 7621005958521508640}
   - component: {fileID: 6653904618753411365}
+  - component: {fileID: 57395031159650986}
   m_Layer: 13
   m_Name: AI Brain
   m_TagString: Untagged
@@ -9139,9 +9140,27 @@ MonoBehaviour:
     Transitions:
       array:
       - Decision: {fileID: 8151667124691831053}
-        TrueState: Hunting
+        TrueState: HuntingNormal
         FalseState: 
-  - StateName: Hunting
+  - StateName: HuntingNormal
+    Actions:
+      array:
+      - {fileID: 1897188088216724564}
+      - {fileID: 8670877532009845402}
+      - {fileID: 5416328586463165254}
+      - {fileID: 5084107527221772881}
+    Transitions:
+      array:
+      - Decision: {fileID: 8151667124691831053}
+        TrueState: 
+        FalseState: DoNothing
+      - Decision: {fileID: 5160058514016094488}
+        TrueState: 
+        FalseState: Jump
+      - Decision: {fileID: 57395031159650986}
+        TrueState: HuntingPathfinding
+        FalseState: 
+  - StateName: HuntingPathfinding
     Actions:
       array:
       - {fileID: 1897188088216724564}
@@ -9479,6 +9498,21 @@ MonoBehaviour:
   TargetFeedbacks: {fileID: 2693740719704925046}
   OnlyPlayWhenEnteringState: 1
   SetTargetGameObjectActive: 1
+--- !u!114 &57395031159650986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7274553028790374106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21818f4def5bf646bec3d25770336cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Label: TimeBeforePathfinding
+  AfterTimeMin: 0.5
+  AfterTimeMax: 0.5
 --- !u!1 &7434978508040668463
 GameObject:
   m_ObjectHideFlags: 0

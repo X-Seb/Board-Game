@@ -16,12 +16,12 @@ PrefabInstance:
     - target: {fileID: 1396738540696432021, guid: 48f4da9b26b5d400191aac0011aea06e,
         type: 3}
       propertyPath: MaxDamageCaused
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1396738540696432021, guid: 48f4da9b26b5d400191aac0011aea06e,
         type: 3}
       propertyPath: MinDamageCaused
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2523049971409876617, guid: 48f4da9b26b5d400191aac0011aea06e,
         type: 3}
@@ -36,7 +36,7 @@ PrefabInstance:
     - target: {fileID: 2859353885731737076, guid: 48f4da9b26b5d400191aac0011aea06e,
         type: 3}
       propertyPath: NumberOfHits
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2884491370053221013, guid: 48f4da9b26b5d400191aac0011aea06e,
         type: 3}

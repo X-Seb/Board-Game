@@ -89,10 +89,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8799078823544382132, guid: d79f257e3a5ba4172b7cd99c20bd73b7,
         type: 3}
+    - target: {fileID: 2651211334850505895, guid: 12befc7050048423b8eb997254066537,
+        type: 3}
+      propertyPath: NumberOfHits
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2867892608413136960, guid: 12befc7050048423b8eb997254066537,
         type: 3}
       propertyPath: m_Name
       value: Battleship Homing Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3565574614206629941, guid: 12befc7050048423b8eb997254066537,
+        type: 3}
+      propertyPath: InitialHealth
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3565574614206629941, guid: 12befc7050048423b8eb997254066537,
+        type: 3}
+      propertyPath: MaximumHealth
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 9031778402899472262, guid: 12befc7050048423b8eb997254066537,
         type: 3}

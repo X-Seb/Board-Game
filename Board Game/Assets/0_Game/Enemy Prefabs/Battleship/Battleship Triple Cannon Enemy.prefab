@@ -84,6 +84,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8799078823544382132, guid: c688f0513a19145c0a3d401a3d416843,
         type: 3}
+    - target: {fileID: 2651211334850505895, guid: 2e5ed418aaaac4bd59ef36854c175c50,
+        type: 3}
+      propertyPath: NumberOfHits
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2867892608413136960, guid: 2e5ed418aaaac4bd59ef36854c175c50,
         type: 3}
       propertyPath: m_Name
@@ -92,12 +97,12 @@ PrefabInstance:
     - target: {fileID: 3565574614206629941, guid: 2e5ed418aaaac4bd59ef36854c175c50,
         type: 3}
       propertyPath: InitialHealth
-      value: 50
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3565574614206629941, guid: 2e5ed418aaaac4bd59ef36854c175c50,
         type: 3}
       propertyPath: MaximumHealth
-      value: 50
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3699149722575243032, guid: 2e5ed418aaaac4bd59ef36854c175c50,
         type: 3}

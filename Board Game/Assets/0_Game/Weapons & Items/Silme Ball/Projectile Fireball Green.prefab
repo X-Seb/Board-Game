@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4314634578637812843}
   - component: {fileID: 566600382507647660}
   - component: {fileID: 1706994213733230950}
+  - component: {fileID: 5893102518422029223}
   m_Layer: 18
   m_Name: Projectile Fireball Green
   m_TagString: Untagged
@@ -112,8 +113,8 @@ MonoBehaviour:
   FaceDirection: 1
   FaceMovement: 1
   MovementVector: 0
-  Speed: 220
-  Acceleration: 0
+  Speed: 200
+  Acceleration: -40
   Direction: {x: 0, y: 0, z: 1}
   DirectionCanBeChangedBySpawner: 1
   FlipValue: {x: 1, y: 1, z: 1}
@@ -259,6 +260,66 @@ MonoBehaviour:
   RepositionRigidbodyLayerMask:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &5893102518422029223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603301004197400376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76891b3b532f84acaaeed44c357bd00c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetLayerMask:
+    serializedVersion: 2
+    m_Bits: 199936
+  Owner: {fileID: 0}
+  TriggerFilter: 195
+  MinDamageCaused: 0
+  MaxDamageCaused: 0
+  TypedDamages:
+  - AssociatedDamageType: {fileID: 11400000, guid: fc92f97ce850546029b4592687842af0,
+      type: 2}
+    MinDamageCaused: 2
+    MaxDamageCaused: 2
+    ForceCharacterCondition: 0
+    ForcedCondition: 0
+    DisableGravity: 0
+    ResetControllerForces: 0
+    ForcedConditionDuration: 0
+    ApplyMovementMultiplier: 0
+    MovementMultiplier: 0
+    MovementMultiplierDuration: 0
+  DamageDirectionMode: 1
+  DamageCausedKnockbackType: 1
+  DamageCausedKnockbackDirection: 0
+  DamageCausedKnockbackForce: {x: 0, y: 0, z: 0}
+  InvincibilityDuration: 0
+  RepeatDamageOverTime: 0
+  AmountOfRepeats: 8
+  DurationBetweenRepeats: 0.5
+  DamageOverTimeInterruptible: 1
+  RepeatedDamageType: {fileID: 11400000, guid: 7e7e563f1c6154833be36265f0e8be10, type: 2}
+  DamageTakenEveryTime: 100
+  DamageTakenDamageable: 0
+  DamageTakenNonDamageable: 0
+  DamageTakenKnockbackType: 0
+  DamageTakenKnockbackForce: {x: 0, y: 0, z: 0}
+  DamageTakenInvincibilityDuration: 0.5
+  HitDamageableFeedback: {fileID: 0}
+  HitNonDamageableFeedback: {fileID: 0}
+  HitAnythingFeedback: {fileID: 0}
+  HitDamageableEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  HitNonDamageableEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  HitAnythingEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &627509315719377458
 GameObject:
   m_ObjectHideFlags: 0

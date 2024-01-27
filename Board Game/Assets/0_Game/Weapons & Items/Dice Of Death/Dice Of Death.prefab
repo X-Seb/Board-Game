@@ -507,8 +507,8 @@ MonoBehaviour:
         PlayMethod: 0
         PoolSize: 10
         StopSoundOnFeedbackStop: 1
-        MinVolume: 0.5
-        MaxVolume: 0.6
+        MinVolume: 0.45
+        MaxVolume: 0.55
         MinPitch: 0.6
         MaxPitch: 1.2
         SfxAudioMixerGroup: {fileID: -3165942800488051908, guid: 7e984f512e89b60468e829489e8883e3,
@@ -781,7 +781,7 @@ MonoBehaviour:
           m_DissipationRate: 0
           m_RawSignal: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4,
             type: 2}
-          m_AmplitudeGain: 0.6
+          m_AmplitudeGain: 0.4
           m_FrequencyGain: 1
           m_RepeatMode: 0
           m_Randomize: 1
@@ -1059,7 +1059,7 @@ MonoBehaviour:
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-        Amplitude: 0.708
+        Amplitude: 0.5
         RelativeIntensity: 0
     - rid: 2694893150061723664
       type: {class: MMF_Vignette, ns: MoreMountains.FeedbacksForThirdParty, asm: MoreMountains.Feedbacks.PostProcessing}
@@ -1166,7 +1166,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         RemapIntensityZero: 0
-        RemapIntensityOne: 0.04
+        RemapIntensityOne: 0.025
         RelativeIntensity: 1
         InterpolateColor: 0
         ColorCurve:

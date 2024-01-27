@@ -16,29 +16,29 @@ MonoBehaviour:
   - {fileID: 1174499198651537194, guid: 3e448d0b64f3945828b7d235b2aad737, type: 3}
   - {fileID: 1174499198651537194, guid: 3e448d0b64f3945828b7d235b2aad737, type: 3}
   - {fileID: 1174499198651537194, guid: 3e448d0b64f3945828b7d235b2aad737, type: 3}
-  - {fileID: 5765793011367982943, guid: 836a90f6a785c4ff898628c64298e70d, type: 3}
+  - {fileID: 1948452043460385931, guid: 36d419256681a45f9a0d1cbede8d865d, type: 3}
   - {fileID: 1174499198651537194, guid: db9955a306a7b4685bb46dd8e5497a28, type: 3}
   - {fileID: 1174499198651537194, guid: db9955a306a7b4685bb46dd8e5497a28, type: 3}
   - {fileID: 1174499198651537194, guid: db9955a306a7b4685bb46dd8e5497a28, type: 3}
-  - {fileID: 6501561028228726192, guid: 7a3227a39e6fe49bd84cd4b96e0ec4a1, type: 3}
+  - {fileID: 3095849369095809815, guid: 4d87cbd22a9ab4a43a030fc584f40c63, type: 3}
   - {fileID: 1174499198651537194, guid: 3e448d0b64f3945828b7d235b2aad737, type: 3}
   - {fileID: 1174499198651537194, guid: 3e448d0b64f3945828b7d235b2aad737, type: 3}
   - {fileID: 1174499198651537194, guid: 3e448d0b64f3945828b7d235b2aad737, type: 3}
-  - {fileID: 3163172427798067701, guid: 1d545b9f3e899443289162231e6c8694, type: 3}
+  - {fileID: 1258462196515774035, guid: 37d4d38e1a4614001aa483314b24a97a, type: 3}
   m_pointReward: 19
   m_spawnInterval: 0
   m_overrideSpawner: 0
   m_overrideSpawnIntervals: 1
   m_newSpawnIntervals:
   - 1
-  - 2
-  - 2
-  - 3
+  - 1.8
+  - 1.8
+  - 2.8
   - 12
-  - 2
-  - 2
-  - 3
+  - 1.8
+  - 1.8
+  - 2.8
   - 12
-  - 2
-  - 2
-  - 3
+  - 1.8
+  - 1.8
+  - 2.8
